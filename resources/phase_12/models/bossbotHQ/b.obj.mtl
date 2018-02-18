@@ -1,0 +1,98 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.187496374)
+
+newmtl JoinedMaterial_#94
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\StoneWall1e.jpg
+
+newmtl material4_1
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\BQ_Fireplace_1.jpg
+
+newmtl JoinedMaterial_#19
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+
+newmtl JoinedMaterial_#20
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\Shingles.jpg
+
+newmtl JoinedMaterial_#21
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\WallBricksBig2.jpg
+
+newmtl JoinedMaterial_#95
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\smoothwall_4.jpg
+
+newmtl JoinedMaterial_#92
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\bossbotHQ_palette_4amla_2.jpg
+
+newmtl JoinedMaterial_#91
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\CogThinTree.jpg
+
+newmtl material43_0
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\CogHedgeFar2.jpg
+
+newmtl JoinedMaterial_#93
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\CogHedgeMaze3.jpg
+
+newmtl material44_1
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\CogHedgeMaze2.jpg
+
+newmtl JoinedMaterial_#96
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ns 64
+illum 2
+map_Kd phase_12\maps\mazedirt_golf.jpg
+

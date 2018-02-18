@@ -1,0 +1,12 @@
+group "goofySpeedway" [
+ visgroup "23000:safe_zone" [
+  vis [   "23000:safe_zone"   ]
+  node "level" [
+   prop "doodlepark_DNARoot" [
+    code [ "doodlepark" ]
+    pos [ 0 0 0 ]
+    nhpr [ 0 0 0 ]
+   ]
+  ]
+ ]
+]

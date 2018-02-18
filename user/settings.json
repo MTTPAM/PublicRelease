@@ -1,0 +1,79 @@
+{
+  "acceptingNewFriends": {
+    "100000001": true,
+    "100000002": true,
+    "100000046": true
+  },
+  "acceptingNonFriendWhispers": {
+    "100000001": true,
+    "100000002": true,
+    "100000046": true
+  },
+  "anisotropic-filtering": 4,
+  "anti-aliasing": false,
+  "anti-alsiasing": false,
+  "aspect-ratio": 0,
+  "doorkey": false,
+  "experienceBarMode": true,
+  "experimental-touch": false,
+  "fieldofview": 52.0,
+  "friendstatusmsgs": true,
+  "fullscreen": false,
+  "game": {
+    "always-max-lod": false,
+    "antialiasing": 0,
+    "auto-start-local-server": true,
+    "blacklist": false,
+    "camera-scroll-select-always-active": false,
+    "classic-characters": true,
+    "elections": false,
+    "interpolate-animations": true,
+    "mini-server": true,
+    "oeuf": false,
+    "random-invasions": true,
+    "retro": false,
+    "sequence-blacklist": false,
+    "software-render": false,
+    "stretched-screen": false,
+    "true-friends": true,
+    "view-props": false,
+    "whitelist": false
+  },
+  "health-meter-mode": 2,
+  "interactkey": false,
+  "keymap": {},
+  "language": "English",
+  "lastEffect": {
+    "100000001": 0,
+    "100000002": 0,
+    "100000046": 0
+  },
+  "lastNametag": {
+    "100000001": 0,
+    "100000002": 0,
+    "100000046": 0
+  },
+  "lastRod": {
+    "100000001": 0,
+    "100000002": 0,
+    "100000046": 0
+  },
+  "loadDisplay": "pandagl",
+  "music": true,
+  "musicVol": 0.0,
+  "newGui": false,
+  "res": [
+    1920,
+    1017
+  ],
+  "sfx": true,
+  "sfxVol": 0.37026874542236327,
+  "show-cog-levels": true,
+  "show-disclaimer": false,
+  "smoothanimations": true,
+  "streamerMode": false,
+  "toonChatSounds": true,
+  "tpmsgs": true,
+  "vertical-sync": false,
+  "want-Custom-Controls": false
+}
