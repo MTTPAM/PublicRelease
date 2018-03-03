@@ -1,4 +1,2 @@
-*.lock
-*.bson
-*.ns
-*.0
+*
+!.gitignore

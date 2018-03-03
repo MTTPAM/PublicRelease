@@ -2,15 +2,11 @@
 cd ../../
 
 rem Get the user input:
-set /P ttUsername="Username: "
-
-rem Get the user input:
-set /P ttPassword="Password: "
+set ttUsername=admin
+rem set /P ttUsername="Username: "
 
 rem Export the environment variables:
 set TT_PLAYCOOKIE=%ttUsername%
-set TT_USERNAME=%ttUsername%
-set TT_PASSWORD=%ttPassword%
 set TT_GAMESERVER=127.0.0.1
 
 echo ===============================

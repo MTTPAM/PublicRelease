@@ -1,5 +1,5 @@
 @echo off
-title Altis Development Mongo
+title MongoDB
 cd ../../astron
 
 :main
