@@ -10,7 +10,7 @@ if (os.path.exists("C:/Program Files (x86)/Git/bin") == 0 and os.path.exists("C:
      os.system("Color 04")
      print("Git Is not installed! please install and run again\n")
      print("Git MUST be installed to the default directory")
-	 print("https://git-scm.com/download/win")
+     print("https://git-scm.com/download/win")
      sys.exit()  
 if (os.path.isfile('FirstTimeSetup.bat') == 0):
 		print("Checking for updates . . .")
