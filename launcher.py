@@ -16,7 +16,7 @@ if (os.path.isfile('FirstTimeSetup.bat') == 0):
 		print("Checking for updates . . .")
 		os.system("color 02")
 		os.system("git fetch")
-		os.system("git pull origin master")
+		os.system("git reset --hard origin/master")
 if (os.path.isfile('FirstTimeSetup.bat')):
         os.system("color 06")
         print("running first time setup . . .")
