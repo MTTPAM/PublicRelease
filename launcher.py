@@ -3,8 +3,28 @@
 ###    Development Launcher      ###
 ###   For  Testing  uses  only   ###
 ####################################
-
-#pos = (X, Y, Z)
+#Start Updater BEFORE launching GUI
+import os, sys
+os.system('cls')
+if (os.path.exists("C:/Program Files (x86)/Git/bin") == 0 and os.path.exists("C:/Program Files/Git/bin") == 0):
+     os.system("Color 04")
+     print("Git Is not installed! please install and run again\n")
+     print("Git MUST be installed to the default directory")
+	 print("https://git-scm.com/download/win")
+     sys.exit()  
+if (os.path.isfile('FirstTimeSetup.bat') == 0):
+		print("Checking for updates . . .")
+		os.system("color 02")
+		os.system("git fetch")
+		os.system("git pull origin master")
+if (os.path.isfile('FirstTimeSetup.bat')):
+        os.system("color 06")
+        print("running first time setup . . .")
+        print("This will take a while.")
+        os.system('FirstTimeSetup.bat')	
+os.system('cls')
+os.system("color 09")
+print("Done; Launching launcher")
 
 from panda3d.core import *
 loadPrcFileData("", "window-title Mr. Tankthrusts Toontown: Project Altis Modifications")
@@ -12,7 +32,6 @@ loadPrcFileData("", "win-size 1200 600")
 loadPrcFileData("", "win-origin 200 200")
 import direct.directbase.DirectStart
 from direct.gui.DirectGui import *
-import os
 from uuid import getnode as get_mac
 #get mac adress used later
 mac = str(hex(get_mac()))
@@ -52,15 +71,6 @@ ip__t = aspect2d.attachNewNode(ip_t)
 ip__t.setScale(0.07), ip_t.setText("ip:")
 ip__t.setPos(-.45 , 0, -.48 ), ip_t.setShadow(0.10, 0.10), ip_t.setShadowColor(0, 0, 0, 1)
 
-def updategame():
-    if (os.path.isfile('FirstTimeSetup.bat') == 0):
-	    os.system("git fetch")
-	    os.system("git pull origin master")
-    if (os.path.isfile('FirstTimeSetup.bat')):
-        os.system('FirstTimeSetup.bat')	
-    launch()		
-
-	#launch()
 def launch():
 
     #Preparing for launching
@@ -81,7 +91,7 @@ def launch():
 
 #setting up the play button
 play_b = DirectButton(frameSize=None, image=(buttonup,buttondown,buttonup), relief=None,  
-command=updategame, pos = (0, 0, -.7 ), scale=0.27)
+command=launch, pos = (0, 0, -.7 ), scale=0.27)
 
 #start the GUI
 base.run()
