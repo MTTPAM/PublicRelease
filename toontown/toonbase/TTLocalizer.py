@@ -1,4 +1,3 @@
-#Embedded file name: toontown.toonbase.TTLocalizer
 from panda3d.core import *
 import string
 import types
