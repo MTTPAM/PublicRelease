@@ -29,7 +29,7 @@ model-path resources
 dc-file astron/dclass/toon.dc
 
 # Server
-server-version MTTPAM-v.2.4.0
+server-version MTTPAM-v.2.5.0
 
 # Performance
 smooth-enable-prediction 1

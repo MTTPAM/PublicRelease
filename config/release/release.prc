@@ -1,5 +1,5 @@
 # Server:
-server-version TTPA-Alpha-1.2.0
+server-version MTTPA-Alpha-1.0.2
 min-access-level 100
 shard-low-pop 50
 shard-mid-pop 100
