@@ -39,7 +39,7 @@
     "view-props": false,
     "whitelist": false
   },
-  "health-meter-mode": 2,
+  "health-meter-mode": 0,
   "interactkey": false,
   "keymap": {},
   "language": "English",
@@ -60,17 +60,17 @@
   },
   "loadDisplay": "pandagl",
   "music": true,
-  "musicVol": 0.0,
+  "musicVol": 0.7554118347167968,
   "newGui": false,
   "res": [
     1920,
-    1017
+    1018
   ],
   "sfx": true,
-  "sfxVol": 0.37026874542236327,
+  "sfxVol": 1.0,
   "show-cog-levels": true,
   "show-disclaimer": false,
-  "smoothanimations": true,
+  "smoothanimations": false,
   "streamerMode": false,
   "toonChatSounds": true,
   "tpmsgs": true,

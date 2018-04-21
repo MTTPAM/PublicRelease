@@ -1,4 +1,3 @@
-#Embedded file name: toontown.toon.ToonDNA
 from direct.directnotify.DirectNotifyGlobal import *
 from direct.distributed.PyDatagram import PyDatagram
 from direct.distributed.PyDatagramIterator import PyDatagramIterator
@@ -6,6 +5,7 @@ from panda3d.core import *
 from panda3d.direct import *
 import ast, colorsys, random
 from otp.avatar import AvatarDNA
+
 notify = directNotify.newCategory('ToonDNA')
 mergeMATTailor = config.GetBool('want-mat-all-tailors', 0)
 toonSpeciesTypes = ['d',
@@ -17,7 +17,12 @@ toonSpeciesTypes = ['d',
  'p',
  'b',
  's',
- 'x']
+ 'x',
+ 'z',
+ 'a',
+ 'v',
+ 'n',
+ 't']
 toonHeadTypes = ['dls',
  'dss',
  'dsl',
@@ -55,7 +60,27 @@ toonHeadTypes = ['dls',
  'xls',
  'xss',
  'xsl',
- 'xll']
+ 'xll',
+ 'zls',
+ 'zss',
+ 'zsl',
+ 'zll',
+ 'als',
+ 'ass',
+ 'asl',
+ 'all',
+ 'vls',
+ 'vss',
+ 'vsl',
+ 'vll',
+ 'nls',
+ 'nss',
+ 'nsl',
+ 'nll',
+ 'tls',
+ 'tss',
+ 'tsl',
+ 'tll']
 
 def getHeadList(species):
     headList = []
@@ -100,6 +125,16 @@ def getSpeciesName(head):
         speciesName = 'pig'
     elif species == 'x':
         speciesName = 'deer'
+    elif species == 'z':
+        speciesName = 'beaver'
+    elif species == 'a':
+        speciesName = 'alligator'
+    elif species == 'v':
+        speciesName = 'fox'
+    elif species == 'n':
+        speciesName = 'bat'
+    elif species == 't':
+        speciesName = 'raccoon'
     return speciesName
 
 
@@ -112,7 +147,12 @@ toonHeadAnimalIndices = [0,
  22,
  26,
  30,
- 34]
+ 34,
+ 38,
+ 42,
+ 46,
+ 50,
+ 54]
 toonHeadAnimalIndicesTrial = [0,
  4,
  12,
@@ -157,7 +197,27 @@ allToonHeadAnimalIndices = [0,
  34,
  35,
  36,
- 37]
+ 37,
+ 38,
+ 39,
+ 40,
+ 41,
+ 42,
+ 43,
+ 44,
+ 45,
+ 46,
+ 47,
+ 48,
+ 49,
+ 50,
+ 51,
+ 52,
+ 53,
+ 54,
+ 55,
+ 56,
+ 57]
 allToonHeadAnimalIndicesTrial = [0,
  1,
  2,
@@ -179,7 +239,11 @@ allToonHeadAnimalIndicesTrial = [0,
  30,
  31,
  32,
- 33]
+ 33,
+ 34,
+ 35,
+ 36,
+ 37]
 toonTorsoTypes = ['ss',
  'ms',
  'ls',
@@ -338,7 +402,18 @@ Shirts = ['phase_3/maps/desat_shirt_1.jpg',
  'phase_4/maps/tt_t_chr_avt_shirt_saveBuilding4.jpg',
  'phase_4/maps/tt_t_chr_avt_shirt_saveBuilding05.jpg',
  'phase_4/maps/tt_t_chr_avt_shirt_anniversary.jpg',
- 'phase_4/maps/i60_shirt.jpg']
+ 'phase_4/maps/i60_shirt.jpg',
+ 'phase_4/maps/flannelshirt_red.jpg',
+ 'phase_4/maps/Blue-white_sprite_shirt.jpg',
+ 'phase_4/maps/Star_shirt.jpg',
+ 'phase_4/maps/Watermelon_shirt.jpg',
+ 'phase_4/maps/Melon_shirt.jpg',
+ 'phase_4/maps/CamelShirt.jpg',
+ 'phase_4/maps/CheckeredShirt.jpg',
+ 'phase_4/maps/BrownShirt.jpg',
+ 'phase_4/maps/CatManShirt.jpg',
+ 'phase_4/maps/TuxShirt.jpg',
+ 'phase_4/maps/WinterSweater1.jpg']
 BoyShirts = [(0, 0),
  (1, 1),
  (2, 2),
@@ -521,7 +596,19 @@ Sleeves = ['phase_3/maps/desat_sleeve_1.jpg',
  'phase_4/maps/tt_t_chr_avt_shirtSleeve_saveBuilding4.jpg',
  'phase_4/maps/tt_t_chr_avt_shirtSleeve_saveBuilding05.jpg',
  'phase_4/maps/tt_t_chr_avt_shirtSleeve_anniversary.jpg',
- 'phase_4/maps/i60_sleeves.jpg']
+ 'phase_4/maps/i60_sleeves.jpg',
+ 'phase_4/maps/flannelsleeve_red.jpg',
+ 'phase_4/maps/Blue-white_sprite_sleeve.jpg',
+ 'phase_4/maps/Star_sleeve.jpg',
+ 'phase_4/maps/Watermelon_shirt_sleeve.jpg',
+ 'phase_4/maps/Melon_sleeve.jpg',
+ 'phase_4/maps/CamelSleeve.jpg',
+ 'phase_4/maps/CheckeredSleeve.jpg',
+ 'phase_4/maps/BrownSleeve.jpg',
+ 'phase_4/maps/CatManSleeve.jpg',
+ 'phase_4/maps/TuxSleeve.jpg',
+ 'phase_4/maps/WinterSweater1Sleeve.jpg',
+ 'phase_4/maps/1.jpg']
 BoyShorts = ['phase_3/maps/desat_shorts_1.jpg',
  'phase_3/maps/desat_shorts_2.jpg',
  'phase_3/maps/desat_shorts_4.jpg',
@@ -579,7 +666,13 @@ BoyShorts = ['phase_3/maps/desat_shorts_1.jpg',
  'phase_4/maps/tt_t_chr_avt_shorts_golf05.jpg',
  'phase_4/maps/tt_t_chr_avt_shorts_racing04.jpg',
  'phase_4/maps/tt_t_chr_avt_shorts_racing05.jpg',
- 'phase_4/maps/i60_shorts.jpg']
+ 'phase_4/maps/i60_shorts.jpg',
+ 'phase_4/maps/PajamaShort.jpg',
+ 'phase_4/maps/ManShort1.jpg',
+ 'phase_4/maps/ManShort2.jpg',
+ 'phase_4/maps/ManShort3.jpg',
+ 'phase_4/maps/ManShort4.jpg',
+ 'phase_4/maps/ManShort5.jpg']
 SHORTS = 0
 SKIRT = 1
 GirlBottoms = [('phase_3/maps/desat_skirt_1.jpg', SKIRT),
@@ -644,7 +737,13 @@ GirlBottoms = [('phase_3/maps/desat_skirt_1.jpg', SKIRT),
  ('phase_4/maps/tt_t_chr_avt_skirt_golf04.jpg', SKIRT),
  ('phase_4/maps/tt_t_chr_avt_skirt_racing04.jpg', SKIRT),
  ('phase_4/maps/tt_t_chr_avt_skirt_racing05.jpg', SKIRT),
- ('phase_4/maps/i60_shorts.jpg', SHORTS)]
+ ('phase_4/maps/i60_shorts.jpg', SHORTS),
+ ('phase_4/maps/PajamaShort.jpg', SHORTS),
+ ('phase_4/maps/FemaleSkirt2017_1.jpg', SKIRT),
+ ('phase_4/maps/FemaleSkirt2017_2.jpg', SKIRT),
+ ('phase_4/maps/FemaleSkirt2017_3.jpg', SKIRT),
+ ('phase_4/maps/FemaleSkirt2017_4.jpg', SKIRT),
+ ('phase_4/maps/FemaleSkirt2017_5.jpg', SKIRT)]
 ClothesColors = [VBase4(0.933594, 0.265625, 0.28125, 1.0),
  VBase4(0.863281, 0.40625, 0.417969, 1.0),
  VBase4(0.710938, 0.234375, 0.4375, 1.0),
@@ -676,7 +775,35 @@ ClothesColors = [VBase4(0.933594, 0.265625, 0.28125, 1.0),
  VBase4(0.0, 0.2, 0.956862, 1.0),
  VBase4(0.972549, 0.094117, 0.094117, 1.0),
  VBase4(0.447058, 0.0, 0.90196, 1.0),
- VBase4(0.3, 0.3, 0.35, 1.0)]
+ VBase4(0.3, 0.3, 0.35, 1.0),
+ VBase4(0.196078, 0.803921, 0.196078, 1.0),
+ VBase4(0.462745098039216, 0.0901960784313725, 0.0901960784313725, 1.0),
+ VBase4(0.47, 0.44, 0.44, 1.0),
+ VBase4(0.74, 0.75, 0.76, 1.0),
+ VBase4(0.61, 0.25, 0.17, 1.0),
+ VBase4(0.447058, 0.0, 0.90196, 1.0),
+ VBase4(1.0, 0.7686274509803922, 0.4470588235294118, 1.0),
+ VBase4(1.0, 0.0, 0.4313725490196078, 1.0),
+ VBase4(0.196078, 0.803921, 0.196078, 1.0),
+ VBase4(0.462745098039216, 0.0901960784313725, 0.0901960784313725, 1.0),
+ VBase4(1.0, 1.0, 0.0, 1.0),
+ VBase4(0.8588235294117647, 0.7137254901960784, 0.0, 1.0),
+ VBase4(0.0, 0.0745098039215686, 0.4980392156862745, 1.0),
+ VBase4(0.7137254901960784, 1.0, 0.0, 1.0),
+ VBase4(0.1882352941176471, 0.1882352941176471, 0.1882352941176471, 1.0),
+ VBase4(0.7254901960784314, 0.7098039215686275, 0.1, 1.0),
+ VBase4(0.0, 0.1490196078431373, 1.0, 1.0),
+ VBase4(0.4980392156862745, 0.0, 0.2156862745098039, 1.0),
+ VBase4(0.0, 0.4980392156862745, 0.4980392156862745, 1.0), 
+ VBase4(0.9450980392156863, 0.9411764705882353, 0.8509803921568627, 1.0),
+ VBase4(0.8313725490196078, 1.0, 0.6274509803921569, 1.0),
+ VBase4(0.7686274509803922, 0.4705882352941176, 0.8117647058823529, 1.0),
+ VBase4(0.5803921568627451, 0.6313725490196078, 0.6470588235294118, 1.0),
+ VBase4(1.0, 0.639215, 0.262745, 1.0),
+ VBase4(0.505882, 0.486274, 1.0, 1.0),
+ VBase4(1.0, 0.180392, 0.0, 1.0),
+ VBase4(0.180392, 0.278431, 0.662745, 1.0),
+ VBase4(0.682352, 0.627450, 0.796078, 1.0)]
 ShirtStyles = {'bss1': [0, 0, [(0, 0),
            (1, 1),
            (2, 2),
@@ -1691,9 +1818,9 @@ TailorCollections = {MAKE_A_TOON: [['bss1', 'bss2'],
                 ['bbs1', 'bbs2'],
                 ['gsk1', 'gsh1']],
  TAILOR_TIM: [['bss1', 'bss2'],
-              ['gss1', 'gss2'],
-              ['bbs1', 'bbs2'],
-              ['gsk1', 'gsh1']],
+                ['gss1', 'gss2'],
+                ['bbs1', 'bbs2'],
+                ['gsk1', 'gsh1']],
  LONGJOHN_LEROY: [['bss3', 'bss14'],
                   ['gss3', 'gss14'],
                   ['bbs3', 'bbs4'],
@@ -1714,6 +1841,7 @@ TailorCollections = {MAKE_A_TOON: [['bss1', 'bss2'],
                   ['gss13', 'gss15'],
                   ['bbs8'],
                   ['gsk7']]}
+
 BOY_SHIRTS = 0
 GIRL_SHIRTS = 1
 BOY_SHORTS = 2
@@ -1728,23 +1856,22 @@ MakeAToonGirlBottoms = []
 MakeAToonGirlShirts = []
 MakeAToonGirlSkirts = []
 MakeAToonGirlShorts = []
+
+#Combine all tailors into MAKE_A_TOON tailor.
 if mergeMATTailor:
     for tailors in TailorCollections:
         for girlBottoms in TailorCollections[tailors][GIRL_BOTTOMS]:
             if girlBottoms not in TailorCollections[MAKE_A_TOON][GIRL_BOTTOMS]:
                 TailorCollections[MAKE_A_TOON][GIRL_BOTTOMS].append(girlBottoms)
-
         for boyShorts in TailorCollections[tailors][BOY_SHORTS]:
             if boyShorts not in TailorCollections[MAKE_A_TOON][BOY_SHORTS]:
-                TailorCollections[MAKE_A_TOON][BOY_SHORTS].append(boyShorts)
-
+                 TailorCollections[MAKE_A_TOON][BOY_SHORTS].append(boyShorts)
         for girlShirts in TailorCollections[tailors][GIRL_SHIRTS]:
             if girlShirts not in TailorCollections[MAKE_A_TOON][GIRL_SHIRTS]:
-                TailorCollections[MAKE_A_TOON][GIRL_SHIRTS].append(girlShirts)
-
+                 TailorCollections[MAKE_A_TOON][GIRL_SHIRTS].append(girlShirts)
         for boyShirts in TailorCollections[tailors][BOY_SHIRTS]:
             if boyShirts not in TailorCollections[MAKE_A_TOON][BOY_SHIRTS]:
-                TailorCollections[MAKE_A_TOON][BOY_SHIRTS].append(boyShirts)
+                 TailorCollections[MAKE_A_TOON][BOY_SHIRTS].append(boyShirts)
 
 for style in TailorCollections[MAKE_A_TOON][BOY_SHORTS]:
     index = BottomStyles[style][0]
@@ -1889,7 +2016,6 @@ def getTops(gender, tailorId = MAKE_A_TOON):
 
     return tops
 
-
 def getTopColors(gender, top, tailorId = MAKE_A_TOON):
     if gender == 'm':
         collection = TailorCollections[tailorId][BOY_SHIRTS]
@@ -1900,10 +2026,8 @@ def getTopColors(gender, top, tailorId = MAKE_A_TOON):
     index = collection[tops.index(top)]
     for color in ShirtStyles[index][2]:
         colors.append((color[0], color[1]))
-
     return colors
-
-
+ 
 def getTopStyles(gender, tailorId = MAKE_A_TOON):
     if gender == 'm':
         collection = TailorCollections[tailorId][BOY_SHIRTS]
@@ -1912,10 +2036,8 @@ def getTopStyles(gender, tailorId = MAKE_A_TOON):
     tops = []
     for style in collection:
         tops.append((ShirtStyles[style][0], ShirtStyles[style][1]))
-
     return tops
-
-
+ 
 def getAllTops(gender):
     tops = []
     for style in ShirtStyles.keys():
@@ -1945,7 +2067,6 @@ def getBottoms(gender, tailorId = MAKE_A_TOON):
 
     return bottoms
 
-
 def getBottomStyles(gender, tailorId = MAKE_A_TOON):
     if gender == 'm':
         collection = TailorCollections[tailorId][BOY_SHORTS]
@@ -1953,11 +2074,10 @@ def getBottomStyles(gender, tailorId = MAKE_A_TOON):
         collection = TailorCollections[tailorId][GIRL_BOTTOMS]
     bottoms = []
     for style in collection:
-        bottoms.append(BottomStyles[style][0])
-
+            bottoms.append(BottomStyles[style][0])
+ 
     return bottoms
-
-
+ 
 def getBottomColors(gender, bottom, tailorId = MAKE_A_TOON):
     if gender == 'm':
         collection = TailorCollections[tailorId][BOY_SHORTS]
@@ -1968,10 +2088,8 @@ def getBottomColors(gender, bottom, tailorId = MAKE_A_TOON):
     index = collection[bottoms.index(bottom)]
     for color in BottomStyles[index][1]:
         colors.append(color)
-
     return colors
-
-
+ 
 def getAllBottoms(gender, output = 'both'):
     bottoms = []
     for style in BottomStyles.keys():
@@ -2031,7 +2149,7 @@ allColorsList = [(1.0, 1.0, 1.0, 1.0),
  (0.325, 0.407, 0.601, 1.0),
  (0.235, 0.573, 0.984, 1.0),
  (0.0, 0.635294, 0.258823, 1.0),
- (0.674509, 0.92549, 1.0, 1.0),
+ (0.674509, 0.925490, 1.0, 1.0),
  (0.988235, 0.894117, 0.745098, 1.0),
  (0.749019, 1.0, 0.847058, 1.0),
  (0.470588, 0.443137, 0.447058, 1.0),
@@ -2043,13 +2161,13 @@ allColorsList = [(1.0, 1.0, 1.0, 1.0),
  (0.862745, 0.078431, 0.235294, 1.0),
  (0.0, 0.635294, 0.513725, 1.0),
  (0.803921, 0.498039, 0.196078, 1.0),
- (0.7, 0.52, 0.75, 1.0),
+ (0.70, 0.52, 0.75, 1.0),
  (1.0, 0, 1.0, 1.0),
  (0.5764, 0.4392, 0.8588, 1.0),
  (1.0, 1.0, 0.94117, 1.0),
  (0.9333, 0.8235, 0.9333, 1.0),
- (0.0, 1.0, 0.498, 1.0),
- (0.8549, 0.647, 0.1254, 1.0),
+ (0.0, 1.0, 0.4980, 1.0),
+ (0.8549, 0.6470, 0.1254, 1.0),
  (1.0, 0.59607, 0.0705, 1.0),
  (0.8039, 0.6862, 0.5843, 1.0),
  (0.2196, 0.5568, 0.5568, 1.0),
@@ -2057,7 +2175,33 @@ allColorsList = [(1.0, 1.0, 1.0, 1.0),
  (0.8901, 0.8117, 0.3411, 1.0),
  (0.4117, 0.4117, 0.4117, 1.0),
  (1.0, 0.8431, 0.0, 1.0),
- (0.9333, 0.7882, 0.0, 1.0)]
+ (0.9333, 0.7882, 0.0, 1.0),
+ (1.0, 0.7686274509803922, 0.4470588235294118, 1.0),
+ (1.0, 0.0, 0.4313725490196078, 1.0),
+ (0.196078, 0.803921, 0.196078, 1.0),
+ (0.462745098039216, 0.0901960784313725, 0.0901960784313725, 1.0),
+ (1.0, 1.0, 0.0, 1.0),
+ (0.8588235294117647, 0.7137254901960784, 0.0, 1.0),
+ (0.0, 0.0745098039215686, 0.4980392156862745, 1.0),
+ (0.7137254901960784, 1.0, 0.0, 1.0),
+ (0.1882352941176471, 0.1882352941176471, 0.1882352941176471, 1.0),
+ (0.7254901960784314, 0.7098039215686275, 0.1, 1.0),
+ (0.0, 0.1490196078431373, 1.0, 1.0),
+ (0.4980392156862745, 0.0, 0.2156862745098039, 1.0),
+ (0.0, 0.4980392156862745, 0.4980392156862745, 1.0), 
+ (0.9450980392156863, 0.9411764705882353, 0.8509803921568627, 1.0),
+ (0.8313725490196078, 1.0, 0.6274509803921569, 1.0),
+ (0.7686274509803922, 0.4705882352941176, 0.8117647058823529, 1.0),
+ (0.5803921568627451, 0.6313725490196078, 0.6470588235294118, 1.0),
+ (1.0, 0.639215, 0.262745, 1.0),
+ (0.505882, 0.486274, 1.0, 1.0),
+ (1.0, 0.2705882352941176, 0.0, 1.0),
+ (0.180392, 0.278431, 0.662745, 1.0),
+ (0.682352, 0.627450, 0.796078, 1.0),
+ (0.5019607843137255, 0.5019607843137255, 0.0, 1.0),
+ (0.0, 0.6823529411764706, 1.0, 1.0),
+ (0.803921568627451, 0.3607843137254902, 0.3607843137254902, 1.0),
+ (0.0235294117647059, 0.2980392156862745, 0.0, 1.0)]
 defaultBoyColorList = [0,
  1,
  2,
@@ -2094,7 +2238,7 @@ defaultBoyColorList = [0,
  33,
  34,
  35,
- 36,
+ 36, 
  37,
  38,
  39,
@@ -2159,7 +2303,7 @@ defaultGirlColorList = [0,
  33,
  34,
  35,
- 36,
+ 36, 
  37,
  38,
  39,
@@ -2187,7 +2331,34 @@ defaultGirlColorList = [0,
  61,
  62,
  63,
- 64]
+ 64,
+ 65,
+ 66,
+ 67,
+ 68,
+ 69,
+ 70,
+ 71,
+ 72,
+ 73,
+ 74,
+ 75,
+ 76,
+ 77,
+ 78,
+ 79,
+ 80,
+ 81,
+ 82,
+ 83,
+ 84,
+ 85,
+ 86,
+ 87,
+ 88,
+ 89,
+ 90]
+
 defaultColorList = allColorsList
 HatModels = [None,
  'phase_4/models/accessories/tt_m_chr_avt_acc_hat_baseball',
@@ -2626,6 +2797,7 @@ class ToonDNA(AvatarDNA.AvatarDNA):
                     self.newToonFromProperties(*dna.asTuple())
         else:
             self.type = 'u'
+        
         self.cache = ()
 
     def __str__(self):
@@ -2673,13 +2845,9 @@ class ToonDNA(AvatarDNA.AvatarDNA):
             self.gloveColor = self.checkIsDefaultColor(self.gloveColor)
             self.legColor = self.checkIsDefaultColor(self.legColor)
             self.headColor = self.checkIsDefaultColor(self.headColor)
-            for colors in (self.armColor,
-             self.gloveColor,
-             self.legColor,
-             self.headColor):
+            for colors in (self.armColor, self.gloveColor, self.legColor, self.headColor):
                 for color in colors[:-1]:
                     dg.addFloat64(color)
-
         elif self.type == 'u':
             notify.error('undefined avatar')
         else:
@@ -2712,22 +2880,10 @@ class ToonDNA(AvatarDNA.AvatarDNA):
         sleeveTexColor = dgi.getUint8()
         botTex = dgi.getUint8()
         botTexColor = dgi.getUint8()
-        armColor = (dgi.getFloat64(),
-         dgi.getFloat64(),
-         dgi.getFloat64(),
-         1.0)
-        gloveColor = (dgi.getFloat64(),
-         dgi.getFloat64(),
-         dgi.getFloat64(),
-         1.0)
-        legColor = (dgi.getFloat64(),
-         dgi.getFloat64(),
-         dgi.getFloat64(),
-         1.0)
-        headColor = (dgi.getFloat64(),
-         dgi.getFloat64(),
-         dgi.getFloat64(),
-         1.0)
+        armColor = (dgi.getFloat64(), dgi.getFloat64(), dgi.getFloat64(), 1.0)
+        gloveColor = (dgi.getFloat64(), dgi.getFloat64(), dgi.getFloat64(), 1.0)
+        legColor = (dgi.getFloat64(), dgi.getFloat64(), dgi.getFloat64(), 1.0)
+        headColor = (dgi.getFloat64(), dgi.getFloat64(), dgi.getFloat64(), 1.0)
         if topTex >= len(Shirts):
             return False
         if topTexColor >= len(ClothesColors):
@@ -2739,8 +2895,9 @@ class ToonDNA(AvatarDNA.AvatarDNA):
         if gender == 'm':
             if botTex >= len(BoyShorts):
                 return False
-        elif botTex >= len(GirlBottoms):
-            return False
+        else:
+            if botTex >= len(GirlBottoms):
+                return False
         if botTexColor >= len(ClothesColors):
             return False
         if not self.checkColor(armColor):
@@ -2754,8 +2911,9 @@ class ToonDNA(AvatarDNA.AvatarDNA):
         return True
 
     def checkColor(self, color):
-        if color in allColorsList:
+        if color in allColorsList: # Color is a default one
             return True
+        
         hsv = colorsys.rgb_to_hsv(color[0], color[1], color[2])
         return 0.1 <= hsv[1] <= 0.9 and 0.2 <= hsv[2] <= 0.9
 
@@ -2782,24 +2940,13 @@ class ToonDNA(AvatarDNA.AvatarDNA):
             self.botTex = dgi.getUint8()
             self.botTexColor = dgi.getUint8()
             try:
-                self.armColor = (dgi.getFloat64(),
-                 dgi.getFloat64(),
-                 dgi.getFloat64(),
-                 1.0)
-                self.gloveColor = (dgi.getFloat64(),
-                 dgi.getFloat64(),
-                 dgi.getFloat64(),
-                 1.0)
-                self.legColor = (dgi.getFloat64(),
-                 dgi.getFloat64(),
-                 dgi.getFloat64(),
-                 1.0)
-                self.headColor = (dgi.getFloat64(),
-                 dgi.getFloat64(),
-                 dgi.getFloat64(),
-                 1.0)
+                self.armColor = (dgi.getFloat64(), dgi.getFloat64(), dgi.getFloat64(), 1.0)
+                self.gloveColor = (dgi.getFloat64(), dgi.getFloat64(), dgi.getFloat64(), 1.0)
+                self.legColor = (dgi.getFloat64(), dgi.getFloat64(), dgi.getFloat64(), 1.0)
+                self.headColor = (dgi.getFloat64(), dgi.getFloat64(), dgi.getFloat64(), 1.0)
             except:
-                self.notify.info('Outdated Toon color format! Converting to new format...')
+                # Outdated toon color, will need to convert to new format
+                self.notify.info("Outdated Toon color format! Converting to new format...")
                 self.armColor = dgi.getUint8()
                 self.gloveColor = dgi.getUint8()
                 self.legColor = dgi.getUint8()
@@ -2808,9 +2955,10 @@ class ToonDNA(AvatarDNA.AvatarDNA):
                 self.gloveColor = allColorsList[self.gloveColor]
                 self.legColor = allColorsList[self.legColor]
                 self.headColor = allColorsList[self.headColor]
-
+                
         else:
             notify.error('unknown avatar type: ', self.type)
+        return None
 
     def defaultColor(self):
         return 25
@@ -2836,7 +2984,7 @@ class ToonDNA(AvatarDNA.AvatarDNA):
             self.botTex = 0
             self.botTexColor = 0
             if color == None:
-                color = 1
+                color = 1 # If for some reason there is no color, gg, and set it to 1
             color = self.checkIsDefaultColor(color)
             self.armColor = color
             self.legColor = color
@@ -2844,7 +2992,7 @@ class ToonDNA(AvatarDNA.AvatarDNA):
             self.gloveColor = 0
         else:
             notify.error("tuple must be in format ('%s', '%s', '%s', '%s')")
-
+            
     def checkIsDefaultColor(self, color):
         if isinstance(color, int):
             return defaultColorList[color]
@@ -2924,10 +3072,7 @@ class ToonDNA(AvatarDNA.AvatarDNA):
         self.gender = gender
         if not npc:
             if stage == MAKE_A_TOON:
-                if not base.cr.isPaid():
-                    animalIndicesToUse = allToonHeadAnimalIndicesTrial
-                else:
-                    animalIndicesToUse = allToonHeadAnimalIndices
+                animalIndicesToUse = allToonHeadAnimalIndicesTrial
                 animal = generator.choice(animalIndicesToUse)
                 self.head = toonHeadTypes[animal]
             else:
@@ -2983,6 +3128,7 @@ class ToonDNA(AvatarDNA.AvatarDNA):
          self.botTexColor)
 
     def getType(self):
+
         if self.type == 't':
             type = self.getAnimal()
         else:
@@ -2994,57 +3140,72 @@ class ToonDNA(AvatarDNA.AvatarDNA):
             self.head = ['d']
         if self.head[0] == 'd':
             return 'dog'
-        if self.head[0] == 'c':
+        elif self.head[0] == 'c':
             return 'cat'
-        if self.head[0] == 'm':
+        elif self.head[0] == 'm':
             return 'mouse'
-        if self.head[0] == 'h':
+        elif self.head[0] == 'h':
             return 'horse'
-        if self.head[0] == 'r':
+        elif self.head[0] == 'r':
             return 'rabbit'
-        if self.head[0] == 'f':
+        elif self.head[0] == 'f':
             return 'duck'
-        if self.head[0] == 'p':
+        elif self.head[0] == 'p':
             return 'monkey'
-        if self.head[0] == 'b':
+        elif self.head[0] == 'b':
             return 'bear'
-        if self.head[0] == 's':
+        elif self.head[0] == 's':
             return 'pig'
-        if self.head[0] == 'x':
+        elif self.head[0] == 'x':
             return 'deer'
-        notify.error('unknown headStyle: ', self.head[0])
+        elif self.head[0] == 'z':
+            return 'beaver'
+        elif self.head[0] == 'a':
+            return 'alligator'
+        elif self.head[0] == 'v':
+            return 'fox'
+        elif self.head[0] == 'n':
+            return 'bat'
+        elif self.head[0] == 't':
+            return 'raccoon'
+        else:
+            notify.error('unknown headStyle: ', self.head[0])
 
     def getHeadSize(self):
         if self.head[1] == 'l':
             return 'long'
-        if self.head[1] == 's':
+        elif self.head[1] == 's':
             return 'short'
-        notify.error('unknown head size: ', self.head[1])
+        else:
+            notify.error('unknown head size: ', self.head[1])
 
     def getMuzzleSize(self):
         if self.head[2] == 'l':
             return 'long'
-        if self.head[2] == 's':
+        elif self.head[2] == 's':
             return 'short'
-        notify.error('unknown muzzle size: ', self.head[2])
+        else:
+            notify.error('unknown muzzle size: ', self.head[2])
 
     def getTorsoSize(self):
         if self.torso[0] == 'l':
             return 'long'
-        if self.torso[0] == 'm':
+        elif self.torso[0] == 'm':
             return 'medium'
-        if self.torso[0] == 's':
+        elif self.torso[0] == 's':
             return 'short'
-        notify.error('unknown torso size: ', self.torso[0])
+        else:
+            notify.error('unknown torso size: ', self.torso[0])
 
     def getLegSize(self):
         if self.legs == 'l':
             return 'long'
-        if self.legs == 'm':
+        elif self.legs == 'm':
             return 'medium'
-        if self.legs == 's':
+        elif self.legs == 's':
             return 'short'
-        notify.error('unknown leg size: ', self.legs)
+        else:
+            notify.error('unknown leg size: ', self.legs)
 
     def getGender(self):
         return self.gender
@@ -3052,15 +3213,16 @@ class ToonDNA(AvatarDNA.AvatarDNA):
     def getClothes(self):
         if len(self.torso) == 1:
             return 'naked'
-        if self.torso[1] == 's':
+        elif self.torso[1] == 's':
             return 'shorts'
-        if self.torso[1] == 'd':
+        elif self.torso[1] == 'd':
             return 'dress'
-        notify.error('unknown clothing type: ', self.torso[1])
+        else:
+            notify.error('unknown clothing type: ', self.torso[1])
 
     def getArmColor(self):
         return self.armColor
-
+    
     def getLegColor(self):
         return self.legColor
 

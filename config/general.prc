@@ -1,5 +1,5 @@
 # Window settings:
-window-title Mr. T's Toontown: Project Altis Modifications - v.2.4.0
+window-title Mr. T's Toontown: Project Altis Modifications - v.2.5.5
 win-origin -2 -2
 icon-filename phase_3/etc/icon.ico
 cursor-filename phase_3/etc/toonmono.cur

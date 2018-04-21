@@ -1,4 +1,3 @@
-#Embedded file name: otp.otpbase.OTPGlobals
 from panda3d.core import *
 QuietZone = 1
 UberZone = 2
@@ -17,7 +16,9 @@ DefaultCameraFar = 800.0
 DefaultCameraNear = 1.0
 AICollisionPriority = 10
 AICollMovePriority = 8
+
 MaxFriends = 300
+
 MaxPlayerFriends = 300
 MaxBackCatalog = 48
 FriendChat = 1
@@ -107,7 +108,8 @@ CEBackStabber = 49
 CEBottomFeeder = 45
 CEGhost = 'g'
 CEWire = 77
-CEName2Id = {'normal': CENormal,
+CEName2Id = {
+ 'normal': CENormal,
  'bighead': CEBigHead,
  'smallhead': CESmallHead,
  'biglegs': CEBigLegs,
@@ -183,7 +185,8 @@ CEName2Id = {'normal': CENormal,
  'tightwad': CETightwad,
  'beancounter': CEBeanCounter,
  'backstabber': CEBackStabber,
- 'bottomfeeder': CEBottomFeeder}
+ 'bottomfeeder': CEBottomFeeder
+}
 BeanToonScale = 2.9
 GiantToonScale = 2.1
 BigToonScale = 1.4
@@ -275,8 +278,8 @@ def setFancyFont(path):
 def getNametagFont(index):
     global NametagFontPaths
     global NametagFonts
-    if index not in NametagFonts or NametagFonts[index] is None:
-        if index not in NametagFontPaths or NametagFontPaths[index] is None:
+    if (index not in NametagFonts) or (NametagFonts[index] is None):
+        if (index not in NametagFontPaths) or (NametagFontPaths[index] is None):
             InterfaceFont = TextNode.getDefaultFont()
             NametagFonts[index] = TextNode.getDefaultFont()
         else:
@@ -365,7 +368,10 @@ HideGameHotKeyOSX = 'meta-h'
 HideGameHotKeyRepeatOSX = 'meta-h-repeat'
 MinimizeGameHotKeyOSX = 'meta-m'
 MinimizeGameHotKeyRepeatOSX = 'meta-m-repeat'
-GlobalDialogColor = (1, 1, 0.75, 1)
+GlobalDialogColor = (1,
+ 1,
+ 0.75,
+ 1)
 DefaultBackgroundColor = (0.3, 0.3, 0.3, 1)
 toonBodyScales = {'mouse': 0.6,
  'cat': 0.73,
@@ -376,7 +382,12 @@ toonBodyScales = {'mouse': 0.6,
  'monkey': 0.68,
  'bear': 0.85,
  'pig': 0.77,
- 'deer': 0.7}
+ 'deer': 0.70,
+ 'beaver': 0.65,
+ 'alligator': 0.77,
+ 'fox': 0.73,
+ 'bat': 0.6,
+ 'raccoon': 0.73}
 toonHeadScales = {'mouse': Point3(1.0),
  'cat': Point3(1.0),
  'duck': Point3(1.0),
@@ -386,7 +397,12 @@ toonHeadScales = {'mouse': Point3(1.0),
  'monkey': Point3(1.0),
  'bear': Point3(1.0),
  'pig': Point3(1.0),
- 'deer': Point3(1.0)}
+ 'deer': Point3(1.0),
+ 'beaver': Point3(1.0),
+ 'alligator': Point3(1.0),
+ 'fox': Point3(1.0),
+ 'bat': Point3(1.0),
+ 'raccoon': Point3(1.0)}
 legHeightDict = {'s': 1.5,
  'm': 2.0,
  'l': 2.75}
@@ -436,7 +452,27 @@ headHeightDict = {'dls': 0.75,
  'xls': 0.75,
  'xss': 0.5,
  'xsl': 0.5,
- 'xll': 0.75}
+ 'xll': 0.75,
+ 'zls': 0.75,
+ 'zss': 0.5,
+ 'zsl': 0.5,
+ 'zll': 0.75,
+ 'als': 0.75,
+ 'ass': 0.5,
+ 'asl': 0.5,
+ 'all': 0.75,
+ 'vls': 0.75,
+ 'vss': 0.5,
+ 'vsl': 0.5,
+ 'vll': 0.75,
+ 'nls': 0.75,
+ 'nss': 0.5,
+ 'nsl': 0.5,
+ 'nll': 0.75,
+ 'tls': 0.75,
+ 'tss': 0.5,
+ 'tsl': 0.5,
+ 'tll': 0.75}
 RandomButton = 'Randomize'
 TypeANameButton = 'Type Name'
 PickANameButton = 'Pick-A-Name'
@@ -459,7 +495,17 @@ PeriodOnlyAfterLetter = 'You can use a period in your name, but only after a let
 ApostropheOnlyAfterLetter = 'You can use an apostrophe in your name, but only after a letter.'
 NoNumbersInTheMiddle = 'Numeric digits may not appear in the middle of a word.'
 ThreeWordsOrLess = 'Your name must be three words or fewer.'
-CopyrightedNames = ('mickey', 'mickey mouse', 'mickeymouse', 'minnie', 'minnie mouse', 'minniemouse', 'donald', 'donald duck', 'donaldduck', 'pluto', 'goofy')
+CopyrightedNames = ('mickey',
+ 'mickey mouse',
+ 'mickeymouse',
+ 'minnie',
+ 'minnie mouse',
+ 'minniemouse',
+ 'donald',
+ 'donald duck',
+ 'donaldduck',
+ 'pluto',
+ 'goofy')
 GuildUpdateMembersEvent = 'guildUpdateMembersEvent'
 GuildInvitationEvent = 'guildInvitationEvent'
 GuildAcceptInviteEvent = 'guildAcceptInviteEvent'
@@ -494,13 +540,15 @@ AccessInvalid = 3
 AvatarPendingCreate = -1
 AvatarSlotUnavailable = -2
 AvatarSlotAvailable = -3
-TF_CODE_EXPIRE = 172800
+
+TF_CODE_EXPIRE = 172800 # How long the code lasts for, 2 days
 TF_COOLDOWN = 300
 TF_MAX_TRIES = 5
+TF_MAX_TRIES_KICK = 10
 TF_UNKNOWN_CODE = 0
 TF_SELF_CODE = 2
 TF_FRIENDS_FULL_LOCAL = 3
 TF_FRIENDS_FULL_TARGET = 4
 TF_ALREADY_FRIENDS = 5
 TF_SUCCESS = 6
-TF_CALM_DOWN_PLEASE = 7
+TF_CALM_DOWN_PLEASE = 7 # if you are going way too fast

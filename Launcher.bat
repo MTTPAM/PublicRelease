@@ -1,3 +1,0 @@
-set /P PPYTHON_PATH=<PPYTHON_PATH
-%PPYTHON_PATH% launcher.py
-pause
