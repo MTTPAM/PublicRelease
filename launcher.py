@@ -91,7 +91,7 @@ def launch():
 
 #setting up the play button
 play_b = DirectButton(frameSize=None, image=(buttonup,buttondown,buttonup), relief=None,  
-command=launch, pos = (0, 0, -.7 ), scale=0.27)
+command=launch, pos = (0, 0, -.75 ), scale=0.27)
 
 #start the GUI
 base.run()
