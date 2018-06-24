@@ -29,6 +29,7 @@ from panda3d.core import *
 loadPrcFileData("", "window-title Mr. Tankthrusts Toontown: Project Altis Modifications")
 loadPrcFileData("", "win-size 1200 600")
 loadPrcFileData("", "win-origin 200 200")
+loadPrcFileData("", "win-fixed-size 1")
 import direct.directbase.DirectStart
 from direct.gui.DirectGui import *
 from uuid import getnode as get_mac
