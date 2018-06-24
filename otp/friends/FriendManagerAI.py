@@ -18,7 +18,8 @@ class FriendManagerAI(DistributedObjectAI):
         self.currentContext = 0
         self.requests = {}
         self.trueFriendFSMs = {}
-        self.trueFriendDatabase()
+        if self.air.wantMongoDB:
+            self.trueFriendDatabase()
 
     def trueFriendDatabase(self):
         self.air.dbGlobalCursor.trueFriendCodes.ensure_index('date', expireAfterSeconds=OTPGlobals.TF_CODE_EXPIRE)

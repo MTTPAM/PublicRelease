@@ -109,6 +109,7 @@ class ToontownAIRepository(ToontownInternalRepository):
         self.wantGardening = self.config.GetBool('want-gardening', False)
         self.cogSuitMessageSent = False
         self.weatherCycleDuration = self.config.GetInt('weather-cycle-duration', 100)
+        self.wantMongoDB = self.config.GetBool('want-mongo', False)
 
     def createManagers(self):
         self.timeManager = TimeManagerAI(self)
@@ -273,6 +274,7 @@ class ToontownAIRepository(ToontownInternalRepository):
         return self.uniqueName(name)
 
     def updateInvasionTrackerTask(self, task):
+        return
         task.delayTime = 10
         statusToType = {0: 'None',
          1: 'Bossbot',
