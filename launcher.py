@@ -6,24 +6,20 @@
 # Start Updater BEFORE launching GUI
 import os
 import sys
-
+noupdate = 0
 os.system('cls')
-if (os.path.exists("C:/Program Files (x86)/Git/bin") == 0 and os.path.exists("C:/Program Files/Git/bin") == 0):
-    os.system("Color 04")
-    print("Git Is not installed! please install and run again\n")
-    print("Git MUST be installed to the default directory")
-    print("https://git-scm.com/download/win")
-    sys.exit()
-if (os.path.isfile('FirstTimeSetup.bat') == 0):
-    print("Checking for updates . . .")
-    os.system("color 02")
-    os.system("git fetch")
-    os.system("git reset --hard origin/master")
-if (os.path.isfile('FirstTimeSetup.bat')):
-    os.system("color 06")
-    print("running first time setup . . .")
-    print("This will take a while.")
-    os.system('FirstTimeSetup.bat')
+if (noupdate == 0):
+    if (os.path.exists("C:/Program Files (x86)/Git/bin") == 0 and os.path.exists("C:/Program Files/Git/bin") == 0):
+        os.system("Color 04")
+        print("Git Is not installed! please install and run again\n")
+        print("Git MUST be installed to the default directory")
+        print("https://git-scm.com/download/win")
+        sys.exit()
+    if (os.path.isfile('FirstTimeSetup.bat') == 0):
+        print("Checking for updates . . .")
+        os.system("color 02")
+        os.system("git fetch")
+        os.system("git reset --hard origin/master")
 os.system('cls')
 os.system("color 09")
 print("Done; Launching launcher")
@@ -88,7 +84,7 @@ def launch():
     # Grabbing the play cookie(YUMMY COOKIE :D)
     # also takes the game server here too
     os.environ['TT_PLAYCOOKIE'] = str(mac)
-
+    os.environ['TT_USERNAME'] = str(mac)
     os.environ['TT_GAMESERVER'] = str(ip)
     # Tell it where PPYTHON.exe is
     os.system('set /P PPYTHON_PATH=<PPYTHON_PATH')
