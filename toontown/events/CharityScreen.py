@@ -56,8 +56,8 @@ class CharityScreen(DistributedObject):
         cash = self.count / 1000.0
         cash = '{:,.2f}'.format(cash)
         if self.counter and self.counterback:
-            self.counter['text'] = (str(self.count) + "\nCogs Destroyed\nYou've earned %s USD\nfor the Extra Life Charity!") % cash
-            self.counterback['text'] = (str(self.count) + "\nCogs Destroyed\nYou've earned %s USD\nfor the Extra Life Charity!") % cash
+            self.counter['text'] = (str(self.count) + "\nCogs Destroyed\n")
+            self.counterback['text'] = (str(self.count) + "\nCogs Destroyed") 
         taskMgr.doMethodLater(10, self.setCount, 'countTask')
 
     def unload(self):

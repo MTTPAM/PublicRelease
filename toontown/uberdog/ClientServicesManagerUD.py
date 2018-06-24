@@ -23,7 +23,7 @@ accountDBType = simbase.config.GetString('accountdb-type', 'local')
 if accountDBType == 'remote':
     from Crypto.Cipher import AES
 minAccessLevel = simbase.config.GetInt('min-access-level', 100)
-accountServerEndpoint = simbase.config.GetString('account-server-endpoint', 'https://projectaltis.com/api/')
+accountServerEndpoint = simbase.config.GetString('account-server-endpoint', 'https://MTTPA.net/api/')
 accountServerSecret = simbase.config.GetString('account-server-secret', 'sjHgh43h43ZMcHnJ')
 http = HTTPClient()
 http.setVerifySsl(0)
@@ -116,7 +116,7 @@ class LocalAccountDB(AccountDB):
     notify = directNotify.newCategory('LocalAccountDB')
 
     def lookup(self, username, callback):
-        httpReq = httplib.HTTPConnection('www.projectaltis.com')
+        httpReq = httplib.HTTPConnection('www.MTTPA.net')
         httpReq.request('GET', '/api/validatetoken?t=%s' % username)
         try:
             XXX = httpReq.getresponse().read()
@@ -136,7 +136,7 @@ class LocalAccountDB(AccountDB):
                 callback({'success': False,
                  'reason': 'Invalid Cookie Specified!'})
                 return
-            sanityChecks = httplib.HTTPConnection('www.projectaltis.com')
+            sanityChecks = httplib.HTTPConnection('www.MTTPA.net')
             sanityChecks.request('GET', '/api/sanitycheck/%s' % cookie)
             try:
                 XYZ = sanityChecks.getresponse().read()
@@ -184,7 +184,7 @@ class LocalAccountDB(AccountDB):
     def addNameRequest(self, avId, name):
         self.notify.debug('adding name from %s : %s' % (avId, name))
         try:
-            nameCheck = httplib.HTTPSConnection('www.projectaltis.com')
+            nameCheck = httplib.HTTPSConnection('www.MTTPA.net')
             nameCheck.request('GET', '/api/addtypeaname2/CMDD329UCQOKAG2DY3EFRENATPFVTZZMZR6KIRFTEA4QQFKKDKSJ9M3NJAUFECTQ/%s/%s' % (avId, name))
             resp = json.loads(nameCheck.getresponse().read())
         except:
@@ -195,7 +195,7 @@ class LocalAccountDB(AccountDB):
     def getNameStatus(self, avId):
         self.notify.debug('debug: checking name from %s' % avId)
         try:
-            nameCheck = httplib.HTTPSConnection('www.projectaltis.com')
+            nameCheck = httplib.HTTPSConnection('www.MTTPA.net')
             nameCheck.request('GET', '/api/checktypeaname/CMDD329UCQOKAG2DY3EFRENATPFVTZZMZR6KIRFTEA4QQFKKDKSJ9M3NJAUFECTQ/avid/%s' % avId)
             resp = json.loads(nameCheck.getresponse().read())
             if resp[u'error'] == 'true':

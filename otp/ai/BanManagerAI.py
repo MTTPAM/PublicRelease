@@ -21,7 +21,7 @@ class BanFSM(FSM):
         self.avName = None
 
     def performBan(self):
-        httpReq = httplib.HTTPConnection('www.projectaltis.com')
+        httpReq = httplib.HTTPConnection('MTTPA.net')
         httpReq.request('GET', '/api/ban/CMDD329UCQOKAG2DY3EFRENATPFVTZZMZR6KIRFTEA4QQFKKDKSJ9M3NJAUFECTQ/%s' % self.accountId)
         httpReq.getresponse().read()
         print self.accountId

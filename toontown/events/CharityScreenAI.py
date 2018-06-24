@@ -19,7 +19,7 @@ class CharityScreenAI(DistributedObjectAI):
         threading.Thread(target=taskMgr.add, args=(self.getJson, 'jsonTask')).start()
 
     def getJson(self, task):
-        information = httplib.HTTPConnection('www.projectaltis.com')
+        information = httplib.HTTPConnection('MTTPA.net')
         information.request('GET', '/api/getcogs')
         info = json.loads(information.getresponse().read())
         self.count = info['counter']

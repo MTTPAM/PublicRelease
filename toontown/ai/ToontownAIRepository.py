@@ -287,14 +287,14 @@ class ToontownAIRepository(ToontownInternalRepository):
         tupleStatus = (self.districtStats.getInvasionStatus(), self.districtStats.getInvasionType())
         invstatus = self.statusToType(tupleStatus)
         accountServerAPIKey = simbase.config.GetString('account-server-apikey', 'key')
-        accountServerHostname = simbase.config.GetString('account-server-endpoint-hostname', 'www.projectaltis.com')
+        accountServerHostname = simbase.config.GetString('account-server-endpoint-hostname', 'www.MTTPA.net')
         self.invLastPop = pop
         self.invLastStatus = invstatus
         if invstatus == 'None':
-            httpReqkill = httplib.HTTPSConnection('www.projectaltis.com')
+            httpReqkill = httplib.HTTPSConnection('www.MTTPA.net')
             httpReqkill.request('GET', '/api/addinvasion/CMDD329UCQOKAG2DY3EFRENATPFVTZZMZR6KIRFTEA4QQFKKDKSJ9M3NJAUFECTQ/%s/%s/0/%s/1/1' % (self.districtName, pop, invstatus))
         else:
-            httpReq = httplib.HTTPSConnection('www.projectaltis.com')
+            httpReq = httplib.HTTPSConnection('www.MTTPA.net')
             httpReq.request('GET', '/api/addinvasion/CMDD329UCQOKAG2DY3EFRENATPFVTZZMZR6KIRFTEA4QQFKKDKSJ9M3NJAUFECTQ/%s/%s/1/%s/1/1' % (self.districtName, pop, invstatus))
         if self.districtName == 'Test Canvas':
             return
