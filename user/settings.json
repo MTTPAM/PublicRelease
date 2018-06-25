@@ -60,14 +60,14 @@
   },
   "loadDisplay": "pandagl",
   "music": true,
-  "musicVol": 0.7554118347167968,
+  "musicVol": 0.5,
   "newGui": false,
   "res": [
     1440,
     855
   ],
   "sfx": true,
-  "sfxVol": 1.0,
+  "sfxVol": 0.5,
   "show-cog-levels": true,
   "show-disclaimer": false,
   "smoothanimations": false,

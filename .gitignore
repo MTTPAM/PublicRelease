@@ -1,3 +1,5 @@
 *.pyc
 *.log
 user/settings.json
+*.json
+.DS_Store

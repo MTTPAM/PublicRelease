@@ -12,8 +12,8 @@ TTA_GAMESERVER=${TTA_GAMESERVER:-"25.86.16.20"}
 # Export the environment variables:
 export ttaUsername=$ttaUsername
 export ttaPassword="password"
-export TTA_PLAYCOOKIE=$ttaUsername
-export TTA_GAMESERVER=$TTA_GAMESERVER
+export TT_PLAYCOOKIE=$ttaUsername
+export TT_GAMESERVER=$TTA_GAMESERVER
 
 echo "==============================="
 echo "Starting Toontown Project Altis..."
