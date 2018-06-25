@@ -1,13 +1,13 @@
 #!/bin/sh
-cd ../
+cd ../..
 
 export DYLD_LIBRARY_PATH=`pwd`/Libraries.bundle
 export DYLD_FRAMEWORK_PATH="Frameworks"
 
 # Get the user input:
 read -p "Username: " ttaUsername
-read -p "Gameserver (DEFAULT:  167.114.28.238): " TTA_GAMESERVER
-TTA_GAMESERVER=${TTA_GAMESERVER:-"167.114.28.238"}
+read -p "Gameserver (DEFAULT:  25.86.16.20): " TTA_GAMESERVER
+TTA_GAMESERVER=${TTA_GAMESERVER:-"25.86.16.20"}
 
 # Export the environment variables:
 export ttaUsername=$ttaUsername
