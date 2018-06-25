@@ -18,9 +18,11 @@ set /P START_TIME="START TIME(DEFAULT : 6): " || ^
 set START_TIME=6
 title %DISTRICT_NAME%
 
+set /P PPYTHON_PATH=<PPYTHON_PATH
+
 echo ===============================
 echo Starting Toontown Project Altis AI server...
-echo ppython: "panda/python/ppython.exe"
+echo ppython: %PPYTHON_PATH%
 echo District name: %DISTRICT_NAME%
 echo Base channel: %BASE_CHANNEL%
 echo Max channels: %MAX_CHANNELS%
@@ -30,7 +32,7 @@ echo Event Logger IP: %EVENTLOGGER_IP%
 echo ===============================
 
 :main
-"panda/python/ppython.exe" -m toontown.ai.ServiceStart --base-channel %BASE_CHANNEL% ^
+%PPYTHON_PATH% -m toontown.ai.ServiceStart --base-channel %BASE_CHANNEL% ^
                --max-channels %MAX_CHANNELS% --stateserver %STATESERVER% ^
                --astron-ip %ASTRON_IP% --eventlogger-ip %EVENTLOGGER_IP% ^
                --district-name "%DISTRICT_NAME%" --start-time "%START_TIME%"
