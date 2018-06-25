@@ -1,19 +1,19 @@
 #!/bin/sh
-cd ../
+cd ../..
 
 export DYLD_LIBRARY_PATH=`pwd`/Libraries.bundle
 export DYLD_FRAMEWORK_PATH="Frameworks"
 
 # Get the user input:
 read -p "Username: " ttaUsername
-read -p "Gameserver (DEFAULT:  167.114.28.238): " TTA_GAMESERVER
-TTA_GAMESERVER=${TTA_GAMESERVER:-"167.114.28.238"}
+read -p "Gameserver (DEFAULT: gs1.toontownjourney.com): " TTA_GAMESERVER
+TTA_GAMESERVER=${TTA_GAMESERVER:-"gs1.toontownjourney.com"}
 
 # Export the environment variables:
 export ttaUsername=$ttaUsername
 export ttaPassword="password"
-export TTA_PLAYCOOKIE=$ttaUsername
-export TTA_GAMESERVER=$TTA_GAMESERVER
+export TT_PLAYCOOKIE=$ttaUsername
+export TT_GAMESERVER=$TTA_GAMESERVER
 
 echo "==============================="
 echo "Starting Toontown Project Altis..."
