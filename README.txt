@@ -4,21 +4,20 @@ please join my Discord server and we will be happy to assist you. https://discor
 How to play on other people's servers
 
 1. Run the launcher.bat
-2. Type in the ip adress or just click play to connect to TTJ
+2. Type in the ip address or just click play to connect to TTJ
 
 To run your own server:
 
 1. Go to the startup/win32 folder.
 
 2. Run the bat files in the following order
-   A. start_mongo.bat
-   B. start_astron_cluster.bat
-   C. start_uberdog_server.bat and press enter once
-   D. start_ai_server.bat and press enter 3 times
+   A. start_astron_cluster.bat
+   B. start_uberdog_server.bat and press enter once
+   C. start_ai_server.bat and press enter 3 times
 
 If you run the astron before you open the other files, it will crash. If it crashes simply reopen it.
 
-3. Run the start_game_localhost.bat file and enter your credentials.
+3. Run the start_game.bat file and enter 1 this will make it connect locally, than enter your credentials.
 
 4. Please note if you don't follow the steps below nobody will beable to connect to your server
    

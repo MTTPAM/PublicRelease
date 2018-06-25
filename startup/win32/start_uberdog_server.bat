@@ -13,9 +13,11 @@ rem Get the user input:
 set /P BASE_CHANNEL="Base channel (DEFAULT: 1000000): " || ^
 set BASE_CHANNEL=1000000
 
+set /P PPYTHON_PATH=<PPYTHON_PATH
+
 echo ===============================
 echo Starting Toontown Project Altis UberDOG server...
-echo ppython: "panda/python/ppython.exe"
+echo ppython: %PPYTHON_PATH%
 echo Base channel: %BASE_CHANNEL%
 echo Max channels: %MAX_CHANNELS%
 echo State Server: %STATESERVER%
@@ -24,7 +26,7 @@ echo Event Logger IP: %EVENTLOGGER_IP%
 echo ===============================
 
 :main
-"panda/python/ppython.exe" -m toontown.uberdog.ServiceStart --base-channel %BASE_CHANNEL% ^
+%PPYTHON_PATH% -m toontown.uberdog.ServiceStart --base-channel %BASE_CHANNEL% ^
                --max-channels %MAX_CHANNELS% --stateserver %STATESERVER% ^
                --astron-ip %ASTRON_IP% --eventlogger-ip %EVENTLOGGER_IP%
 goto main
