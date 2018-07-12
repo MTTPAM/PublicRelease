@@ -1,7 +1,7 @@
 #Embedded file name: toontown.golf.GolfGlobals
 from direct.directnotify import DirectNotifyGlobal
 import random
-MAX_PLAYERS_PER_HOLE = 8
+MAX_PLAYERS_PER_HOLE = 4
 GOLF_BALL_RADIUS = 0.25
 GOLF_BALL_VOLUME = 4.0 / 3.0 * 3.14159 * GOLF_BALL_RADIUS ** 3
 GOLF_BALL_MASS = 0.5

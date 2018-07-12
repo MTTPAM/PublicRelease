@@ -1,3 +1,4 @@
+#Embedded file name: toontown.toonbase.TTLocalizerEnglish
 from toontown.toonbase.TTLocalizerEnglishProperty import *
 from toontown.catalog import CatalogAccessoryItemGlobals
 from otp.otpbase import OTPLocalizer as OL
@@ -14,63 +15,36 @@ MinnieFont = 'phase_3/models/fonts/MinnieFont'
 FancyFont = 'phase_3/models/fonts/Comedy'
 BuildingNametagFont = 'phase_3/models/fonts/MickeyFont'
 BuildingNametagShadow = None
-NametagFonts = (
-    'phase_3/models/fonts/ImpressBT.ttf',
-    'phase_3/models/fonts/AnimGothic.bam',
-    'phase_3/models/fonts/Aftershock.bam',
-    'phase_3/models/fonts/JiggeryPokery.bam',
-    'phase_3/models/fonts/Ironwork.bam',
-    'phase_3/models/fonts/HastyPudding.bam',
-    'phase_3/models/fonts/Comedy.bam',
-    'phase_3/models/fonts/Humanist.bam',
-    'phase_3/models/fonts/Portago.bam',
-    'phase_3/models/fonts/Musicals.bam',
-    'phase_3/models/fonts/Scurlock.bam',
-    'phase_3/models/fonts/Danger.bam',
-    'phase_3/models/fonts/Alie.bam',
-    'phase_3/models/fonts/OysterBar.bam',
-    'phase_3/models/fonts/RedDogSaloon.bam'
-    'phase_3/models/fonts/PBN.ttf',
-    'phase_3/models/fonts/SomethingStrange.ttf',
-    'phase_3/models/fonts/DinosaursAreAlive.ttf',
-    'phase_3/models/fonts/Adventure.otf',
-    'phase_3/models/fonts/SixtyFour.ttf',
-    'phase_3/models/fonts/MickeyFont',
-    'phase_3/models/fonts/ALIENS.TTF',
-    'phase_3/models/fonts/AlphaRomanieG98.ttf',
-    'phase_3/models/fonts/MarioKart70.ttf',
-    'phase_3/models/fonts/Kingdom_Hearts_Font.ttf',
-    'phase_3/models/fonts/CHLORINT.TTF'
-)
-NametagFontNames = (
-    'Basic',
-    'Plain',
-    'Shivering',
-    'Wonky',
-    'Fancy',
-    'Silly',
-    'Zany',
-    'Practical',
-    'Nautical',
-    'Whimsical',
-    'Spooky',
-    'Action',
-    'Poetic',
-    'Boardwalk',
-    'Western',
-    'Topcial Robot',
-    '8-bit',
-    'Minnie',
-    'Adventure',
-    'SixtyFour',
-    'Mickey',
-    'Aliens',
-    'G98',
-    'Kart',
-    'Kingdom',
-    'Chlorint'
-	
-)
+NametagFonts = ('phase_3/models/fonts/ImpressBT.ttf',
+ 'phase_3/models/fonts/AnimGothic.bam',
+ 'phase_3/models/fonts/Aftershock.bam',
+ 'phase_3/models/fonts/JiggeryPokery.bam',
+ 'phase_3/models/fonts/Ironwork.bam',
+ 'phase_3/models/fonts/HastyPudding.bam',
+ 'phase_3/models/fonts/Comedy.bam',
+ 'phase_3/models/fonts/Humanist.bam',
+ 'phase_3/models/fonts/Portago.bam',
+ 'phase_3/models/fonts/Musicals.bam',
+ 'phase_3/models/fonts/Scurlock.bam',
+ 'phase_3/models/fonts/Danger.bam',
+ 'phase_3/models/fonts/Alie.bam',
+ 'phase_3/models/fonts/OysterBar.bam',
+ 'phase_3/models/fonts/RedDogSaloon.bam')
+NametagFontNames = ('Basic',
+ 'Plain',
+ 'Shivering',
+ 'Wonky',
+ 'Fancy',
+ 'Silly',
+ 'Zany',
+ 'Practical',
+ 'Nautical',
+ 'Whimsical',
+ 'Spooky',
+ 'Action',
+ 'Poetic',
+ 'Boardwalk',
+ 'Western')
 NametagLabel = ' Nametag'
 UnpaidNameTag = 'Basic'
 ScreenshotPath = 'screenshots/'
@@ -125,7 +99,6 @@ GlobalStreetNames = {15000: ('to', 'on', 'Tutorial Terrace'),
  3100: ('to', 'on', 'Walrus Way'),
  3200: ('to', 'on', 'Sleet Street'),
  3300: ('to', 'on', 'Polar Place'),
- 3400: ('to', 'on', 'Arctic Avenue'),
  4000: ('to the', 'in the', 'Playground'),
  4100: ('to', 'on', 'Alto Avenue'),
  4200: ('to', 'on', 'Baritone Boulevard'),
@@ -144,29 +117,28 @@ GlobalStreetNames = {15000: ('to', 'on', 'Tutorial Terrace'),
  9000: ('to the', 'in the', 'Playground'),
  9100: ('to', 'on', 'Lullaby Lane'),
  9200: ('to', 'on', 'Pajama Place'),
- 9300: ('to', 'on', 'Twilight Terrace'),
- 10000: ('to', 'in', 'Bossbot HQ Country Club'),
- 10100: ('to the', 'in the', 'Bossbot HQ Lobby'),
+ 10000: ('to', 'in', 'Boardbot HQ Country Club'),
+ 10100: ('to the', 'in the', 'Boardbot HQ Lobby'),
  10200: ('to the', 'in the', 'The Clubhouse'),
  10500: ('to the', 'in the', 'The Front Three'),
  10600: ('to the', 'in the', 'The Middle Six'),
  10700: ('to the', 'in the', 'The Back Nine'),
- 11000: ('to the', 'in the', 'Sellbot HQ Courtyard'),
- 11100: ('to the', 'in the', 'Sellbot HQ Lobby'),
- 11200: ('to the', 'in the', 'Sellbot HQ Factory Exterior'),
- 11500: ('to the', 'in the', 'Sellbot Factory'),
- 12000: ('to', 'in', 'Cashbot Train Yard'),
- 12100: ('to the', 'in the', 'Cashbot HQ Lobby'),
- 12500: ('to the', 'in the', 'Cashbot Coin Mint'),
- 12600: ('to the', 'in the', 'Cashbot Dollar Mint'),
- 12700: ('to the', 'in the', 'Cashbot Bullion Mint'),
- 13000: ('to', 'in', 'Lawbot HQ Courtyard'),
+ 11000: ('to the', 'in the', 'Executivebot HQ Courtyard'),
+ 11100: ('to the', 'in the', 'Executivebot HQ Lobby'),
+ 11200: ('to the', 'in the', 'Executivebot HQ Factory Exterior'),
+ 11500: ('to the', 'in the', 'Executivebot Factory'),
+ 12000: ('to', 'in', 'Vaultbot Train Yard'),
+ 12100: ('to the', 'in the', 'Vaultbot HQ Lobby'),
+ 12500: ('to the', 'in the', 'Vaultbot Coin Mint'),
+ 12600: ('to the', 'in the', 'Vaultbot Dollar Mint'),
+ 12700: ('to the', 'in the', 'Vaultbot Bullion Mint'),
+ 13000: ('to', 'in', 'Politibot HQ Courtyard'),
  13100: ('to the', 'in the', 'Courthouse Lobby'),
  13200: ('to the', 'in the', "DA's Office Lobby"),
- 13300: ('to the', 'in the', 'Lawbot A Office'),
- 13400: ('to the', 'in the', 'Lawbot B Office'),
- 13500: ('to the', 'in the', 'Lawbot C Office'),
- 13600: ('to the', 'in the', 'Lawbot D Office'),
+ 13300: ('to the', 'in the', 'Politibot A Office'),
+ 13400: ('to the', 'in the', 'Politibot B Office'),
+ 13500: ('to the', 'in the', 'Politibot C Office'),
+ 13600: ('to the', 'in the', 'Politibot D Office'),
  19000: ('to the', 'in the', 'Boardbot HQ Courtyard'),
  19100: ('to the', 'in the', 'Boardroom Lobby'),
  19200: ('to the', 'in the', 'Board Office Lobby'),
@@ -184,11 +156,11 @@ OutdoorZone = ('to', 'in', lOutdoorZone)
 FunnyFarm = ('to', 'in', lFunnyFarm)
 GoofySpeedway = ('to', 'in', lGoofySpeedway)
 DonaldsDreamland = ('to', 'in', lDonaldsDreamland)
-BossbotHQ = ('to', 'in', 'Bossbot HQ')
-SellbotHQ = ('to', 'in', 'Sellbot HQ')
-CashbotHQ = ('to', 'in', 'Cashbot HQ')
-LawbotHQ = ('to', 'in', 'Lawbot HQ')
-BoardbotHQ = ('to', 'in', 'Under Construction')
+BossbotHQ = ('to', 'in', 'Boardbot HQ')
+SellbotHQ = ('to', 'in', 'Executivebot HQ')
+CashbotHQ = ('to', 'in', 'Vaultbot HQ')
+LawbotHQ = ('to', 'in', 'Politibot HQ')
+BoardbotHQ = ('to', 'in', 'Unfinished Techbot HQ')
 Tutorial = ('to the', 'in the', 'Toon-torial')
 MyEstate = ('to', 'in', 'your house')
 WelcomeValley = ('to', 'in', 'Welcome Valley')
@@ -200,8 +172,8 @@ SellbotFrontEntrance = 'Front Entrance'
 SellbotSideEntrance = 'Side Entrance'
 Office = 'Office'
 FactoryNames = {0: 'Factory Mockup',
- 11500: 'Sellbot Cog Factory',
- 13300: 'Lawbot Cog Office'}
+ 11500: 'Executivebot Cog Factory',
+ 13300: 'Politibot Cog Office'}
 FactoryTypeLeg = 'Leg'
 FactoryTypeArm = 'Arm'
 FactoryTypeTorso = 'Torso'
@@ -223,40 +195,40 @@ Cog = 'Cog'
 Cogs = 'Cogs'
 ACog = 'a Cog'
 TheCogs = 'The Cogs'
-ASkeleton = 'a Skelecog'
-Skeleton = 'Skelecog'
-SkeletonP = 'Skelecogs'
+ASkeleton = 'a Naked Cog'
+Skeleton = 'Naked Cog'
+SkeletonP = 'Naked Cogs'
 Av2Cog = 'a Version 2.0 Cog'
 v2Cog = 'Version 2.0 Cog'
 v2CogP = 'Version 2.0 Cogs'
-ASkeleton = 'a Skelecog'
+ASkeleton = 'a Naked Cog'
 Foreman = 'Factory Foreman'
 ForemanP = 'Factory Foremen'
 AForeman = 'a Factory Foreman'
 CogVP = Cog + ' VP'
-CogVPs = "Cog VPs"
+CogVPs = 'Cog VPs'
 ACogVP = ACog + ' VP'
-Supervisor = 'Mint Supervisor'
-SupervisorP = 'Mint Supervisors'
-ASupervisor = 'a Mint Supervisor'
+Supervisor = 'Vault Guard'
+SupervisorP = 'Vault Guards'
+ASupervisor = 'a Vault Guard'
 President = 'Club President'
 PresidentP = 'Club Presidents'
 APresident = 'a Club President'
-Clerk = 'Clerk'
-ClerkP = 'Clerks'
-AClerk = 'a Clerk'
+Clerk = 'District Attourney'
+ClerkP = 'District Attourneys'
+AClerk = 'a District Attourney'
 BoardExecutive = 'Executive Board Member'
 BoardExecutiveP = 'Executive Board Members'
 ABoardExecutive = 'a Executive Board Member'
-CogCFO = Cog + ' C.F.O.'
-CogCFOs = "Cog C.F.O.'s"
-ACogCFO = ACog + ' C.F.O.'
+CogCFO = Cog + ' V.S.S. 2.0'
+CogCFOs = "Cog V.S.S. 2.0's"
+ACogCFO = ACog + ' V.S.S.'
 CogCJ = Cog + ' CJ'
-CogCJs = "Cog CJs"
+CogCJs = 'Cog CJs'
 ACogCJ = ACog + ' CJ'
-CogCEO = Cog + ' CEO.'
-CogCEOs = "Cog CEOs"
-ACogCEO = ACog + ' CEO'
+CogCEO = Cog + ' Chairman'
+CogCEOs = 'Cog Chairmen'
+ACogCEO = ACog + ' Chairman'
 TheFish = 'the Fish'
 AFish = 'a fish'
 Level = 'Level'
@@ -303,8 +275,8 @@ QuestsDefaultReject = ('Heya, _avName_!',
  'Howdy, _avName_!',
  'Welcome, _avName_!',
  "Hey, _avName_! How's it hanging?",
- "Need any help?",
- "Hi _avName_, what brings you here?")
+ 'Need any help?',
+ 'Hi _avName_, what brings you here?')
 QuestsDefaultTierNotDone = ('Hello, _avName_! You must finish your current ToonTasks before getting a new one.', 'Hi there! You need to finish the ToonTasks you are working on in order to get a new one.', 'Hi, _avName_! Before I can give you a new ToonTask, you need to finish the ones you have.')
 QuestsDefaultQuest = None
 QuestsDefaultVisitQuestDialog = ('I heard _toNpcName_ is looking for you._where_',
@@ -324,8 +296,6 @@ QuestsExpQuestProgress = '%(progress)s of %(numExp)s collected'
 QuestsCogQuestHeadline = 'WANTED'
 QuestsCogQuestSCStringS = 'I need to defeat %(cogName)s%(cogLoc)s.'
 QuestsCogQuestSCStringP = 'I need to defeat some %(cogName)s%(cogLoc)s.'
-QuestsEliteCogQuestSCStringS = 'I need to defeat %(cogName)s%(cogLoc)s.'
-QuestsEliteCogQuestSCStringP = 'I need to defeat some %(cogName)s%(cogLoc)s.'
 QuestsExpQuestHeadline = 'COLLECT'
 QuestsExpQuestSCStringS = 'I need to collect %(experience)s %(track)s point.'
 QuestsExpQuestSCStringP = 'I need to collect %(experience)s %(track)s points.'
@@ -333,8 +303,6 @@ QuestsExpQuestCollect = 'Collect %(experience)s %(track)s points'
 QuestsExpQuestCollectDesc = '%(experience)s %(track)s points'
 QuestsCogQuestDefeat = 'Defeat %s'
 QuestsCogQuestDefeatDesc = '%(numCogs)s %(cogName)s'
-QuestsEliteCogQuestDefeat = 'Defeat %s'
-QuestsEliteCogQuestDefeatDesc = '%(numCogs)s Elite %(cogName)s'
 QuestsCogNewNewbieQuestObjective = 'Help a new Toon defeat %s'
 QuestsCogNewNewbieQuestCaption = 'Help a new Toon %d Laff or less'
 QuestsCogOldNewbieQuestObjective = 'Help a Toon with %(laffPoints)d Laff or less defeat %(objective)s'
@@ -585,18 +553,18 @@ QuestsItemDict = {1: ['Pair of Glasses', 'Pairs of Glasses', 'a '],
  36: ['Paint Brush', 'Paint Brushes', 'a '],
  37: ['Music Note', 'Music Notes', 'a '],
  38: ['Memo From The Factory Foreman', 'Memos From The Factory Foreman', 'a '],
- 39: ['Glasses', 'Pairs of Glasses', 'Dr. Ivanna Cee\'s '],
+ 39: ['Glasses', 'Pairs of Glasses', "Dr. Ivanna Cee's "],
  40: ['Snow Globe', 'Snow Globes', 'a '],
- 41: ['Favorite Snow Globe', 'Favorite Snow Globes', 'Shakey\'s '],
+ 41: ['Favorite Snow Globe', 'Favorite Snow Globes', "Shakey's "],
  42: ['Boarding Ticket', 'Boarding Tickets', 'a '],
  43: ['Suitcase', 'Suitcases', 'a '],
- 44: ['Glasses', 'Pairs of Glasses', 'Dr. Friezeframe\'s '],
+ 44: ['Glasses', 'Pairs of Glasses', "Dr. Friezeframe's "],
  45: ['Bowl of Soup', 'Bowls of Soup', 'a '],
  46: ['Ice Skates', 'Ice Skates', 'some '],
  47: ['Broken Steering Wheel', 'Broken Steering Wheels', 'a '],
  48: ['Repaired Steering Wheel', 'Repaired Steering Wheels', 'a '],
- 49: ['Glasses', 'Pairs of Glasses', 'Dr. Blinky\'s '],
- 50: ['Glasses', 'Pairs of Glasses', 'Dr. Bleary\'s '],
+ 49: ['Glasses', 'Pairs of Glasses', "Dr. Blinky's "],
+ 50: ['Glasses', 'Pairs of Glasses', "Dr. Bleary's "],
  51: ['Bottle', 'Bottles', 'a '],
  52: ['Donut', 'Donuts', 'a '],
  53: ['Teleportation Access Memo', 'Teleportation Access Memos', 'a '],
@@ -617,32 +585,6 @@ QuestsItemDict = {1: ['Pair of Glasses', 'Pairs of Glasses', 'a '],
  68: ['Cash', 'Rolls of Cash', 'some '],
  110: ['TIP Clothing Ticket', 'Clothing Tickets', 'a '],
  1000: ['Clothing Ticket', 'Clothing Tickets', 'a '],
- 1001: ['Dried Suit', 'Dried Suits', 'a '],
- 1002: ['Signed Check', 'Signed Checks', 'a '],
- 1003: ['Board', 'Boards', 'a '],
- 1004: ['Lucky Hook', 'Lucky Hooks', 'a '],
- 1005: ['Cloth', 'Pieces of Cloth', 'some '],
- 1006: ['Sail', 'Sails', 'a '],
- 1007: ['Fishing Rod', 'Fishing Rods', 'a '],
- 1008: ['Fishing Hook', 'Fishing Hooks', 'a '],
- 1009: ['Can of Worms', 'Cans of Worms', 'a '],
- 1010: ['Fish', 'Fish', 'some '],
- 1011: ['Chips', 'Bags of Chips', 'some '],
- 1012: ['Taxi Keys', 'Taxi Keys', 'some '],
- 1013: ['Striped Shirt', 'Striped Shirts', 'a '],
- 1014: ['Hat', 'Hats', 'a '],
- 1015: ['Glasses', 'Glasses', 'some '],
- 1016: ['Lipstick', 'Lipsticks', 'some '],
- 1017: ['Blowdryer', 'Blowdryers', 'a '],
- 1018: ['Earrings', 'Pairs of Earrings', 'some '],
- 1019: ['Make-Up Kit', 'Make-Up Kits', 'a '],
- 1020: ['Deed to Seacastle Contractors', 'Deeds', 'a '],
- 1021: ["Glasses", "Glasses", "Captain Carl's  "],
- 1022: ["Glasses", "Glasses", "Rusty Ralph's "],
- 1023: ["Glasses Framework", "Glasses Frameworks", "a "],
- 1024: ['Metal', 'Bars of Metal', 'some '],
- 1025: ['Light Bulbs', 'Light Bulbs', 'some '],
- 1026: ['Glass', 'Plates of Glass', 'some '],
  2001: ['Textbook', 'Textbooks', 'a '],
  2002: ['Magnifying Glass', 'Magnifying Glasses', 'a '],
  2003: ['Lime', 'Limes', 'some '],
@@ -657,11 +599,11 @@ QuestsItemDict = {1: ['Pair of Glasses', 'Pairs of Glasses', 'a '],
  2012: ['Recipe', 'Recipes', 'a '],
  2013: ['Wrapper', 'Wrappers', 'a '],
  2014: ['Chocolate Bar', 'Chocolate Bars', 'a '],
- 2015: ['Jar of Jellybeans', 'Jars of Jellybeans', 'a '],
+ 2015: ['Jellybean', 'Jellybeans', 'a '],
  2016: ['Package', 'Packages', 'a '],
  2017: ['Banana Peel', 'Banana Peels', 'a '],
  2018: ['Net', 'Nets', 'a '],
- 2019: ['Saxophone', 'Saxophones', 'a '],
+ 2019: ['Saxaphone', 'Saxaphones', 'a '],
  2020: ['Label Sorter', 'Label Sorters', 'a '],
  2021: ['Glasses', 'Glasses', 'a pair of '],
  2022: ['Urgent Memo', 'Urgent Memos', 'an '],
@@ -679,79 +621,72 @@ QuestsItemDict = {1: ['Pair of Glasses', 'Pairs of Glasses', 'a '],
  2034: ['Invisible Ink', 'Invisible Ink', 'a bottle of '],
  2035: ['Fountain Pen', 'Fountain Pens', 'a '],
  2036: ['Ink Sac', 'Ink Sacs', 'an '],
- 4001: ["Tire", "Tires", 'a '],
- 4002: ["Bologna Sandwich", "Bologna Sandwiches", 'a '],
- 4003: ['Meatball Sub', 'Meatball Subs', 'a '],
- 4004: ["Old Silverware", "Sets of Old Silverware", 'some '],
- 4005: ["Old Clock", "Old Clocks", 'an '],
- 4006: ["Old Tea Set", "Old Tea Sets", 'an '],
- 4007: ["Electric Keyboard", "Electric Keyboards", 'an '],
- 4008: ['Note', 'Notes', 'a '],
- 4009: ['Golf Club', 'Golf Clubs', 'a '],
- 4010: ['Soccer Ball', 'Soccer Balls', 'a '],
- 4011: ["Cashbot HQ Plans", "Cashbot HQ Plans", 'some '],
- 4012: ['Golden Delicious Salmon', 'Golden Delicious Salmons', 'a '],
- 4013: ['Passport', 'Passports', 'a '],
- 4014: ['Music Note', 'Music Notes', 'a '],
- 4015: ['Memo', 'Memos', 'a '],
- 5001: ['Bushel of Berries', 'Bushels of Berries', 'a '],
- 5002: ['Cabbage', 'Cabbages', 'a '],
- 5003: ['Lettuce', 'Leaves of Lettuce', 'some '],
- 5004: ['Letter', 'Letters', 'a '],
- 5005: ['Package', 'Packages', 'a '],
- 5006: ['14-Carrot Ring', '14-Carrot Rings', 'a '],
- 5007: ['14-Carrot Necklace', '14-Carrot Necklaces', 'a '],
- 5008: ['Shower Head', 'Shower Heads', 'a '],
- 5009: ['Flowerpot', 'Flowerpots', 'a '],
- 5010: ['Marbles', 'Sets of Marbles', 'some '],
- 5011: ['Seltzer Bottle', 'Seltzer Bottles', 'a '],
- 5012: ['Safe', 'Safes', 'a '],
+ 4001: ["Tina's Inventory", "Tina's Inventories", ''],
+ 4002: ["Yuki's Inventory", "Yuki's Inventories", ''],
+ 4003: ['Inventory Form', 'Inventory Forms', 'an '],
+ 4004: ["Fifi's Inventory", "Fifi's Inventories", ''],
+ 4005: ["Lumber Jack's Ticket", "Lumber Jack's Tickets", ''],
+ 4006: ["Tabitha's Ticket", "Tabitha's Tickets", ''],
+ 4007: ["Barry's Ticket", "Barry's Tickets", ''],
+ 4008: ['Cloudy Castanet', 'Cloudy Castanets', ''],
+ 4009: ['Blue Squid Ink', 'Blue Squid Ink', 'some '],
+ 4010: ['Clear Castanet', 'Clear Castanets', 'a '],
+ 4011: ["Leo's Lyrics", "Leo's Lyrics", ''],
+ 5001: ['Silk necktie', 'Silk neckties', 'a '],
+ 5002: ['Pinstripe Suit', 'Pinstripe Suits', 'a '],
+ 5003: ['Pair of Scissors', 'Pairs of Scissors', 'a '],
+ 5004: ['Postcard', 'Postcards', 'a '],
+ 5005: ['Pen', 'Pens', 'a '],
+ 5006: ['Inkwell', 'Inkwells', 'an '],
+ 5007: ['Notepad', 'Notepads', 'a '],
+ 5008: ['Office Lockbox', 'Office Lockboxes', 'an '],
+ 5009: ['Bag of Bird Seed', 'Bags of Bird Seed', 'a '],
+ 5010: ['Sprocket', 'Sprockets', 'a '],
+ 5011: ['Salad', 'Salads', 'a '],
+ 5012: ['Key to ' + lDaisyGardens, 'Keys to ' + lDaisyGardens, 'a '],
  5013: [lSellbotHQ + ' Blueprints', lSellbotHQ + ' HQ Blueprints', 'some '],
  5014: [lSellbotHQ + ' Memo', lSellbotHQ + ' Memos', 'a '],
  5015: [lSellbotHQ + ' Memo', lSellbotHQ + ' Memos', 'a '],
  5016: [lSellbotHQ + ' Memo', lSellbotHQ + ' Memos', 'a '],
  5017: [lSellbotHQ + ' Memo', lSellbotHQ + ' Memos', 'a '],
- 3001: ['Tuxedo', 'Tuxedos', 'a '],
- 3002: ['Lawbot HQ Plans', 'Lawbot HQ Plans', 'some '],
- 3003: ['Lawbot HQ Blueprints', 'Lawbot HQ Blueprints', 'some '],
- 3004: ['External Temperature Sensor', 'External Temperature Sensors', 'an '],
- 3005: ['Temperature Readings', 'Temperature Readings', 'some '],
- 3006: ['Ice cream cone', 'Ice cream cones', 'an '],
- 3007: ['Ice Cube', 'Ice Cubes', 'an '],
- 3008: ['Pliers', 'Pliers', 'some '],
- 3009: ["Plumber's Snake", "Plumber's Snakes", 'a '],
- 3010: ['Pirate Hat', 'Pirate Hats', 'a '],
- 3011: ['Fedora', 'Fedoras', 'a '],
- 3012: ['Mittens', 'Mittens', 'a pair of '],
- 3013: ['Aviator Hats', 'Aviator Hats', 'some '],
- 3014: ['Loaf of Bread', 'Loaves of Bread', 'a '],
- 3015: ['Hambuger Rolls', 'Hamburger Rolls', 'some '],
- 3016: ['Swiss Cheese Lump', 'Swiss Cheese Lumps', 'a '],
- 3017: ['Cheddar Cheese', 'Lumps of Cheddar Cheese', 'some '],
- 3018: ['Grill', 'Grills', "Chef Bumblesoup's "],
- 3019: ['Solar Powered Blankets', 'Solar Powered Blankets', 'some '],
- 3020: ['Sickle Probe', 'Sickle Probes', 'a '],
- 3021: ['Sharp Tooth', 'Sharp Teeth', 'a '],
- 3022: ['Eyepatch', 'Eyepatches', 'an '],
- 3023: ['Make-Up Kit', 'Make-Up Kits', 'a '],
- 3024: ['Scale', 'Scales', 'a '],
- 3025: ['Shiny Beak', 'Shiny Beaks', 'a '],
- 3026: ['Shiny Tooth', 'Shiny Teeth', 'a '],
- 3027: ['Gold Tooth', 'Gold Teeth', 'a '],
- 3028: ['Pie Chart', 'Pie Charts', 'a '],
- 3029: ['Lumpy Cheese', 'Lumpy Cheeses', 'a '],
- 3030: ['Big White Wig', 'Big White Wigs', 'a '],
- 6001: ['Warm Blankets', 'Warm Blankets', 'some '],
- 6002: ['Humidifier', 'Humidifiers', 'a '],
- 6003: ['Ring', 'Rings', 'a '],
- 6004: ['Insurance Card', 'Insurance Cards', 'an '],
- 6005: ['Bolts', 'Bolts', 'some '],
- 6006: ['Straw', 'Bits of Straw', 'some '],
- 6007: ['Wood', 'Chunks of Wood', 'some '],
- 6008: ['Bricks', 'Bricks', 'some '],
- 6009: ['Straw, Wood, and Brick', 'Straws, Wood, Bricks', 'some '],
- 6010: ['Allergy Pill', 'Allergy Pills', 'an '],
- 6011: ['Shipping Bill', 'Shipping Bills', 'a '],
+ 3001: ['Soccer ball', 'Soccer balls', 'a '],
+ 3002: ['Toboggan', 'Toboggans', 'a '],
+ 3003: ['Ice cube', 'Ice cubes', 'an '],
+ 3004: ['Love letter', 'Love letters', 'a '],
+ 3005: ['Wiener dog', 'Wiener dogs', 'a '],
+ 3006: ['Engagement ring', 'Engagement rings', 'an '],
+ 3007: ['Sardine whiskers', 'Sardine whiskers', 'some '],
+ 3008: ['Calming potion', 'Calming potion', 'a '],
+ 3009: ['Broken tooth', 'Broken teeth', 'a '],
+ 3010: ['Gold tooth', 'Gold teeth', 'a '],
+ 3011: ['Pine cone bread', 'Pine cone breads', 'a '],
+ 3012: ['Lumpy cheese', 'Lumpy cheeses', 'some '],
+ 3013: ['Simple spoon', 'Simple spoons', 'a '],
+ 3014: ['Talking toad', 'Talking toad', 'a '],
+ 3015: ['Ice cream cone', 'Ice cream cones', 'an '],
+ 3016: ['Wig powder', 'Wig powders', 'some '],
+ 3017: ['Rubber ducky', 'Rubber duckies', 'a '],
+ 3018: ['Fuzzy dice', 'Fuzzy dice', 'some '],
+ 3019: ['Microphone', 'Microphones', 'a '],
+ 3020: ['Electric keyboard', 'Electric keyboards', 'an '],
+ 3021: ['Platform shoes', 'Platform shoes', 'some '],
+ 3022: ['Caviar', 'Caviar', 'some '],
+ 3023: ['Make-up powder', 'Make-up powders', 'some '],
+ 3024: ['Yarn', 'Yarn', 'some '],
+ 3025: ['Knitting Needle', 'Knitting Needles', 'a '],
+ 3026: ['Alibi', 'Alibis', 'an '],
+ 3027: ['External Temperature Sensor', 'External Temperature Sensors', 'an '],
+ 6001: ['Cashbot HQ Plans', 'Cashbot HQ Plans', 'some '],
+ 6002: ['Rod', 'Rods', 'a '],
+ 6003: ['Drive Belt', 'Drive Belts', 'a '],
+ 6004: ['Pair of Pincers', 'Pairs of Pincers', 'a '],
+ 6005: ['Reading Lamp', 'Reading Lamps', 'a '],
+ 6006: ['Zither', 'Zithers', 'a '],
+ 6007: ['Zamboni', 'Zambonis', 'a '],
+ 6008: ['Zebra Zabuton', 'Zebra Zabutons', 'a '],
+ 6009: ['Zinnias', 'Zinnias', 'some '],
+ 6010: ['Zydeco Records', 'Zydeco Records', 'some '],
+ 6011: ['Zucchini', 'Zucchinis', 'a '],
  6012: ['Zoot Suit', 'Zoot Suits', 'a '],
  7001: ['Plain Bed', 'Plain Beds', 'a '],
  7002: ['Fancy Bed', 'Fancy Beds', 'a '],
@@ -767,8 +702,7 @@ QuestsItemDict = {1: ['Pair of Glasses', 'Pairs of Glasses', 'a '],
  7012: ['Slimy Kelp', 'Slimy Kelp', 'some '],
  7013: ['Pestle', 'Pestles', 'a '],
  7014: ['Jar of Wrinkle Cream', 'Jars of Wrinkle Cream', 'a '],
- 7016: ['Toon Training Manual', 'Toon Training Manuals', 'some ']
- }
+ 7016: ['Toon Training Manual', 'Toon Training Manuals', 'some ']}
 QuestsHQOfficerFillin = lHQOfficerM
 QuestsHQWhereFillin = ''
 QuestsHQBuildingNameFillin = lToonHQ
@@ -797,1366 +731,172 @@ TheBrrrghTrackQuestDict = {GREETING: '',
  COMPLETE: 'Very wise choice!',
  LEAVING: 'Good luck.  Return to me when you have mastered your new skill.'}
 QuestDialog_3225 = {QUEST: "Oh, thanks for coming, _avName_!\x07The Cogs in the neighborhood frightened away my delivery person.\x07I don't have anyone to deliver this salad to _toNpcName_!\x07Can you do it for me? Thanks so much!_where_"}
-QuestDialog_2910 = {QUEST: 'Back so soon?\x07Great job on those Cogs.\x07Now I need one more favor.\x07Could you get some flour from _toNpcName_ for me?\x07I\'m running really low in supply of that._where_'}
-QuestDialogDict = {
- 164: {QUEST: 'Phew, tired yet?\x07You know... You look like you could use some new gags.\x07Go see %s, maybe he can help you out._where_' % Flippy},
- 165: {QUEST: 'Heya! I remember seeing you in the streets earlier.\x07I don\'t believe I formally introduced myself...\x07I\'m Flippy, Mayor of the Toon Council here in Toontown.\x07Hopefully we\'ll be seeing each other a lot more often!\x07It looks like you need to practice training your gags.\x07First, I want you to start by defeating 3 Cogs.'},
- 166: {QUEST: 'Hey there _avName_!\x07I hear you\'re looking for some training?\x07Well I\'d be happy to help teaching you the ropes, but I let _toNpcName_ borrow my manuals!\x07Pop over to him and get them back so we can start!_where_'},
- 167: {QUEST: 'Hey! You\'re the toon Flippy sent over,\x07Unfortunately I lost the manuals when some cogs took over my building!\x07I bet one of them out there still has them!\x07Go destroy some cogs until you find the Manuals!_where_', COMPLETE: 'You found them!'},
+QuestDialog_2910 = {QUEST: "Back so soon?\x07Great job on those Cogs.\x07Now I need one more favor.\x07Could you get some flour from _toNpcName_ for me?\x07I'm running really low in supply of that._where_"}
+QuestDialogDict = {164: {QUEST: 'Phew, tired yet?\x07You know... You look like you could use some new gags.\x07Go see %s, maybe he can help you out._where_' % Flippy},
+ 165: {QUEST: "Heya! I remember seeing you in the streets earlier.\x07I don't believe I formally introduced myself...\x07I'm Flippy, Mayor of the Toon Council here in Toontown.\x07Hopefully we'll be seeing each other a lot more often!\x07It looks like you need to practice training your gags.\x07First, I want you to start by defeating 3 Cogs."},
+ 166: {QUEST: "Hey there _avName_!\x07I hear you're looking for some training?\x07Well I'd be happy to help teaching you the ropes, but I let _toNpcName_ borrow my manuals!\x07Pop over to him and get them back so we can start!_where_"},
+ 167: {QUEST: "Hey! You're the toon Flippy sent over,\x07Unfortunately I lost the manuals when some cogs took over my building!\x07I bet one of them out there still has them!\x07Go destroy some cogs until you find the Manuals!_where_",
+       COMPLETE: 'You found them!'},
  168: {QUEST: 'Great work _avName_, now just run them back to _toNpcName_!_where_'},
- # Toontown Central Tasks
- # Task Zero
- 2000: {QUEST:  "_toNpcName_ has some books that are overdue!\x07He's been studying about the silly bones in our bodies.\x07Could you go ask him to return those books?_where_"}, #Pete to Dr Tom to collect School Books (visit)
- 2001: {QUEST:  "Oh no the books are already overdue?\x07Some pesky cogs stole those books before I got a chance to read them!\x07Go recover those for me please!_where_"}, #Dr Tom kill some cogs to recover School Books
- 2002: {QUEST:  "Alright, let's take a look at these books...\x07Wow this font is super small!\x07Where did my magnifying glass go?\x07I bet those pesky cogs stole it!\x07Go get it back please!"}, #Dr Tom kill some cogs to recover magnifying glass
- 2003: {QUEST:  "Ah much better!\x07Wait a minute...\x07This doesn't make any sense!\x07Could you go ask _toNpcName_ to decode these for me?"}, #Dr Tom visit Dr. Pulyurleg to decode the books
- 2004: {QUEST:  "Alright let's take a look here...\x07Oh, this is so simple!\x07Give me second while I write this all down for him...\x07There! Done!\x07Go give these back to _toNpcName_."}, #Dr. Pulyurleg visit Dr Tom to return decoded books
- 2005: {QUEST:  "This makes so much sense now!\x07Now that I have these decoded notes, go return these books for me please!", COMPLETE: "Thank you so much for doing this, _avName_!"}, #Dr Tom visit Pete to return the decoded books
-
- # Task One
- 2010: {QUEST:  "Oh man, I'm parched!\x07Listen, _toNpcName_ told me earlier she was going to make a batch of lemonade.\x07Could you do me a favor and get a pitcher of it from her?_where_"}, #Flippy to Limeys limes (visit)
- 2011: {GREETING: "Ahoy!",
-		QUEST:  "Huh? You want some lemonade?\x07Well unfortunately, I was fishing earlier and dropped my ingredients in the pond.\x07Would you mind fishing those up for me?",
-		LEAVING: ''}, #Limey fish to find some limes
+ 2000: {QUEST: "_toNpcName_ has some books that are overdue!\x07He's been studying about the silly bones in our bodies.\x07Could you go ask him to return those books?_where_"},
+ 2001: {QUEST: 'Oh no the books are already overdue?\x07Some pesky cogs stole those books before I got a chance to read them!\x07Go recover those for me please!_where_'},
+ 2002: {QUEST: "Alright, let's take a look at these books...\x07Wow this font is super small!\x07Where did my magnifying glass go?\x07I bet those pesky cogs stole it!\x07Go get it back please!"},
+ 2003: {QUEST: "Ah much better!\x07Wait a minute...\x07This doesn't make any sense!\x07Could you go ask _toNpcName_ to decode these for me?"},
+ 2004: {QUEST: "Alright let's take a look here...\x07Oh, this is so simple!\x07Give me second while I write this all down for him...\x07There! Done!\x07Go give these back to _toNpcName_."},
+ 2005: {QUEST: 'This makes so much sense now!\x07Now that I have these decoded notes, go return these books for me please!',
+        COMPLETE: 'Thank you so much for doing this, _avName_!'},
+ 2010: {QUEST: "Oh man, I'm parched!\x07Listen, _toNpcName_ told me earlier she was going to make a batch of lemonade.\x07Could you do me a favor and get a pitcher of it from her?_where_"},
+ 2011: {GREETING: 'Ahoy!',
+        QUEST: 'Huh? You want some lemonade?\x07Well unfortunately, I was fishing earlier and dropped my ingredients in the pond.\x07Would you mind fishing those up for me?',
+        LEAVING: ''},
  2012: {GREETING: '',
-		QUEST:  "Yep, these were the limes I was looking for!\x07However, I forgot that I dropped the lemons in there too!\x07Could you do me a favor and get those for me?",
-		LEAVING: ''}, #Limey fish to find some lemons 
+        QUEST: 'Yep, these were the limes I was looking for!\x07However, I forgot that I dropped the lemons in there too!\x07Could you do me a favor and get those for me?',
+        LEAVING: ''},
  2013: {GREETING: '',
-		QUEST:  "Thanks again!\x07So listen, I decided to go fishing AGAIN, and...\x07Well, I dropped the cups I had on me when I leaned to grab my catch.\x07Could you go grab those out for me?",
-		LEAVING: ''}, #Limey fish to find some Acorn Cups
- 2014: {QUEST:  "Thanks for getting these, I'll make sure to wash them before I use them.\x07I should really stop carrying my supplies on me when I fish, don't ya think?\x07Speaking of supplies, I need 3 glasses of water to make this with.\x07Mind going and buying those from the gag shop?",
-		LEAVING: ''}, #Limey buy 3 glasses of water
+        QUEST: 'Thanks again!\x07So listen, I decided to go fishing AGAIN, and...\x07Well, I dropped the cups I had on me when I leaned to grab my catch.\x07Could you go grab those out for me?',
+        LEAVING: ''},
+ 2014: {QUEST: "Thanks for getting these, I'll make sure to wash them before I use them.\x07I should really stop carrying my supplies on me when I fish, don't ya think?\x07Speaking of supplies, I need 3 glasses of water to make this with.\x07Mind going and buying those from the gag shop?",
+        LEAVING: ''},
  2015: {GREETING: '',
-		QUEST:  "Awesome!\x07Okay, next I need three fruit pie slices, they pair great with the lemonade!",
-		LEAVING: ''}, #Limey buy 3 fruit pie slices
+        QUEST: 'Awesome!\x07Okay, next I need three fruit pie slices, they pair great with the lemonade!',
+        LEAVING: ''},
  2016: {GREETING: '',
-		QUEST:  "Yeah, these will be really tasty.\x07Now, I'm having trouble with my juicer.\x07Go and defeat a few cogs and see if you can get a Gear Garnish from them.",
-		LEAVING: ''}, #Limey kill some cogs to recover a Gear Garnish
+        QUEST: "Yeah, these will be really tasty.\x07Now, I'm having trouble with my juicer.\x07Go and defeat a few cogs and see if you can get a Gear Garnish from them.",
+        LEAVING: ''},
  2017: {GREETING: '',
-		QUEST:  "Alright, last item, I promise.\x07I need ice cubes, which you can grab off of Cold Callers.\x07Go defeat them until you can find three.",
-		LEAVING: ''}, #Recover 3 Ice Cubes fron Cold Callers
- 2018: {QUEST:  "Alright, here you go!\x07Deliver this pitcher, these cups and these pies to _toNpcName_.", COMPLETE: "Thanks _avName_, this should quench my thirst just nicely.\x07I'll be sure to go thank Limey for the pies, as well.\x07Anyways, here's your reward."}, #Deliver Lemonade to Flippy in Toon Hall 
- 
- # Task Two
- 2020: {QUEST:  "Hey, _avName_!\x07Could you head on over to _toNpcName_ and do him several favors?\x07I heard he needs some help with his new chocolate bars._where_"}, # Flippy to Sal Snicker (visit)   
- 2021: {QUEST:  "Hello! You must be _avName_.\x07Anyways, let me tell you what happened.\x07Just a few hours ago, those pesky cogs raided my building and took my supplies!\x07I found out that the Penny Pinchers have my moulds.\x07Could you get those back for me please?"}, # Kill Penny Pinchers to recover Chocolate Moulds
- 2022: {QUEST:  "Yep, that's all of them!\x07Next, the Pencil Pushers should have my chocolate shavings.\x07They've mistaken my chocolate shavings for pencil shavings, how funny is that?"}, # Kill Pencil Pushers to recover Chocolate Shavings 
- 2023: {QUEST:  "Alright, I'll get to work melting those into the moulds.\x07So, it looks like the Bloodsuckers have my sugar.\x07Would you mind grabbing it from them?"}, # Kill Bloodsuckers to recover Sugar
- 2024: {QUEST:  "Time to add the sugar!\x07Now to see what I have to do next...\x07Uh oh!!!\x07I think the Con Artists took my recipe, they were in here right before it went missing.\x07Go defeat them until you find it."}, # Kill Con Artists to recover recipe
- 2025: {QUEST:  "Awesome! Now we can get finished on this bad boy.\x07Rumor has it that the Telemarketers keep some wrappers in their rolodexes.\x07Would you be able to grab some for me?\x07Why do I need them, you ask?\x07How else would I deliver this chocolate?"}, # Kill Telemarketers to recover Wrappers
- 2026: {QUEST:  "And voila! Freshly made chocolate bars!\x07I promised to give Banker Bob one, would you kindly this one to him?_where_"}, # Deliver Chocolate Bar to Banker Bob
- 2027: {QUEST:  "Are these the new chocolate bars?\x07Mmm~ Thiff 'if so good!\x07 Eheh, excuse me. Please, deliver these beans to Sal for me."}, # Deliver Money to Sal Snicker
- 2028: {QUEST:  "Thanks so much for making that delivery for me!\x07Now, I need a huge favor.\x07Rumor has it that the Cashbots have been planning a heist on my shop.\x07I can't let that happen!\x07Can you take down a handful of those pesky cogs for me please?"}, # Kill 10 Cashbots 
- 2029: {QUEST:  "Great! Now they won't be pulling anything sneaky off!\x07I just got a call from Flippy, and he wanted to try one of my chocolate bars.\x07Please deliver this to him. He also said there would be a reward involved.", COMPLETE: "Oh this chocolate bar looks good.\x07WHOA, THIS IS BRILLIANT!!!\x07Thanks for delivering this gift of heaven to my office!\x07Here is your reward..."}, #Deliver Chocolate Bar To Flippy
- 
- # Task Three
- 2030: {QUEST:  "Let's get down to business, _avName_.\x07_toNpcName_ would like to inform you about the Cog departments and even about those horrid newly-built Cogs._where_"}, # Flippy to Librarian Larry (visit)
- 2031: {QUEST:  "Welcome, new student!\x07Ah, so you're here for the lecture on the Cogs I see?\x07Let's discuss the difference between each department first.\x07Originally, Toontown was invaded by four types of Cogs: Sellbots, Cashbots, Lawbots, and Bossbots.\x07Sellbots are into marketing...\x07Cashbots love to handle the money...\x07Lawbots like to lay down the law...\x07And Bossbots love to boss everyone around and be in charge.\x07For now, I would like you to demonstarte your knowledge in being able to differentiate these types of Cogs.\x07Defeat 5 Sellbots and then return to me."}, # Kill 5 Sellbot  
- 2032: {QUEST:  "Welcome, new student!\x07Ah, so you're here for the lecture on the Cogs I see?\x07Let's discuss the difference between each department first.\x07Originally, Toontown was invaded by four types of Cogs: Sellbots, Cashbots, Lawbots, and Bossbots.\x07Sellbots are into marketing...\x07Cashbots love to handle the money...\x07Lawbots like to lay down the law...\x07And Bossbots love to boss everyone around and be in charge.\x07For now, I would like you to demonstarte your knowledge in being able to differentiate these types of Cogs.\x07Defeat 5 Cashbots and then return to me."}, # Kill 5 Cashbot
- 2033: {QUEST:  "Welcome, new student!\x07Ah, so you're here for the lecture on the Cogs I see?\x07Let's discuss the difference between each department first.\x07Originally, Toontown was invaded by four types of Cogs: Sellbots, Cashbots, Lawbots, and Bossbots.\x07Sellbots are into marketing...\x07Cashbots love to handle the money...\x07Lawbots like to lay down the law...\x07And Bossbots love to boss everyone around and be in charge.\x07For now, I would like you to demonstarte your knowledge in being able to differentiate these types of Cogs.\x07Defeat 5 Lawbots and then return to me."}, # Kill 5 Lawbot
- 2034: {QUEST:  "Welcome, new student!\x07Ah, so you're here for the lecture on the Cogs I see?\x07Let's discuss the difference between each department first.\x07Originally, Toontown was invaded by four types of Cogs: Sellbots, Cashbots, Lawbots, and Bossbots.\x07Sellbots are into marketing...\x07Cashbots love to handle the money...\x07Lawbots like to lay down the law...\x07And Bossbots love to boss everyone around and be in charge.\x07For now, I would like you to demonstarte your knowledge in being able to differentiate these types of Cogs.\x07Defeat 5 Bossbots and then return to me."}, # Kill 5 Bossbot
+        QUEST: 'Alright, last item, I promise.\x07I need ice cubes, which you can grab off of Cold Callers.\x07Go defeat them until you can find three.',
+        LEAVING: ''},
+ 2018: {QUEST: 'Alright, here you go!\x07Deliver this pitcher, these cups and these pies to _toNpcName_.',
+        COMPLETE: "Thanks _avName_, this should quench my thirst just nicely.\x07I'll be sure to go thank Limey for the pies, as well.\x07Anyways, here's your reward."},
+ 2020: {QUEST: 'Hey, _avName_!\x07Could you head on over to _toNpcName_ and do him several favors?\x07I heard he needs some help with his new chocolate bars._where_'},
+ 2021: {QUEST: 'Hello! You must be _avName_.\x07Anyways, let me tell you what happened.\x07Just a few hours ago, those pesky cogs raided my building and took my supplies!\x07I found out that the Penny Pinchers have my moulds.\x07Could you get those back for me please?'},
+ 2022: {QUEST: "Yep, that's all of them!\x07Next, the Pencil Pushers should have my chocolate shavings.\x07They've mistaken my chocolate shavings for pencil shavings, how funny is that?"},
+ 2023: {QUEST: "Alright, I'll get to work melting those into the moulds.\x07So, it looks like the Bloodsuckers have my sugar.\x07Would you mind grabbing it from them?"},
+ 2024: {QUEST: 'Time to add the sugar!\x07Now to see what I have to do next...\x07Uh oh!!!\x07I think the Con Artists took my recipe, they were in here right before it went missing.\x07Go defeat them until you find it.'},
+ 2025: {QUEST: 'Awesome! Now we can get finished on this bad boy.\x07Rumor has it that the Telemarketers keep some wrappers in their rolodexes.\x07Would you be able to grab some for me?\x07Why do I need them, you ask?\x07How else would I deliver this chocolate?'},
+ 2026: {QUEST: 'And voila! Freshly made chocolate bars!\x07I promised to give Banker Bob one, would you kindly this one to him?_where_'},
+ 2027: {QUEST: "Are these the new chocolate bars?\x07Mmm~ Thiff 'if so good!\x07 Eheh, excuse me. Please, deliver these beans to Sal for me."},
+ 2028: {QUEST: "Thanks so much for making that delivery for me!\x07Now, I need a huge favor.\x07Rumor has it that the Cashbots have been planning a heist on my shop.\x07I can't let that happen!\x07Can you take down a handful of those pesky cogs for me please?"},
+ 2029: {QUEST: "Great! Now they won't be pulling anything sneaky off!\x07I just got a call from Flippy, and he wanted to try one of my chocolate bars.\x07Please deliver this to him. He also said there would be a reward involved.",
+        COMPLETE: 'Oh this chocolate bar looks good.\x07WHOA, THIS IS BRILLIANT!!!\x07Thanks for delivering this gift of heaven to my office!\x07Here is your reward...'},
+ 2030: {QUEST: "Let's get down to business, _avName_.\x07_toNpcName_ would like to inform you about the Cog departments and even about those horrid newly-built Cogs._where_"},
+ 2031: {QUEST: "Welcome, new student!\x07Ah, so you're here for the lecture on the Cogs I see?\x07Let's discuss the difference between each department first.\x07Originally, Toontown was invaded by four types of Cogs: Sellbots, Cashbots, Lawbots, and Bossbots.\x07Sellbots are into marketing...\x07Cashbots love to handle the money...\x07Lawbots like to lay down the law...\x07And Bossbots love to boss everyone around and be in charge.\x07For now, I would like you to demonstarte your knowledge in being able to differentiate these types of Cogs.\x07Defeat 5 Sellbots and then return to me."},
+ 2032: {QUEST: "Welcome, new student!\x07Ah, so you're here for the lecture on the Cogs I see?\x07Let's discuss the difference between each department first.\x07Originally, Toontown was invaded by four types of Cogs: Sellbots, Cashbots, Lawbots, and Bossbots.\x07Sellbots are into marketing...\x07Cashbots love to handle the money...\x07Lawbots like to lay down the law...\x07And Bossbots love to boss everyone around and be in charge.\x07For now, I would like you to demonstarte your knowledge in being able to differentiate these types of Cogs.\x07Defeat 5 Cashbots and then return to me."},
+ 2033: {QUEST: "Welcome, new student!\x07Ah, so you're here for the lecture on the Cogs I see?\x07Let's discuss the difference between each department first.\x07Originally, Toontown was invaded by four types of Cogs: Sellbots, Cashbots, Lawbots, and Bossbots.\x07Sellbots are into marketing...\x07Cashbots love to handle the money...\x07Lawbots like to lay down the law...\x07And Bossbots love to boss everyone around and be in charge.\x07For now, I would like you to demonstarte your knowledge in being able to differentiate these types of Cogs.\x07Defeat 5 Lawbots and then return to me."},
+ 2034: {QUEST: "Welcome, new student!\x07Ah, so you're here for the lecture on the Cogs I see?\x07Let's discuss the difference between each department first.\x07Originally, Toontown was invaded by four types of Cogs: Sellbots, Cashbots, Lawbots, and Bossbots.\x07Sellbots are into marketing...\x07Cashbots love to handle the money...\x07Lawbots like to lay down the law...\x07And Bossbots love to boss everyone around and be in charge.\x07For now, I would like you to demonstarte your knowledge in being able to differentiate these types of Cogs.\x07Defeat 5 Bossbots and then return to me."},
  2035: {GREETING: '',
-		QUEST: "Great work on those Cogs.\x07Now, I think I can tell you about the newly introduced Cog department: The Boardbots.\x07The Boardbots have more power than all the other Cogs and are in charge of everything that goes around Cogs Incorporated.\x07I would like you to go and defeat 5 Boardbots then return to me."},
- 2036: {QUEST:  "Have any trouble with those Boardbots?\x07Now that you've seen the 5 major Cog types, its time to introduce you to the subclasses of Cogs.\x07Now, Cogs also come in different shapes and forms, depending on how they were built.\x07Right now, you'll only counter regular Cogs, and Elite Cogs.\x07Later, in more Cog inhibited areas such as HQs, you will find other special types of Cogs, such as Skelecogs, V2, Virtual Cogs, and Elite V2 Cogs.\x07Ugh, I get shivers just thinking of them!\x07Anyways, around the playgrounds, you'll notice difference in the levels of the Cogs.\x07I want you to avoid those weak level one Cogs and attempt to defeat those stronger Cogs out there."}, # Kill 5 Level 2+ Cogs
- 2037: {QUEST:  "Hope that wasn't to hard. Now, I want you to defeat five Elite Cogs.\x07Elite Cogs pose a very significant risk to the happiness of our toons.\x07They are stronger, have more health, and can even dodge better than the average Cog. Oh, what a nightmare!\x07I'm only sending you on this mission, toon, because I belive you are strong enough to handle it.\x07Just be careful out there.\x07Defeat 5 Elite Cogs."}, # Kill 5 Elite Cogs
- 2038: {QUEST: "How'd you do on those Elite Cogs?\x07Finally, I would like you to do something small but a little difficult.\x07I want you to take care of those high leveled Cogs, the level 4+ ones.\x07You can find them on Wacky Way and Silly Street.", COMPLETE: "Great job on all those Cogs!\x07You've passed my lesson. Congrats!"},
- 
- # Task Four
- 2040: {QUEST:  "Welcome back, _avName_!\x07_toNpcName_ is in need of some help.\x07Would you mind helping him deliver some packages?_where_"}, # Flippy to Postmaster Pete
- 2041: {QUEST:  "Hey, nice to meet you _avName_!\x07I need your help.\x07The high leveled Cogs around here tend to steal all the packages that I need delivered.\x07Can you go get several of them back for me please?"}, # Recover 5 packages from level 3+ cogs in Toontown Central
- 2042: {QUEST:  "Alright, thank you for that.\x07Would you mind delivering this one to Rancid Robert?_where_"}, # Deliver a Package to Rancid Robert
- 2043: {QUEST:  "Hey, is this my package?\x07Oh, I'm sorry. I'm too down right now to sign for it...\x07Maybe you could help me?\x07See, those Boardbots storm in here and take away all my Banana Peels and I just feel like nothing without them.\x07Could you get those back for me? There were about 7 of them."}, # Recover 7 banana peels from Boardbots in Toontown Central
- 2044: {QUEST:  "Thanks, but I'm still not feeling normal...\x07Maybe if you could get those nets of mine that those Bossbots stole from me..."}, # Recover 5 nets from Bossbots in Toontown Central
+        QUEST: 'Great work on those Cogs.\x07Now, I think I can tell you about the newly introduced Cog department: The Boardbots.\x07The Boardbots have more power than all the other Cogs and are in charge of everything that goes around Cogs Incorporated.\x07I would like you to go and defeat 5 Boardbots then return to me.'},
+ 2036: {QUEST: "Have any trouble with those Boardbots?\x07Now that you've seen the 5 major Cog types, its time to introduce you to the subclasses of Cogs.\x07Now, Cogs also come in different shapes and forms, depending on how they were built.\x07Right now, you'll only counter regular Cogs, and Elite Cogs.\x07Later, in more Cog inhibited areas such as HQs, you will find other special types of Cogs, such as Skelecogs, V2, Virtual Cogs, and Elite V2 Cogs.\x07Ugh, I get shivers just thinking of them!\x07Anyways, around the playgrounds, you'll notice difference in the levels of the Cogs.\x07I want you to avoid those weak level one Cogs and attempt to defeat those stronger Cogs out there."},
+ 2037: {QUEST: "Hope that wasn't to hard. Now, I want you to defeat five Elite Cogs.\x07Elite Cogs pose a very significant risk to the happiness of our toons.\x07They are stronger, have more health, and can even dodge better than the average Cog. Oh, what a nightmare!\x07I'm only sending you on this mission, toon, because I belive you are strong enough to handle it.\x07Just be careful out there.\x07Defeat 5 Elite Cogs."},
+ 2038: {QUEST: "How'd you do on those Elite Cogs?\x07Finally, I would like you to do something small but a little difficult.\x07I want you to take care of those high leveled Cogs, the level 4+ ones.\x07You can find them on Wacky Way and Silly Street.",
+        COMPLETE: "Great job on all those Cogs!\x07You've passed my lesson. Congrats!"},
+ 2040: {QUEST: 'Welcome back, _avName_!\x07_toNpcName_ is in need of some help.\x07Would you mind helping him deliver some packages?_where_'},
+ 2041: {QUEST: 'Hey, nice to meet you _avName_!\x07I need your help.\x07The high leveled Cogs around here tend to steal all the packages that I need delivered.\x07Can you go get several of them back for me please?'},
+ 2042: {QUEST: 'Alright, thank you for that.\x07Would you mind delivering this one to Rancid Robert?_where_'},
+ 2043: {QUEST: "Hey, is this my package?\x07Oh, I'm sorry. I'm too down right now to sign for it...\x07Maybe you could help me?\x07See, those Boardbots storm in here and take away all my Banana Peels and I just feel like nothing without them.\x07Could you get those back for me? There were about 7 of them."},
+ 2044: {QUEST: "Thanks, but I'm still not feeling normal...\x07Maybe if you could get those nets of mine that those Bossbots stole from me..."},
  2045: {GREETING: '',
-		QUEST:  "Now, if only that Connoisseur would return my favorite saxophone...",
-		LEAVING: ''}, # Recover a saxophone from a Connosieur
- 2046: {QUEST:  "Oh I feel a lot better now!\x07Let me just sign for this package...\x07Wait a darn minute, this doesn't belong to me?\x07It belongs to _toNpcName_!!!_where_.", COMPLETE:"Awesome! That's the package I ordered.\x07Let me just sign for this and, BAM!\x07Here is a reward, kind toon..."}, # Return to Charlie Chortle, tell him the show is on
-
- # Task Five
- 2050: {QUEST:  "Great work so far _avName_\x07Could you do me a quick favor and drop this off for _toNpcName_?\x07It got delivered here for some reason..._where_"}, # Flippy Deliver Package to Liar Liar
- 2051: {QUEST:  "Yay! A new delivery...\x07Wait, this isn't for me. This is for _toNpcName_, my biggest competitor._where_"}, # Liar Liar Deliver Package to Pants On Fire
- 2052: {QUEST:  "Yay! A new delivery...\x07Wait, this isn't for me. This is for _toNpcName_, my biggest competitor._where_"}, # Pants On Fire Deliver Package to Liar Liar
- 2053: {QUEST:  "Yay! A new delivery...\x07Wait, not you again _avName_. This isn't for me!\x07Take it back to _toNpcName_. He can find out where it's meant to be._where_"}, # Liar Liar in to Postmaster Pete
- 2054: {QUEST:  "What's that you've got there, _avName_?\x07Oh, well that's not right... This label is all messed up.\x07I would fix it, but my sorter got stolen when some Boardbots took over my building.\x07Could you go get it back for me?"}, # Recover Label Sorter from Boardbots
- 2055: {QUEST:  "Alright, here's the proper label.\x07Return this to Pants On Fire for me please._where_"}, # Postmaster Pete Deliver Package to Pants On Fire
- 2056: {QUEST:  "Yay! A new delivery...\x07Wait, not you again _avName_.\x07Oh, this looks like the right package. Thanks!\x07Could you do me a favor, and go grab my glasses?\x07They were stolen by a Flunky."}, # Recover Glasses from Connoisseur
- 2057: {QUEST:  "Ah, good. I can finish writing this memo now.\x07Alright, would you mind delivering this to _toNpcName_?_where_"}, # Deliver Urgent Memo to Shirley U. Jest
- 2058: {QUEST:  "Is this from Pants On Fire?\x07Alright... Mhm... I see...\x07He believes that he'd be a bit more mellow about being neighbors if there were less level 2+ Cogs on this steet.\x07Maybe this could lead to peace between us if you help us out."}, # Defeat 5 Level 2+ Cogs on Wacky Way
+        QUEST: 'Now, if only that Connoisseur would return my favorite saxaphone...',
+        LEAVING: ''},
+ 2046: {QUEST: "Oh I feel a lot better now!\x07Let me just sign for this package...\x07Wait a darn minute, this doesn't belong to me?\x07It belongs to _toNpcName_!!!_where_.",
+        COMPLETE: "Awesome! That's the package I ordered.\x07Let me just sign for this and, BAM!\x07Here is a reward, kind toon..."},
+ 2050: {QUEST: 'Great work so far _avName_\x07Could you do me a quick favor and drop this off for _toNpcName_?\x07It got delivered here for some reason..._where_'},
+ 2051: {QUEST: "Yay! A new delivery...\x07Wait, this isn't for me. This is for _toNpcName_, my biggest competitor._where_"},
+ 2052: {QUEST: "Yay! A new delivery...\x07Wait, this isn't for me. This is for _toNpcName_, my biggest competitor._where_"},
+ 2053: {QUEST: "Yay! A new delivery...\x07Wait, not you again _avName_. This isn't for me!\x07Take it back to _toNpcName_. He can find out where it's meant to be._where_"},
+ 2054: {QUEST: "What's that you've got there, _avName_?\x07Oh, well that's not right... This label is all messed up.\x07I would fix it, but my sorter got stolen when some Boardbots took over my building.\x07Could you go get it back for me?"},
+ 2055: {QUEST: "Alright, here's the proper label.\x07Return this to Pants On Fire for me please._where_"},
+ 2056: {QUEST: 'Yay! A new delivery...\x07Wait, not you again _avName_.\x07Oh, this looks like the right package. Thanks!\x07Could you do me a favor, and go grab my glasses?\x07They were stolen by a Flunky.'},
+ 2057: {QUEST: 'Ah, good. I can finish writing this memo now.\x07Alright, would you mind delivering this to _toNpcName_?_where_'},
+ 2058: {QUEST: "Is this from Pants On Fire?\x07Alright... Mhm... I see...\x07He believes that he'd be a bit more mellow about being neighbors if there were less level 2+ Cogs on this steet.\x07Maybe this could lead to peace between us if you help us out."},
  2059: {GREETING: '',
-		QUEST:  "Now that you took care of Pants On Fire, maybe you could mellow me out.\x07Please reduce the amount of high leveled Cogs in this playground and then I'll give you a reward.", 
-		COMPLETE: "Oh, thank you so much!\x07Here is your reward..."}, # Defeat 4 Level 4+ Cogs on Wacky Way
-
- # Task Six
- 2060: {QUEST:  "My friend, _toNpcName_, has been having problems with the cogs lately.\x07Would you mind going over to his shop and helping him out?_where_"}, # Flippy to Tony Maroni
+        QUEST: "Now that you took care of Pants On Fire, maybe you could mellow me out.\x07Please reduce the amount of high leveled Cogs on this street and then I'll give you a reward.",
+        COMPLETE: 'Oh, thank you so much!\x07Here is your reward...'},
+ 2060: {QUEST: 'My friend, _toNpcName_, has been having problems with the cogs lately.\x07Would you mind going over to his shop and helping him out?_where_'},
  2061: {GREETING: '',
-		QUEST:  "Ay, you must be _avName_ whom was sent to help out, eh?\x07There have been some Bossbots roughing up my clients lately.\x07Mind making 'em go away?", # Defeat 5 level 3+ Bossbots
-		LEAVING: ''},
+        QUEST: "Ay, you must be _avName_ whom was sent to help out, eh?\x07There have been some Bossbots roughing up my clients lately.\x07Mind making 'em go away?",
+        LEAVING: ''},
  2062: {GREETING: '',
-		QUEST:  "Ey, forget about 'em, yeah?\x07While you were out there, a group of lawbots came by and made one of my customers sad.\x07Can ya go teach 'em a lesson for me?\x07I'm tryin' ta work ova here!!! C'mon!",
-		LEAVING: ''}, # Defeat 10 Lawbots
- 2063: {QUEST:  "Last task, boss.\x07Some cogs have been halting my supply trains, taking their pies and such.\x07I need you to make sure they don't do that again, kapeesh?", COMPLETE: "Alright, a deals a deal."}, # Defeat 6 level 2+ Cogs
- 
- # Task Seven
- 2070: {QUEST:  "_toNpcName_ has been having a ton of issues with Cogs in the surrounding area.\x07Could you possibly go help him with whatever he needs?_where_"}, # Flippy to Louise Connection
- 2071: {QUEST:  "I just had a package of cell phones delivered here and a Sellbot just came around and stole it!\x07Could you please go get it back for me?"}, # Recover a package from Sellbots
- 2072: {QUEST:  "I just had a package of cell phones delivered here and a Cashbot just came around and stole it!\x07Could you please go get it back for me?"}, # Recover a package from from Cashbots
- 2073: {QUEST:  "I just had a package of cell phones delivered here and a Lawbot just came around and stole it!\x07Could you please go get it back for me?"}, # Recover a package from Lawbots
- 2074: {QUEST:  "I just had a package of cell phones delivered here and a Bossbot just came around and stole it!\x07Could you please go get it back for me?"}, # Recover a package from Bossbots
- 2075: {QUEST:  "Thanks for getting that package back for me.\x07I need to make sure those Bossbots don't get greedy and try to steal these phones for their work.\x07Please defeat 5 of them then come back to me."}, # Defeat 5 Boardbots
- 2076: {QUEST:  "Thanks for getting that package back for me.\x07Now, I need to make sure those Sellbots don't steal these phones and sell them for higher prices, ripping off toons everywhere!\x07Please defeat 5 of them then come back to me."}, # Defeat 5 Sellbots
- 2077: {QUEST:  "Now I need a couple of those greedy Middlemen out of the picture..."}, # Defeat 2 Middlemen
- 2078: {QUEST:  "Now I need a couple of those greedy Glad Handers out of the picture..."}, # Defeat 2 Glad Hander
- 2079: {QUEST:  "Alright, here you go.\x07What is it, you ask?\x07You're nosy, but I suppose it couldn't hurt.\x07It's a cellphone that needs to be delivered to _toNpcName_._where_", COMPLETE: "Oh, is this from Louise Connection?\x07Awesome! Can't wait to get started with this thing!\x07Anyways, here's your reward!"}, # Deliver an activated cell phone to Loony Louis
-
- # Task Eight
- 2080: {QUEST:  "Hiya! You are getting pretty far!\x07Hmm, your gags look like they can use a little more work though.\x07How about you get a few more points in your Throw track?"}, # Flippy - Collect 20 Throw Points
- 2081: {QUEST:  "Great work! Your Throw gags are looking a lot better now!\x07But now your Squirt gags are a little too far behind.\x07Go put some work into your Squirt gags and come back to me when you are done."}, # Collect 20 Squirt Points
- 2082: {QUEST:  "Now your gags are looking stronger then ever!\x07Now that that's done, do you mind bringing over a Cream Pie Slice to _toNpcName_?_where_"}, # Deliver a Cream Pie Slice to Ma Putrid 
- 2083: {QUEST:  "Oh wow! This Cream Pie Slice looks delicious! Thank you so much _avName_!\x07Spamonia Biggles called me recently and told me she is in desperate need of a squirt gun.\x07Could you go deliever her one for me?"}, # Deliver a squirt gun to Spamonia Biggles
- 2084: {QUEST:  "This is just what I was looking for! Thank you _avName_!\x07Flippy told me he has a task for you, go see him immediately."}, # Visit Flippy
- 2085: {QUEST:  "Hey there! I see Biggles sent you right over here, perfect!\x07I need you to go and defeat some cogs for some reasearch."}, # Defeat 5 cogs
- 2086: {QUEST:  "Perfect! This will help my research a lot.\x07For your last task I need you to defeat some higher level cogs.", COMPLETE: "Our research will be greatly advanced because of you!\x07Thank you for all your help _avName_!"}, # Defeat 3 level 4+ cogs
- 
- # Task Nine
- 2090: {QUEST:  "Thank god you are here _avName_!\x07Sticky Lou is in desperate need of assistance with an unexpected wave of Cogs surrounding his shop!\x07Please go to him and help him with whatever he needs._where_"}, # Flippy to Sticky Lou
- 2091: {QUEST:  "There are just too many!!! I don't know what to do!\x07Oh, _avName_! I didn't notice you there!\x07Please help me with all these Cogs, there are way too many for me to handle on my own."}, # Defeat 30 Cogs in Toontown Central
- 2092: {QUEST:  "Thank you so much _avName_, that makes me feel a lot more safe roaming the streets!\x07We need to start taking out the big cogs now.\x07Go defeat some level 2+ Cogs on Wacky Way..."}, # Defeat 4 Level 2+ Cogs on Wacky Way
- 2093: {QUEST:  "A sprinkle of level 3+ Cogs on Punchline Place..."}, # Defeat 3 Level 3+ Cogs on Punchline Place
- 2094: {QUEST:  "A dash of level 4+ Cogs on Silly Street..."}, # Defeat 2 Level 4+ Cogs on Silly Street
- 2095: {QUEST:  "And a hint of lime of level 4+ Cogs on Loopy Lane!"}, # Defeat 2 Level 5+ Cogs on Loopy Lane
- 2096: {QUEST:  "While you were away, I assumed everything was fine.\x07I was heading to the Post Office to store these top secret blueprints, and then a strong Cog roaming this street took it away.\x07You just have to get those blueprints back for me! Within the Cogs' hands, who knows what could happen?", COMPLETE: "All of the toons and I appreicate all you have done for us.\x07The streets will now be a lot safer with all you have done.\x07Please take this reward!"}, # Recover a Blueprint from Level 5+ Cogs in Toontown Central
-
- # Task Ten
- 2100: {QUEST:  "_toNpcName_ has gone completely mad about how the Cogs have been acting around here.\x07Could you go see what's up?_where_"}, # Flippy to Shorty Fuse
+        QUEST: "Ey, forget about 'em, yeah?\x07While you were out there, a group of lawbots came by and made one of my customers sad.\x07Can ya go teach 'em a lesson for me?\x07I'm tryin' ta work ova here!!! C'mon!",
+        LEAVING: ''},
+ 2063: {QUEST: "Last task, boss.\x07Some cogs have been halting my supply trains, taking their pies and such.\x07I need you to make sure they don't do that again, kapeesh?",
+        COMPLETE: 'Alright, a deals a deal.'},
+ 2070: {QUEST: '_toNpcName_ has been having a ton of issues with Cogs in the surrounding area.\x07Could you possibly go help him with whatever he needs?_where_'},
+ 2071: {QUEST: 'I just had a package of cell phones delivered here and a Sellbot just came around and stole it!\x07Could you please go get it back for me?'},
+ 2072: {QUEST: 'I just had a package of cell phones delivered here and a Cashbot just came around and stole it!\x07Could you please go get it back for me?'},
+ 2073: {QUEST: 'I just had a package of cell phones delivered here and a Lawbot just came around and stole it!\x07Could you please go get it back for me?'},
+ 2074: {QUEST: 'I just had a package of cell phones delivered here and a Bossbot just came around and stole it!\x07Could you please go get it back for me?'},
+ 2075: {QUEST: "Thanks for getting that package back for me.\x07I need to make sure those Bossbots don't get greedy and try to steal these phones for their work.\x07Please defeat 5 of them then come back to me."},
+ 2076: {QUEST: "Thanks for getting that package back for me.\x07Now, I need to make sure those Sellbots don't steal these phones and sell them for higher prices, ripping off toons everywhere!\x07Please defeat 5 of them then come back to me."},
+ 2077: {QUEST: 'Now I need a couple of those greedy Middlemen out of the picture...'},
+ 2078: {QUEST: 'Now I need a couple of those greedy Glad Handers out of the picture...'},
+ 2079: {QUEST: "Alright, here you go.\x07What is it, you ask?\x07You're nosy, but I suppose it couldn't hurt.\x07It's a cellphone that needs to be delivered to _toNpcName_._where_",
+        COMPLETE: "Oh, is this from Louise Connection?\x07Awesome! Can't wait to get started with this thing!\x07Anyways, here's your reward!"},
+ 2080: {QUEST: 'Hiya! You are getting pretty far!\x07Hmm, your gags look like they can use a little more work though.\x07How about you get a few more points in your Throw track?'},
+ 2081: {QUEST: 'Great work! Your Throw gags are looking a lot better now!\x07But now your Squirt gags are a little too far behind.\x07Go put some work into your Squirt gags and come back to me when you are done.'},
+ 2082: {QUEST: "Now your gags are looking stronger then ever!\x07Now that that's done, do you mind bringing over a Cream Pie Slice to _toNpcName_?_where_"},
+ 2083: {QUEST: 'Oh wow! This Cream Pie Slice looks delicious! Thank you so much _avName_!\x07Spamonia Biggles called me recently and told me she is in desperate need of a squirt gun.\x07Could you go deliever her one for me?'},
+ 2084: {QUEST: 'This is just what I was looking for! Thank you _avName_!\x07Flippy told me he has a task for you, go see him immediately.'},
+ 2085: {QUEST: 'Hey there! I see Biggles sent you right over here, perfect!\x07I need you to go and defeat some cogs for some reasearch.'},
+ 2086: {QUEST: 'Perfect! This will help my research a lot.\x07For your last task I need you to defeat some higher level cogs.',
+        COMPLETE: 'Our research will be greatly advanced because of you!\x07Thank you for all your help _avName_!'},
+ 2090: {QUEST: 'Thank god you are here _avName_!\x07Sticky Lou is in desperate need of assistance with an unexpected wave of Cogs surrounding his shop!\x07Please go to him and help him with whatever he needs._where_'},
+ 2091: {QUEST: "There are just too many!!! I don't know what to do!\x07Oh, _avName_! I didn't notice you there!\x07Please help me with all these Cogs, there are way too many for me to handle on my own."},
+ 2092: {QUEST: 'Thank you so much _avName_, that makes me feel a lot more safe roaming the streets!\x07We need to start taking out the big cogs now.\x07Go defeat some level 2+ Cogs on Punchline Place...'},
+ 2093: {QUEST: 'A sprinkle of level 3+ Cogs on Loopy Lane...'},
+ 2094: {QUEST: 'A dash of level 4+ Cogs on Wacky Way...'},
+ 2095: {QUEST: 'And a hint of lime of level 5+ Cogs on Silly Street!'},
+ 2096: {QUEST: "While you were away, I assumed everything was fine.\x07I was heading to the Post Office to store these top secret blueprints, and then a strong Cog roaming this street took it away.\x07You just have to get those blueprints back for me! Within the Cogs' hands, who knows what could happen?",
+        COMPLETE: 'All of the toons and I appreicate all you have done for us.\x07The streets will now be a lot safer with all you have done.\x07Please take this reward!'},
+ 2100: {QUEST: "_toNpcName_ has gone completely mad about how the Cogs have been acting around here.\x07Could you go see what's up?_where_"},
  2101: {GREETING: '',
-		QUEST:  "These Cogs are giving me a short fuse, and I feel like I'm about to EXPLODE!!!\x07Ooooh, those high leveled Cogs around here, they need a lesson taught to them...",
-		LEAVING: ''}, # Defeat 5 Level 3+ Cogs in Toontown Central
+        QUEST: "These Cogs are giving me a short fuse, and I feel like I'm about to EXPLODE!!!\x07Ooooh, those high leveled Cogs around here, they need a lesson taught to them...",
+        LEAVING: ''},
  2102: {GREETING: '',
-		QUEST:  "Now, those Lawbots...\x07THEY REALLY JUST GET MY FUSE DOWN TO THE BOTTOM!!!",
-		LEAVING: "KA-BOOM!!!!!!"}, # Defeat 10 Lawbots
+        QUEST: 'Now, those Lawbots...\x07THEY REALLY JUST GET MY FUSE DOWN TO THE BOTTOM!!!',
+        LEAVING: 'KA-BOOM!!!!!!'},
  2103: {GREETING: '',
-		QUEST:  "Now, those Bossbots...\x07THEY REALLY JUST GET MY FUSE DOWN TO THE BOTTOM!!!",
-		LEAVING: "KA-BOOM!!!!!!"}, # Defeat 10 Bossbots
+        QUEST: 'Now, those Bossbots...\x07THEY REALLY JUST GET MY FUSE DOWN TO THE BOTTOM!!!',
+        LEAVING: 'KA-BOOM!!!!!!'},
  2104: {GREETING: '',
-		QUEST:  "Now, those Boardbots...\x07THEY REALLY JUST GET MY FUSE DOWN TO THE BOTTOM!!!",
-		LEAVING: "KA-BOOM!!!!!!"}, # Defeat 10 Boardbots
+        QUEST: 'Now, those Boardbots...\x07THEY REALLY JUST GET MY FUSE DOWN TO THE BOTTOM!!!',
+        LEAVING: 'KA-BOOM!!!!!!'},
  2105: {GREETING: '',
-		QUEST: "IT'S NOT FAIR!!!\x07WHY ARE THERE SO MANY HIGH LEVELED SELLBOTS???",
-		LEAVING: "MY HEAD IS ABOUT TO BURST, I'M SO ANGRY!!"}, # Defeat 3 Level 4+ Sellbots
+        QUEST: "IT'S NOT FAIR!!!\x07WHY ARE THERE SO MANY HIGH LEVELED SELLBOTS???",
+        LEAVING: "MY HEAD IS ABOUT TO BURST, I'M SO ANGRY!!"},
  2106: {GREETING: '',
-		QUEST: "IT'S NOT FAIR!!!\x07WHY ARE THERE SO MANY HIGH LEVELED CASHBOTS???",
-		LEAVING: "MY HEAD IS ABOUT TO BURST, I'M SO ANGRY!!"}, # Defeat 3 Level 4+ Cashbots
- 2107: {QUEST:  "Oof, oof, I'm cooling down now...\x07Several more Cogs and I should be normal...", COMPLETE: "Sunshine, lollipops and, rainbows butterflies...\x07Thank you so much for this warm, happy feeling _avName_.\x07Here is a well deserved reward..."}, # Defeat 10 Cogs in Toontown Central
- 
- # Task Eleven
- 2110: {QUEST:  "Hey _avName_, we've almost run out of things for you to do!\x07Next up, the Toon Clinic is in need of some supplies.\x07First, pay a visit to _toNpcName_, and see what he needs."}, # Flippy to Charlie Doggenbottom
- 2111: {QUEST:  "Hello, are you our help?\x07Awesome, because things have been really hectic around here.\x07To start with, a bunch of our straightjackets were stolen."}, # Recover 10 straightjackets from the cogs in AA
- 2112: {QUEST:  "Alright, thanks for getting those back from the cogs.\x07If you wouldn't mnd, could you deliver those to _toNpcName_?"}, # Deliver 10 straightjackets to Dr. Sensitive
- 2113: {QUEST:  "Are these the straight jackets that were stolen?\x07Thank you so much. No time to Dawdle though, _toNpcName_ is in need of some help."}, # Visit Nurse Nancy
- 2114: {QUEST:  "Hey, so glad you're here.\x07Would you mind going out and defeating some Ambulance Chasers for me?\x07They've been a real pain lately."}, # Defeat 5 Ambulance Chasers
- 2115: {QUEST:  "Well, it seems they got angry, because they stole a set of our ambulance keys.\x07Could you go out and defeat a few more?\x07You should be able to recover the keys from them."}, # Collect a set of ambulance keys from Ambulance Chasers
- 2116: {QUEST:  "Thank you so much for recovering those!\x07Now, could you go visit _toNpcName_? He's supposed to have some new tires for us."}, # Visit Loony Louis
- 2117: {QUEST:  "Oh man, what am I gonna do?\x07Oh hey! Are you here for the tires?\x07Well, unfortunately there was an accident in delivery.\x07They ended up in the pond somehow, and I don't have my fishing pole.\x07Would you mind going and fishing those up for mee collaborative text?"}, # Collect 4 ambulance tires from fishing
- 2118: {QUEST:  "Alright, I'll have those delivered to the clinic right away.\x07We had a diesel engine being delivered too, but it was stolen by some higher level cogs.\x07Would you mind going out and grabbing it?\x07Just defeat some five level cogs until you find it.", COMPLETE: "Hey, is that the engine?\x07Man, how did you carry that all the way here?\x07Anyways, thanks, here's your reward."}, # Collect a diesel engine from level 5+ cogs
- 
- # Task Twelve, MEGATASK OF ZONE
- 2120: {QUEST:  "Good to see you again, _avName_!\x07_toNpcName_ asked me for some help, could you go visit them and see what they need?"}, # Flippy to Nona Seeya
- 2121: {QUEST:  "I'm in a bit of a stick right now -- I lost all my invisible ink!\x07I'm almost certain that I dropped them in a pond, could you be a dear and fish them back for me?"}, # Recover 4 invisible ink from the fish
- 2122: {QUEST:  "Great work! There's just one problem; I have nothing to write with! A bunch of glad handers came in and ransacked my shop taking my fountain pens.\x07Go defeat some of those filthy Glad Handers and get them back!"}, # Recover 4 fountain pens from glad handers
- 2123: {QUEST:  "Amazing!\x07I do owe flippy a pen of mine so how about you go take one of these to him?_where_"}, # Deliver a fountain pen to Flippy"},
- 2124: {QUEST:  "Oh, it's you again?\x07A pen? Well, tell Nona Seeya I said thank you!"}, # Return to Nona Seeya
- 2125: {QUEST:  "Hey, you're back! I just remembered I also owe _toNpcName_ a fountain pen too so go ahead and deliver this to him."}, # Deliver a fountain pen 
- 2126: {QUEST: "Heya, son! I've never seen you before.\x07A fountain pen? Well, my apprecations! There's just one problem...\x07I can't write with all those cogs stomping around! How about you go defeat some of those higher cogs and then maybe I could?"}, # Defeat 8 level 4+ cogs in TTC
- 2127: {QUEST:  "Hmmm... Still too shaky. Try defeating some of the elite cogs, then."}, # Defeat 4 level 5+ cogs in TTC
- 2128: {QUEST:  "Ugh! The shakings better but I can't focus with all those noisy cog buildings!\x07Defeat one cog building for me, would you?"}, # Defeat a cog building
- 2129: {QUEST:  "Just right! I can write again! Go back to Nona Seeya and tell her I said thanks."}, # Return to Nona Seeya
- 2130: {QUEST:  "You're back? I almost thought that you let me forever!\x07Anyways, my friend Inky Ivon just asked me for a fountain pen. Would you please deliver one to him?"}, # Deliver a fountain pen to Inky Ivon
- 2131: {QUEST:  "Aye, son! You got that fountain pen for me?\x07What do you think about doing me a favor, while you're here?\x07I need some Inc Sacs for this pen, which you should be able to fish up for me.ait "}, # Fish for 15 Inc Sacks
- 2132: {QUEST:  "Thanks for that! Now I can actually use this pen.\x07Go back to Nona Seeya and tell her I'm very grateful."}, # Return to Nona Seeya
- 2133: {QUEST:  "Alright, I need you to deliver another one.This one is going to...\x07Ah! Deliver this one to Postmaster Pete"}, # Deliver a fountain pen to Postmaster Pete
- 2134: {QUEST:  "Hey, is this my pen from Nona Seeya?\x07Alright, now I can sign these pack....\x07Wait, where did those packages go??\x07Oh dear, those cogs that were in here earlier must have stolen them!\x07Alright, could you go get them back for me?"}, # Collect 10 packages from Level 4+ cogs
- 2135: {QUEST:  "And that's it. Thank you, kindly return to Flippy when you're ready."}, # Return to Flippy
- 2136: {QUEST:  "Hey there, done with your deliveries?\x07Alright, for your last task I need you to...\x07Go defeat a two story building, or higher!", COMPLETE: "Thank you so much!\x07Hope you are feeling better now that you've completed everything for me.\x07Alright, I think you're finally ready to move out. I'm going to send you off to Acorn Acres, so that you can do some more training work for them.\x07Beware, as that playground is significantly more infested with cogs \x07However, I know that you're ready for it.\x07Alright, good luck! \x07 Best be getting on your way now."}, # Defeat a 2+ story building
- 
- #AA Task One
- 3000: {QUEST: "You must be new around here?\x07_toNpcName_ could use help from a new guy like you._where_"},
- 3001: {GREETING: '',
-		QUEST: "Welcome, _avName_!\x07Every day, I spend my dedicated time to helping the citizens of Acorn Acres with their problems.\x07Today, I need a break. I've been working non-stop every day for the past few months!\x07Don't worry, there aren't that many citizens who need help today.\x07I want you to start by helping _toNpcName_.\x07It seems her humidifiers have been stolen and she is freezing cold in her shop.\x07Please take these warm blankets please._where_"},
- 3002: {GREETING: '',
-		QUEST: "Brrrr...\x07O-o-ohhh are th-th-those blankets for m-me?\x07Ahhh, that's refreshing...\x07Anyways, the Cogs around here have stolen my humidifiers and I need them back!\x07Could you please go get them for me?",
-		LEAVING: ''},
- 3003: {GREETING: '',
-		QUEST: "Great!\x07Now let _toNpcName_ know that everything here is okay.",
-		LEAVING: ''},
- 3004: {GREETING: 'Brilliant work, _avName_!',
-		QUEST: "Next, I need you to help calm down _toNpcName_.\x07Between you and me, he's a little crazy..._where_",
-		LEAVING: ''},
- 3005: {GREETING: '',
-		QUEST: "The Cashbots around here, they make me SO uncomfortable!\x07I can't relax knowing that there are plenty of them around here roaming the streets!",
-		LEAVING: ''},
- 3006: {GREETING: '',
-		QUEST: "No, no, the high leveled Cogs on this street...\x07Are they just waiting for me to let my guard down?",
-		LEAVING: ''},
- 3007: {GREETING: '',
-		QUEST: "Ahh, what a lovely morning!\x07What's that, _avName_? _toNpcName_ wants to know if I'm alright?\x07Well, why wouldn't I be? Tell him that everything is okay around here!",
-		COMPLETE: "Alright, here's your next assignment.\x07Wait... that's all I had for you.\x07Well, I guess this mean I owe you something.",
-		LEAVING: ''},
-		
- #AA Task Two
- 3010: {QUEST: "_toNpcName_ is trying to earn a spot as a full time detective.\x07Only issue is that he's not the brightest when it comes to solving crimes..._where_"},
- 3011: {GREETING: '',
-		QUEST: "Greetings, _avName_.\x07Are you going to help me solve a case today?\x07There has been a lot of crime around town, and I suspect those Swindlers are up to it!\x07Those suspicious masks tell us the truth: they are guilty!\x07Go defeat some of them and bring them to justice!",
-		LEAVING: ''},
- 3012: {GREETING: '',
-		QUEST: "No... Crime is still at a normal rate...\x07Maybe it's the Boardbots in general causing crimes?",
-		LEAVING: ''},
- 3013: {GREETING: '',
-		QUEST: "The crime rate got even higher after you left!\x07I'm starting to suspect that those Bloodsuckers are up to no good...",
-		LEAVING: ''},
- 3014: {GREETING: '',
-		QUEST: "Why isn't the crime rate dropping?\x07It may not have been those Bloodsuckers, but perhaps those high leveled Lawbots in general...",
-		LEAVING: ''},
- 3015: {GREETING: '',
-		QUEST: "The crime rate got even higher after you left!\x07I'm starting to suspect that those Penny Pinchers are up to no good...",
-		LEAVING: ''},
- 3016: {GREETING: '',
-		QUEST: "Why isn't the crime rate dropping?\x07It may not have been those Penny Pinchers, but perhaps those high leveled Cashbots in general...",
-		LEAVING: ''},
- 3017: {GREETING: '',
-		QUEST: "While you were gone, three shops have been broken into!\x07Ugh, I'm a terrible detective, completely on the wrong case...\x07Just defeat those Cogs until the crime rate drops.",
-		COMPLETE: "Wow!\x07A lot of shopkeepers are calling me saying how good my detective work was!\x07Thanks for all your help, _avName_.\x07Here's a reward.",
-		LEAVING: ''},
-
- #AA Task Three
- 3020: {QUEST: "Oh no! There was a break-in at _toNpcName_'s store!\x07Go see what's up and how you can help her._where_"},
- 3021: {GREETING: '',
-		QUEST: "Those Elite Cogs came in here and trashed my place!\x07Once they left, I saw that my most expensive ring has been stolen.\x07I'm not sure, but I think it was a Tightwad who took it.\x07Could you get it back for me please? He could be anywhere with it!",
-		LEAVING: ''},
- 3022: {GREETING: '',
-		QUEST: "Thanks for getting that back for me, hun!\x07Now I need you to teach those Elites a lesson.",
-		COMPLETE: "Amazing work!",
-		LEAVING: ''},
- #AA Task Four
- 3030: {QUEST: "Looks like there's an issue at the insurance agency._where_"},
- 3031: {QUEST: "The Ambulance Chasers have been causing issues to the Toons around here.\x07They get in accidents often with them and when they need to exchange insurance information, those Cogs just run off with their insurance cards!\x07A Toon just called in and said his insurance card was taken, so I suspect it was an Ambulance Chaser.\x07Why not take some down and see if you can get it back?"},
- 3032: {GREETING: '',
-		QUEST: "No insurance card?\x07Maybe they passed it along to one of their friends...",
-		LEAVING: ''},
- 3033: {QUEST: "Great job! Now bring that to _toNpcName_ as soon as possible!_where_"},
- 3034: {QUEST: "Thanks for getting my insurance card back!\x07I don't know if you'd be willing to do a favor for me, but a bunch of Cogs just broke in and stole my bolts.\x07I need them back for a secret project that I'm constructing.\x07If you could get those back for me, that'd be fantastic!"},
- 3035: {QUEST: "You got them back! Thank you so much!\x07I guess _toNpcName_ needs to see you again now that you're done with me."},
- 3036: {QUEST: "Those strong Lawbots are still causing trouble around town.\x07If you could take down some of them, I will give you a reward.",
-		COMPLETE: "Well, a deal is a deal..."},
-
- #AA Task Five
- 3040: {QUEST: "_toNpcName_ has an idea for creating a new tent and needs your help._where_"},
- 3041: {QUEST: "So, I guess you heard about my new tent, huh?\x07Yep, but the only issue is that the only supplier of the material I need keeps getting robbed of his material.\x07Try to see if you can help get it back._where_"},
- 3042: {GREETING: '',
-		QUEST: "Hey, _avName_. How can I help you?\x07You need straw, wood, and brick?\x07Well, I'd love to give you some, but you'd have to get it back for me first.\x07To begin with, the Sellbots huffed and puffed and took my supply of straw.\x07I'll need about 10 bits of those back.",
-		LEAVING: ''},
- 3043: {GREETING: '',
-		QUEST: "Then the Lawbots huffed and puffed and took my supply of wood...",
-		LEAVING: ''},
- 3044: {GREETING: '',
-		QUEST: "Then the Cashbots huffed and puffed, but they failed to take my supply of brick!\x07Only later, they called some of their high leveled friends in to take the supply, which they succeeded to do...",
-		LEAVING: ''},
- 3045: {GREETING: '',
-		QUEST: "Great! Now take these to _toNpcName_",
-		COMPLETE: "Wow, you actually got the materials!\x07I'll be sure to credit you if I ever end up making this new tent.\x07Here's a reward for your help...",
-		LEAVING: ''},
-		
- #AA Task Six
- 3050: {QUEST: "_toNpcName_ is throwing a party and needs help passing out invitations._where_"},
- 3051: {GREETING: 'Hey dawg.',
-		QUEST: "Yeah, I'm having a killer party tonight for the residents of my fellow street.\x07Only issue is that some of them are too scared of the Cogs on this street to try to make it here.\x07I need you to calm their nerves for me, then report back to me if they can come or not.\x07First, I need you to check on _toNpcName_._where_",
-		LEAVING: "Peace, dawg!"},
- 3052: {QUEST: "Yeah, I'd love to go to Reid's party, but I don't like those high leveled Cogs roaming around this street as I try to walk out of my shop.\x07I'll be glad to go to his party if you could defeat several of them."},
- 3053: {QUEST: "Great! Let _toNpcName_ know that he'll see me tonight!",
-		LEAVING: ''},
- 3054: {GREETING: "One guest down, two to go.",
-		QUEST: "Next, I need you to go get _toNpcName_ to chill and come to the party!_where_",
-		LEAVING: "Peace, dawg!"},
- 3055: {QUEST: "Sure, I'd go to Reid's party if there weren't so many Boardbots on this street!"},
- 3056: {QUEST: "Let _toNpcName_ know that I'll be there!"},
- 3057: {GREETING: "Wow, you're good at this dawg.",
-		QUEST: "Finally, I want you to go get word from _toNpcName_ that she'll be there._where_",
-		LEAVING: "Good luck, dawg!"},
- 3058: {QUEST: "I'll go to the party if you could take down one of those big buildings around here.\x07If you could do that, it'd relieve the stress I have thinking my building will be taken over if I leave it..."},
- 3059: {GREETING: '',
-		QUEST: "Oh, thank you for calming me down.\x07Can't wait for the party!",
-		COMPLETE: "Aye dawg, this party is going to be great!\x07Here's a reward for ya, dawg...",
-		LEAVING: ''},
-
- #AA Task Seven
- 3060: {QUEST: "_toNpcName_ is having an issue with medicine._where_"},
- 3061: {GREETING: '',
-		QUEST: "Oh this is just awful!\x07The Cogs just raided my shop and took all the allergy pills that I have to give to my patients.\x07I had about 15 of them before they took over.\x07Please, go get them back for me!",
-		COMPLETE: "Yes! That's all of them.\x07Here's a nifty reward for you!",
-		LEAVING: ''},
-
- #AA Task Eight
- 3070: {QUEST: "The spirit of the town has gone down and _toNpcName_ needs help bringing it back up._where_"},
- 3071: {GREETING: '',
-		QUEST: "Those Cogs are always trying to take away the spirit of the town.\x07I feel like those Downsizer bring them down more than anyone else.\x07Why not defeat some of them and regain some spirit to the toons of this town?",
-		LEAVING: "Good luck, buddy!"},
- 3072: {GREETING: '',
-		QUEST: "Next, I need you to defeat several Toxic Managers before they poison the spirit filled inside each toon.",
-		LEAVING: ''},
- 3073: {GREETING: '',
-		QUEST: "Finally, take down a few of those big and ugly Cog Buildings",
-		COMPLETE: "Yep! The spirit of this town seems to be shining again!\x07Thanks for your help. Here's your reward...",
-		LEAVING: ''},
-		
- #AA Task Nine
- 3080: {QUEST: "Ahh yes, it appears that the Cogs have been giving toons some burning feeling, according to _toNpcName_.\x07Could you go see what's up?_where_"},
- 3081: {GREETING: '',
-		QUEST: "You're here about the burning case?\x07Yes, it appears that Cold Callers have been burning toons with their Hot Air attacks.\x07They're dangerous and must be stopped.\x07Defeat a handful then report back to me.",
-		LEAVING: ''},
- 3082: {GREETING: '',
-		QUEST: "Next, those Tightwads love to do some firing.\x07Some toons come in here with a fully burnt body, and it's just awful.\x07Go teach those punks a lesson, why don't ya?",
-		LEAVING: ''},
- 3083: {GREETING: '',
-		QUEST: "To finish off, I want you to take down a handful of strong Cogs that defeat toons with a painful burn.",
-		COMPLETE: "Seems like someone turned down the heat, no?\x07Thanks for all your help, _avName_. Here's a reward for ya...",
-		LEAVING: ''},
-		
- #AA Task Ten
- 3090: {QUEST: "According to _toNpcName_, the stronger Cogs are causing trouble everywhere they go._where_"},
- 3091: {QUEST: "I've been hearing reports of those high leveled Bossbots causing an issue all over town.\x07Can you defeat several of them please?"},
- 3092: {QUEST: "I've been hearing reports of those high leveled Lawbots causing an issue all over town.\x07Can you defeat several of them please?"},
- 3093: {QUEST: "I've been hearing reports of those high leveled Cashbots causing an issue all over town.\x07Can you defeat several of them please?"},
- 3094: {QUEST: "I've been hearing reports of those high leveled Sellbots causing an issue all over town.\x07Can you defeat several of them please?"},
- 3095: {QUEST: "I've been hearing reports of those high leveled Boardbots causing an issue all over town.\x07Can you defeat several of them please?"},
- 3096: {QUEST: "Great job!\x07Now, if you could take down a couple of those Cog Buildings in revenge of what they've done, I'll give you a reward.",
-		COMPLETE: "Well, a deal's a deal."},
-		
- #AA Task Eleven
- 3100: {QUEST: "There have been a lot of toons going sad and _toNpcName_ knows the reason why._where_"},
- 3101: {QUEST: "You want to know why toons keep going sad? Well I'll tell you why.\x07Those high level 6+ Cogs are just the biggest threat to every toon out there.\x07Toons kept coming in here telling me \"Ohhhh, how awful it was fighting those awfully strong robots.\"\x07Please defeat a handful of them and then I'll give you a reward.",
-		COMPLETE: "As I promised..."},
-		
- #AA Task Twelve
- 3110: {QUEST: "Setting up shop on a street like Walnut Way is rough with all those high leveled Cogs.\x07_toNpcName_ would like to check your gags to see if you could defend yourself on such a street._where_"},
- 3111: {QUEST: "Have you seen the Cogs that roam out there?\x07Awful how strong they are.\x07I never want you to have a struggle when fighting those kinds of Cogs.\x07First, you'll need stronger gags.\x07Go out and train your throw."},
- 3112: {GREETING: '',
-		QUEST: "Now how about training that squirt too?",
-		LEAVING: ''},
- 3113: {GREETING: '',
-		QUEST: "Great work! Now let me see that new throw gag of yours.",
-		LEAVING: ''},
- 3114: {GREETING: '',
-		QUEST: "Now how about that squirt...",
-		COMPLETE: "Well, it's a start, but you'll need more gags if you want to fight the highest set of Cogs around here.\x07Here a reward to help you progress...",
-		LEAVING: ''},
-		
- #AA MEGA TASK
- 3200: {QUEST: "_toNpcName_ has major issues with the strong Cogs around the town._where_"},
- 3201: {GREETING: '',
-		QUEST: "Thank you for coming, _avName_.\x07Each day, I try to build a new home for new toons to move into, but the strong Cogs keep interupting my construction to prevent new toons from moving into town.\x07I'm about to get working on another house in the backyard, and I need you to make sure that those strong Cogs don't get in the way.\x07Start by defeating some Spin Doctors.",
-		LEAVING: ''},
- 3202: {GREETING: '',
-		QUEST: "Back already?\x07I barely even started on this house.\x07Try defeating some Money Bags while I continue building, they seem to cause issues too.",
-		LEAVING: ''},
- 3203: {GREETING: '',
-		QUEST: "Now, those Two-Faces are just a handful to deal with!",
-		LEAVING: ''},
- 3204: {GREETING: '',
-		QUEST: "I'm almost done with the base.\x07Just defeat some of those creepy Magnates while I put on some of the finishing touches.",
-		LEAVING: ''},
- 3205: {GREETING: '',
-		QUEST: "The base is all set. Now I need a roof to work with.\x07Can you see if _toNpcName_ can build me a new roof?_where_",
-		LEAVING: ''},
- 3206: {GREETING: '',
-		QUEST: "A new roof? I can get that done in minutes!\x07While I do it, I need you to keep those Elite Cogs in check and make sure they don't come in here and take my materials.",
-		LEAVING: ''},
- 3207: {GREETING: '',
-		QUEST: "Finished that roof and shipped it off.\x07Could you go give this bill to _toNpcName_? He could mail the check to me.",
-		LEAVING: ''},
- 3208: {GREETING: '',
-		QUEST: "A bill? I thought we were friends!\x07Oh well, it's no big deal.\x07Now, I just need you to ensure that those high leveled Bossbots don't destroy this new home.\x07A new toon is suppose to move in tomorrow, you know.",
-		LEAVING: ''},
- 3209: {GREETING: '',
-		QUEST: "A bill? I thought we were friends!\x07Oh well, it's no big deal.\x07Now, I just need you to ensure that those high leveled Lawbots don't destroy this new home.\x07A new toon is suppose to move in tomorrow, you know.",
-		LEAVING: ''},
- 3210: {GREETING: '',
-		QUEST: "A bill? I thought we were friends!\x07Oh well, it's no big deal.\x07Now, I just need you to ensure that those high leveled Cashbots don't destroy this new home.\x07A new toon is suppose to move in tomorrow, you know.",
-		LEAVING: ''},
- 3211: {GREETING: '',
-		QUEST: "A bill? I thought we were friends!\x07Oh well, it's no big deal.\x07Now, I just need you to ensure that those high leveled Sellbots don't destroy this new home.\x07A new toon is suppose to move in tomorrow, you know.",
-		LEAVING: ''},
- 3212: {GREETING: '',
-		QUEST: "A bill? I thought we were friends!\x07Oh well, it's no big deal.\x07Now, I just need you to ensure that those high leveled Boardbots don't destroy this new home.\x07A new toon is suppose to move in tomorrow, you know.",
-		LEAVING: ''},
- 3213: {GREETING: '',
-		QUEST: "Finally, we don't want to scare the new toon away with those tall, disgusting buildings.\x07Take down a few and then I'll give you a neat reward.",
-		COMPLETE: "Thank you for all your hard work in helping me.\x07I'll be sure to tell this new toon about you, you're a great citizen!\x07Here's a big reward for you...",
-		LEAVING: ''},
-		
- #DD Task One
- 4000: {QUEST: "I'm not sure exactly why, but _toNpcName_ is looking for help.\x07Please go see what's wrong with her._where_"},
- 4001: {GREETING: '',
-		QUEST: "Oh, thank you for taking my request!\x07You see, the Bossbots came in here and took all my dried suits!\x07I think there were about 10 of them. Please get them before customers expect their suits back!",
-		LEAVING: ''},
- 4002: {GREETING: '',
-		QUEST: "Thank goodness you got them back.\x07One of my customers came in while you were out recovering the dried suits and I told him you'd deliver it once you got back._where_",
-		LEAVING: "Make sure you don't leave without a signed check!"},
- 4003: {GREETING: 'Ahoy, me bucko!',
-		QUEST: "Ah, that be me dry cleaning, thanks matey!\x07Eh? A signed check?\x07Errr, I gotta clear something up with me bank before I sign ye a check.\x07While I do that, maybe ye can defeat some of them big meaty Cogs on this street.",
-		LEAVING: "Good luck matey!"},
- 4004: {GREETING: '',
-		QUEST: "Argh, here be me check.\x07Return it to _toNpcName_.",
-		COMPLETE: "Thanks so much for your help!\x07Here's a reward...",
-		LEAVING: ''},
-		
- #DD Task Two
- 4010: {QUEST: "_toNpcName_ seems to have crashed his pirate ship and needs help recovering from the incident._where_"},
- 4011: {GREETING: 'Ahoy Matey!',
-		QUEST: "Come to help me, ye say?\x07Ye see, I was sailing through the seven seas, collecting me treasure, when suddenly I was attacked!\x07Cogs everywhere came flying down! Shiver me timbers, it's a horror to remember!\x07I need ye to help repair me pirate ship so I can continue to sail across the dock.\x07First, I need ye to fish out some boards of wood that the beavers drop in the pond on this here street.",
-		LEAVING: ''},
- 4012: {GREETING: 'Avast, Matey!',
-		QUEST: "Arrrgh! Ye have brought me the boards, how wonderful!\x07Next, I need me lucky hook. The Backstabbers took it from me, and no pirate is right without his lucky hook!",
-		LEAVING: ''},
- 4013: {GREETING: '',
-		QUEST: "Me lucky hook! The most valuable treasure I've ever come across!\x07Matey ye have done me a good service, but how could I ever sail without my sail?\x07I know! _toNpcName_ can make me a whicked sail in a heartbeat!\x07Could ye go get a sail from him?_where_",
-		LEAVING: ''},
- 4014: {GREETING: '',
-		QUEST: "A new sail for Jack?\x07Arrrgh, I'd love to help, but I'm afraid that the Sellbots took all my pieces of cloth.\x07If you recover those for me, I'll gladly make a new sail.",
-		LEAVING: ''},
- 4015: {GREETING: '',
-		QUEST: "Excellent!\x07I'll get started on this sail right away.\x07While I'm making this sail, please defeat some of the Cogs around here.",
-		LEAVING: ''},
- 4016: {GREETING: '',
-		QUEST: "Great! Take this back to _toNpcName_ immediately!",
-		LEAVING: ''},
- 4017: {GREETING: 'That be a brilliant sail ye got there!',
-		QUEST: "Time for me to get started on me ship.\x07While I repair me ship, I need ye to defeat some of them buildings out there to take revenge on those Cogs.\x07Don't worry matey, there is a treasuring reward with this here quest!",
-		COMPLETE: "The ship is all sailed!\x07Thank ye so much for all your help.\x07Would ye like to sign up as a matey of mine?\x07No? Then here be a reward instead...",
-		LEAVING: ''},
-
- #DD Task Three
- 4020: {QUEST: "_toNpcName_ is going on a big fishing expedition, but is totally unprepared._where_"},
- 4021: {QUEST: "Ah yes, the fishing expedition.\x07I'm not ready to go and I could use a few favors.\x07Don't worry, there's a reward involved in this job.\x07First, I need a nice fishing rod from _toNpcName_. He makes some high quality fishing rods._where_"},
- 4022: {QUEST: "So, you need some of my finest fishing rods, hmm?\x07I'd love to show you the display, but the Money Bags took all 5 of my fishing rods...",
-		LEAVING: ''},
- 4023: {GREETING: '',
-		QUEST: "Hey! There's my display!\x07I guess I could give _toNpcName_ one for free since he sent you to help me.",
-		LEAVING: ''},
- 4024: {GREETING: '',
-		QUEST: "Wow! What an excellent fishing rod!\x07Next, I need a bunch of hooks.\x07The Cashbots raided my supply and ran off with them.",
-		LEAVING: ''},
- 4025: {GREETING: '',
-		QUEST: "Finally, I want you to fish out some cans of worms that I accidentally left on my last trip to the pond on this street.",
-		LEAVING: '',
-		COMPLETE: "Yep, that's everything!\x07I'm all set and ready to go, all thanks to you!\x07Here's a reward..."},
-		
- #DD Task Four
- 4030: {QUEST: "_toNpcName_'s shop has been a mess ever since the Cogs broke in._where_"},
- 4031: {GREETING: '',
-		QUEST: "Oh, those awful Cogs!\x07First, those Sellbots came in and stole all my fish...",
-		LEAVING: ''},
- 4032: {GREETING: '',
-		QUEST: "Then those nasty Boardbots stole all my chips!",
-		LEAVING: ''},
- 4033: {GREETING: '',
-		QUEST: "Now it doesn't even feel safe to go boating with all these Cogs around the docks...",
-		COMPLETE: "Hmm, the area feels a lot safer.\x07Thanks for helping me out, _avName_. Sorry I was acting so uneasy.\x07Here's a reward for your troubles.",
-		LEAVING: ''},
-
- #DD Task Five
- 4040: {QUEST: "_toNpcName_'s taxi service has been going downhill because of the Cogs roaming the streets.\x07He wants to get back in business and needs help._where_"},
- 4041: {GREETING: '',
-		QUEST: "Hey, _avName_. I'm in a bit of a fix.\x07My taxi service went out of business a long time ago when the Cogs first invaded.\x07I didn't do anything to fix my business, and now I have these bills that I can't pay off.\x07I need help restoring this business and it involves taking down those Cogs.\x07First, start by defeating the higher leveled Cogs on this street.",
-		LEAVING: ''},
- 4042: {GREETING: '',
-		QUEST: "Great job!\x07Now, may I ask that you defeat those Cashbots?\x07They like to call my taxi over and take all the money I've earned.",
-		LEAVING: ''},
- 4043: {GREETING: '',
-		QUEST: "Finally, I need my taxi keys back.\x07I'm pretty sure that they were taken by a Cashbot...",
-		COMPLETE: "Thanks for all your help, _avName_.\x07I think I'm ready to go back in business!\x07Here's your reward..."},
-		
- #DD Task Six
- 4050: {QUEST: "_toNpcName_'s lost and found has been raided by the Cogs.\x07He needs all the help he can get to get his inventory back._where_"},
- 4051: {QUEST: "It's just awful! All the lost items here have been stolen!\x07Can you please help me get each item back?\x07First, the striped shirts I had were stolen by a bunch of Bossbots."},
- 4052: {QUEST: "Perfect! A call came in about a lost striped shirt while you were away.\x07Let me see those shirts.\x07Mhm... Uh-huh... Oh, here it is.\x07Take this to _toNpcName_ please._where_"},
- 4053: {QUEST: "My stolen striped shirt! You found it!\x07What? You thought I lost it?\x07No, those Lawbots love to steal my inventory. I was just lucky someone found my favorite striped shirt.\x07I know you're busy, but you don't think you could defeat some of those bratty Lawbots for me, do you?"},
- 4054: {QUEST: "Thanks for your help.\x07Please bring this jar of jellybeans to _toNpcName_ for his troubles."},
- 4055: {QUEST: "Oh, he didn't have to pay. That's so sweet.\x07Next, I want you to recover some hats taken by the Connoisseurs.\x07Believe it or not, they love to mix and match hats outside of those Top Hats."},
- 4056: {QUEST: "Awesome! Now I need you to deliver this hat to _toNpcName_._where_"},
- 4057: {GREETING: '',
-		QUEST: "Oh yep, that's my hat.\x07Give my thanks to _toNpcName_.",
-		LEAVING: ''},
- 4058: {QUEST: "Finally, I need you to get back the inventory of glasses.\x07I'm not sure which specific Cogs took them, so just defeat those Cogs until you get them all back.",
-		COMPLETE: "I'll just deliver these on my own.\x07Thanks for all your help."},
-		
- #DD Task Seven
- 4060: {QUEST: "_toNpcName_'s world famous make-up supply has been taken and she needs help getting it back._where_"},
- 4061: {GREETING: '',
-		QUEST: "Oh hey, _avName_.\x07I'm kind of in a mess right now. Those evil feminine Cogs raided my supply of make-up!\x07First, those Name Droppers took all my lipstick...",
-		LEAVING: ''},
- 4062: {GREETING: '',
-		QUEST: "Now, I need my blowdryers back from those Micromanagers.",
-		LEAVING: ''},
- 4063: {GREETING: '',
-		QUEST: "Then there were my special earrings that were taken by those Number Crunchers...",
-		LEAVING: ''},
- 4064: {GREETING: '',
-		QUEST: "And lastly, my secret Make-Up Kit was taken by a Mingler...",
-		COMPLETE: "Wow! You got it all back!\x07Let me repay you for all your hard work...",
-		LEAVING: ''},
-		
- #DD Task Eight
- 4070: {QUEST: "_toNpcName_ has an issue with those strong Cashbots._where_"},
- 4071: {GREETING: '',
-		QUEST: "Oh, those strong Cashbots are always busting my pipes and taking my water supply.\x07Can you defeat a handful of them for me? It'd really relieve my stress.",
-		LEAVING: ''},
- 4072: {GREETING: '',
-		QUEST: "Now, I want them to feel the pain I feel when they bust my pipes.\x07Defeat several Cashbot Buildings and I'll reward you.",
-		COMPLETE: "Alright, I'll stick to my word.\x07Thanks for your help.",
-		LEAVING: ''},
-		
- #DD Task Nine
- 4080: {QUEST: "It seems like the Cogs are trying to put _toNpcName_ out of business.\x07We can't let another toon lose their shop to the Cogs! Go see what's up._where_"},
- 4081: {GREETING: '',
-		QUEST: "Oh _avName_, it's just awful. Those Cogs keep trying to work out a deal to take ownership to my building.\x07A bunch of Middlemen come in here and always try to work out a deal with me.\x07When I refuse to accept, they damage my inventory and I'm sick of it!\x07Defeat those Middlemen and then return to me please.",
-		LEAVING: ''},
- 4082: {GREETING: '',
-		QUEST: "Now those Sellbots are after the deed to my building so that they can sell it!\x07How do I know this? I got a note that stated they were after the deed.\x07Please go defeat those Sellbots.",
-		LEAVING: ''},
- 4083: {GREETING: '',
-		QUEST: "I was wrong!\x07A Boardbot came in and took the deed to my building while you were away!",
-		COMPLETE: "You got it back!\x07Thanks for making me feel safe again, _avName_."},
-		
- #DD Task Ten
- 4090: {QUEST: "_toNpcName_ just called in and said that those Flunkies are causing trouble for him._where_"},
- 4091: {GREETING: '',
-		QUEST: "Those Flunkies have just been obnoxious lately.\x07They think they deserve more respect and think they should be the only ones to wear glasses to feel superior.\x07As a result, they stole glasses from a client of mine.\x07Could you get them back for me?",
-		LEAVING: ''},
- 4092: {GREETING: '',
-		QUEST: "Great! Now take these to _toNpcName_ right away!_where_",
-		LEAVING: ''},
- 4093: {GREETING: '',
-		QUEST: "Ahoy matey!\x07Arrgh, these be me glasses indeed.\x07Give me thanks to _toNpcName_.",
-		LEAVING: ''},
- 4094: {GREETING: '',
-		QUEST: "Now I need you to retrieve another stolen pair from those Flunkies.",
-		LEAVING: ''},
- 4095: {GREETING: '',
-		QUEST: "Those brats left a scratch on here!\x07I'll need a new frame. Perhaps a fancy one from the Connoisseurs",
-		LEAVING: ''},
- 4096: {GREETING: '',
-		QUEST: "Perfect! Let me just fit this in correctly...\x07And there we go.\x07Take this to _toNpcName_ immediately._where_",
-		LEAVING: ''},
- 4097: {GREETING: '',
-		QUEST: "Oh goodie, my reading glasses!\x07Send my thanks to _toNpcName_",
-		LEAVING: ''},
- 4098: {GREETING: '',
-		QUEST: "OK, one last thing and then I'll give you a reward.\x07Earlier, the Bossbots came in here and raided the glasses drop off.\x07I need those back, for they must be fixed and returned today.",
-		COMPLETE: "Awesome! Thanks for your help.\x07As I said before, I will give you a reward.",
-		LEAVING: ''},
-	
- #DD Task Eleven
- 4100: {QUEST: "Think you're tough? _toNpcName_ wants to test your strength._where_"},
- 4101: {GREETING: '',
-		QUEST: "So, ya think you're tough?\x07Prove it to me. Defeat some of those Boardbots then return to me.",
-		LEAVING: ''},
- 4102: {GREETING: '',
-		QUEST: "Oh, not tough enough for ya?\x07See if _toNpcName_ has a tougher challenge for ya._where_",
-		LEAVING: ''},
- 4103: {GREETING: '',
-		QUEST: "So, ya think you're tough, eh?\x07Prove it. Defeat some of those Spin Doctors and prove that they can't take ya on a spin.",
-		LEAVING: ''},
- 4104: {GREETING: '',
-		QUEST: "Not tough enough for ya, eh?\x07See if _toNpcName_ has a tougher challenge for ya._where_",
-		LEAVING: ''},
- 4105: {GREETING: '',
-		QUEST: "So, ya think you're tough, do ya?\x07Prove it to me. Defeat some of the toughest Cogs out there.",
-		LEAVING: ''},
- 4106: {GREETING: '',
-		QUEST: "Not tough enough for ya, hmm?\x07See if _toNpcName_ has a tougher challenge for ya._where_",
-		LEAVING: ''},
- 4107: {GREETING: '',
-		QUEST: "So, ya think you're tou- Oh it's just ya again.\x07Hmm, I see ya completed all our challenges, so now I'll give ya an even tougher challenge.\x07Once ya defeat several large buildings, ya will have proven that you're a tough one.",
-		COMPLETE: "Ya seem to be tough enough to me.\x07Here's a reward for ya toughness...",
-		LEAVING: ''},
-		
- #DD Task Twelve
- 4110: {QUEST: "Your gags look like they could use some work.\x07Go see _toNpcName_ and see how you should train them._where_"},
- 4111: {QUEST: "Oh yes, you could use some new gags.\x07For every gag that hits a Cog, you get points for that gag.\x07You can earn more points in Cog Invasions, Cog Headquarters, and any Cog Facility.\x07I want you to train your throw a little bit and then return to me."},
- 4112: {QUEST: "Now you should train your squirt."},
- 4113: {GREETING: '',
-		QUEST: "Great! Can I see that new throw gag of yours?",
-		LEAVING: ''},
- 4114: {GREETING: '',
-		QUEST: "How about that new squirt?",
-		COMPLETE: "Good job on that training.\x07Here's a little bonus for your troubles.",
-		LEAVING: ''},
-		
- #DD Mega Task
- 4200: {QUEST: "Oh no! It seems a Cog cargo ship just crashed into the big lighthouse!\x07That is the pure symbol of Donald's Dock and everyone is panicking at its destruction.\x07_toNpcName_ needs your help collecting material in order to repair the lighthouse._where_"},
- 4201: {GREETING: '',
-		QUEST: "Hey, _avName_. This isn't a great time...\x07Oh you're here about the lighthouse? Thank goodness.\x07I need all the help I can get.\x07First, I need some metal.\x07There's no metal shop here in Donald's Dock, but I think that _toNpcName_ has metal for his clock repair shop._where_",
-		LEAVING: ''},
- 4202: {GREETING: '',
-		QUEST: "I did have metal, but those Cogs took my entire supply.\x07If you could get them back for me, I'll give you some to take back to Doctor Drift.",
-		LEAVING: ''},
- 4203: {GREETING: '',
-		QUEST: "Well, a promise is a promise.\x07Take this metal to _toNpcName_.",
-		LEAVING: ''},
- 4204: {GREETING: '',
-		QUEST: "Next on the list are some light bulbs.\x07See if _toNpcName_ has a spare supply of them._where_",
-		LEAVING: ''},
- 4205: {GREETING: '',
-		QUEST: "Light bulbs?\x07Yeah, I had a supply, but they were taken by the Lawbots.\x07If you get them back, they're yours to keep.",
-		LEAVING: ''},
- 4206: {GREETING: '',
-		QUEST: "Light bulbs?\x07Yeah, I had a supply, but they were taken by the Bossbots.\x07If you get them back, they're yours to keep.",
-		LEAVING: ''},
- 4207: {GREETING: '',
-		QUEST: "Great job on those light bulbs!\x07I just found out that the Cogs in charge of the destruction were those awful Corporate Raiders.\x07Go invade those Bossbot buildings or attack them at Bossbot HQ in revenge for what they have done to our beloved town.",
-		LEAVING: ''},
- 4208: {GREETING: '',
-		QUEST: "Alright, I've got the base of the lighthouse done.\x07We're going to need someone to paint this lighthouse once we're done.\x07The citizens did love the old design and only _toNpcName_ knew how to paint it.\x07Can you see if he'll paint it again?_where_",
-		LEAVING: ''},
- 4209: {GREETING: '',
-		QUEST: "No way I'll go over to Lighthouse Lane to paint that new lighthouse!\x07At least, not with those strong Cogs over there...",
-		LEAVING: ''},
- 4210: {GREETING: '',
-		QUEST: "You got rid of some of those strong Cogs for me?\x07Alright fine, tell _toNpcName_ that I'll come paint the lighthouse once it's ready.",
-		LEAVING: ''},
- 4211: {GREETING: '',
-		QUEST: "Finally, I need some glass to protect the lights and to provide a brighter shine.\x07I haven't seen a glass studio anywhere around here, but I'm pretty sure _toNpcName_ knows where to get some glass._where_",
-		LEAVING: ''},
- 4212: {GREETING: '',
-		QUEST: "Glass? I don't have any.\x07However, I could really use some for my mart since it's in high demand.\x07I think that the Cashbots have glass on them. Maybe you could get some from them?\x07Not sure why they would carry that around. Isn't that a bit dangerous?",
-		LEAVING: ''},
- 4213: {GREETING: '',
-		QUEST: "Glass? I don't have any.\x07However, I could really use some for my mart since it's in high demand.\x07I think that the Sellbots have glass on them. Maybe you could get some from them?\x07Not sure why they would carry that around. Isn't that a bit dangerous?",
-		LEAVING: ''},
- 4214: {GREETING: '',
-		QUEST: "Oh perfect!\x07Take these over to _toNpcName_ right away!",
-		LEAVING: ''},
- 4215: {GREETING: '',
-		QUEST: "I have to put the finishing touches on the lighthouse.\x07In a final revenge act on those Cogs, I'd like you to take down a few of their biggest Cog Buildings.",
-		COMPLETE: "Thank you, citizen for all your hard work.\x07The citizens of Donald's Dock are all grateful and in your debt.\x07Here's a big reward for your help.",
-		LEAVING: ''},
-		
- #DG Task One
- 5000: {QUEST: "Oh no! The Cogs have ruined all of _toNpcName_'s world famous berries!_where_"},
- 5001: {GREETING: '',
-		QUEST: "So you've heard the news _avName_?\x07Yeah, all my berries are gone. Squashed. Blended. Stolen.\x07However, I have a solution to get my shop started up again.\x07_toNpcName_ is a berry supplier who recently moved into this town and it'd be great if you could ask him to help me out._where_",
-		LEAVING: ''},
- 5002: {QUEST: "Oh? Barry needs a new supplier?\x07Alright, but first I'll need a couple of favors since I don't do this kind of thing for free.\x07First, those Bossbots make me feel nervous and uneasy when walking around town.\x07They try to act like they have total control of my supply, since they are \"The Boss.\"\x07Could you defeat a handful of them for me?"},
- 5003: {GREETING: '',
-		QUEST: "Now, I want you to take out some of those Bean Counters.\x07They come to my berry garden and pick them all off the bushes.\x07That's not even the worst part, they'll just pick them off before they're ready and just leave them on the ground!\x07They say it's for the war against the beans and the fruits, which makes no sense at all...\x07I guess they're going crazy.",
-		LEAVING: ''},
- 5004: {GREETING: '',
-		QUEST: "Alright, I'll officially be Barry's supplier.\x07Take this first sample of berries to _toNpcName_.",
-		LEAVING: ''},
- 5005: {GREETING: '',
-		QUEST: "So I have a supplier?\x07That's fantastic!\x07I just need one more favor from you, then I'll give you a reward.\x07I'm worried that the strong Cogs on this street are going to try and destroy my berry supply again.\x07Can you take down a handful so that doesn't happen again?",
-		COMPLETE: "Thanks for all your help.",
-		LEAVING: ''},
-		
- #DG Task Two
- 5010: {QUEST: "Hmm. It seems that the Sellbots are having a factory salad party.\x07Why is this important? They stole several cabbages and some lettuce from _toNpcName_._where_"},
- 5011: {GREETING: '',
-		QUEST: "Oh no!\x07Those Sellbots were on their way to the factory and they stopped by and stole all my important cabbages!\x07Can you get them back for me please?",
-		LEAVING: ''},
- 5012: {GREETING: '',
-		QUEST: "Oh thank you, but a Mover & Shaker came in here and took some of my lettuce while you were gone.\x07Maybe you passed him? He was on his way to the factory as well.",
-		COMPLETE: "Thank you.",
-		LEAVING: ''},
-
- #DG Task Three
- 5020: {QUEST: "Seems that slowpoke _toNpcName_ can't hold on to his mail._where_"},
- 5021: {GREETING: "Helloooooooo _avName_.",
-		QUEST: "My... supply... of... letters........\x07All... stolen... by... Selbots........\x07Whom... work... in... the........\x07Factory.\x07Can... you... get... them........\x07Back... for... me... please?",
-		LEAVING: "Goooooooooooood luck!"},
- 5022: {GREETING: '',
-		QUEST: "Thank... you.\x07Now... I... need... my........\x07Packages... back... which... were........\x07Taken... by... factory... Cogs........\x07As... well.",
-		COMPLETE: "Thank... you... for... all........\x07Your... help!\x07Here... is... a... reward........",
-		LEAVING: "Gooooooood-bye!"},
-		
- #DG Task Four
- 5030: {QUEST: "_toNpcName_ is unhappy with how little class the Cogs have for this town and is giving a big reward to those who can help take them down._where_"},
- 5031: {GREETING: "Mhmm, welcome _avName_.",
-		QUEST: "Oh, those Cogs have no class around here!\x07Those awfully strong Lawbots ruin everything with their false laws! There's not a spec of class in them.\x07Take down the toughtest of them and then return to me.",
-		LEAVING: ''},
- 5032: {GREETING: "I'm quite charmed of your hard work.",
-		QUEST: "Now those Head Hunters are just a vacuum of class.\x07They just take all the class away!\x07Both theoretically and literally. They stole all my 14-Carrot Rings.\x07I need you to get them back for me.",
-		LEAVING: ''},
- 5033: {GREETING: "I'm quite charmed of your hard work.",
-		QUEST: "Now those Two-Face are just a vacuum of class.\x07They just take all the class away! Both theoretically and literally. They stole all my 14-Carrot Rings.\x07I need you to get them back for me.",
-		LEAVING: ''},
- 5034: {GREETING: '',
-		QUEST: "Ohhh, it seems I've dropped my 14-Carrot Necklace while taking a walk around this street.\x07Maybe someone pawned it at _toNpcName_'s shop. Can you go see?_where_",
-		LEAVING: "Ugh, that pawn shop lacks so much class!\x07Sometimes, I think it should be shut down."},
- 5035: {GREETING: '',
-		QUEST: "A 14-Carrot Necklace? You wouldn't happen to by working for Tammy Tuber?\x07Ugh, she's so snooty and annoying with her \"Everything must have class policy.\"\x07I'll give this necklace back, but first you must do something for me.\x07I want you take make this street safer and take out a handful of Cogs.",
-		LEAVING: ''},
- 5036: {GREETING: '',
-		QUEST: "Fine, take this necklace back to that snooty _toNpcName_.",
-		LEAVING: "Just saying that name makes me shudder..."},
- 5037: {GREETING: "Ohhhh my necklace! My beautiful necklace!",
-		QUEST: "Finally, those ugly Cog Buildings around here have the least amount of class.\x07Take down some of them and then return to me for a big reward.",
-		LEAVING: '',
-		COMPLETE: "Ohhhh, the class feels much better around here.\x07Thanks for helping me clean up those filthy low-class Cogs."},
-
- #DG Task Five
- 5040: {QUEST: "_toNpcName_ needs help taking down Cogs that have broken the law._where_"},
- 5041: {GREETING: "Greetings _avName_!",
-		QUEST: "We've got several Cog crimes going on around town and I need your help to bring them to justice.\x07We just got a report of Penny Pinchers pulling off Pinch and Runs. Go bring them to justice!",
-		LEAVING: ''},
- 5042: {GREETING: '',
-		QUEST: "A report just came in! The Glad Handers are blinding toons with their bright and shiny teeth.\x07They must be stopped!",
-		LEAVING: ''},
- 5043: {GREETING: '',
-		QUEST: "Apparently, those Head Hunters are taking toons from their shops and putting them to work in Cog Headquarters.\x07We can't let this happen! Stop them at once!",
-		LEAVING: ''},
- 5044: {GREETING: '',
-		QUEST: "We're getting alerts of those Legal Eagles arresting toons for laws that don't exist.\x07They soar the skies and sweep those innocent right into Cog prision.\x07This is highly unacceptable! They must be stopped!",
-		COMPLETE: "No more reports, _avName_.\x07Take this reward for your hard work.",
-		LEAVING: ''},
-		
- #DG Task Six
- 5050: {QUEST: "_toNpcName_ suspects a suspicious activity going on at the Sellbot Factory._where_"},
- 5051: {QUEST: "I have a feeling that those Sellbots are plotting a huge invasion, but I'm not so sure.\x07I need you to shut down a few factories so they won't have enough Cogs for the invasion.",
-		COMPLETE: "Turns out I was wrong. It was just another rumor from Donald Frump...\x07Here's a reward for your troubles."},
-		
- #DG Task Seven
- 5060: {QUEST: "_toNpcName_ is investigating in Sellbot Headquarters and can use your help._where_"},
- 5061: {GREETING: '',
-		QUEST: "Hey _avName_.\x07As you heard, I'm investigating into Sellbot Headquarters.\x07If you didn't know, Sellbots and most Cogs in general communicate with each other through memos.\x07I want to find out what the head of Sellbot Headquarters, the Vice President, is up to.\x07Go around each part of Sellbot Headquarters and retrieve a memo for me, starting with the Junkyard.",
-		LEAVING: ''},
- 5062: {GREETING: '',
-		QUEST: "Let's read, shall we?\x07\"Dear Sellbots,\"\x07\"As you know, several toons have been breaking into my office and have been snooping around for information.\"\x07\"They even pushed me off the edge, and as you know, THAT HOLE IN THE JUNKYARD ISN'T GOING TO REPAIR ITSELF! GET TO WORK, SLACKERS!\"\x07\"Signed, the Vice President.\"\x07Hmm, not much to learn from here. We already knew this information.\x07Check if any Cogs outside the factory have any useful information.",
-		LEAVING: ''},
- 5063: {GREETING: '',
-		QUEST: "\"Dear Sellbots of the Factory,\"\x07\"Stop leaving Cog Parts out in the open. I've been getting reports of toons taking them and creating disguises.\"\x07\"Anyways, those blueprints for our top secret project, you decide who holds on to them. Whoever it is must have them stick to them like glue.\"\x07\"Signed, the Vice President.\"\x07Now this is information that we need!\x07Go find those blueprints and then return them to me.",
-		COMPLETE: "Just as I suspected. These blueprints are encrypted.\x07I'm going to send these to the nearest HQ and see if they can decrypt it.\x07Thanks for your help! Here is your reward...",
-		LEAVING: ''},
-		
- #DG Task Eight
- 5070: {QUEST: "The Travel Agency in this playground has been having very slow business lately because the Cogs give the Toons fear of going on vacation.\x07_toNpcName_ could use your help in stopping those Cogs._where_"},
- 5071: {GREETING: '',
-		QUEST: "Ahh, yes. As you've heard, my business has been very slow.\x07Those Boardbots scare shopkeepers around here from leaving their shops and taking a nice vacation, which takes away the need for a travel agent.\x07I'm sure if you defeated a bunch of them, they'd feel safer about going on vacation.",
-		LEAVING: ''},
- 5072: {GREETING: '',
-		QUEST: "Ahh, yes. As you've heard, my business has been very slow.\x07Those Sellbots scare shopkeepers around here from leaving their shops and taking a nice vacation, which takes away the need for a travel agent.\x07I'm sure if you defeated a bunch of them, they'd feel safer about going on vacation.",
-		LEAVING: ''},
- 5073: {GREETING: '',
-		QUEST: "Ahh, yes. As you've heard, my business has been very slow.\x07Those Cashbots scare shopkeepers around here from leaving their shops and taking a nice vacation, which takes away the need for a travel agent.\x07I'm sure if you defeated a bunch of them, they'd feel safer about going on vacation.",
-		LEAVING: ''},
- 5074: {GREETING: '',
-		QUEST: "Ahh, yes. As you've heard, my business has been very slow.\x07Those Lawbots scare shopkeepers around here from leaving their shops and taking a nice vacation, which takes away the need for a travel agent.\x07I'm sure if you defeated a bunch of them, they'd feel safer about going on vacation.",
-		LEAVING: ''},
- 5075: {GREETING: '',
-		QUEST: "Ahh, yes. As you've heard, my business has been very slow.\x07Those Bossbots scare shopkeepers around here from leaving their shops and taking a nice vacation, which takes away the need for a travel agent.\x07I'm sure if you defeated a bunch of them, they'd feel safer about going on vacation.",
-		LEAVING: ''},
- 5076: {GREETING: '',
-		QUEST: "Excellent work!\x07I just need one more favor.\x07Toons are also afraid of those Loan Sharks.\x07Whenever they encounter one, it leaves them with a bite they can't forget.\x07I can't send my clients places with those awful Cogs!\x07I want you to defeat 10 of them and then return to me for a nifty reward.",
-		COMPLETE: "Well, here you go.",
-		LEAVING: ''},
- 
- #DG Task Nine
- 5080: {QUEST: "_toNpcName_ has felt really uneasy lately and is asking for help._where_"},
- 5081: {GREETING: '',
-		QUEST: "I can't take those strong Cogs anymore!\x07They're always taking over my shop and destroying my inventory!\x07Oh, _avName_ thank goodness you came to help.\x07Can you please take care of some of the strongest Cogs on this street?",
-		LEAVING: ''},
- 5082: {GREETING: '',
-		QUEST: "Those Mover & Shakers from Sellbot Headquarters love to prank me every other day.\x07They quake outside my shop and break all my shower heads.\x07Can you go teach them a lesson?",
-		LEAVING: ''},
- 5083: {GREETING: "Ahh!",
-		QUEST: "As you were a way, a Name Dropper took one of my shower heads to the factory!",
-		COMPLETE: "Thanks for your help! I feel a lot better.\x07Here is something for your troubles...",
-		LEAVING: ''},
-		
- #DG Task Ten
- 5090: {QUEST: "_toNpcName_ has a big scoop and he needs you to interview a client._where_"},
- 5091: {GREETING: "Heya, _avName_!",
-		QUEST: "I've gotta big scoop on _toNpcName_'s investigation!\x07Toons everywhere have had their sweet treats stolen right under their noses, and they can't seem to figure out the thieves.\x07Ya think ya can get me a full scoop on the investigate?_where_",
-		LEAVING: "Get that scoop, fella!"},
- 5092: {GREETING: '',
-		QUEST: "Here about the sweet treat mystery?\x07I've almost got leads, but I have no way to narrow the culprit down.\x07Before I give you an interview, I want to catch the culprit red handed.\x07I suspect that the Sellbots are the cause of this.\x07Can you defeat some of them and see if the rate of thievery decreases?",
-		LEAVING: ''},
- 5093: {GREETING: '',
-		QUEST: "The rate of sweets being stolen haven't changed...\x07Maybe the Lawbots are the cause of this?",
-		LEAVING: ''},
- 5094: {GREETING: '',
-		QUEST: "Yes! The rate is slowly decreasing!\x07Now we just gotta figure out which Lawbot would have a motive for stealing sweets.\x07I'm thinking it'd be the Bottom Feeders. Defeat some and see if the rate has changed.",
-		LEAVING: ''},
- 5095: {GREETING: '',
-		QUEST: "Nothing...\x07Wait, it has to be those Bloodsuckers!\x07Of course, they're always after sugar because of their super sweet tooth.\x07Defeat some of them and then I'll make a conclusion.",
-		LEAVING: ''},
- 5096: {GREETING: '',
-		QUEST: "Yep. The sweet culprit were the Bloodsuckers, no doubt.\x07The rate has been dropping ever since you've left to defeat them.\x07Go report this back to _toNpcName_.",
-		LEAVING: '',
-		COMPLETE: "Wowza! What a grand scoop!\x07Thanks for gettin' this for me.\x07I've just gotta give ya a reward for this grand scoop!"},
-		
- #DG Task Eleven
- 5100: {QUEST: "A major break-in just happened at _toNpcName_'s shop._where_"},
- 5101: {GREETING: '',
-		QUEST: "A lot of Cogs just broke into my store and after they all leave, I notice that all my flowerpots are gone!\x07Can you get them back for me please?",
-		COMPLETE: "Oh, thank you so much.\x07Now if only there was a way for me to repay you...\x07Oh, I know!",
-		LEAVING: ''},
-		
- #DG Task Twelve
- 5110: {QUEST: "It seems that there is a shortage of Gags at _toNpcName_'s shop._where_"},
- 5111: {GREETING: '',
-		QUEST: "Oh _avName_, I've lost my marbles and I'm going crazy!\x07So go get them back from those level 5+ Cogs!",
-		LEAVING: ''},
- 5112: {GREETING: '',
-		QUEST: "Oh, my marbles! I feel sane again.\x07Now, I need a drink, and I only drink Seltzer from those Cashbots.",
-		LEAVING: ''},
- 5113: {GREETING: '',
-		QUEST: "How refreshing.\x07Now I don't feel safe without my safes...\x07They were taken by the Sellbots for some top secret project.",
-		LEAVING: '',
-		COMPLETE: "Safe at last."},
-		
- #DG Mega Task
- 5200: {QUEST: "Oh, it seems that _toNpcName_ has a huge challenge for you.\x07He has seen you helping toons all over town and would like to see if you could complete his really challenging task._where_"},
- 5201: {GREETING: "Heya, buddy.",
-		QUEST: "So I see you took my challenge. That means there's no backing down now.\x07I will take you through a series of challenges that involves defeating some of the strongest Cogs you've seen.\x07Start by defeating a large amount of level 6+ Cogs.",
-		LEAVING: "See ya, buddy."},
- 5202: {GREETING: "Welcome back, buddy.",
-		QUEST: "I want to see how quickly you can train your gags.\x07Start by earning 400 Throw points.",
-		LEAVING: "Good luck, buddy."},
- 5203: {GREETING: '',
-		QUEST: "Now earn 400 Squirt points.",
-		LEAVING: ''},
- 5204: {GREETING: "Good job, buddy.",
-		QUEST: "Now, I want to see if you can handle those tough Elites.\x07Return to me when you have defeated 20.",
-		LEAVING: "Best of luck to ya, buddy."},
- 5205: {GREETING: '',
-		QUEST: "Now try to defeat 10 Corporate Raiders.\x07You can find them in buildings or in Bossbot HQ.",
-		LEAVING: ''},
- 5206: {GREETING: '',
-		QUEST: "Now try to defeat 10 Legal Eagles.\x07You can find them in buildings or in Lawbot HQ.",
-		LEAVING: ''},
- 5207: {GREETING: '',
-		QUEST: "Now try to defeat 10 Loan Sharks.\x07You can find them in buildings or in Cashbot HQ.",
-		LEAVING: ''},
- 5208: {GREETING: '',
-		QUEST: "Now try to defeat 10 Minglers.\x07You can find them in buildings or in Sellbot HQ.",
-		LEAVING: ''},
- 5209: {GREETING: '',
-		QUEST: "Now try to defeat 5 Big Fish.\x07You can find them in Boardbot buildings.",
-		LEAVING: ''},
- 5210: {GREETING: "Fantastic work, buddy!",
-		QUEST: "Now for an even tougher challenge.\x07I want you to defeat 5 4+ story Cog Buildings.",
-		LEAVING: ''},
- 5211: {GREETING: "Excellent job, buddy!",
-		QUEST: "Time to steer our focus away from the playgrounds in Toontown and onto Sellbot HQ.\x07In any Cog HQ, you can find early developed and incomplete Cogs called Skelecogs.\x07They roam around Cog HQ Courtyards and inside the facilities.\x07I want you to defeat 15 Skelecogs in Sellbot HQ, whether it's outside or inside the factory.",
-		LEAVING: "See ya, buddy."},
- 5212: {GREETING: "Good job, buddy.",
-		QUEST: "Now I want you to defeat 48 Cogs in the factory.\x07Actually, if you take out all the Cogs in the factory, you should be done with this task.",
-		LEAVING: ''},
- 5213: {GREETING: '',
-		QUEST: "Finally, I want you to gather a group of toons, infiltrate the Sellbot Lobby, and then defeat the Senior Vice President.\x07This is a dangerous job, and you must be prepared for the worst.\x07It's best if you train your gags before attempting this challenge.",
-		LEAVING: '',
-		COMPLETE: "Wow, you really did a great job with this challenge.\x07Take this huge reward for your success."},
-		
- #MML Task One
- 6000: {QUEST: "_toNpcName_ wants you to infiltrate the mints in the Cashbot Headquarters._where_"},
- 6001: {GREETING: "",
-		QUEST: "Ah, you're here about the mint situation, huh?\x07Let me explain: The Coin Mints are a threat to the citizens of Minnie's Melodyland.\x07According to my theory, if the Cogs in the Coin Mint activate all the stompers at once, it could cause a wicked earthquake that could destroy Minnie's Melodyland.\x07Luckily, the Cashbots don't know this yet.\x07I want you to defeat some of those workers in the Coin Mint before they find out about this.",
-		LEAVING: ''},
- 6002: {GREETING: '',
-		QUEST: "Oh no!\x07I think some Robber Barons were eavesdropping on our conversation!\x07They went back to the Coin Mint. Go stop them before the news spreads!",
-		LEAVING: '',
-		COMPLETE: "While you were away, I did some recalculations.\x07Well, it seems that my theory was... rather wrong.\x07Yeah, sorry for wasting your time. Let me make it up to you."},
-
- #MML Task Two		
- 6010: {QUEST: "_toNpcName_ isn't able to repair customer tires with those Cogs bugging him._where_"},
- 6011: {GREETING: '',
-		QUEST: "Oh, _avName_, you've gotta help me!\x07I keep trying to repair these tires and a bunch of Boardbots come in when I'm finished and pop them all.\x07They have no right to do that!\x07Please go defeat several of them while I repair more tires.",
-		LEAVING: ''},
- 6012: {GREETING: '',
-		QUEST: "Perfect. Got these tires repaired with no issues from those Boardbots.\x07In fact, could you make a couple deliveries for me?\x07Start by returning this tire to _toNpcName_._where_",
-		LEAVING: ''},
- 6013: {GREETING: '',
-		QUEST: "Oh hey, my tire!\x07Thank you, but may I ask for a favor?\x07See, the reason I got into an accident was because I was driving behind a Mr. Hollywood.\x07He thought it was funny to shine those bright teeth on my windshield and I couldn't see where I was going.\x07Those Mr. Hollywoods are a threat to toons everywhere and they must be punished.\x07Go out and defeat several of them.",
-		LEAVING: ''},
- 6014: {GREETING: '',
-		QUEST: "Good job on those Hollywoods.\x07_toNpcName_ just called to ask you to return to him.",
-		LEAVING: ''},
- 6015: {GREETING: '',
-		QUEST: "Alright, next delivery goes to _toNpcName_._where_",
-		LEAVING: ''},
- 6016: {GREETING: '',
-		QUEST: "Ah, my tire.\x07Thanks, but I need some help real quick if you don't mind.\x07Cogs everywhere have been stealing and destroying Toons karts, claiming them to be theirs and committing insurance fraud.\x07Now, there's no way I can prove it so I have to give them payment regardless.\x07If you could defeat a lot of Cogs, that'd show them not to mess with my insurance.",
-		LEAVING: ''},
- 6017: {GREETING: '',
-		QUEST: "_toNpcName_ just called. He wants to see you again.",
-		LEAVING: '',
-		COMPLETE: "Thank you for delivering those tires for me.\x07I've got a reward for your help..."},
-		
- #MML Task Three
- 6020: {QUEST: "_toNpcName_ has a certain issue with the Mint Supervisors.\x07I'm not sure why, but can you check it out anyways?_where_"},
- 6021: {GREETING: '',
-		QUEST: "Hey _avName_.\x07Those Supervisors that run the Cashbot Mints are just so uncool.\x07I asked them to fund my shop and they refused, so I think you should go teach a few a lesson.\x07What? You think I'm being unreasonable?\x07Stop being uncool and just do it.",
-		LEAVING: "Stay cool.",
-		COMPLETE: "Groovy, thanks for the help.\x07Here's a cool reward..."},
-		
- #MML Task Four
- 6030: {QUEST: "_toNpcName_ can't enjoy a meal without those Cashbots interrupting him._where_"},
- 6031: {GREETING: '',
-		QUEST: "Heya _avName_.\x07Those-a darn Cashbots are always-a takin' my lunch.\x07I was just enjoying a bologna sandwich and then a Cashbot comes-a in here and takes it to the mint.\x07He said that he needed HIS lunch break.\x07Why couldn't he just get-a his own lunch?\x07Could you-a get my delicious sandwich back for me please?",
-		LEAVING: ''},
- 6032: {GREETING: '',
-		QUEST: "Oh-a no!\x07I went to get a meatball sub while you were away and another Cashbot came in and-a took it!\x07He also needed a lunch break and refuses to-a pay for his own meals.\x07Can you-a get that back for me please?",
-		LEAVING: '',
-		COMPLETE: "Oh-a thank you!"},
-		
- #MML Task Five
- 6040: {QUEST: "_toNpcName_'s antique shop has just been robbed._where_"},
- 6041: {GREETING: '',
-		QUEST: "Oh thank goodness you're here, _avName_. Maybe you could help me?\x07All of my antiques were taken by the Cogs.\x07First, I'll need all my old silverware back.\x07I think those were taken by the Cashbots...",
-		LEAVING: ''},
- 6042: {GREETING: '',
-		QUEST: "Oh thank goodness you're here, _avName_. Maybe you could help me?\x07All of my antiques were taken by the Cogs.\x07First, I'll need all my old silverware back.\x07I think those were taken by the Lawbots...",
-		LEAVING: ''},
- 6043: {GREETING: '',
-		QUEST: "Ooo you got them back.\x07Next, I need my old clocks back from the Sellbots.",
-		LEAVING: ''},
- 6044: {GREETING: '',
-		QUEST: "Ooo you got them back.\x07Next, I need my old clocks back from the Bossbots.",
-		LEAVING: ''},
- 6045: {GREETING: '',
-		QUEST: "Finally, I'll need my old tea sets back from those Boardbots.",
-		COMPLETE: "Thank you so much for all your help.\x07Here's your reward...",
-		LEAVING: ''},
-
- #MML Task Six
- 6050: {QUEST: "_toNpcName_ is a great electric keyboard player and people really want to hire her for special gatherings.\x07However, due to the amount of issues she has had with the Cogs, she retired and refuses to play anymore.\x07The toons around here would really like to see her come out of retirement, so see what you could do to help out._where_"},
- 6051: {GREETING: '',
-		QUEST: "Come out of retirement?\x07No way! Not with those strong Cogs around.\x07I'll need a few favors before I decide on this.\x07Start by destroying some of those high leveled Cogs.",
-		LEAVING: ''},
- 6052: {GREETING: '',
-		QUEST: "Long ago, the Cashbots decided to have their own gathering in the coin mint.\x07They stole instruments from all over the town, including my prize electric keyboard.\x07I need you to get that back if you want me to play at all.",
-		LEAVING: ''},
- 6053: {GREETING: '',
-		QUEST: "There's no way I'm leaving this shop with those Cog Buildings around here!",
-		LEAVING: '',
-		COMPLETE: "Alright, you've convinced me to come out of retirement.\x07Thanks for all those favors I asked you to do. Let me make it up to you."},
-		
- #MML Task Seven
- 6060: {QUEST: "_toNpcName_'s job is to settle in new toons and have them feel comfy around the new environment.\x07This time, he's planning a surprise birthday party for one of the new toons and needs help setting up._where_"},
- 6061: {GREETING: '',
-		QUEST: "Hey, _avName_!\x07I need your help. See, I'm setting up a surprise party for _toNpcName_ and I'm not nearly ready!\x07First, I need him to have a reason to come here, so deliver this note to him saying we're having a secret gathering of important toons in Minnie's Melodyland._where_",
-		LEAVING: ''},
- 6062: {GREETING: '',
-		QUEST: "What's this note?\x07\"An important gathering for important people.\"\x07Gee, I'd love to go but I don't want to leave this shop until the amount of high leveled Cashbots are decreased dramatically.",
-		LEAVING: ''},
- 6063: {GREETING: '',
-		QUEST: "Alright, I'll go to this super important meeting.\x07Hmm, that's strange. It's planned on the same day as my birthday...",
-		LEAVING: ''},
- 6064: {GREETING: '',
-		QUEST: "So he'll come? Great!\x07Now we'll just need a birthday cake for him.",
-		LEAVING: ''},
- 6065: {GREETING: '',
-		QUEST: "Oh, this looks delicious!\x07Next, I'll need a few storm clouds.\x07Whenever toons throw a party, they surround their shops with storm clouds to prevent Cogs from crashing the party.",
-		COMPLETE: "Thank you so much for all your help.\x07I'm sure he'll have a blast!\x07Here's a reward for you...",
-		LEAVING: ''},
-		
- #MML Task Eight
- 6070: {QUEST: "_toNpcName_ is having a conflict with those rank eight Cogs._where_"},
- 6071: {GREETING: "What's with all this swagger?",
-		QUEST: "Here I am just minding my own business when suddenly, a bunch of strong Cogs come in here raiding my sporting goods!\x07Can't thou lend me a hand and get my equipment back?\x07First, those Big Cheeses broke in here and took all my golf clubs.",
-		LEAVING: ''},
- 6072: {GREETING: "What's with all this swagger?",
-		QUEST: "Here I am just minding my own business when suddenly, a bunch of strong Cogs come in here raiding my sporting goods!\x07Can't thou lend me a hand and get my equipment back?\x07First, those Robber Barons broke in here and took all my golf clubs.",
-		LEAVING: ''},
- 6073: {GREETING: '',
-		QUEST: "Then, those Head Honchos came in here and took all my Soccer Balls.",
-		LEAVING: ''},
- 6074: {GREETING: '',
-		QUEST: "Then, those Mr. Hollywoods came in here and took all my Soccer Balls.",
-		LEAVING: ''},
- 6075: {GREETING: '',
-		QUEST: "Then, those Big Wigs came in here and took all my Soccer Balls.",
-		LEAVING: ''},
- 6076: {GREETING: '',
-		QUEST: "I thank thee for getting my equipment back, but the thought of those higher up Cogs just infuriates me!\x07Can thou do me a favor and defeat those higher up Cogs.",
-		COMPLETE: "I thank thee.\x07Thy shall have a grand reward...",
-		LEAVING: ''},
-		
- #MML Task Nine
- 6080: {QUEST: "_toNpcName_ needs help investigating Cashbot Headquarters._where_"},
- 6081: {GREETING: '',
-		QUEST: "Let me tell you a little story.\x07The other day, a couple of friends and I decided to infiltrate the Cashbot Coin Mint.\x07Less than halfway through the mint, we went sad. It seemed that those Skelecogs were a lot tougher than they should be.\x07As I was forced out of the mint, something caught my eye. I saw a file labeled \"TOP SECRET PLANS\"\x07I need you to infiltrate that Coin Mint and get those plans.\x07I'm pretty sure they let the higher up Cogs hold on to those types of important files...",
-		LEAVING: ''},
- 6082: {GREETING: '',
-		QUEST: "Ugh, I can't read these plans.\x07Maybe _toNpcName_ can read these plans better than I could._where_",
-		LEAVING: ''},
- 6083: {GREETING: '',
-		QUEST: "Ah, Susan Soprano just called to inform me about these plans.\x07Let's see, it seems like the Coin Mint Skelecogs have been upgraded and are about to invade Toontown!\x07We can't let those strong Skelecogs invade us! Stop them quickly!",
-		COMPLETE: "Great job citizen!",
-		LEAVING: ''},
-		
- #MML Task Ten
- 6090: {QUEST: "Not sure why, but _toNpcName_ needs help on her broadcast._where_"},
- 6091: {GREETING: '',
-		QUEST: "Breaker, breaker. This is Telly Prompter LIVE with some action news.\x07Today, I have _avName_ who has agreed by taking this task to help deal with the massive flood of Elite Cogs introduced to Toontown.\x07If they complete this task, then they shall be rewarded strongly.",
-		LEAVING: "That's all for the news! We'll be back later!",
-		COMPLETE: "This just in, _avName_ has swept the streets clean of a handful of Elite Cogs.\x07Here's that reward that was promised..."},
-		
- #MML Task Eleven
- 6100: {QUEST: "Need some experience?\x07_toNpcName_ is offering a lot to anyone who can provide him with some assistance._where_"},
- 6101: {GREETING: '',
-		QUEST: "Yeah, I can hit you up with some big experience points if you do me a few favors.\x07First, those Bossbots are always getting on my nerves.\x07Defeat a bunch of them and then come back to me.",
-		LEAVING: ''},
- 6102: {GREETING: '',
-		QUEST: "Yeah, I can hit you up with some big experience points if you do me a few favors.\x07First, those Lawbots are always getting on my nerves.\x07Defeat a bunch of them and then come back to me.",
-		LEAVING: ''},
- 6103: {GREETING: '',
-		QUEST: "Now, I'm getting quite sick of those Toxic Managers making the streets unsafe around here.\x07They let their Acid Rain hit the streets and it burns the feet of the toons who walk on it.\x07Defeat several of them for the greater good.",
-		LEAVING: ''},
- 6104: {GREETING: '',
-		QUEST: "Now, I'm getting quite sick of those Downsizers bringing toons down.\x07Whenever I hang out with a friend who was attacked by a Downsizer, they act all depressed and aren't any fun.\x07Defeat several of them for the greater good.",
-		LEAVING: ''},
- 6105: {GREETING: '',
-		QUEST: "Those tall Sellbot Buildings are just so ugly!\x07Take down some of them and then return to me for one last thing.",
-		LEAVING: ''},
- 6106: {GREETING: '',
-		QUEST: "Those tall Cashbot Buildings are just so ugly!\x07Take down some of them and then return to me for one last thing.",
-		LEAVING: ''},
- 6107: {GREETING: '',
-		QUEST: "Those tall Boardbot Buildings are just so ugly!\x07Take down some of them and then return to me for one last thing.",
-		LEAVING: ''},
- 6108: {GREETING: '',
-		QUEST: "Finally, rumor has it that there is a golden delicious salmon swimming around the ponds of Minnie's Melodyland.\x07If you could catch that for me to have for dinner, then I will give you your big reward.",
-		LEAVING: '',
-		COMPLETE: "Well, I guess a deal is a deal."},
-		
- #MML Task Twelve
- 6110: {QUEST: "_toNpcName_ was about to go traveling but his passport was stolen._where_"},
- 6111: {GREETING: '',
-		QUEST: "Please help me! A Legal Eagle stole my passport.\x07He said it wasn't legal without any evidence and just took it! I need it back so I can go travel.",
-		COMPLETE: "Thank you.",
-		LEAVING: ''},
-		
- #MML Mega Task
- 6200: {QUEST: "It seems like the Cogs have launched a massive invasion against Minnie's Melodyland.\x07The streets were flooded with them all of a sudden and it seems they have ruined the tune of the playground.\x07_toNpcName_ needs your help getting it back, as well as the other citizens of Minnie's Melodyland._where_"},
- 6201: {GREETING: '',
-		QUEST: "Oh, you must be here about the issue with the tune of this playground.\x07Let me explain, not long ago, the Cogs were ordered to invade Minnie's Melodyland and make the peaceful and beautiful sound of the playground come to a stop.\x07Nobody is certain who the leader of this operation is, and I am trying to figure out who it could be.\x07While I investigate, could you go see _toNpcName_ to see how you could help fix the tune around here?_where_",
-		LEAVING: ''},
- 6202: {GREETING: '',
-		QUEST: "Oh, it's just terrible what happened here.\x07The Cogs took all the beautiful music notes that power the instruments and sound around here.\x07You must get them back for us.\x07Once you collect them all, bring them to me and I'll redistribute them properly.",
-		LEAVING: ''},
- 6203: {GREETING: '',
-		QUEST: "Excellent!\x07I'll get these notes back in the right places they need to be in.\x07Go see if _toNpcName_ still needs any help.",
-		LEAVING: ''},
- 6204: {GREETING: '',
-		QUEST: "I'm still investigating on who the leader may be, but _toNpcName_ is in charge of taking down the Cog Buildings.\x07Go see if you can help her._where_",
-		LEAVING: ''},
- 6205: {GREETING: '',
-		QUEST: "Ah, you're here about the buildings, huh?\x07Well, if the Cogs are going to take over our buildings, we're going to need to take them back.\x07Bring down some of the tallest buildings around here.",
-		LEAVING: ''},
- 6206: {GREETING: '',
-		QUEST: "While you were out defeating buildings, _toNpcName_ called to say that she had some news for you.",
-		LEAVING: ''},
- 6207: {GREETING: '',
-		QUEST: "While you were away, I talked with _toNpcName_ and he claims to have some sort of clue on how we can find out who the leader is.\x07Go see what you can do for him._where_",
-		LEAVING: ''},
- 6208: {GREETING: '',
-		QUEST: "Ah, you must've came from Barbara, hmm?\x07I found out that a few Cogs were given memos to launch the attack.\x07If we can figure out who signed it, that's who the leader is.",
-		LEAVING: ''},
- 6209: {GREETING: '',
-		QUEST: "No, the signature is scratched off here. Must've been a worn out memo.\x07I know. Maybe a Big Cheese has a better memo.\x07After all, the Cogs at the top of the corporate ladder get the most classified information.",
-		LEAVING: ''},
- 6210: {GREETING: '',
-		QUEST: "No, the signature is scratched off here. Must've been a worn out memo.\x07I know. Maybe a Big Wig has a better memo.\x07After all, the Cogs at the top of the corporate ladder get the most classified information.",
-		LEAVING: ''},
- 6211: {GREETING: '',
-		QUEST: "No, the signature is scratched off here. Must've been a worn out memo.\x07I know. Maybe a Robber Baron has a better memo.\x07After all, the Cogs at the top of the corporate ladder get the most classified information.",
-		LEAVING: ''},
- 6212: {GREETING: '',
-		QUEST: "No, the signature is scratched off here. Must've been a worn out memo.\x07I know. Maybe a Mr. Hollywood has a better memo.\x07After all, the Cogs at the top of the corporate ladder get the most classified information.",
-		LEAVING: ''},
- 6213: {GREETING: '',
-		QUEST: "No, the signature is scratched off here. Must've been a worn out memo.\x07I know. Maybe a Head Honcho has a better memo.\x07After all, the Cogs at the top of the corporate ladder get the most classified information.",
-		LEAVING: ''},
- 6214: {GREETING: '',
-		QUEST: "Okay, let's check out the signature...\x07\"Signed, the CFO.\"\x07Bingo! It was all planned by our neighboring Cashbot fiends! I should've known.\x07Well, if they're going to invade our town, let's just invade their workplace.\x07Go and stop those workers in the Cashbot Coin Mint. That'll slow down their production progress.",
-		LEAVING: ''},
- 6215: {GREETING: '',
-		QUEST: "Next, shut down a Dollar Mint, the higher up Mint in Cashbot Headquarters.",
-		LEAVING: ''},
- 6216: {GREETING: '',
-		QUEST: "Now I want you to show that CFO a lesson and teach him not to mess with us.\x07Gather a group of toons and get out there and defeat him!",
-		COMPLETE: "The number of Cogs around here have decreased a ton.\x07I'm pretty sure that CFO learned his lesson, or at least I hope he did.\x07Here, take this as a thanks on behalf of the citizens of Minnie's Melodyland...",
-		LEAVING: ''},
-		
- #TB Task One
- 7000: {QUEST: "_toNpcName_ is offering experience points to those who can help her with a small job._where_"},
- 7001: {GREETING: '',
-		QUEST: "Hey _avName_. I need you to do me a couple favors.\x07Firstly, I lent a tuxedo to _toNpcName_ awhile back and he's overdue for returning it.\x07Can you go see if he can return it to me?_where_",
-		LEAVING: ''},
- 7002: {GREETING: '',
-		QUEST: "Oh, you came in just in time, _avName_.\x07I need your help.\x07The Bossbots raided my building and once they left, I noticed that my tuxedo was missing!\x07Can you get that back for me please?",
-		LEAVING: ''},
- 7003: {GREETING: '',
-		QUEST: "Awesome! Thanks for getting that back for me.\x07Now, why did you come here in the first place?\x07Oh, you needed to return that tuxedo to _toNpcName_, hmm?\x07Alright, tell her I say thanks.",
-		LEAVING: ''},
- 7004: {GREETING: '',
-		QUEST: "Alright, that's one job done.\x07Now I want you to defeat some of those high leveled Cogs for me. They make me feel uneasy whenever I work here.",
-		LEAVING: '',
-		COMPLETE: "Thanks for taking care of those Cogs.\x07Here, this is for you..."},
-		
- #TB Task Two
- 7010: {QUEST: "Oh no. _toNpcName_ is running his mouth again about those Lawbots..._where_"},
- 7011: {GREETING: '',
-		QUEST: "Those no good Lawbots.\x07They come into our town, make fake laws, destroy our buildings, they need to be stopped.\x07I think we should build a wall blocking all ties between Lawbot Headquarters and The Brrrgh. It'll be huge.\x07However, before we cut off all ties, I must know their secrets.\x07I need you to snoop around, gather any important information you can find.",
-		LEAVING: "Did I forget to mention that we'd make those Lawbots pay for the wall too?"},
- 7012: {GREETING: '',
-		QUEST: "Excellent. Now I need some blueprints.\x07Go find them while I analyze these plans.",
-		LEAVING: '',
-		COMPLETE: "Hmm. These plans state that they plan to extend the Lawbot Headquarters.\x07However, with these new blueprints, we can get started on that wall where they plan to extend.\x07All thanks to you, citizen.\x07Let me give you a HUGE reward."},
-
- #TB Task Three
- 7020: {QUEST: "_toNpcName_ is investigating in the unusual changes in temperature around The Brrrgh and needs helps conducting research._where_"},
- 7021: {GREETING: '',
-		QUEST: "This is no good, _avName_.\x07The temperatures around this playground are going higher than zero degrees celsius which is not normal for this type of environment.\x07I need you to get me some temperature readings from my good friend _toNpcName_._where_",
-		LEAVING: ''},
- 7022: {GREETING: '',
-		QUEST: "Need some temperature readings?\x07I'd love to help you out, but all my external temperature sensors for The Brrrgh have been stolen from the Cogs.\x07I need you to get new ones for me. Start by getting one from Walrus Way.",
-		LEAVING: ''},
- 7023: {GREETING: '',
-		QUEST: "Let me get the temperature readings from this while you get a new sensor from Sleet Street.",
-		LEAVING: ''},
- 7024: {GREETING: '',
-		QUEST: "Next I'll need one on that newly built street, Arctic Avenue.",
-		LEAVING: ''},
- 7025: {GREETING: '',
-		QUEST: "And finally, one right here on beautiful Polar Place.",
-		LEAVING: ''},
- 7026: {GREETING: '',
-		QUEST: "Good grief! These reading are on the roof!\x07Take these to _toNpcName_ right away.",
-		LEAVING: ''},
- 7027: {GREETING: '',
-		QUEST: "Just as I've thought, Polar Place temperatures are increasing dramatically over time.\x07This street is also increasing a little in temperature, and Walrus Way and Sleet Street are unaffected.\x07From the looks of this, all streets near Lawbot Headquarters are increasing in temperature. They must be the cause of this.\x07Go shut down a few A-Offices and see if that takes down some steam.",
-		LEAVING: '',
-		COMPLETE: "Hmm, I can't really tell if this has changed anything around here.\x07I'll need time to do some analyzing, but I'll be sure to get back to you.\x07In the meantime, here's a reward for your help..."},
-		
- #TB Task Four
- 7030: {QUEST: "_toNpcName_ needs help opening his store._where_"},
- 7031: {GREETING: '',
-		QUEST: "Hey, _avName_. I could really use your help.\x07I was getting ready to open for business, when suddenly, my buildings was invaded by Big Wigs.\x07They stole all my Ice Cream Cones and I need them back as soon as possible!\x07Can you please go get them for me?",
-		LEAVING: ''},
- 7032: {GREETING: '',
-		QUEST: "Hey, _avName_. I could really use your help.\x07I was getting ready to open for business, when suddenly, my buildings was invaded by Mr. Hollywoods.\x07They stole all my Ice Cream Cones and I need them back as soon as possible!\x07Can you please go get them for me?",
-		LEAVING: ''},
- 7033: {GREETING: '',
-		QUEST: "Hey, _avName_. I could really use your help.\x07I was getting ready to open for business, when suddenly, my buildings was invaded by Big Cheeses.\x07They stole all my Ice Cream Cones and I need them back as soon as possible!\x07Can you please go get them for me?",
-		LEAVING: ''},
- 7034: {GREETING: '',
-		QUEST: "Hey, _avName_. I could really use your help.\x07I was getting ready to open for business, when suddenly, my buildings was invaded by Robber Barons.\x07They stole all my Ice Cream Cones and I need them back as soon as possible!\x07Can you please go get them for me?",
-		LEAVING: ''},
- 7035: {GREETING: '',
-		QUEST: "Thank you so much for getting those cones back for me!\x07Now, while I continue to set up for when I open, can you take down some buildings around here?\x07The customer should never feel intimidated when going to their favorite ice cream store.",
-		LEAVING: '',
-		COMPLETE: "Thanks for the help."},
-	
- #TB Task Five
- 7040: {QUEST: "Walt has been experiencing issues with his plumbing supplies._where_"},
- 7041: {GREETING: "Hey, _avName_.",
-		QUEST: "I was wondering when you'd get here.\x07I need you to go see my buddy Blue Lou.\x07I need some pliers and he's the only toon I know that would supply them._where_",
-		LEAVING: ''},
- 7042: {GREETING: '',
-		QUEST: "Pliers? I don't have any in stock, but I know where to find them.\x07In order to make them, I need some Ice Cubes from this here playground.",
-		LEAVING: ''},
- 7043: {GREETING: '',
-		QUEST: "Now I need you to take these to _toNpcName_, he'll know what to do with these._where_",
-		LEAVING: ''},
- 7044: {GREETING: '',
-		QUEST: "You need me to make some pliers?\x07Well, my business works in awhile where all material for my items come from sturdy dried ice.\x07These ice cubes are just not ready.\x07Let me take these and make a fresh batch of dried ice.\x07While I do so, I need you to defeat some of those high leveled Cogs out there.",
-		LEAVING: ''},
- 7045: {GREETING: '',
-		QUEST: "While you were gone, I took the courtesy of making these sturdy pliers.\x07Take 'em to Walt for me, will ya?",
-		LEAVING: ''},
- 7046: {GREETING: '',
-		QUEST: "Perfect!\x07Now, I need a...\x07Uh, what did I need again?\x07Sorry, I suffer a bit from short-term memory.\x07I'm afraid it'll take me awhile to remember...\x07Can you do me a favor and take down a couple of those tallest buildings for me while I try to think?",
-		LEAVING: ''},
- 7047: {GREETING: '',
-		QUEST: "I remembered now.\x07I need a Plumber's Snake. Can't be a good plumber without it.\x07I think _toNpcName_ has an extra one in stock that he can give to me._where_",
-		LEAVING: ''},
- 7048: {GREETING: '',
-		QUEST: "A Plumber's Snake?\x07Yeah, I can give you one if you could defeat some of those annoying Sellbots for me.",
-		LEAVING: ''},
- 7049: {GREETING: '',
-		QUEST: "Alright, a deal's a deal.\x07Take these back to Walt right away.",
-		COMPLETE: "Awesome!\x07Now I'll need a...\x07Oh, there's my short-term memory again.\x07You know, I don't want this to hold you back, so once I remember, I'll go out and get the supplies myself.\x07Anyways, here's a reward for all your help...",
-		LEAVING: ''},
-		
- #TB Task Six
- 7050: {QUEST: "Oh no! It seems the Cogs have taken all of _toNpcName_'s hats!_where_"},
- 7051: {GREETING: '',
-		QUEST: "Oh man, _avName_. This is just awful!\x07The Cogs busted in here and took all of my hats!\x07I need you to get them all back to me!\x07I'd like you to start by getting back all the Top Hats from the Connoisseurs.\x07Let's see, I think there were about 12 of them...",
-		LEAVING: ''},
- 7052: {GREETING: '',
-		QUEST: "Ooo shiny.\x07I mean, uh, now I'll need some pirate hats back in my stock.\x07I didn't see which Cogs took them, but I'm positive it was those ugly Corporate Raiders.",
-		LEAVING: ''},
- 7053: {GREETING: '',
-		QUEST: "Yarrrgh did it!\x07No? Didn't like that one?\x07Well, now I'll need my fedoras back.\x07There were about 15 of them, and I think they were taken by the Sellbots.",
-		LEAVING: ''},
- 7054: {GREETING: '',
-		QUEST: "Yarrrgh did it!\x07No? Didn't like that one?\x07Well, now I'll need my fedoras back.\x07There were about 15 of them, and I think they were taken by the Bossbots.",
-		LEAVING: ''},
- 7055: {GREETING: '',
-		QUEST: "Yarrrgh did it!\x07No? Didn't like that one?\x07Well, now I'll need my fedoras back.\x07There were about 15 of them, and I think they were taken by the Cashbots.",
-		LEAVING: ''},
- 7056: {GREETING: '',
-		QUEST: "Hmm, I can't seem to track down where my Aviator Hats could be.\x07My good friend _toNpcName_ may have borrowed them, but I can't seem to remember.\x07Can you go ask her if she has them?_where_",
-		LEAVING: ''},
- 7057: {GREETING: 'H-h-hey, _avName_.',
-		QUEST: "A-a-a-aviator Hats?\x07Y-y-yes I h-have them.\x07B-b-but I can't move without my m-m-mittens.\x07A c-c-cog took them not l-l-long ago, so they sh-should be around h-h-here.",
-		LEAVING: 'G-g-good luck!'},
- 7058: {GREETING: "Oh y-y-you got them b-b-back for me.",
-		QUEST: "Ahhh, that's much better.\x07Let me just reach below the desk and...\x07Here you go! Take these to _toNpcName_ right away!",
-		LEAVING: ''},
- 7059: {GREETING: '',
-		QUEST: "Yep, that's all of my hats alright!\x07Now, I'm worried that those Lawbots have been planning to take over my building and take all my hats again.\x07To intimidate them, I want you to defeat some of their highest buildings. That'll teach 'em to back off.",
-		LEAVING: '',
-		COMPLETE: "You have done a wonderful job in helping me.\x07Thank you so much for all your help.\x07Let me give you a big reward..."},
-		
- #TB Task Seven
- 7060: {QUEST: "_toNpcName_ has a bad feeling about the Lawbot Offices._where_"},
- 7061: {GREETING: '',
-		QUEST: "Hey, _avName_. I've got a bad feeling about something...\x07You know how magnets work? They've got a North and a South pole, right?\x07Well, I feel like there's a stronger north pole in Toontown and that's because of the overpopulation of Lawbots in Lawbot Headquarters.\x07I need you to defeat a handful of those Lawbots working in those offices.",
-		COMPLETE: "Things are looking normal again.",
-		LEAVING: ''},
-		
- #TB Task Eight
- 7070: {QUEST: "_toNpcName_ needs help gathering ingredients for his world famous hambrrrghers._where_"},
- 7071: {GREETING: '',
-		QUEST: "Oh, you're just in time _avName_.\x07I don't have all that I need to create my signature burger, \"The Hambrrrghers.\"\x07See, I've already gathered the meat, but it didn't occur to me that I was missing some hamburger rolls.\x07I need some rolls, specifically from _toNpcName_. She makes the best kinds of bread._where_",
-		LEAVING: ''},
- 7072: {GREETING: '',
-		QUEST: "Hamburger rolls?\x07Yeah, I can get you some, but I'll need you to do me a favor first.\x07The Bossbots around here decided to break into this here store and take all my loaves of bread.\x07If you get them all back for me, I'll gladly give you these here hamburger rolls.",
-		LEAVING: ''},
- 7073: {GREETING: '',
-		QUEST: "I reckon a deal's a deal.\x07Take these here rolls to _toNpcName_.",
-		LEAVING: ''},
- 7074: {GREETING: '',
-		QUEST: "Perfect! These rolls smell great too.\x07Next, I'll need some of the best kind of cheddar cheese in town.\x07I hate to do this, but I'll need you to get it from _toNpcName_ down in Acorn Acres.\x07It's the only cheese shop in this town._where_",
-		LEAVING: ''},
- 7075: {GREETING: '',
-		QUEST: "Cheddar cheese?\x07I'm not sure if I have any. I could always check the storage room, but I've lost the key.\x07While I look for it, could you do me a huge favor?\x07Earlier, when I was sampling off some slices of swiss cheese, The Big Cheeses decided to come in here and take all 10 of my lumps!\x07Could you get those back for me?",
-		INCOMPLETE_PROGRESS: "Nope, still haven't found that key...",
-		LEAVING: ''},
- 7076: {GREETING: '',
-		QUEST: "Ah, yes. You got those lumps back.\x07Lucky for you, I found the storage key AND had some cheddar cheese in stock.\x07I'll be glad to give these to you for your hard work.",
-		LEAVING: ''},
- 7077: {GREETING: '',
-		QUEST: "Sweet! You got the cheddar!\x07However, while you were away, a Lawbot came in here and took my best grill to use at a cookoff in the Lawbot District Attorney Office.\x07I don't understand why they'd have a cookoff in such a workspace, but you have to get it back for me!",
-		LEAVING: '',
-		COMPLETE: "Woo! You got them back for me!\x07I owe you a free hambrrrgher, but for now, take this as my thanks."},
-		
- #TB Task Nine
- 7080: {QUEST: "A toon's home is very special in one's heart.\x07_toNpcName_ values The Brrrgh like his home and wants nothing more than to protect it from those filthy Cogs._where_"},
- 7081: {GREETING: '',
-		QUEST: "The Brrrgh used to be a great and fun place.\x07We'd build snowmen, have snowball fights, make snow angels, all of that fun stuff.\x07Now, with those strict Elite Cogs roaming the place, we can't even leave our own shops!\x07I want this place to feel like a home again, not just for me, but for everyone in The Brrrgh.\x07Oh, _avName_, you just have to defeat those Elite Cogs for our sake!",
-		LEAVING: '',
-		COMPLETE: "Home, sweet, home."},
-	
- #TB Task Ten	
- 7090: {QUEST: "_toNpcName_ needs help retrieving a shipment of Solar Powered Blankets safely._where_"},
- 7091: {GREETING: '',
-		QUEST: "Welcome, _avName_!\x07As you may know, The Brrrgh gets very little sunlight and Solar Powered Blankets require it in order to work.\x07Every time I create a new batch, I send 'em over to _toNpcName_ down in Daisy Gardens for the most amount of sunlight.\x07This method provides the most amount of energy for the blankets, which means they last for a very long amount of time.\x07However, the post offices around Toontown have had packing issues with them, such as some of the blankets short-circuiting during delivery, and have stopped supporting shipment of the blankets.\x07I'll need you to collect those blankets for me._where_",
-		LEAVING: ''},
- 7092: {GREETING: '',
-		QUEST: "Ah, you're here to pick up Ray's blankets?\x07I'm afraid they're not fully charged yet.\x07While they're still charging, I want to send you on a small mission.\x07Rumor has it that the Lawbots are trying to find away to take away the sunshine from Daisy Gardens so that we can't have our flowers.\x07Without our flowers, we'd have no spirit.\x07If you could defeat some of their strongest workers, I'll bet that'd distract them from their plans.",
-		INCOMPLETE_PROGRESS: "The blankets aren't fully charged yet.\x07Have you finished taking down those workers?",
-		LEAVING: ''},
- 7093: {GREETING: '',
-		QUEST: "Ah, the blankets just finished charging.\x07Take these back to _toNpcName_.",
-		LEAVING: ''},
- 7094: {GREETING: '',
-		QUEST: "Awesome!\x07Now, I'll need one last favor and then I'll give you a big reward.\x07Although it's usually cloudy, we still have little rays of sunlight shine down here every now and then.\x07Customers will need that sunshine, no matter how weak it is, to charge up once they've used all the energy from the blankets.\x07However, those tall Cog Buildings take away those little rays of sunshine from us.\x07Please defeat some of the tallest buildings around here.",
-		COMPLETE: "I appreciate all your help.\x07Here's a reward out of gratitude...",
-		LEAVING: ''},
-		
- #TB Task Eleven
- 7100: {QUEST: "The Cogs are causing some dential issues for _toNpcName_._where_"},
- 7101: {GREETING: "Tsk, tsk.",
-		QUEST: "Toons keep coming in here with cavities.\x07I've noticed quite a trend with these cavities though.\x07Each toon comes in here saying that the last thing they did was fighting a Cashbot.\x07I'm sure those Cashbots are damaging our toons' teeth.\x07I don't know how they are doing so, but they must be stopped.",
-		LEAVING: "Keep those teeth shiny."},
- 7102: {GREETING: "Tsk, tsk.",
-		QUEST: "Toons keep coming in here with cavities.\x07I've noticed quite a trend with these cavities though.\x07Each toon comes in here saying that the last thing they did was fighting a Sellbot.\x07I'm sure those Sellbots are damaging our toons' teeth.\x07I don't know how they are doing so, but they must be stopped.",
-		LEAVING: "Keep those teeth shiny."},
- 7103: {GREETING: '',
-		QUEST: "Tsk, tsk.\x07While you were away, those Boardbots went and took my Sickle Probe.",
-		LEAVING: '',
-		COMPLETE: "Thanks for getting that back for me. Couldn't work without it.\x07Let me give you a reward for your help..."},
-		
- #TB Task Twelve
- 7110: {QUEST: "_toNpcName_ is working on an electrical problem and can't work with the Cogs distracting him._where_"},
- 7111: {GREETING: '',
-		QUEST: "I'm working on an issue with the electric circuit, but the Cogs outside are just too loud and distracting.\x07Can you defeat a whole bunch of them so I can work in peace?\x07If I don't get this done, the entire electric grid in Toontown could fail.",
-		LEAVING: '',
-		COMPLETE: "Ah, peace and quiet."},
-		
- #TB Mega Task
- 7200: {QUEST: "Uh oh... _toNpcName_ is looking for you.\x07He's the meanest, eldest, and toughest toon in town._where_",
-		LEAVING: "Don't ask me why he wants you! I just hand out these tasks!"},
- 7201: {GREETING: "Welcome, young apprentice.",
-		QUEST: "I see you've been helping out the toons around The Brrrgh and have been doing a pretty good job at it, as well.\x07Before you head out for your next adventures, I went to test your stealth, skills, loyalty, and intelligence.\x07Your first test will be to defeat those vicious Loan Sharks.",
-		LEAVING: "Don't come back without proof of defeat.\x07About 20 Shark Teeth will be enough proof."},
- 7202: {GREETING: "Welcome, young apprentice.",
-		QUEST: "I see you've been helping out the toons around The Brrrgh and have been doing a pretty good job at it, as well.\x07Before you head out for your next adventures, I went to test your stealth, skills, loyalty, and intelligence.\x07Your first test will be to defeat those filthy Corporate Raiders.",
-		LEAVING: "Don't come back without proof of defeat.\x07About 20 Eyepatches will be enough proof."},
- 7203: {GREETING: "Welcome, young apprentice.",
-		QUEST: "I see you've been helping out the toons around The Brrrgh and have been doing a pretty good job at it, as well.\x07Before you head out for your next adventures, I went to test your stealth, skills, loyalty, and intelligence.\x07Your first test will be to defeat those beautiful and gorgeous- I mean, hideous Minglers.",
-		LEAVING: "Don't come back without proof of defeat.\x07About 20 Make-Up Kits will be enough proof."},
- 7204: {GREETING: "Welcome, young apprentice.",
-		QUEST: "I see you've been helping out the toons around The Brrrgh and have been doing a pretty good job at it, as well.\x07Before you head out for your next adventures, I went to test your stealth, skills, loyalty, and intelligence.\x07Your first test will be to defeat those brainless Big Fish.",
-		LEAVING: "Don't come back without proof of defeat.\x07About 15 Scales will be enough proof."},
- 7205: {GREETING: "Welcome, young apprentice.",
-		QUEST: "I see you've been helping out the toons around The Brrrgh and have been doing a pretty good job at it, as well.\x07Before you head out for your next adventures, I went to test your stealth, skills, loyalty, and intelligence.\x07Your first test will be to defeat those soaring Legal Eagles.",
-		LEAVING: "Don't come back without proof of defeat.\x07About 20 Shiny Beaks will be enough proof."},
- 7206: {GREETING: "Ah, nice work young apprentice.",
-		QUEST: "For your next test, I would like you to defeat some of those self-centered Mr. Hollywoods.",
-		LEAVING: "Again, you will need proof of their defeat.\x0715 Shiny Teeth will be enough."},
- 7207: {GREETING: "Ah, nice work young apprentice.",
-		QUEST: "For your next test, I would like you to defeat some of those sneaky Robber Barons.",
-		LEAVING: "Again, you will need proof of their defeat.\x0715 Gold Teeth will be enough."},
- 7208: {GREETING: "Ah, nice work young apprentice.",
-		QUEST: "For your next test, I would like you to defeat some of those greedy Head Honchos.",
-		LEAVING: "Again, you will need proof of their defeat.\x0710 Pie Charts will be enough."},
- 7209: {GREETING: "Ah, nice work young apprentice.",
-		QUEST: "For your next test, I would like you to defeat some of those good-smelling Big Cheeses.",
-		LEAVING: "Again, you will need proof of their defeat.\x0715 Lumpy Cheeses will be enough."},
- 7210: {GREETING: "Ah, nice work young apprentice.",
-		QUEST: "For your next test, I would like you to defeat some of those poorly-styled Big Wigs.",
-		LEAVING: "Again, you will need proof of their defeat.\x0715 Big White Wigs will be enough."},
- 7211: {GREETING: "Tsk, tsk. You were a bit slow with that test.",
-		QUEST: "Hopefully, you could be a bit faster defeating those strong Elite Cogs.",
-		LEAVING: "C'mon. Time's ticking. I ain't getting any younger over here."},
- 7212: {GREETING: "OK.",
-		QUEST: "You may not like this next test.\x07However, you're not doing this just for me.\x07Not just for you.\x07But for this whole town.\x07Protecting everyone in our town should be your duty.\x07And I'd like you to continue that duty by taking down some of the tallest buildings around here.",
-		LEAVING: "Remember this.\x07You don't throw a pie with your hand.\x07You throw it with your heart."},
- 7213: {GREETING: "Brilliant work, young apprentice.",
-		QUEST: "But you're not done yet.\x07Oh? Hmm?\x07Yeah sure, I can ask.\x07Oh, you must be wondering who I'm talking to.\x07No, I'm not crazy and talking to ghosts. This here is my Talking Toad.\x07This toad and his girlfriend have been going out for quite some time, and he thinks he's ready to take the relationship to the next level.\x07We'll need a wedding cake just incase he does decide to take it there.",
-		LEAVING: "You want me to be your best man, toad?\x07I don't know, I'll need some time to think about that..."},
- 7214: {GREETING: "Brilliantwork, young apprentice.",
-		QUEST: "But you're not done yet.\x07Oh? Hmm?\x07Oh, you must be wondering who I'm talking to.\x07No, I'm not crazy and talking to ghosts. This here is my Talking Toad.\x07He requests a drink, and his favorite comes from a fresh spring geyser.\x07Don't ask me why he like it specifically from there, he's a weird fella.\x07I need you to bring one of them here so I can set that up for him.",
-		LEAVING: "Oh, quit denying it toad. You are a bit of a weirdo."},
- 7215: {GREETING: '',
-		QUEST: "Alright, enough child's work. Let's get down to business.\x07Our evil neighboring Lawbots are planning a trial against one of our toons, Bumpy Bumblebehr.\x07Bumpy is one of our top resistance toons who was taken while infiltrating a Lawbot D-Office alone.\x07If he gets taken away, the toon resistance will weaken.\x07We can't let that happen, we must win the trial.\x07In order to do that, we must make sure they don't overload themselves with lawyers.\x07Defeat some of those strong lawyers in the Lawbot A-Office.",
-		LEAVING: "C'mon! There's no time to waste."},
- 7216: {GREETING: '',
-		QUEST: "Apparently, the Lawbots weren't sending A-Office lawyers to the trial...\x07They're sending the B-Office laywers...\x07You've got to stop them, quickly!",
-		LEAVING: ''},
- 7217: {GREETING: "Great! Now they're down to around eight or ten lawyers.",
-		QUEST: "I'd ask you to defeat them, but the trial is about to start.\x07I need you to gather a group of toons, sneak into the trial disguised as lawyers, and win that trial.",
-		LEAVING: "It is a dangerous and risky task, but I trust that you'll do well."},
- 7218: {GREETING: '',
-		QUEST: "The news just came out. Bumpy was found not guilty.\x07Oh, and a call from HQ Randy came in. The Bossbots around Acorn Acres are stirring up trouble.\x07Go see what you can do to help.\x07What? You are expecting a reward?\x07Well you're not getting one.\x07Back in my day, we worked out of generosity to protect this town. You toons are so greedy nowadays.",
-		COMPLETE: "Hey, _avName_.\x07It seems the Bossbots are coming out of their headquarters and attacking Acorn Acres.\x07We need you to stop them.\x07Once you're ready, the other HQ Officers here and I will offer you tasks requiring help to the toons of Acorn Acres once again.\x07Oh? You need to go back to The Brrrgh and Lil Oldman refused to grant you it?\x07No worries. I'll just give you teleport access and a reward that you probably deserve.",
-		LEAVING: ''}}
-		
-		
+        QUEST: "IT'S NOT FAIR!!!\x07WHY ARE THERE SO MANY HIGH LEVELED SELLBOTS???",
+        LEAVING: "MY HEAD IS ABOUT TO BURST, I'M SO ANGRY!!"},
+ 2107: {QUEST: "Oof, oof, I'm cooling down now...\x07Several more Cogs and I should be normal...",
+        COMPLETE: 'Sunshine, lollipops and, rainbows butterflies...\x07Thank you so much for this warm, happy feeling _avName_.\x07Here is a well deserved reward...'},
+ 2110: {QUEST: "Hey _avName_, we've almost run out of things for you to do!\x07Next up, the Toon Clinic is in need of some supplies.\x07First, pay a visit to _toNpcName_, and see what he needs."},
+ 2111: {QUEST: 'Hello, are you our help?\x07Awesome, because things have been really hectic around here.\x07To start with, a bunch of our straightjackets were stolen.'},
+ 2112: {QUEST: "Alright, thanks for getting those back from the cogs.\x07If you wouldn't mnd, could you deliver those to _toNpcName_?"},
+ 2113: {QUEST: 'Are these the straight jackets that were stolen?\x07Thank you so much. No time to Dawdle though, _toNpcName_ is in need of some help.'},
+ 2114: {QUEST: "Hey, so glad you're here.\x07Would you mind going out and defeating some Ambulance Chasers for me?\x07They've been a real pain lately."},
+ 2115: {QUEST: 'Well, it seems they got angry, because they stole a set of our ambulance keys.\x07Could you go out and defeat a few more?\x07You should be able to recover the keys from them.'},
+ 2116: {QUEST: "Thank you so much for recovering those!\x07Now, could you go visit _toNpcName_? He's supposed to have some new tires for us."},
+ 2117: {QUEST: "Oh man, what am I gonna do?\x07Oh hey! Are you here for the tires?\x07Well, unfortunately there was an accident in delivery.\x07They ended up in the pond somehow, and I don't have my fishing pole.\x07Would you mind going and fishing those up for mee collaborative text?"},
+ 2118: {QUEST: "Alright, I'll have those delivered to the clinic right away.\x07We had a diesel engine being delivered too, but it was stolen by some higher level cogs.\x07Would you mind going out and grabbing it?\x07Just defeat some five level cogs until you find it.",
+        COMPLETE: "Hey, is that the engine?\x07Man, how did you carry that all the way here?\x07Anyways, thanks, here's your reward."},
+ 2120: {QUEST: 'Good to see you again, _avName_!\x07_toNpcName_ asked me for some help, could you go visit them and see what they need?'},
+ 2121: {QUEST: "I'm in a bit of a stick right now -- I lost all my invisible ink!\x07I'm almost certain that I dropped them in a pond, could you be a dear and fish them back for me?"},
+ 2122: {QUEST: "Great work! There's just one problem; I have nothing to write with! A bunch of glad handers came in and ransacked my shop taking my fountain pens.\x07Go defeat some of those filthy Glad Handers and get them back!"},
+ 2123: {QUEST: 'Amazing!\x07I do owe flippy a pen of mine so how about you go take one of these to him?_where_'},
+ 2124: {QUEST: "Oh, it's you again?\x07A pen? Well, tell Nona Seeya I said thank you!"},
+ 2125: {QUEST: "Hey, you're back! I just remembered I also owe Sam Stain a fountain pen too so go ahead and deliver this to him."},
+ 2126: {QUEST: "Heya, son! I've never seen you before.\x07A fountain pen? Well, my apprecations! There's just one problem...\x07I can't write with all those cogs stomping around! How about you go defeat some of those higher cogs and then maybe I could?"},
+ 2127: {QUEST: 'Hmmm... Still too shaky. Try defeating some of the higher cogs, then.'},
+ 2128: {QUEST: "Ugh! The shakings better but I can't focus with all those noisy cog buildings!\x07Defeat one cog building for me, would you?"},
+ 2129: {QUEST: 'Just right! I can write again! Go back to Nona Seeya and tell her I said thanks.'},
+ 2130: {QUEST: "You're back? I almost thought that you let me forever!\x07Anyways, my friend Inky Ivon just asked me for a fountain pen. Would you please deliver one to him?"},
+ 2131: {QUEST: "Aye, son! You got that fountain pen for me?\x07What do you think about doing me a favor, while you're here?/x07I need some Inc Sacs for this pen, which you should be able to fish up for me.ait "},
+ 2132: {QUEST: "Thanks for that! Now I can actually use this pen.\x07Go back to Nona Seeya and tell her I'm very grateful."},
+ 2133: {QUEST: 'Alright, I need you to deliver another one.This one is going to...\x07Ah! Deliver this one to Postmaster Pete'},
+ 2134: {QUEST: 'Hey, is this my pen from Nona Seeya?\x07Alright, now I can sign these pack....\x07Wait, where did those packages go??\x07Oh dear, those cogs that were in here earlier must have stolen them!\x07Alright, could you go get them back for me?'},
+ 2135: {QUEST: "And that's it. Thank you, kindly return to Flippy when you're ready."},
+ 2136: {QUEST: 'Hey there, done with your deliveries?\x07Alright, for your last task I need you to...\x07Go defeat a two story building, or higher!',
+        COMPLETE: "Thank you so much!\x07Hope you are feeling better now that you've completed everything for me.\x07Alright, I think you're finally ready to move out. I'm going to send you off to Acorn Acres, so that you can do some more training work for them.\x07Beware, as that playground is significantly more infested with cogs \x07However, I know that you're ready for it.\x07Alright, good luck! \x07 Best be getting on your way now."}}
 ChatGarblerDog = ['woof', 'arf', 'rruff']
 ChatGarblerCat = ['meow', 'mew']
 ChatGarblerMouse = ['squeak', 'squeaky', 'squeakity']
@@ -2169,37 +909,33 @@ ChatGarblerDuck = ['quack', 'quackity', 'quacky']
 ChatGarblerMonkey = ['ooh', 'ooo', 'ahh']
 ChatGarblerBear = ['growl', 'grrr']
 ChatGarblerPig = ['oink', 'oik', 'snort']
-ChatGarblerDeer = ['meh', 'mee']
-ChatGarblerBat = ['eee', 'yee', 'eew']
-ChatGarblerBeaver = ['ear', 'air', 'ree']
-ChatGarblerGator = ['snort', 'crunch', 'chomp']
-ChatGarblerFox = ['awo', 'ring ding', 'ow']
+ChatGarblerDeer = ['eee', 'yee', 'eee']
 ChatGarblerDefault = ['blah']
-Bossbot = 'Bossbot'
-Lawbot = 'Lawbot'
-Cashbot = 'Cashbot'
-Sellbot = 'Sellbot'
-Boardbot = 'Boardbot'
-BossbotS = 'a Bossbot'
-LawbotS = 'a Lawbot'
-CashbotS = 'a Cashbot'
-SellbotS = 'a Sellbot'
-BoardbotS = 'a Boardbot'
-BossbotP = 'Bossbots'
-LawbotP = 'Lawbots'
-CashbotP = 'Cashbots'
-SellbotP = 'Sellbots'
-BoardbotP = 'Boardbots'
-BossbotSkelS = 'a Bossbot Skelecog'
-LawbotSkelS = 'a Lawbot Skelecog'
-CashbotSkelS = 'a Cashbot Skelecog'
-SellbotSkelS = 'a Sellbot Skelecog'
-BoardbotSkelS = 'a Boardbot Skelecog'
-BossbotSkelP = 'Bossbot Skelecogs'
-LawbotSkelP = 'Lawbot Skelecogs'
-CashbotSkelP = 'Cashbot Skelecogs'
-SellbotSkelP = 'Sellbot Skelecogs'
-BoardbotSkelP = 'Boardbot Skelecogs'
+Bossbot = 'Boardbot'
+Lawbot = 'Politibot'
+Cashbot = 'Vaultbot'
+Sellbot = 'Executivebot'
+Boardbot = 'Techbot'
+BossbotS = 'a Boardbot'
+LawbotS = 'a Politibot'
+CashbotS = 'a Vaultbot'
+SellbotS = 'a Executivebot'
+BoardbotS = 'a Techbot'
+BossbotP = 'Boardbots'
+LawbotP = 'Politibots'
+CashbotP = 'Vaultbots'
+SellbotP = 'Executivebots'
+BoardbotP = 'Techbots'
+BossbotSkelS = 'a Boardbot Naked Cog'
+LawbotSkelS = 'a Politibot Naked Cog'
+CashbotSkelS = 'a Vaultbot Naked Cog'
+SellbotSkelS = 'a Executivebot Naked Cog'
+BoardbotSkelS = 'a Techbot Naked Cog'
+BossbotSkelP = 'Boardbot Naked Cogs'
+LawbotSkelP = 'Politibot Naked Cogs'
+CashbotSkelP = 'Vaultbot Naked Cogs'
+SellbotSkelP = 'Executivebot Naked Cogs'
+BoardbotSkelP = 'Techbot Naked Cogs'
 SkeleRevivePostFix = ' v2.0'
 AvatarDetailPanelOK = lOK
 AvatarDetailPanelCancel = lCancel
@@ -2247,7 +983,7 @@ ReportPanelCategoryHacking = 'Hacking'
 ReportPanelConfirmations = ('You are about to report that %s has used obscene, bigoted or sexually explicit language.',
  'You are about to report that %s is being unsafe by giving out or requesting a phone number, address, last name, email address, password or account name.',
  'You are about to report that %s is bullying, harassing, or using extreme behavior to disrupt the game.',
- "You are about to report that %s has created a name that does not follow the Project Altis rules.",
+ 'You are about to report that %s has created a name that does not follow the Project Altis rules.',
  'You are about to report that %s has hacked/tampered with the game or used third party software.')
 ReportPanelWarning = "We take reporting very seriously. Your report will be viewed by a Moderator who will take appropriate action for anyone breaking our rules. If your account is found to have participated in breaking the rules, or if you make false reports or abuse the 'Report a Player' system, a Moderator may take action against your account. Are you absolutely sure you want to report this player?"
 ReportPanelThanks = 'Thank you! Your report has been sent to a Moderator for review. There is no need to contact us again about the issue. The moderation team will take appropriate action for a player found breaking our rules.'
@@ -2261,8 +997,6 @@ IgnorePanelRemoveIgnore = 'Would you like to stop ignoring %s?'
 IgnorePanelEndIgnore = 'You are no longer ignoring %s.'
 IgnorePanelAddFriendAvatar = '%s is your friend, you cannot ignore them while you are friends.'
 IgnorePanelAddFriendPlayer = '%s (%s)is your friend, you cannot ignore them while you are friends.'
-PetRequestBadLocation = 'Your doodle is too far away to teleport here!'
-PetRequestAlreadyPresent = 'Your doodle is already with you!'
 PetPanelFeed = 'Feed'
 PetPanelCall = 'Call'
 PetPanelGoTo = 'Go To'
@@ -2322,12 +1056,12 @@ TeleportPanelUnavailableHood = '%s is not available right now; try again later.'
 TeleportPanelDenySelf = "You can't go to yourself!"
 TeleportPanelOtherShard = "%(avName)s is in district %(shardName)s, and you're in district %(myShardName)s.  Do you want to switch to %(shardName)s?"
 TeleportPanelBusyShard = '%(avName)s is in a full District.'
-BattleBldgBossTaunt = "I'm the boss."
+BattleBldgBossTaunt = "I want to hang myself."
 CogdoBattleBldgBossTaunt = "I don't take meetings with Toons."
 FactoryBossTaunt = "I'm the Foreman."
 FactoryBossBattleTaunt = 'Let me introduce you to the Foreman.'
-MintBossTaunt = "I'm the Supervisor."
-MintBossBattleTaunt = 'You need to talk to the Supervisor.'
+MintBossTaunt = "I'm the Vault Guard"
+MintBossBattleTaunt = 'You need to talk to the Vault Guard'
 StageBossTaunt = "My Justice isn't Blind."
 StageBossBattleTaunt = 'I am above the Law.'
 CountryClubBossTaunt = "I'm the Club President."
@@ -2526,11 +1260,29 @@ MovieSOSCallHelp = '%s HELP!'
 MovieSOSWhisperHelp = '%s needs help in battle!'
 MovieSOSObserverHelp = 'HELP!'
 MovieNPCSOSGreeting = 'Hi %s! Glad to help!'
-FrumpGreetings = ["I'm all in on this for a small loan of a million jellybeans.", 'Did one of you mention a wall?', "TOGETHER... WE WILL MAKE TOONTOWN GREAT AGAIN!!!", 'This is gonna be yuge.', "They are all filthy cogs, I'm sure some of them are great robots.", 'We are going to build a wall and make Loonyville pay for it!']
-JakebooySOSGreetings = ["You called for some rakes?", "Rake 'em in, boys!", "This won't rake long!", "These cogs are about to have a Pounding Headrake!", "Why are you calling me? The rake is a lie.", "It's time to rake up!", "Let them eat rake!", "It's time to put the icing on the rake!", "It's time to rake up!", "I rake it that you need some help?", "It's time to rake them cogs pay!"]
-JakebooySOSGoodbyes = ["So head on down to Jakes Rakes today!", "Rake it or leaf it!", "Rake ya later!", "Rake me up when september ends."]
+FrumpGreetings = ["I'm all in on this for a small loan of a million jellybeans.",
+ 'Did one of you mention a wall?',
+ 'TOGETHER... WE WILL MAKE TOONTOWN GREAT AGAIN!!!',
+ 'This is gonna be yuge.',
+ "They are all filthy cogs, I'm sure some of them are great robots.",
+ 'We are going to build a wall and make Loonyville pay for it!']
+JakebooySOSGreetings = ['You called for some rakes?',
+ "Rake 'em in, boys!",
+ "This won't rake long!",
+ 'These cogs are about to have a Pounding Headrake!',
+ 'Why are you calling me? The rake is a lie.',
+ "It's time to rake up!",
+ 'Let them eat rake!',
+ "It's time to put the icing on the rake!",
+ "It's time to rake up!",
+ 'I rake it that you need some help?',
+ "It's time to rake them cogs pay!"]
+JakebooySOSGoodbyes = ['So head on down to Jakes Rakes today!',
+ 'Rake it or leaf it!',
+ 'Rake ya later!',
+ 'Rake me up when september ends.']
 AliceSOSLeave = "I'll be going back to my rabbit hole now."
-AliceSOSGreeting = "Off with their heads!"
+AliceSOSGreeting = 'Off with their heads!'
 MovieNPCSOSGoodbye = 'See you later!'
 MovieNPCSOSToonsHit = 'Toons Always Hit!'
 MovieNPCSOSToonsHitS = 'Toons Always Hit\nFor One Round!'
@@ -2554,7 +1306,6 @@ MoviePetSOSTrickSucceedGirl = 'Good girl!'
 MovieSuitCancelled = 'CANCELLED\nCANCELLED\nCANCELLED'
 CogHQBonus = '2x BONUS - Cog HQ!'
 CogInvasionBonus = '2x BONUS - Cog Invasion!'
-MegaBonus = '3x BONUS - MEGA MULTIPLIER!'
 RewardPanelToonTasks = 'ToonTasks'
 RewardPanelItems = 'Items Recovered'
 RewardPanelMissedItems = 'Items Not Recovered'
@@ -2571,14 +1322,14 @@ RewardPanelEndTrack = 'Yay! %(avName)s has reached the end of the %(gagName)s Ga
 RewardPanelPromotionPending = 'Pending promotion...'
 RewardPanelMeritsMaxed = 'Maxed'
 RewardPanelMeritBarLabels = ['Stock Options',
- 'Subpoenas',
+ 'Jury Notices',
  'Cogbucks',
  'Merits',
  'Invoices']
 RewardPanelMeritAlert = 'Ready for promotion!'
 RewardPanelCogPart = 'You gained a Cog disguise part!'
 RewardPanelPromotion = 'Ready for promotion in %s  track!'
-RewardPanelSkip = 'Skip'
+RewardPanelSkip = 'SKIP THIS ALREADY'
 CheesyEffectDescriptions = [('Normal Toon', 'you will be normal'),
  ('Big head', 'Big head'),
  ('Small head', 'Small head'),
@@ -2598,8 +1349,7 @@ CheesyEffectHours = 'For the next %(time)s hours, %(effectName)s%(whileIn)s.'
 CheesyEffectDays = 'For the next %(time)s days, %(effectName)s%(whileIn)s.'
 CheesyEffectWhileYouAreIn = ' while you are in %s'
 CheesyEffectExceptIn = ', except in %s'
-CheesyEffectId2Name = {
- 0: 'Normal Toon',
+CheesyEffectId2Name = {0: 'Normal Toon',
  1: 'Big Head',
  2: 'Small Head',
  3: 'Big Legs',
@@ -2613,130 +1363,129 @@ CheesyEffectId2Name = {
  11: 'Invisible',
  15: 'Green Toon',
  77: 'Wireframe'}
-SuitFlunky = 'Flunky'
+SuitFlunky = 'Small Fish'
 SuitPencilPusher = 'Pencil Pusher'
-SuitYesman = 'Yesman'
-SuitMicromanager = 'Micro\x03manager'
-SuitDownsizer = 'Downsizer'
-SuitHeadHunter = 'Head Hunter'
-SuitCorporateRaider = 'Corporate Raider'
-SuitTheBigCheese = 'The Big Cheese'
-SuitColdCaller = 'Cold Caller'
-SuitTelemarketer = 'Tele\x03marketer'
-SuitNameDropper = 'Name Dropper'
-SuitGladHander = 'Glad Hander'
-SuitMoverShaker = 'Mover & Shaker'
-SuitTwoFace = 'Two-Face'
-SuitTheMingler = 'The Mingler'
-SuitMrHollywood = 'Mr. Hollywood'
-SuitShortChange = 'Short Change'
-SuitPennyPincher = 'Penny Pincher'
-SuitTightwad = 'Tightwad'
-SuitBeanCounter = 'Bean Counter'
-SuitNumberCruncher = 'Number Cruncher'
-SuitMoneyBags = 'Money Bags'
-SuitLoanShark = 'Loan Shark'
-SuitRobberBaron = 'Robber Baron'
-SuitConArtist = 'Con Artist'
-SuitConnoisseur = 'Connoisseur'
-SuitSwindler = 'The Swindler'
-SuitMiddleman = 'Middleman'
-SuitToxicManager = 'Toxic Manager'
-SuitMagnate = 'Magnate'
-SuitBigFish = 'Big Fish'
-SuitHeadHoncho = 'Head Honcho'
+SuitYesman = 'Downsizer'
+SuitMicromanager = 'Medium Fish'
+SuitDownsizer = 'Middleman'
+SuitHeadHunter = 'Con Artist'
+SuitCorporateRaider = 'Big Fish'
+SuitTheBigCheese = 'Toxic Manager'
+SuitColdCaller = 'Big Lips'
+SuitTelemarketer = 'Sysadmin'
+SuitNameDropper = 'The Mingler'
+SuitGladHander = 'Two-Face'
+SuitMoverShaker = 'Python Charmer'
+SuitTwoFace = 'Buff Shark'
+SuitTheMingler = 'Steel Telemarketer'
+SuitMrHollywood = 'Black Marketer'
+SuitShortChange = 'Light Blue Box'
+SuitPennyPincher = 'Black Eyed Pea'
+SuitTightwad = 'Fat Baron'
+SuitBeanCounter = 'Sales Monkey'
+SuitNumberCruncher = 'Hippie Freak'
+SuitMoneyBags = 'Bald Eagle'
+SuitLoanShark = 'Toxic Accountant'
+SuitRobberBaron = 'The Cash Collector'
+SuitConArtist = 'Script Kiddie'
+SuitConnoisseur = 'Code Monkey'
+SuitSwindler = 'Voodoo Programmer'
+SuitMiddleman = 'Shotgun Debugger'
+SuitToxicManager = 'Keyboard Cowboy'
+SuitMagnate = 'Software Simian'
+SuitBigFish = 'Installer Wizard'
+SuitHeadHoncho = 'Root User'
 SuitBottomFeeder = 'Bottom Feeder'
 SuitBloodsucker = 'Blood\x03sucker'
-SuitDoubleTalker = 'Double Talker'
-SuitAmbulanceChaser = 'Ambulance Chaser'
-SuitBackStabber = 'Back Stabber'
-SuitSpinDoctor = 'Spin Doctor'
-SuitLegalEagle = 'Legal Eagle'
-SuitBigWig = 'Big Wig'
-SuitFlunkyS = 'a Flunky'
+SuitDoubleTalker = 'The Swindler'
+SuitAmbulanceChaser = 'Assembly Assassin'
+SuitBackStabber = 'Toxic Attourney'
+SuitSpinDoctor = 'Magnate'
+SuitLegalEagle = 'Barrister'
+SuitBigWig = 'Shadow Justice'
+SuitFlunkyS = 'a Small Fish'
 SuitPencilPusherS = 'a Pencil Pusher'
-SuitYesmanS = 'a Yesman'
-SuitMicromanagerS = 'a Micromanager'
-SuitDownsizerS = 'a Downsizer'
-SuitHeadHunterS = 'a Head Hunter'
-SuitCorporateRaiderS = 'a Corporate Raider'
-SuitTheBigCheeseS = 'a The Big Cheese'
-SuitColdCallerS = 'a Cold Caller'
-SuitTelemarketerS = 'a Telemarketer'
-SuitNameDropperS = 'a Name Dropper'
-SuitGladHanderS = 'a Glad Hander'
-SuitMoverShakerS = 'a Mover & Shaker'
-SuitTwoFaceS = 'a Two-Face'
-SuitTheMinglerS = 'a The Mingler'
-SuitMrHollywoodS = 'a Mr. Hollywood'
-SuitShortChangeS = 'a Short Change'
-SuitPennyPincherS = 'a Penny Pincher'
-SuitTightwadS = 'a Tightwad'
-SuitBeanCounterS = 'a Bean Counter'
-SuitNumberCruncherS = 'a Number Cruncher'
-SuitMoneyBagsS = 'a Money Bags'
-SuitLoanSharkS = 'a Loan Shark'
-SuitRobberBaronS = 'a Robber Baron'
-SuitConArtistS = 'a Con Artist'
-SuitConnoisseurS = 'a Connoisseur'
-SuitSwindlerS = 'a Swindler'
-SuitMiddlemanS = 'a Middleman'
-SuitToxicManagerS = 'a Toxic Manager'
-SuitMagnateS = 'a Magnate'
-SuitBigFishS = 'a Big Fish'
-SuitHeadHonchoS = 'a Head Honcho'
+SuitYesmanS = 'a Downsizer'
+SuitMicromanagerS = 'a Medium Fish'
+SuitDownsizerS = 'a Middleman'
+SuitHeadHunterS = 'a Con Artist'
+SuitCorporateRaiderS = 'a Big Fish'
+SuitTheBigCheeseS = 'a Toxic Manager'
+SuitColdCallerS = 'a Big Lips'
+SuitTelemarketerS = 'a Sysadmin'
+SuitNameDropperS = 'a The Mingler'
+SuitGladHanderS = 'a Two-Face'
+SuitMoverShakerS = 'a Python Charmer'
+SuitTwoFaceS = 'a Buff Shark'
+SuitTheMinglerS = 'a Steel Telemarketer'
+SuitMrHollywoodS = 'a Black Marketer'
+SuitShortChangeS = 'a Light Blue Box'
+SuitPennyPincherS = 'a Black Eyed Pea'
+SuitTightwadS = 'a Fat Baron'
+SuitBeanCounterS = 'a Sales Monkey'
+SuitNumberCruncherS = 'a Hippie Freak'
+SuitMoneyBagsS = 'a Bald Eagle'
+SuitLoanSharkS = 'a Toxic Accountant'
+SuitRobberBaronS = 'a The Cash Collector'
+SuitConArtistS = 'a Script Kiddie'
+SuitConnoisseurS = 'a Code Monkey'
+SuitSwindlerS = 'a Voodoo Programmer'
+SuitMiddlemanS = 'a Shotgun Debugger'
+SuitToxicManagerS = 'a Keyboard Cowboy'
+SuitMagnateS = 'a Software Simian'
+SuitBigFishS = 'a Installer Wizard'
+SuitHeadHonchoS = 'a Root User'
 SuitBottomFeederS = 'a Bottom Feeder'
 SuitBloodsuckerS = 'a Bloodsucker'
-SuitDoubleTalkerS = 'a Double Talker'
-SuitAmbulanceChaserS = 'an Ambulance Chaser'
-SuitBackStabberS = 'a Back Stabber'
-SuitSpinDoctorS = 'a Spin Doctor'
-SuitLegalEagleS = 'a Legal Eagle'
-SuitBigWigS = 'a Big Wig'
-SuitFlunkyP = 'Flunkies'
+SuitDoubleTalkerS = 'a The Swindler'
+SuitAmbulanceChaserS = 'an Assembly Assassin'
+SuitBackStabberS = 'a Toxic Attourney'
+SuitSpinDoctorS = 'a Magnate'
+SuitLegalEagleS = 'a Barrister'
+SuitBigWigS = 'a Shadow Justice'
+SuitFlunkyP = 'Small Fish'
 SuitPencilPusherP = 'Pencil Pushers'
-SuitYesmanP = 'Yesmen'
-SuitMicromanagerP = 'Micromanagers'
-SuitDownsizerP = 'Downsizers'
-SuitHeadHunterP = 'Head Hunters'
-SuitCorporateRaiderP = 'Corporate Raiders'
-SuitTheBigCheeseP = 'The Big Cheeses'
-SuitColdCallerP = 'Cold Callers'
-SuitTelemarketerP = 'Telemarketers'
-SuitNameDropperP = 'Name Droppers'
-SuitGladHanderP = 'Glad Handers'
-SuitMoverShakerP = 'Movers & Shakers'
-SuitTwoFaceP = 'Two-Faces'
-SuitTheMinglerP = 'The Minglers'
-SuitMrHollywoodP = 'Mr. Hollywoods'
-SuitShortChangeP = 'Short Changes'
-SuitPennyPincherP = 'Penny Pinchers'
-SuitTightwadP = 'Tightwads'
-SuitBeanCounterP = 'Bean Counters'
-SuitNumberCruncherP = 'Number Crunchers'
-SuitMoneyBagsP = 'Money Bags'
-SuitLoanSharkP = 'Loan Sharks'
-SuitRobberBaronP = 'Robber Barons'
-SuitConArtistP = 'Con Artists'
-SuitConnoisseurP = 'Connoisseurs'
-SuitSwindlerP = 'Swindlers'
-SuitMiddlemanP = 'Middlemen'
-SuitToxicManagerP = 'Toxic Managers'
-SuitMagnateP = 'Magnates'
-SuitBigFishP = 'Big Fish'
-SuitHeadHonchoP = 'Head Honchos'
+SuitYesmanP = 'Downsizers'
+SuitMicromanagerP = 'Medium Fish'
+SuitDownsizerP = 'Middlemen'
+SuitHeadHunterP = 'Con Artists'
+SuitCorporateRaiderP = 'Big Fish'
+SuitTheBigCheeseP = 'Toxic Managers'
+SuitColdCallerP = 'Big Lips'
+SuitTelemarketerP = 'Sysadmins'
+SuitNameDropperP = 'The Minglers'
+SuitGladHanderP = 'Two-Faces'
+SuitMoverShakerP = 'Python Charmers'
+SuitTwoFaceP = 'Buff Sharks'
+SuitTheMinglerP = 'Steel Telemarketers'
+SuitMrHollywoodP = 'Black Marketers'
+SuitShortChangeP = 'Light Blue boxes'
+SuitPennyPincherP = 'Black Eyed Peas'
+SuitTightwadP = 'Fat Barons'
+SuitBeanCounterP = 'Sales Monkies'
+SuitNumberCruncherP = 'Hippie Freaks'
+SuitMoneyBagsP = 'Bald Eagles'
+SuitLoanSharkP = 'Toxic Accountants'
+SuitRobberBaronP = 'The Cash Collectors'
+SuitConArtistP = 'Script Kiddies'
+SuitConnoisseurP = 'Code Monkeys'
+SuitSwindlerP = 'Voodoo Programmers'
+SuitMiddlemanP = 'Shotgun Debuggers'
+SuitToxicManagerP = 'Keyboard Cowboys'
+SuitMagnateP = 'Software Simians'
+SuitBigFishP = 'Installer Wizards'
+SuitHeadHonchoP = 'Root Users'
 SuitBottomFeederP = 'Bottom Feeders'
 SuitBloodsuckerP = 'Bloodsuckers'
-SuitDoubleTalkerP = 'Double Talkers'
-SuitAmbulanceChaserP = 'Ambulance Chasers'
-SuitBackStabberP = 'Back Stabbers'
-SuitSpinDoctorP = 'Spin Doctors'
-SuitLegalEagleP = 'Legal Eagles'
-SuitBigWigP = 'Big Wigs'
+SuitDoubleTalkerP = 'The Swindlers'
+SuitAmbulanceChaserP = 'Assembly Assassins'
+SuitBackStabberP = 'Toxic Attourneys'
+SuitSpinDoctorP = 'Magnates'
+SuitLegalEagleP = 'Barristers'
+SuitBigWigP = 'Shadow Justices'
 SuitFaceoffDefaultTaunts = ['Boo!']
 SuitAttackDefaultTaunts = ['Take that!', 'Take a memo on this!']
-SuitAttackNames = {'AcidRain': 'Acid Rain!',
- 'Audit': 'Audit!',
+SuitAttackNames = {'Audit': 'Audit!',
  'Bite': 'Bite!',
  'BounceCheck': 'Bounce Check!',
  'BrainStorm': 'Brain Storm!',
@@ -2803,12 +1552,7 @@ SuitAttackNames = {'AcidRain': 'Acid Rain!',
  'Watercooler': 'Watercooler!',
  'Withdrawal': 'Withdrawal!',
  'WriteOff': 'Write Off!'}
-SuitAttackTaunts = {'AcidRain': ["It's sulfur you.",
-           "A little CO2 didn't hurt anybody, right?",
-           'Environment, Shmenvironment.',
-           "Today's Forecast: Rainy with a chance of dissolution.",
-           'pHew! That was close!'],
- 'Audit': ["I believe your books don't balance.",
+SuitAttackTaunts = {'Audit': ["I believe your books don't balance.",
            "Looks like you're in the red.",
            'Let me help you with your books.',
            'Your debit column is much too high.',
@@ -3109,7 +1853,7 @@ SuitAttackTaunts = {'AcidRain': ["It's sulfur you.",
               "You aren't above the law!",
               'There should be a law against you.',
               "There's no ex post facto with me!",
-              "The opinions expressed in this attack are not those of Project Altis.",
+              'The opinions expressed in this attack are not those of Project Altis.',
               'We cannot be held responsible for damages suffered in this attack.',
               'Your results for this attack may vary.',
               'This attack is void where prohibited.',
@@ -3363,7 +2107,7 @@ SuitAttackTaunts = {'AcidRain': ["It's sulfur you.",
  'SongAndDance': ['Whoa whoa whoa...',
                   'A-one! A-two! A skiddly-diddly-doo!',
                   "Don't trip up!",
-                  "Think of this as a dance to the death.",
+                  'Think of this as a dance to the death.',
                   "It's like dreaming with your feet.",
                   'Never miss a chance to dance!',
                   'When you feel sad, dance!',
@@ -3461,15 +2205,15 @@ SuitAttackTaunts = {'AcidRain': ["It's sulfur you.",
               "You're about to suffer some losses.",
               'This is going to hurt your bottom line.']}
 BuildingWaitingForVictors = ('Waiting for other toons...',)
-ElevatorHopOff = 'Hop off'
-ElevatorStayOff = "If you hop off, you'll need to wait\nfor the elevator to leave or empty."
+ElevatorHopOff = 'Get Out'
+ElevatorStayOff = "If you get off of this fricking elevator you won't be able to board it again!"
 ElevatorLeaderOff = 'Only your leader can decide when to hop off.'
-ElevatorHoppedOff = 'You need to wait for the next elevator.'
+ElevatorHoppedOff = 'Haha you have to wait for the next elevator.'
 ElevatorMinLaff = 'You need %s laff points to ride this elevator.'
-ElevatorHopOK = 'Okay'
+ElevatorHopOK = 'OKAY!!!!'
 ElevatorGroupMember = 'Only your group leader can\n decide when to board.'
 KartMinLaff = 'You need %s laff points to ride this kart'
-CogsIncExt = ', Inc.'
+CogsIncExt = ', Incorporated'
 CogsIncModifier = '%s' + CogsIncExt
 CogsInc = Cogs.upper() + CogsIncExt
 CogdominiumsExt = ' Field Office'
@@ -3480,14 +2224,14 @@ DoorWhoAppendix = ' who?'
 DoorNametag = 'Door'
 FADoorCodes_UNLOCKED = None
 FADoorCodes_TALK_TO_TOM = 'You need gags! Go talk to Tutorial Tom!'
-FADoorCodes_DEFEAT_FLUNKY_HQ = 'Come back here when you have defeated the Flunky!'
+FADoorCodes_DEFEAT_FLUNKY_HQ = 'Come back here when you have defeated the Small Fish!'
 FADoorCodes_TALK_TO_HQ = 'Go get your reward from HQ Harry!'
 FADoorCodes_WRONG_DOOR_HQ = 'Wrong door! Take the other door to the playground!'
 FADoorCodes_GO_TO_PLAYGROUND = 'Wrong way! You need to go to the playground!'
-FADoorCodes_DEFEAT_FLUNKY_TOM = 'Walk up to that Flunky to battle him!'
+FADoorCodes_DEFEAT_FLUNKY_TOM = 'Walk up to that Small Fish to fuck him in the ass!'
 FADoorCodes_TALK_TO_HQ_TOM = 'Go get your reward from Toon Headquarters!'
 FADoorCodes_SUIT_APPROACHING = None
-FADoorCodes_BUILDING_TAKEOVER = "Watch out! There's a Cog in there!"
+FADoorCodes_BUILDING_TAKEOVER = "Fuck you! There's a Cog in there!"
 FADoorCodes_SB_DISGUISE_INCOMPLETE = "You'll get caught going in there as a Toon! You need to complete your Sellbot Disguise first!\n\nBuild your Sellbot Disguise out of parts from the Factory."
 FADoorCodes_CB_DISGUISE_INCOMPLETE = "You'll get caught going in there as a Toon! You need to complete your Cashbot Disguise first!\n\nBuild your Cashbot Disguise out of parts from the Mints."
 FADoorCodes_LB_DISGUISE_INCOMPLETE = "You'll get caught going in there as a Toon! You need to complete your Lawbot Disguise first!\n\nBuild your Lawbot Disguise out of parts from the DA Offices."
@@ -4478,7 +3222,7 @@ LauncherPhaseNames = {0: 'Initialization',
  12: Bossbot + ' HQ',
  13: 'Parties'}
 LauncherProgress = '%(name)s (%(current)s of %(total)s)'
-LauncherStartingMessage = "Starting Project Altis... "
+LauncherStartingMessage = 'Starting Project Altis... '
 LauncherDownloadFile = 'Downloading update for ' + LauncherProgress + '...'
 LauncherDownloadFileBytes = 'Downloading update for ' + LauncherProgress + ': %(bytes)s'
 LauncherDownloadFilePercent = 'Downloading update for ' + LauncherProgress + ': %(percent)s%%'
@@ -4510,7 +3254,7 @@ AvatarChoiceNameApproved = 'Name\nApproved!'
 AvatarChoiceNameReview = 'Under\nReview'
 AvatarChoiceNameYourToon = 'Name\nYour Toon!'
 AvatarChoiceDeletePasswordText = 'Careful! This will delete %s forever.  To delete this Toon, enter your password.'
-AvatarChoiceDeleteConfirmText = 'Careful! This will delete %(name)s forever.  If you are sure you want to do this, type "%(confirm)s" and click OK.'
+AvatarChoiceDeleteConfirmText = 'Careful! This will delete %(name)s forever.  If you are sure you want to do this, type %(confirm)s and click OK.'
 AvatarChoiceDeleteConfirmUserTypes = 'delete'
 AvatarChoiceDeletePasswordTitle = 'Delete Toon?'
 AvatarChoicePassword = 'Password'
@@ -4553,242 +3297,196 @@ InventoryPagePluralPoints = 'You will get a new\n%(trackName)s gag when you\nget
 InventoryPageSinglePoint = 'You will get a new\n%(trackName)s gag when you\nget %(numPoints)s more %(trackName)s point.'
 InventoryPageNoAccess = 'You do not have access to the %s track yet.'
 AchievementsPageTitle = 'Achievements'
-
-# Stats Page
-StatsPageTitle = "Toon Stats"
-
-StatsList = [
-"Cogs defeated: %s",
-"Buildings Saved: %s",
-"Elite Cogs defeated: %s",
-"Friends made: %s",
-"Current friends: %s",
-"Tasks completed: %s",
-"VPs defeated: %s",
-"CFOs defeated: %s",
-"CJs defeated: %s",
-"CEOs defeated: %s",
-"??? defeated: %s",
-"Times went sad: %s",
-"Items purchased: %s",
-"Fish caught: %s",
-"Trolley games played: %s",
-"Gags used: %s",
-"Treasures collected: %s",
-"Jellybeans spent: %s",
-"Jellybeans earned: %s",
-"SOS Cards used: %s",
-"Unites used: %s",
-"Summons used: %s",
-"Fires used: %s",
-"Factories defeated: %s",
-"Mints defeated: %s",
-"District Attorney Offices defeated: %s",
-"Cog Golf Courses defeated: %s",
-"??? defeated: %s"
-]
-
+StatsPageTitle = 'Toon Stats'
+StatsList = ['Cogs defeated: %s',
+ 'Buildings Saved: %s',
+ 'Elite Cogs defeated: %s',
+ 'Friends made: %s',
+ 'Current friends: %s',
+ 'Tasks completed: %s',
+ 'VPs defeated: %s',
+ 'CFOs defeated: %s',
+ 'CJs defeated: %s',
+ 'CEOs defeated: %s',
+ '??? defeated: %s',
+ 'Times went sad: %s',
+ 'Items purchased: %s',
+ 'Fish caught: %s',
+ 'Trolley games played: %s',
+ 'Gags used: %s',
+ 'Treasures collected: %s',
+ 'Jellybeans spent: %s',
+ 'Jellybeans earned: %s',
+ 'SOS Cards used: %s',
+ 'Unites used: %s',
+ 'Summons used: %s',
+ 'Fires used: %s']
 EarnedAchievement = 'You earned an achievement!'
-
 LockedAchievement = 'ACHIEVEMENT LOCKED'
-
-AchievementCategories = [
- "Friends",
- "Catalog",
- "Trolley",
- "Cogs",
- "Gags",
- "Fishing",
- "Visit",
- "Special"]
-Achievements = [
- "You've Got a Friend In Me!",
+AchievementCategories = ['Friends',
+ 'Catalog',
+ 'Trolley',
+ 'Cogs',
+ 'Gags',
+ 'Fishing',
+ 'Visit',
+ 'Special']
+Achievements = ["You've Got a Friend In Me!",
  "I'm In a Clique!",
- "Popular Toon in Town!",
- "Shipping and Handling is Free!",
- "Impulse Buyer!",
- "Regular Customer!",
+ 'Popular Toon in Town!',
+ 'Shipping and Handling is Free!',
+ 'Impulse Buyer!',
+ 'Regular Customer!',
  "Clarabelle's on Speed-dial!",
- "Choo Choo!",
+ 'Choo Choo!',
  "That's-a Spicy Meatball!",
- "Counter-offer!",
- "Closed Lost!",
- "Breaking the Bank!",
- "Robbing the Bank!",
- "First Case!",
- "The Prosecution does not Rest!",
- "Demoted!",
- "Corporate Restructuring!",
- "Take a seat.",
- "All in favor?",
- "Closed Win!",
- "Buying the Bank!",
- "Per Curiam!",
+ 'Counter-offer!',
+ 'Closed Lost!',
+ 'Breaking the Bank!',
+ 'Robbing the Bank!',
+ 'First Case!',
+ 'The Prosecution does not Rest!',
+ 'Demoted!',
+ 'Corporate Restructuring!',
+ 'Take a seat.',
+ 'All in favor?',
+ 'Closed Win!',
+ 'Buying the Bank!',
+ 'Per Curiam!',
  "You're the Boss!",
- "Motion Carried!",
- "It Tickles!",
+ 'Motion Carried!',
+ 'It Tickles!',
  "You'll Slip and Slide on This!",
- "Attractive Personality!",
- "Professional Noisemaker!",
- "Shock and Awe!",
- "Heads up!",
- "How Did Island Here?",
- "Do You See What I Ski?",
- "Stay Composed!",
+ 'Attractive Personality!',
+ 'Professional Noisemaker!',
+ 'Shock and Awe!',
+ 'Heads up!',
+ 'How Did Island Here?',
+ 'Do You See What I Ski?',
+ 'Stay Composed!',
  "Don't be Such a Pansy!",
- "Make Like a Tree and Leaf!",
- "Grand Prix-ce of Cake!",
- "Counting Sheep!",
- "Welcome to the Club!",
- "The Sales Floor!",
- "Not the Mint I was Talking About!",
- "Justice Second!",
- "Board Yet?",
- "First Encounter!",
- "Ten Tin Suits!",
+ 'Make Like a Tree and Leaf!',
+ 'Grand Prix-ce of Cake!',
+ 'Counting Sheep!',
+ 'Welcome to the Club!',
+ 'The Sales Floor!',
+ 'Not the Mint I was Talking About!',
+ 'Justice Second!',
+ 'Board Yet?',
+ 'First Encounter!',
+ 'Ten Tin Suits!',
  "I'm 40% Corporate!",
- "Saving the Streets!",
- "Corporate Conundrum!",
- "Toontastic Takeover!",
- "Cog-Crusher!",
- "You Can Make a Fishstick With That!",
- "The Reel Deal!",
- "Not Bad, Cod Do Better!",
+ 'Saving the Streets!',
+ 'Corporate Conundrum!',
+ 'Toontastic Takeover!',
+ 'Cog-Crusher!',
+ 'You Can Make a Fishstick With That!',
+ 'The Reel Deal!',
+ 'Not Bad, Cod Do Better!',
  "You're Krilling it!",
- "Sole of a Fisherman!",
- "Stand-up Comedian!",
- "You Just Activated my Trap Card!",
- "VERY Attractive Personality!",
- "Shrill of the Fight!",
- "You Underestimate My Flour!",
- "Go With the Flow!",
- "1.21 Gigawatts!",
- "I Missed the Minor Chord!",
- "Never gets old!",
- "Where Have you Bean All my Life?",
- "Viva la Resistance!",
- "Fun for Everyone!",
- "Minigame Mania!",
- "Frequent Rider!",
- "Solo Salesman!",
- "I Knead that Dough!",
- "Ace Attorney!",
- "Good Fore-Sight!",
- "Board of Director!",
- "Appraised!",
- "Depreciation!",
- "Evicted!",
- "Forclosure!",
- "Deed to the City!",
- "Shutting down the Factory!",
- "Plant Shutdown!",
- "Seizing the Means of Production!",
- "Loose Change!",
- "Making it Rain!",
- "Making it Pour!",
- "Corporate Espionage!",
- "Extradition!",
- "Legal Breakdown!",
- "Round of Putt-Putt!",
- "Country Club Regular!",
- "Tiger Woods!",
- "Board?",
- "I'd Like to Make a Proposal!",
- "Motion Acknowledged!"
-]
-AchievementsDesc = ("Make a friend",
- "Make 10 friends",
- "Make 50 friends",
- "Purchase an item from the cattlelog",
- "Purchase 10 items from the cattlelog",
- "Purchase 50 items from the cattlelog",
- "Purchase 100 items from the cattlelog",
- "Ride the trolley",
+ 'Sole of a Fisherman!',
+ 'Stand-up Comedian!',
+ 'You Just Activated my Trap Card!',
+ 'VERY Attractive Personality!',
+ 'Shrill of the Fight!',
+ 'You Underestimate My Flour!',
+ 'Go With the Flow!',
+ '1.21 Gigawatts!',
+ 'I Missed the Minor Chord!',
+ 'Never gets old!',
+ 'Where Have you Bean All my Life?',
+ 'Viva la Resistance!',
+ 'Fun for Everyone!',
+ 'Minigame Mania!',
+ 'Frequent Rider!',
+ 'Solo Salesman!',
+ 'I Knead that Dough!',
+ 'Ace Attorney!',
+ 'Good Fore-Sight!',
+ 'Board of Director!',
+ 'Appraised!',
+ 'Depreciation!',
+ 'Evicted!',
+ 'Forclosure!',
+ 'Deed to the City!']
+AchievementsDesc = ('Make a friend',
+ 'Make 10 friends',
+ 'Make 50 friends',
+ 'Purchase an item from the cattlelog',
+ 'Purchase 10 items from the cattlelog',
+ 'Purchase 50 items from the cattlelog',
+ 'Purchase 100 items from the cattlelog',
+ 'Ride the trolley',
  "Visit Loopy's Balls",
- "Defeat the VP",
- "Defeat 10 VPs",
- "Defeat the CFO",
- "Defeat 10 CFOs",
- "Defeat the CJ",
- "Defeat 10 CJs",
- "Defeat the CEO",
- "Defeat 10 CEOs",
- "Defeat the Chairman",
- "Defeat 10 Chairmen",
- "Reach level 50 Sellbot Suit",
- "Reach level 50 Cashbot Suit",
- "Reach level 50 Lawbot Suit",
- "Reach level 50 Bossbot Suit",
- "Reach level 50 Boardbot Suit",
- "Unlock the TOON-UP gag track.",
- "Unlock the TRAP gag track.",
- "Unlock the LURE gag track.",
- "Unlock the SOUND gag track.",
- "Unlock the ZAP gag track.",
- "Unlock the DROP gag track.",
+ 'Defeat the CEO',
+ 'Defeat 10 CEOs',
+ 'Defeat the VSS',
+ 'Defeat 10 VSSs',
+ 'Defeat the CJ',
+ 'Defeat 10 CJs',
+ 'Defeat the Chairman',
+ 'Defeat 10 Chairmans',
+ 'Defeat the EEE',
+ 'Defeat 10 EEE',
+ 'Reach level 50 Executivebot Suit',
+ 'Reach level 50 Vaultbot Suit',
+ 'Reach level 50 Politibot Suit',
+ 'Reach level 50 Boardbot Suit',
+ 'Reach level 50 Techbot Suit',
+ 'Unlock the TOON-UP gag track.',
+ 'Unlock the TRAP gag track.',
+ 'Unlock the LURE gag track.',
+ 'Unlock the SOUND gag track.',
+ 'Unlock the ZAP gag track.',
+ 'Unlock the DROP gag track.',
  "Visit Donald's Dock.",
- "Visit The Brrrrgh.",
+ 'Visit The Brrrrgh.',
  "Visit Minnie's Melodyland.",
- "Visit Daisy Gardens.",
- "Visit Acorn Acres.",
- "Visit Goofy Speedway.",
+ 'Visit Daisy Gardens.',
+ 'Visit Acorn Acres.',
+ 'Visit Goofy Speedway.',
  "Visit Donald's Dreamland.",
- "Visit Bossbot HQ.",
- "Visit Sellbot HQ.",
- "Visit Cashbot HQ.",
- "Visit Lawbot HQ.",
- "Visit Boardbot HQ.",
- "Destroy 1 cog.",
- "Destroy 10 cogs.",
- "Destroy 100 cogs.",
- "Destroy 1,000 cogs.",
- "Destroy 10,000 cogs.",
- "Destroy 100,000 cogs.",
- "Destroy 1,000,000 cogs.",
- "Catch 1 fish.",
- "Catch 10 fish.",
- "Catch 100 fish.",
- "Catch 1,000 fish.",
- "Catch 10,000 fish.",
- "Max the TOON-UP gag track.",
- "Max the TRAP gag track.",
- "Max the LURE gag track.",
- "Max the SOUND gag track.",
- "Max the THROW gag track.",
- "Max the SQUIRT gag track.",
- "Max the ZAP gag track.",
- "Max the DROP gag track.",
- "Humor Sofie Squirt with a stale joke.",
- "Buy a doodle.",
- "Join the Resistance.",
- "Ride the trolley 10 times.",
- "Ride the trolley 50 times.",
- "Ride the trolley 100 times.",
- "Solo the VP.",
- "Solo the CFO.",
- "Solo the CJ.",
- "Solo the CEO.",
- "Solo the Chairman.",
- "Reclaim a Cog building.",
- "Reclaim 10 Cog buildings.",
- "Reclaim 50 Cog buildings.",
- "Reclaim 100 Cog buildings.",
- "Reclaim 250 Cog buildings.",
- "Defeat a Factory.",
- "Defeat 10 Factories.",
- "Defeat 50 Factories.",
- "Defeat a Mint.",
- "Defeat 10 Mints.",
- "Defeat 50 Mints.",
- "Defeat a District Attorney's Office.",
- "Defeat 10 District Attorney's Offices.",
- "Defeat 50 District Attorney's Offices.",
- "Defeat a Cog Golf Course.",
- "Defeat 10 Cog Golf Courses.",
- "Defeat 50 Cog Golf Courses.",
- "Defeat a Board Office.",
- "Defeat 10 Board Offices.",
- "Defeat 50 Board Offices.")
+ 'Visit Boardbot HQ.',
+ 'Visit Executivebot HQ.',
+ 'Visit Vaultbot HQ.',
+ 'Visit Politibot HQ.',
+ 'Visit Techbot HQ.',
+ 'Destroy 1 cog.',
+ 'Destroy 10 cogs.',
+ 'Destroy 100 cogs.',
+ 'Destroy 1,000 cogs.',
+ 'Destroy 10,000 cogs.',
+ 'Destroy 100,000 cogs.',
+ 'Destroy 1,000,000 cogs.',
+ 'Catch 1 fish.',
+ 'Catch 10 fish.',
+ 'Catch 100 fish.',
+ 'Catch 1,000 fish.',
+ 'Catch 10,000 fish.',
+ 'Max the TOON-UP gag track.',
+ 'Max the TRAP gag track.',
+ 'Max the LURE gag track.',
+ 'Max the SOUND gag track.',
+ 'Max the THROW gag track.',
+ 'Max the SQUIRT gag track.',
+ 'Max the ZAP gag track.',
+ 'Max the DROP gag track.',
+ 'Humor Sofie Squirt with a stale joke.',
+ 'Buy a doodle.',
+ 'Join the Resistance.',
+ 'Ride the trolley 10 times.',
+ 'Ride the trolley 50 times.',
+ 'Ride the trolley 100 times.',
+ 'Solo the CEO.',
+ 'Solo the VSS.',
+ 'Solo the CJ.',
+ 'Solo the Chairman.',
+ 'Solo the EEE.',
+ 'Reclaim a Cog building.',
+ 'Reclaim 10 Cog buildings.',
+ 'Reclaim 50 Cog buildings.',
+ 'Reclaim 100 Cog buildings.',
+ 'Reclaim 250 Cog buildings.')
 NPCFriendPageTitle = 'SOS Toons'
 PartyDateFormat = '%(mm)s %(dd)d, %(yyyy).4d'
 PartyTimeFormat = '%d:%.2d %s'
@@ -5317,8 +4015,8 @@ OptionsPageExitConfirm = 'Exit Toontown?'
 CodePageTitle = 'Codes'
 ItemsPageTitle = 'Items'
 ItemsPageNametagStyle = 'Nametag Style'
-ItemsPageFishingRods = "Fishing Rod"
-ItemsPageCheesyEffect = "Cheesy Effect"
+ItemsPageFishingRods = 'Fishing Rod'
+ItemsPageCheesyEffect = 'Cheesy Effect'
 DisplaySettingsTitle = 'Display Settings'
 DisplaySettingsIntro = 'The following settings are used to configure the way Toontown is displayed on your computer.  It is usually unnecessary to adjust these unless you are experiencing a problem.'
 DisplaySettingsIntroSimple = 'You may adjust the screen resolution to a higher value to improve the clarity of text and graphics in Toontown, but depending on your graphics card, some higher values may make the game run less smoothly or may not work at all.'
@@ -5337,7 +4035,7 @@ CdrPageTitle = 'Enter a Code'
 CdrInstructions = 'Enter your code to receive a special item in your mailbox.'
 CdrResultSuccess = 'Congratulations! Check your mailbox to claim your item!'
 CdrResultInvalidCode = "You've entered an invalid code. Please check the code and try again."
-CdrResultIneligibleCode = "You are not eligible for this code!"
+CdrResultIneligibleCode = 'You are not eligible for this code!'
 CdrResultExpiredCode = "We're sorry. This code has expired."
 CdrResultUnknownError = "We're sorry. This code cannot be applied to your Toon."
 CdrResultMailboxFull = 'Your mailbox is full. Please remove an item, then enter your code again.'
@@ -5354,19 +4052,9 @@ InsomniaReusableCodes = 'If you are using an Insomnia 60 code, keep it! You can 
 TrackPageTitle = 'Gag Track Training'
 TrackPageShortTitle = 'Gag Training'
 TrackPageSubtitle = 'Training Points:'
-TrackPageUnlocked = 'UNLOCKED'
-TrackPageProgress = '%s/2 POINTS TO UNLOCK'
-TrackPageHints = ['First of 2 pieces of the gag training reel, get both to unlock the gag track!', 'Last piece of the gag training reel, get both to unlock the gag track!', 'Adds a 20% self heal bonus to Toon-up gags.', '???', '???',
- 'First of 2 pieces of the gag training reel, get both to unlock the gag track!', 'Last piece of the gag training reel, get both to unlock the gag track!', 'Adds a 10% chance to not use a Trap gag.', '???', '???',
- 'First of 2 pieces of the gag training reel, get both to unlock the gag track!', 'Last piece of the gag training reel, get both to unlock the gag track!', 'Adds an additional round of stun to Lure gags.', '???', '???',
- 'First of 2 pieces of the gag training reel, get both to unlock the gag track!', 'Last piece of the gag training reel, get both to unlock the gag track!', 'All Sound gags get a bonus damage equal to 1/2 the highest level cog in the battle.', '???', '???',
- 'First of 2 pieces of the gag training reel, get both to unlock the gag track!', 'Last piece of the gag training reel, get both to unlock the gag track!', 'Adds a 10% damage bonus to Throw gags.', '???', '???',
- 'First of 2 pieces of the gag training reel, get both to unlock the gag track!', 'Last piece of the gag training reel, get both to unlock the gag track!', 'Adds an extra round of soak to Squirt gags, as well as giving a -20 defense debuff to the cog, as long as the cog is soaked.', '???', '???',
- 'First of 2 pieces of the gag training reel, get both to unlock the gag track!', 'Last piece of the gag training reel, get both to unlock the gag track!', 'Increases the chance for Zap gags to cause a shortcircuit by 1.5x (50%).', '???', '???',
- 'First of 2 pieces of the gag training reel, get both to unlock the gag track!', 'Last piece of the gag training reel, get both to unlock the gag track!', 'Adds a 20% accuracy bonus to Drop gags.', '???', '???']
-TrackPageUpgrade = 'Training Point Use'
-TrackPageAckTakeback = 'You are about to allocate a training point into the %(track)s gag track, you can take the training point back IF you have only allocated one point into the track. Once the second point is allocated, you can no longer take those points back! Are you sure you want to use your training point?'
-TrackPageAckPrestige = 'You are about to allocate a training point into the %(track)s gag track, it will add the following bonus:\n\n%(bonus)s\n\nThis third training point is not permanent, but it isn\'t cheap to buy back! Are you sure you want to upgrade %(track)s?'
+TrackPageDone = 'FIN'
+TrackPageClear = 'PLACEHOLDER'
+
 QuestPageToonTasks = 'ToonTasks'
 QuestPageChoose = 'Choose'
 QuestPageLocked = 'Locked'
@@ -5529,8 +4217,8 @@ TIPPageTitle = 'TIP'
 SuitBaseNameWithLevel = '%(name)s\n%(dept)s\nLevel %(level)s'
 HealthForceAcknowledgeMessage = 'You cannot leave the playground until your Laff meter is smiling!'
 InventoryTotalGags = 'Total gags\n%d / %d'
-InventroyPinkSlips = '%s Pink Slips'
-InventroyPinkSlip = '1 Pink Slip'
+InventroyPinkSlips = '%s Things That Fire Cogs'
+InventroyPinkSlip = '1 Things That Fire Cogs'
 InventoryDelete = 'DELETE'
 InventoryDeleteAll = 'DELETE ALL'
 InventoryDeleteConfirm = "Are you sure you want to delete all your gags? Don't worry, your level 7 gags will be safe"
@@ -5542,6 +4230,7 @@ InventoryDetailAmount = '%(numItems)s / %(maxItems)s'
 InventoryDetailData = 'Accuracy: %(accuracy)s\n%(damageString)s: %(damage)d%(bonus)s\n%(singleOrGroup)s'
 InventoryDetailDataExtra = 'Accuracy: %(accuracy)s\n%(damageString)s: %(damage)d%(bonus)s\n%(singleOrGroup)s\n%(extra)s'
 TrapExtraText = '+10% chance to save gag'
+DropExtraText = '+10% acc. w/ 2+ drops'
 SoundExtraText = '(+Varies)'
 HealExtraText = '%(heal)s self'
 ZapExtraText = 'Fry Chance: %s'
@@ -5576,7 +4265,7 @@ NPCForceAcknowledgeMessage6 = 'Great job defeating those Cogs!\n\n\n\n\n\n\n\n\n
 NPCForceAcknowledgeMessage7 = "Don't forget to make a friend!\n\n\n\n\n\n\nClick on another player and use the New Friend button."
 NPCForceAcknowledgeMessage8 = 'Great! You made a new friend!\n\n\n\n\n\n\n\n\nYou should go back at Toon Headquarters now.'
 NPCForceAcknowledgeMessage9 = 'Good job using the phone!\n\n\n\n\n\n\n\n\nReturn to Toon Headquarters to claim your reward.'
-ToonSleepString = '. . . ZZZ . . .'
+ToonSleepString = 'I am sleeping go away. ZZZZZZZZZZZ'
 MovieTutorialReward1 = 'You received 1 Throw point! When you get 10, you will get a new gag!'
 MovieTutorialReward2 = 'You received 1 Squirt point! When you get 10, you will get a new gag!'
 MovieTutorialReward3 = 'Good job! You completed your first ToonTask!'
@@ -5618,7 +4307,7 @@ BattleGlobalAvPropStrings = (('Feather',
   'Aoogah',
   'Elephant Trunk',
   'Foghorn',
-  'Opera Singer'),
+  'MLG Horn'),
  ('Cupcake',
   'Fruit Pie Slice',
   'Cream Pie Slice',
@@ -5674,7 +4363,7 @@ BattleGlobalAvPropStringsSingular = (('a Feather',
   'an Aoogah',
   'an Elephant Trunk',
   'a Foghorn',
-  'an Opera Singer'),
+  'an MLG Horn'),
  ('a Cupcake',
   'a Fruit Pie Slice',
   'a Cream Pie Slice',
@@ -5730,7 +4419,7 @@ BattleGlobalAvPropStringsPlural = (('Feathers',
   'Aoogahs',
   'Elephant Trunks',
   'Foghorns',
-  'Opera Singers'),
+  'MLG Horn'),
  ('Cupcakes',
   'Fruit Pie Slices',
   'Cream Pie Slices',
@@ -5771,7 +4460,7 @@ BattleGlobalLureAccLow = 'Low'
 BattleGlobalLureAccMedium = 'Medium'
 AttackMissed = 'MISSED'
 NPCCallButtonLabel = 'CALL'
-LoaderLabel = 'Loading Project Altis...'
+LoaderLabel = 'Loading Mr. Ts Project Altis Modifications...'
 StarringIn = 'Starring In...'
 HeadingToHood = 'Loading %(hood)s...'
 HeadingToYourEstate = 'Loading your estate...'
@@ -5834,14 +4523,18 @@ FishPoker2Pair = '2 Pair'
 FishPokerPair = 'Pair'
 TutorialGreeting1 = 'Hello %s! Welcome to Toontown!'
 TutorialGreeting2 = 'As you may know, we are a small town on the Toontown Mainland.'
-TutorialGreeting3 = 'However, everything hasn\'t always been slapstick and seltzer in Toontown...'
+TutorialGreeting3 = "However, everything hasn't always been slapstick and seltzer in Toontown..."
 TutorialGreeting4 = 'After the E.R.A.S.E.R., things have been a little more dreary.'
 TutorialGreeting5 = 'Though, I have a good feeling about you!'
 TutorialGreeting6 = 'Alright, so where to start... OH! I got it!'
 TutorialGreeting7 = 'Use the arrow keys to move. Then come over and talk to me!'
 TutorialSuit1 = 'You must be the new kid on the block.'
-TutorialSuitTaunt = {'s': "I'm gonna send chills down your spine.", 'm': "I'll make short work of you.", 'l': 'Time for a feeding frenzy!', 'c': "Schools in session, and you're about to flunk out.", 'g': 'Ze idea is zat you vill lose!'} 
-TutorialMickeyWelcome = 'Welcome to Toontown!'
+TutorialSuitTaunt = {'s': "I'm gonna send chills down your spine.",
+ 'm': "I'll make short work of you.",
+ 'l': 'Time for a feeding frenzy!',
+ 'c': "Schools in session, and you're about to flunk out.",
+ 'g': 'Ze idea is zat you vill lose!'}
+TutorialMickeyWelcome = 'Welcome to Tew Tow!'
 TutorialFlippyIntro = 'Let me introduce you to my friend %s...' % Flippy
 TutorialFlippyHi = 'Hi, %s!'
 TutorialQT1 = 'You can talk by using this.'
@@ -5926,7 +4619,7 @@ MintBossConfrontedMsg = '%s is battling the Supervisor!'
 StageBossConfrontedMsg = '%s is battling the Clerk!'
 BoardOfficeBossConfrontedMsg = '%s is battling the Executive Board Member!'
 stageToonEnterElevator = '%s \nhas entered the elevator'
-ForcedLeaveStageAckMsg = 'The Clerk was defeated before you could reach him. You did not recover any Subpoenas.'
+ForcedLeaveStageAckMsg = 'The Law was defeated before you could reach him. You did not recover any Jury Notices.'
 MinigameWaitingForOtherPlayers = 'Waiting for other players to join...'
 MinigamePleaseWait = 'Please wait...'
 DefaultMinigameTitle = 'Minigame Title'
@@ -5951,7 +4644,7 @@ TugOfWarGameEnd = 'Good game!'
 TugOfWarGameTie = 'You tied!'
 TugOfWarPowerMeter = 'Power meter'
 PatternGameTitle = 'Match Tubby'
-PatternGameInstructions = 'Sir Tubby Cheezyfish will show you a dance sequence. ' + 'Try to repeat Sir Tubby Cheezyfish\'s dance just the way you see it using the arrow keys!'
+PatternGameInstructions = 'Sir Tubby Cheezyfish will show you a dance sequence. ' + "Try to repeat Sir Tubby Cheezyfish's dance just the way you see it using the arrow keys!"
 PatternGameWatch = 'Watch these dance steps...'
 PatternGameGo = 'GO!'
 PatternGameRight = 'Good, %s!'
@@ -6065,8 +4758,8 @@ GagShopPlayerDisconnected = '%s has disconnected'
 GagShopPlayerExited = '%s has exited'
 GagShopPlayerPlayAgain = 'Play Again'
 GagShopPlayerBuying = 'Buying'
-PopupTouchControls = 'You are using the \1textShadow\1EXPERIMENTAL\2 touch controls. These are very early in development and may be buggy. Please report any issues to the team. Thanks, and enjoy Project Altis!'
-PopupAlphaDisclaimer = '\1textShadow\1Disclaimer:\2\nThis is an BETA build of Project Altis! Things that are in game may be subject to change! There is some incomplete content as well, so stay tooned for the updated content! Thanks for participating in Project Altis\' Beta!'
+PopupTouchControls = 'You are using the \x01textShadow\x01EXPERIMENTAL\x02 touch controls. These are very early in development and may be buggy. Please report any issues to the team. Thanks, and enjoy Project Altis!'
+PopupAlphaDisclaimer = '\x01textShadow\x01Disclaimer:\x02\nThis is a Disclaimer, nobody will read this anyways, so just click the OK button!'
 QuitConfirm = 'Are you sure you want to quit?'
 PlayGame = 'Pick-A-Toon'
 DiscordButton = 'News'
@@ -6086,8 +4779,8 @@ ColorShopBody = 'Body'
 ColorShopLegs = 'Legs'
 ColorShopParts = 'Multi Color'
 ColorShopAll = 'Single Color'
-ColorShopPicker = "Color Picker"
-ColorShopBasic = "Basic Picker"
+ColorShopPicker = 'Color Picker'
+ColorShopBasic = 'Basic Picker'
 ClothesShopShorts = 'Shorts'
 ClothesShopShirt = 'Shirts'
 ClothesShopBottoms = 'Bottoms'
@@ -6112,7 +4805,10 @@ PickClothesTitle = 'Choose  Your  Clothes'
 PickStatusTitle = 'Choose  Your  Statuses'
 PickStartTitle = 'Choose  Your  Starting  Playground'
 NameToonTitle = 'Choose  Your  Name'
-UberTitles = ['Normal', '15 Laff', '25 Laff', '34 Laff']
+UberTitles = ['Normal',
+ '15 Laff',
+ '25 Laff',
+ '34 Laff']
 UberInfos = ['Your average run of the mill toon, they have no laff limits! Great for players who want to play traditionally.',
  '15 laff ubers can NEVER GAIN ANY LAFF POINTS.',
  '25 laff ubers can gain up to 10 extra laff points from their base laff. Once they reach 25 laff, they can NEVER GAIN ANY MORE LAFF POINTS.',
@@ -6139,7 +4835,7 @@ TypeANameButton = 'Type-A-Name'
 TypeAName = "Don't like these names?\nClick here -->"
 PickAName = 'Try the PickAName game!\nClick here -->'
 PickANameButton = 'Pick-A-Name'
-RejectNameText = 'That name is not allowed. Please try again.'
+RejectNameText = 'Haha your name has been rejected. Please try again, I AM BEGGING YOU!'
 WaitingForNameSubmission = 'Submitting your name...'
 PetNameMaster = 'PetNameMasterEnglish.txt'
 PetNameIndexMAX = 2713
@@ -6261,14 +4957,18 @@ AnimalToSpecies = {'dog': 'Dog',
  'monkey': 'Monkey',
  'bear': 'Bear',
  'pig': 'Pig',
- 'deer': 'Deer',
- 'beaver': 'Beaver',
- 'alligator': 'Alligator',
- 'fox': 'Fox',
- 'bat': 'Bat',
- 'raccoon': 'Raccoon'}
-AllSpecies = ('Dog', 'Cat', 'Horse', 'Mouse', 'Rabbit', 'Duck', 'Monkey', 'Bear', 'Pig', 'Deer', 'Beaver', 'Alligator', 'Fox', 'Bat', 'Raccoon')
-NameTooLong = 'That name is too long. Please try again.'
+ 'deer': 'Deer'}
+AllSpecies = ('Dog',
+ 'Cat',
+ 'Horse',
+ 'Mouse',
+ 'Rabbit',
+ 'Duck',
+ 'Monkey',
+ 'Bear',
+ 'Pig',
+ 'Deer')
+NameTooLong = 'OMG That name is too long, try again dumbass.'
 ToonAlreadyExists = 'You already have a toon named %s!'
 NameAlreadyInUse = 'That name is already used!'
 EmptyNameError = 'You must enter a name first.'
@@ -6308,31 +5008,29 @@ STOREOWNER_OK = lOK
 STOREOWNER_CANCEL = lCancel
 STOREOWNER_TROPHY = 'Wow! You collected %s of %s fish. That deserves a trophy and a Laff boost!'
 STOREOWNER_BANKING = 'Welcome to The Toontown Bank! How may I help you?'
-STOREOWNER_ROD_BUY = 'Congratulations on your new fishing rod! You can access it from the \'Items\' page of your shtiker book!'
-STOREOWNER_BUCKET_BUY = 'Congratulations on your new fishing bucket! Your bucket has been automatically upgraded.'
-SuitInvasionBegin1 = lToonHQ + ': A Cog invasion has begun!!!'
+SuitInvasionBegin1 = lToonHQ + ': A freaking Cog invasion has begun!!!'
 SuitInvasionBegin2 = lToonHQ + ': %s have taken over Toontown!!!'
 SuitInvasionEnd1 = lToonHQ + ': The %s invasion has ended!!!'
-SuitInvasionEnd2 = lToonHQ + ': The Toons have saved the day once again!!!'
+SuitInvasionEnd2 = lToonHQ + ': The cogs have screwed us over once again!!!'
 SuitInvasionUpdate1 = lToonHQ + ': Keep it up, Toons!!!'
-SuitInvasionUpdate2 = lToonHQ + ': The Cogs appear to be decreasing in numbers!!!'
-SuitInvasionBulletin1 = lToonHQ + ': There is a Cog invasion in progress!!!'
+SuitInvasionUpdate2 = lToonHQ + ': The Cogs appear to be fucking themselves in the ass!!!'
+SuitInvasionBulletin1 = lToonHQ + ': There is a freaking Cog invasion in progress!!!'
 SuitInvasionBulletin2 = lToonHQ + ': %s have taken over Toontown!!!'
 SkelecogInvasionBegin1 = lToonHQ + ": Hmm... We're getting a strange reading over here..."
-SkelecogInvasionBegin2 = lToonHQ + ': The Cog factories are running out of parts to build new Cogs!'
-SkelecogInvasionBegin3 = lToonHQ + ': Skelecogs have taken over Toontown!!!'
-SkelecogInvasionEnd1 = lToonHQ + ': The Skelecog invasion has ended!!!'
-SkelecogInvasionEnd2 = lToonHQ + ': The Toons have saved the day once again!!!'
+SkelecogInvasionBegin2 = lToonHQ + ': OMG the factory was too lazy to clothe their cogs!'
+SkelecogInvasionBegin3 = lToonHQ + ': Naked Cogs have taken over Toontown, avert your eyes!!!'
+SkelecogInvasionEnd1 = lToonHQ + ': The Naked Cog invasion has ended!!!'
+SkelecogInvasionEnd2 = lToonHQ + ': The cogs have screwed us over once again!!!'
 SkelecogInvasionBulletin1 = lToonHQ + ': There is a Cog invasion in progress!!!'
 SkelecogInvasionBulletin2 = lToonHQ + ': The Cog factories are running out of parts to build new Cogs!'
 SkelecogInvasionBulletin3 = lToonHQ + ': Skelecogs have taken over Toontown!!!'
-WaiterInvasionBegin1 = lToonHQ + ': It appears that the C.E.O. has fired all his waiters...'
+WaiterInvasionBegin1 = lToonHQ + ': It appears the waiters were fired for sucking at their job...'
 WaiterInvasionBegin2 = lToonHQ + ': The unemployed waiters are invading Toontown!!!'
 WaiterInvasionEnd1 = lToonHQ + ': The unemployed waiters have been defeated!!!'
-WaiterInvasionEnd2 = lToonHQ + ': The Toons have saved the day once again!!!'
-WaiterInvasionBulletin1 = lToonHQ + ': There is a Cog invasion in progress!!!'
+WaiterInvasionEnd2 = lToonHQ + ': The cogs have screwed us over once again!!!'
+WaiterInvasionBulletin1 = lToonHQ + ': There is a freaking Cog invasion in progress!!!'
 WaiterInvasionBulletin2 = lToonHQ + ': The C.E.O. has fired all of his waiters!!!'
-WaiterInvasionBulletin3 = lToonHQ + ": The unemployed waiters are invading Toontown!!!"
+WaiterInvasionBulletin3 = lToonHQ + ': The unemployed waiters are invading Toontown!!!'
 V2InvasionBegin1 = lToonHQ + ": Yikes!!! This isn't good, Toons!"
 V2InvasionBegin2 = lToonHQ + ': A major firmware update has been released to the Cogs!!!'
 V2InvasionBegin3 = lToonHQ + ': Version 2.0 Cogs have taken over Toontown!!!'
@@ -6341,12 +5039,6 @@ V2InvasionEnd2 = lToonHQ + ': The Toons have saved the day once again!!!'
 V2InvasionBulletin1 = lToonHQ + ': There is a Cog invasion in progress!!!'
 V2InvasionBulletin2 = lToonHQ + ': A major firmware update has been released to the Cogs!!!'
 V2InvasionBulletin3 = lToonHQ + ': Version 2.0 Cogs have taken over Toontown!!!'
-SuitMegaInvasionBegin1 = lToonHQ + ': A MEGA invasion has begun!!!'
-SuitMegaInvasionBegin2 = lToonHQ + ': %s have taken over Toontown!!!'
-SuitMegaInvasionEnd1 = lToonHQ + ': The %s MEGA invasion has ended!!!'
-SuitMegaInvasionEnd2 = lToonHQ + ': The Toons have saved the day once again!!!'
-SuitMegaInvasionUpdate1 = lToonHQ + ': Bulletin incoming, Toons!!!'
-SuitMegaInvasionUpdate2 = lToonHQ + ': There are still a ton of cogs, but keep it up!!!'
 LeaderboardTitle = 'Toon Platoon'
 QuestScriptTutorialMickey_1 = 'Toontown has a new citizen! Do you have some extra gags?'
 QuestScriptTutorialMickey_2 = 'Sure, %s!'
@@ -6369,7 +5061,6 @@ QuestScript101_11 = "OH NO! There's a Cog outside my shop!"
 QuestScript101_12 = 'HELP ME, PLEASE! Defeat that Cog!'
 QuestScript101_13 = 'Here is your first ToonTask!'
 QuestScript101_14 = 'Hurry up! Go defeat that Cog!'
-
 QuestScript110_1 = 'Good work defeating that Cog. Let me give you a Shticker Book...'
 QuestScript110_2 = 'The book is full of good stuff.'
 QuestScript110_3 = "Open it, and I'll show you."
@@ -6377,11 +5068,10 @@ QuestScript110_4 = "The map shows where you've been."
 QuestScript110_5 = 'Turn the page to see your gags...'
 QuestScript110_6 = 'Uh oh! You have no gags! I will assign you a task.'
 QuestScript110_7 = 'Turn the page to see your tasks.'
-QuestScript110_8 = 'You\'ll need a way to get beans.'
+QuestScript110_8 = "You'll need a way to get beans."
 QuestScript110_9 = 'Luckily, Banker Bob knows a thing or two on how to earn some!'
 QuestScript110_10 = 'Now, close the book and find the bank!'
 QuestScript110_11 = 'When Bob is finished with you, please return to the Toon HQ.'
-
 QuestScriptTutorialBlocker_1 = 'Why, hello there!'
 QuestScriptTutorialBlocker_2 = 'Hello?'
 QuestScriptTutorialBlocker_3 = "Oh! You don't know how to use SpeedChat!"
@@ -6390,7 +5080,6 @@ QuestScriptTutorialBlocker_5 = 'Very good!\x07Where you are going there are many
 QuestScriptTutorialBlocker_6 = "If you want to chat with other Toons using the keyboard, there's another button you can use."
 QuestScriptTutorialBlocker_7 = "It's called the SpeedChat Plus button. You need to turn on Speedchat Plus in your Account Manager on the Project Altis Website to use it."
 QuestScriptTutorialBlocker_8 = 'Good luck! See you later!'
-
 QuestScriptGagShop_1 = 'Welcome to the Gag Shop!'
 QuestScriptGagShop_1a = 'This is where Toons come to buy gags to use against the Cogs.'
 QuestScriptGagShop_3 = 'To buy gags, click on the gag buttons. Try getting some now!'
@@ -6399,73 +5088,64 @@ QuestScriptGagShop_5 = "Here's a peek at the advanced throw and squirt gags..."
 QuestScriptGagShop_6 = "When you're done buying gags, click this button to return to the Playground."
 QuestScriptGagShop_7 = 'Normally you can use this button to play another Trolley Game...'
 QuestScriptGagShop_8 = "...but there's no time for another game right now. You're needed in Toon HQ!"
-
 QuestScript120_1 = "Ah, yes. You need to earn beans, don't you?\x07One way toons can earn their beans is through riding the trolley."
-QuestScript120_2 = 'Once you ride the trolley, please return to me.\x07You should have enough beans to purchase more gags once you\'re done.'
-
-QuestScript121_1 = "Another way you can earn beans is through fishings.\x07Why not go catch two fish and then return to me? Just so you get the hang of it.\x07However, you do need beans with you in order to fish."
-
+QuestScript120_2 = "Once you ride the trolley, please return to me.\x07You should have enough beans to purchase more gags once you're done."
+QuestScript121_1 = 'Another way you can earn beans is through fishings.\x07Why not go catch two fish and then return to me? Just so you get the hang of it.\x07However, you do need beans with you in order to fish.'
 QuestScript130_1 = 'Great job fishing!\x07Now, return to the Toon Headquarters.'
 QuestScript131_1 = 'Oh, thanks for the chalk.\x07What?!?\x07Those Cogs stole my blackboard. Defeat Cogs to find my stolen blackboard.\x07When you find it, bring it back to me.'
-
 QuestScript140_1 = 'Good job finding the trolley!\x07By the way, I have this friend, Librarian Larry, who is quite a book worm.\x07I picked this book up for him last time I was over in ' + lDonaldsDock + '.\x07Could you take it over to him, he is usually in the Library.'
 QuestScript141_1 = 'Oh, yes, this book almost completes my collection.\x07Let me see...\x07Uh oh...\x07Now where did I put my glasses?\x07I had them just before those Cogs took over my building.\x07Defeat Cogs to find my stolen glasses.\x07When you find them, bring them back to me for a reward.'
 QuestScript145_1 = 'I see you had no problem with Bob!\x07Listen, the Cogs have stolen our blackboard eraser.\x07Go into the streets and fight Cogs until you recover the eraser.\x07To reach the streets go through one of the tunnels like this:'
 QuestScript145_2 = "When you find our eraser, bring it back here.\x07Don't forget, if you need gags, ride the trolley.\x07Also, if you need to recover Laff points, collect ice cream cones in the Playground."
-
 QuestScript150_1 = 'Great work!\x07Toontown is more fun when you have friends!'
 QuestScript150_2 = 'To make friends, find another player, and use the New Friend button.'
 QuestScript150_3 = 'Once you have made a friend, come back here.'
 QuestScript150_4 = 'Some tasks are too difficult to do alone!'
-
-QuestScript600_1 = "Welcome to Toontown: Project Altis!"
-QuestScript600_2 = "There are many shop keepers out there who will require your help."
-QuestScript600_3 = "Those toons send help requests here to the Toon HQ, where we give the job to toons like you."
-QuestScript600_4 = "Jester Chester can help you get used to this habbit."
-QuestScript600_5 = "He can be found at Jest for Laughs on Loopy Lane."
-QuestScript600_6 = "Have fun in Toontown: Project Altis!"
-
+QuestScript600_1 = 'Welcome to Toontown: Project Altis!'
+QuestScript600_2 = 'There are many shop keepers out there who will require your help.'
+QuestScript600_3 = 'Those toons send help requests here to the Toon HQ, where we give the job to toons like you.'
+QuestScript600_4 = 'Jester Chester can help you get used to this habbit.'
+QuestScript600_5 = 'He can be found at Jest for Laughs on Loopy Lane.'
+QuestScript600_6 = 'Have fun in Toontown: Project Altis!'
 QuestScript10301_1 = "Welcome to Loopy's Balls!"
-QuestScript10301_2 = "We sell the freshest swedish meatballs in all of Toontown!"
-QuestScript10301_3 = "What would you like to order?"
-QuestScript10301_4 = "Meatballs! A Fan favorite. Great choice! Let me just check in with Jimmy."
-QuestScript10301_5 = "JIMMY!!"
+QuestScript10301_2 = 'We sell the freshest swedish meatballs in all of Toontown!'
+QuestScript10301_3 = 'What would you like to order?'
+QuestScript10301_4 = 'Meatballs! A Fan favorite. Great choice! Let me just check in with Jimmy.'
+QuestScript10301_5 = 'JIMMY!!'
 QuestScript10301_6 = "Oh, That's right."
-QuestScript10301_7 = "Jimmy was loafing around earlier so I tossed him in the pond."
-QuestScript10301_8 = "Can you be a darling and go fish him out and bring him back for me?"
-
+QuestScript10301_7 = 'Jimmy was loafing around earlier so I tossed him in the pond.'
+QuestScript10301_8 = 'Can you be a darling and go fish him out and bring him back for me?'
 MissingKeySanityCheck = 'Ignore me'
-SellbotBossName = 'Senior V. P.'
-CashbotBossName = 'C. F. O.'
+SellbotBossName = 'C.E.O.'
+CashbotBossName = 'V.S.S. 2.0'
 LawbotBossName = 'Chief Justice'
-BoardbotBossName = 'Chairman'
+BoardbotBossName = 'EEE'
 BossCogNameWithDept = '%(name)s\n%(dept)s'
-BossCogPromoteDoobers = 'You are hereby promoted to full-fledged %s.  Congratulations!'
-BossCogDoobersAway = {'s': 'Go!  And make that sale!'}
-BossCogWelcomeToons = 'Welcome, new Cogs!'
-BossCogPromoteToons = 'You are hereby promoted to full-fledged %s.  Congratu--'
-CagedToonInterruptBoss = 'Hey! Hiya! Hey over there!'
-CagedToonRescueQuery = 'So, did you Toons come to rescue me?'
-BossCogDiscoverToons = 'Huh?  Toons!  In disguise!'
-BossCogAttackToons = 'Attack!!'
+BossCogPromoteDoobers = 'You ugly beings have been promoted. I hate you all %s.  DIE!'
+BossCogDoobersAway = {'s': 'Get out of here you useless cogs.'}
+BossCogWelcomeToons = 'Hello, freaky new cogs!'
+BossCogPromoteToons = 'Hey I know you %s are toons, so let us just cut to the chase ok?'
+CagedToonInterruptBoss = 'REEEEEEEEEEEEEEEEEEEEEEEEEEEE!'
+CagedToonRescueQuery = 'Did you toons come to free me from this dispairing cage?'
+BossCogDiscoverToons = 'HUH?  Toons in cog suits!!!!'
+BossCogAttackToons = 'Make them all go sad!!'
 CagedToonDrop = ["Great job!  You're wearing him down!",
  "Keep after him!  He's on the run!",
  'You guys are doing great!',
  "Fantastic!  You've almost got him now!"]
 CagedToonPrepareBattleTwo = "Look out, he's trying to get away!\x07Help me, everyone--get up here and stop him!"
 CagedToonPrepareBattleThree = "Hooray, I'm almost free!\x07Now you need to attack the V.P. Cog directly.\x07I've got a whole bunch of pies you can use!\x07Jump up and touch the bottom of my cage and I'll give you some pies.\x07Press the Delete key to throw pies once you've got them!"
-BossBattleNeedMorePies = 'You need to get more pies!'
+BossBattleNeedMorePies = 'Get more pies dumbass.'
 BossBattleHowToGetPies = 'Jump up to touch the cage to get pies.'
 BossBattleHowToThrowPies = 'Press the Delete key to throw pies!'
-CagedToonYippee = 'Yippee!'
+CagedToonYippee = 'WOOHOO!'
 CagedToonThankYou = "It's great to be free!\x07Thanks for all your help!\x07I am in your debt.\x07Here's my card. If you ever need a hand in battle, give a shout!\x07Just click on your SOS button."
-CagedToonLevelPromotion = "\x07Say--that V.P. Cog left behind your promotion papers.\x07I'll file them for you on the way out, so you'll get your promotion!"
+CagedToonLevelPromotion = "\x07Say--that C.E.O. Cog left behind your promotion papers.\x07I'll file them for you on the way out, so you'll get your promotion!"
 CagedToonSuitPromotion = "\x07It seems like you've reached the highest level you can for a %s.\x07You can continue upgrading your Cog suit through the disguise page in your Shticker Book.\x07Along with getting a new Cog suit, you will also get a 1 point Laff boost!"
-CagedToonLastPromotion = "\x07Wow, you've reached level %s on your Cog suit!\x07Cogs don't get promoted higher than that.\x07You can now start upgrading your v2.0 suit, however, you can only promote this suit in hard mode bosses or higher."
-CagedToonLastRevivePromotion = "\x07Wow, you've reached level %s on your v2.0 Cog suit!\x07Cogs don't get promoted higher than that, at all.\x07You are now at the top of the corporate ladder, well, a step below the boss cogs.\x07You are the highest level cog that is promoted through the boss cogs! Thank you, for coming back to save more toons!\x07And with this, I award you your final laff point for your cog disguise."
+CagedToonLastPromotion = "\x07Wow, you've reached level %s on your Cog suit!\x07I'm pretty sure Cogs don't get promoted higher than that.\x07You can't upgrade your Cog suit anymore, but you can certainly keep rescuing Toons!"
 CagedToonHPBoost = "\x07You've rescued a lot of Toons from this HQ.\x07The Toon Council has decided to give you another Laff point. Congratulations!"
 CagedToonMaxed = '\x07I see that you have a level %s Cog suit. Very impressive!\x07On behalf of the Toon Council, thank you for coming back to rescue more Toons!'
-CagedToonGoodbye = 'See ya!'
+CagedToonGoodbye = 'Get outta here!'
 CagedToonBattleThree = {10: 'Nice jump, %(toon)s.  Here are some pies!',
  11: 'Hi, %(toon)s!  Have some pies!',
  12: "Hey there, %(toon)s!  You've got some pies now!",
@@ -6481,9 +5161,9 @@ CagedToonBattleThree = {10: 'Nice jump, %(toon)s.  Here are some pies!',
 CagedToonBattleThreeMaxGivePies = 12
 CagedToonBattleThreeMaxTouchCage = 21
 CagedToonBattleThreeMaxAdvice = 106
-CashbotBossHadEnough = "That's it.  I've had enough of these pesky Toons!"
-CashbotBossOuttaHere = "I've got a train to catch!"
-ResistanceToonName = 'Mata Hairy'
+CashbotBossHadEnough = "I'm sick of getting hit by my own creations. I am outta here!"
+CashbotBossOuttaHere = "I've got a train to get run over by!"
+ResistanceToonName = 'Ugly Freak'
 ResistanceToonCongratulations = "You did it!  Congratulations!\x07You're an asset to the Resistance!\x07Here's a special phrase you can use in a tight spot:\x07%s\x07When you say it, %s.\x07But you can only use it once, so choose that time well!"
 ResistanceToonToonupInstructions = 'all the Toons near you will gain %s Laff points'
 ResistanceToonToonupAllInstructions = 'all the Toons near you will gain full Laff points'
@@ -6491,27 +5171,26 @@ ResistanceToonMoneyInstructions = 'all the Toons near you will gain %s Jellybean
 ResistanceToonMoneyAllInstructions = 'all the Toons near you will fill their Jellybean jars'
 ResistanceToonRestockInstructions = 'all the Toons near you will restock their "%s" gags'
 ResistanceToonRestockAllInstructions = 'all the Toons near you will restock all their gags'
-ResistanceToonBonusUnites = '\x07Since you have continued your efforts against the C.F.O. and progressed your cog disguise, you have been awarded %d extra unites!'
+ResistanceToonBonusUnites = '\x07Since you have continued your efforts against the V.S.S. 2.0 and progressed your cog disguise, you have been awarded %d extra unites!'
 ResistanceToonHPBoost = "\x07You've done a lot of work for the Resistance.\x07The Toon Council has decided to give you another Laff point. Congratulations!"
-ResistanceToonLevelPromotion = "\x07Say--that C.F.O. Cog left behind your promotion papers.\x07I'll file them for you on the way out, so you'll get your promotion!"
+ResistanceToonLevelPromotion = "\x07Say--that V.S.S. 2.0 Cog left behind your promotion papers.\x07I'll file them for you on the way out, so you'll get your promotion!"
 ResistanceToonSuitPromotion = "\x07It seems like you've reached the highest level you can for a %s.\x07You can continue upgrading your Cog suit through the disguise page in your Shticker Book.\x07Along with getting a new Cog suit, you will also get a 1 point Laff boost!"
-ResistanceToonLastPromotion = "\x07Wow, you've reached level %s on your Cog suit!\x07I'm pretty sure Cogs don't get promoted higher than that.\x07You can begin upgrading your V2.0 Cog Suit, through hard mode bosses!"
-ResistanceToonLastRevivePromotion = "\x07Wow, you've reached level %s on your Cog suit!\x07I'm pretty sure Cogs don't get promoted higher than that.\x07You have really went above and beyond the call of duty!\x07And with this, I grant you your last Cog Disguise laff boost!"
+ResistanceToonLastPromotion = "\x07Wow, you've reached level %s on your Cog suit!\x07I'm pretty sure Cogs don't get promoted higher than that.\x07You can't upgrade your Cog suit anymore, but you can certainly keep working for the Resistance!!"
 ResistanceToonMaxed = '\x07I see that you have a level %s Cog suit. Very impressive!\x07On behalf of the Toon Council, thank you for coming back to rescue more Toons!'
 CashbotBossCogAttack = 'Get them!!!'
-ResistanceToonWelcome = 'Hey, you made it!  Follow me to the main vault before the C.F.O. finds us!'
-ResistanceToonTooLate = "Blast it!  We're too late!"
-CashbotBossDiscoverToons1 = 'Ah-HAH!'
-CashbotBossDiscoverToons2 = 'I thought I smelled something a little toony in here!  Imposters!'
-ResistanceToonKeepHimBusy = "Keep him busy!  I'm going to set a trap!"
-ResistanceToonFollowHim = 'Come on toons! Follow that bag of bolts!'
-CashbotBossTrapped = "I've got you right where I want you now, toons."
-CashbotBossCogAgain = 'Err, again...'
+ResistanceToonWelcome = 'Hey, you made it!  Follow me to the main vault before the Vault Security System spots us!'
+ResistanceToonTooLate = "Damn it!  We're too late!"
+CashbotBossDiscoverToons1 = 'REEEEEEEEEEEEEEEEEEEEEE!'
+CashbotBossDiscoverToons2 = 'I thought I detected imposters!'
+ResistanceToonKeepHimBusy = "Keep it busy!  I'm going to set a trap!"
+ResistanceToonFollowHim = 'Come on nerds! Follow that fat chink!'
+CashbotBossTrapped = "Haha I've got you right where I want you."
+CashbotBossCogAgain = 'Again? Ok.'
 ResistanceToonCraneInstructions1 = 'Control a magnet by stepping up to a podium.'
 ResistanceToonCraneInstructions2 = 'Use the arrow keys to move the crane, and press the Ctrl key to grab an object.'
-ResistanceToonCraneInstructions3 = "Grab a safe with a magnet and knock the C.F.O.'s safe-ty helmet off."
-ResistanceToonCraneInstructions4 = 'Once his helmet is gone, grab a disabled goon and hit him in the head!'
-ResistanceToonGetaway = 'Eek!  Gotta run!'
+ResistanceToonCraneInstructions3 = "Grab a safe with a magnet and knock the Vault Security System's safe-ty helmet off."
+ResistanceToonCraneInstructions4 = 'Once its helmet is gone, grab a disabled goon and hit it in the head!'
+ResistanceToonGetaway = 'AHHHHHHH!  Gotta run!'
 CashbotCraneLeave = 'Leave Crane'
 CashbotCraneAdvice = 'Use the arrow keys to move the overhead crane.'
 CashbotMagnetAdvice = 'Hold down the control key to pick things up.'
@@ -6536,7 +5215,7 @@ RentalTypeName = 'Rental Item'
 GardenStarterTypeName = 'Gardening Kit'
 NametagTypeName = 'Name tag'
 AccessoryTypeName = 'Accessory'
-InteriorLayoutTypeName = "Interior Layout"
+InteriorLayoutTypeName = 'Interior Layout'
 CatalogItemTypeNames = {0: 'INVALID_ITEM',
  1: FurnitureTypeName,
  2: ChatTypeName,
@@ -6558,7 +5237,10 @@ CatalogItemTypeNames = {0: 'INVALID_ITEM',
  18: 'ANIMATED FURNITURE',
  19: AccessoryTypeName,
  20: InteriorLayoutTypeName}
-InteriorLayoutNames = ["Default Layout", "Layout 2", "Layout 3", "Layout 4"]
+InteriorLayoutNames = ['Default Layout',
+ 'Layout 2',
+ 'Layout 3',
+ 'Layout 4']
 HatStylesDescriptions = {'hbb1': 'Green Baseball Cap',
  'kmh1': 'Mouskateer',
  'hbb2': 'Blue Baseball Cap',
@@ -7997,7 +6679,7 @@ NPCToonNames = {20000: 'Tutorial Tom',
  1315: 'Doctor Drift',
  1316: 'Wilma Wobble',
  1317: 'Paula Pylon',
- 1318: 'Captain Jack Harrow',
+ 1318: 'Dinghy Dan',
  1319: 'Davey Drydock',
  1320: 'Ted Calm',
  1321: 'Dinah Docker',
@@ -8147,22 +6829,6 @@ NPCToonNames = {20000: 'Tutorial Tom',
  3327: 'Chuck Roast',
  3328: 'Shady Sadie',
  3329: 'Treading Ed',
- 3401: 'Xanon',
- 3402: 'Olive',
- 3403: 'Auntie Art',
- 3404: 'Chilly',
- 3405: 'Toony',
- 3406: 'Nate Happening',
- 3407: 'Ice Day',
- 3408: 'Polar Brrr',
- 3409: "Feelin' Frosty",
- 3410: "North 'N South",
- 3411: 'Gunther',
- 3412: 'Dr. Buck',
- 3413: 'Freezy Pete',
- 3414: 'Dr. Nerve',
- 3415: 'Cold Cuts',
- 3416: 'Frost',
  4001: 'Molly Molloy',
  4002: lHQOfficerM,
  4003: lHQOfficerF,
@@ -8339,7 +7005,7 @@ NPCToonNames = {20000: 'Tutorial Tom',
  5127: 'Polly Pollen',
  5128: 'Shoshanna Sap',
  5129: 'Sally',
- 5201: 'Jake',
+ 5201: 'Jakebooy',
  5202: 'Cynthia',
  5203: 'Lisa',
  5204: 'Bert',
@@ -8422,7 +7088,6 @@ NPCToonNames = {20000: 'Tutorial Tom',
  6008: 'Park',
  6009: 'Bark',
  6010: 'Tim',
- 6011: 'Norman',
  6101: 'Ried Solocup',
  6102: 'Dr. Vert',
  6103: 'Chet Ter',
@@ -8471,7 +7136,6 @@ NPCToonNames = {20000: 'Tutorial Tom',
  6313: 'Relaxed Roger',
  6314: 'Vincent Vacation',
  6315: 'Bees-In-My-Eyes Johnson',
- 6316: 'Awkward Adam',
  6316: 'Awkward Adam',
  6317: 'Nutty Nathan',
  6318: 'Irritable Ivy',
@@ -8809,7 +7473,7 @@ zone2TitleDict = {2513: ('Toon Hall', ''),
  1833: ('This Transom Man Custom Tailored Suits', ''),
  1834: ('Rudderly Ridiculous!', ''),
  1835: ('', ''),
- 1903: ("Poetic Fishing Rods", ''),
+ 1903: ('Poetic Fishing Rods', ''),
  1904: ('Seaside Seasaws', ''),
  1905: ('I See Seafood', ''),
  1906: ('School of Fish Tutoring', ''),
@@ -8822,7 +7486,7 @@ zone2TitleDict = {2513: ('Toon Hall', ''),
  1914: ("Sailor Don't Sail! Boating Equipment", ''),
  1915: ("Salty Smirky's Seriously Salty Seafood Shop", ''),
  1922: (lToonHQ, ''),
- 1924: ("Fish and Chips on Ships", ''),
+ 1924: ('Fish and Chips on Ships', ''),
  1925: ('Pelican Package Company', ''),
  1926: ('Sad Vacant Building', ''),
  1927: ('Swordfish Armor and Weaponry', ''),
@@ -9028,12 +7692,12 @@ zone2TitleDict = {2513: ('Toon Hall', ''),
  5909: ("Orange's Door Hinges", ''),
  5910: ("Gus' Fungus Funhouse", ''),
  5911: ("Flora's Flowers", ''),
- 5912: ("Palm Tree Fortunes", ''),
- 5914: ("Rainbow Sightseeings", ''),
+ 5912: ('Palm Tree Fortunes', ''),
+ 5914: ('Rainbow Sightseeings', ''),
  5915: ('Seed and Send Post Office', ''),
  5917: ('Garden Patrol', ''),
  5919: ("Garden's Awaiting", ''),
- 5920: ("Campfire Firewood", ''),
+ 5920: ('Campfire Firewood', ''),
  5921: ("O'Hare Air", ''),
  5922: ('Mow Jellybeans, Mow Problems', ''),
  5923: ('A Bushel Of Berries Fruit Shop', ''),
@@ -9288,23 +7952,7 @@ zone2TitleDict = {2513: ('Toon Hall', ''),
  3827: ('Choral Wreaths', ''),
  3828: ("Snowman's Land", ''),
  3829: ('Pinecone Zone', ''),
- 3830: ('Wait and See Goggle Defogging', ''),
- 3901: ("Xanon's Xylophones", ''),
- 3902: ("Olive the Other Reindeer", ''),
- 3903: ("Ant-Art-Ica Art Academy", ''),
- 3904: ("Avalanchovies Fish Market", ''),
- 3905: ("Frosted Flakes", ''),
- 3906: ("Snow Way in Hail", ''),
- 3907: ("Ice to Meet You!", ''),
- 3908: ("Polar Panels", ''),
- 3909: ("The Cold Shoulder", ''),
- 3910: ("Polar Opposites", ''),
- 3911: ("Central Parka", ''),
- 3912: ("Frostbite Dentistry", ''),
- 3913: ("B-Ice-Cycles", ''),
- 3914: ("Brain Freeze Neurology", ''),
- 3915: ("Sub Zero Deli", ''),
- 3916: ("Frost Come, Frost Serve", '')}
+ 3830: ('Wait and See Goggle Defogging', '')}
 ClosetTimeoutMessage = 'Sorry, you ran out\n of time.'
 ClosetNotOwnerMessage = "This isn't your closet, but you may try on the clothes."
 ClosetPopupOK = lOK
@@ -9346,10 +7994,6 @@ DistributedBankNotOwner = 'Sorry, this is not your bank.'
 FishGuiCancel = lCancel
 FishGuiOk = 'Sell All'
 FishTankValue = 'Hi, %(name)s! You have %(num)s fish in your bucket worth a total of %(value)s Jellybeans. Do you want to sell them all?'
-FishItemBuyPageTitle = 'Would you like to upgrade your fishing rod or your bucket today?'
-FishRodBuy = 'Would you like to buy the %(type)s rod for %(beans)s jellybeans?'
-FishBucketBuy = 'Would you like to upgrade your fishing bucket capacity by 10 for %s jellybeans?'
-FishPurchase = 'Purchase'
 FlowerGuiCancel = lCancel
 FlowerGuiOk = 'Sell All'
 FlowerBasketValue = '%(name)s, you have %(num)s flowers in your basket worth a total of %(value)s Jellybeans. Do you want to sell them all?'
@@ -9510,12 +8154,11 @@ TipDict = {TIP_NONE: ('',),
                'Different neighborhoods have different Doodles offered for adoption.',
                'When using the new battle GUI, you can press Alt + a number to change tracks, and Ctrl + a number to select a gag!',
                'When using the new battle GUI, you can use the mousewheel to swap between tracks.',
-               "Do you know that the Doctor's moustache is fake?",
                'Goofy Speedway has six different race tracks. '),
- TIP_STREET: ('There are five types of Cogs: Lawbots, Cashbots, Sellbots, Bossbots, and Boardbots.',
+ TIP_STREET: ('There are five types of Cogs: Politibots, Vaultbots, Executivebots, Boardbots, and Techbots.',
               'Each Gag Track has different amounts of accuracy and damage.',
               'Sound gags will affect all Cogs but will wake up any lured Cogs.',
-              'Zap gags deal three times as much damage if a Squirt gag is used before it, it also has a chance to shortcircuit a cog!',
+              'Zap gags deal twice as much damage if a Squirt gag is used before it, it also has a chance to shortcircuit a cog!',
               'Defeating Cogs in strategic order can greatly increase your chances of winning battles.',
               'The Toon-Up Gag Track lets you heal other Toons in battle.',
               'Gag experience points are doubled during a Cog Invasion!',
@@ -9558,46 +8201,46 @@ TipDict = {TIP_NONE: ('',),
                 'In the Tug-of-War you are awarded more Jellybeans if you play against a tougher Cog.',
                 'Trolley Game difficulty varies by neighborhood; ' + lToontownCentral + ' has the easiest and ' + lDonaldsDreamland + ' has the hardest.',
                 'Certain Trolley Games can only be played in a group.'),
- TIP_COGHQ: ('You must complete your Sellbot Disguise before visiting the V.P.',
-             'You must complete your Cashbot Disguise before visiting the C.F.O.',
-             'You must complete your Lawbot Disguise before visiting the Chief Justice.',
-             'You must complete your Boardbot Disguise before visiting the ???.',
+ TIP_COGHQ: ('You must complete your Executivebot Disguise before visiting the C.E.O.',
+             'You must complete your Vaultbot Disguise before visiting the V.S.S. 2.0',
+             'You must complete your Politibot Disguise before visiting the Chief Justice.',
+             'You must complete your Techbot Disguise before visiting the ???.',
              'You can jump on Cog Goons to temporarily disable them.',
-             'Collect Cog Merits by defeating Sellbot Cogs in battle.',
-             'Collect Cogbucks by defeating Cashbot Cogs in battle.',
-             'Collect Subpoenas by defeating Lawbot Cogs in battle.',
-             'Collect Stock Options by defeating Bossbot Cogs in battle.',
+             'Collect Cog Merits by defeating Executivebot Cogs in battle.',
+             'Collect Cogbucks by defeating Vaultbot Cogs in battle.',
+             'Collect Jury Notices by defeating Politibot Cogs in battle.',
+             'Collect Stock Options by defeating Boardbot Cogs in battle.',
              'Collect ??? by defeating ??? in battle.',
-             'You get more Merits, Cogbucks, Subpoenas, Stock Options, or Gears from higher level Cogs.',
-             'When you collect enough Cog Merits to earn a promotion, go see the Sellbot V.P.!',
-             'When you collect enough Cogbucks to earn a promotion, go see the Cashbot C.F.O.!',
-             'When you collect enough Subpoenas to earn a promotion, go see the Lawbot Chief Justice!',
-             'When you collect enough Stock Options to earn a promotion, go see the Bossbot C.E.O.!',
+             'You get more Merits, Cogbucks, Jury Notices, Stock Options, or Gears from higher level Cogs.',
+             'When you collect enough Cog Merits to earn a promotion, go see the Executivebot C.E.O.!',
+             'When you collect enough Cogbucks to earn a promotion, go see the Vaultbot V.S.S. 2.0!',
+             'When you collect enough Jury Notices to earn a promotion, go see the Politibot Chief Justice!',
+             'When you collect enough Stock Options to earn a promotion, go see the Boardbot Chairman!',
              'When you collect enough ??? to earn a promotion, go see the ???!',
              'You can talk like a Cog when you are wearing your Cog Disguise.',
-             'Up to eight Toons can join together to fight the Sellbot V.P.',
-             'Up to eight Toons can join together to fight the Cashbot C.F.O.',
-             'Up to eight Toons can join together to fight the Lawbot Chief Justice.',
-             'Up to eight Toons can join together to fight the Bossbot C.E.O.',
+             'Up to eight Toons can join together to fight the Executivebot C.E.O.',
+             'Up to eight Toons can join together to fight the Vaultbot V.S.S. 2.0',
+             'Up to eight Toons can join together to fight the Politibot Chief Justice.',
+             'Up to eight Toons can join together to fight the Boardbot Chairman',
              'Up to eight Toons can join together to fight the ???.',
              'Inside Cog Headquarters follow stairs leading up to find your way.',
-             'Each time you battle through a Sellbot HQ factory, you will gain one part of your Sellbot Cog Disguise.',
-             'Each time you battle through a Cashbot HQ Mint, you will gain one part of your Cashbot Cog Disguise.',
-             'Each time you battle through a Lawbot HQ District Attorney\'s Office, you will gain one part of your Lawbot Cog Disguise.',
-             'Each time you battle through a Bossbot HQ Cog Golf Course, you will gain one part of your Bossbot Cog Disguise.',
+             'Each time you battle through a Executivebot HQ factory, you will gain one part of your Executivebot Cog Disguise.',
+             'Each time you battle through a Vaultbot HQ Mint, you will gain one part of your Vaultbot Cog Disguise.',
+             "Each time you battle through a Politibot HQ District Attorney's Office, you will gain one part of your Politibot Cog Disguise.",
+             'Each time you battle through a Boardbot HQ Cog Golf Course, you will gain one part of your Boardbot Cog Disguise.',
              'Each time you battle through a "CLASSIFIED INFORMATION", you will gain one part of your ???.',
              'You can check the progress of your Cog Disguise in your Shticker Book.',
              'You can check your promotion progress on your Disguise Page in your Shticker Book.',
              'Make sure you have full gags and a full Laff Meter before going to Cog Headquarters.',
              'As you get promoted, your Cog disguise updates.',
-             'You must defeat the ' + Foreman + ' to recover a Sellbot Cog Disguise part.',
-             'You must defeat the ' + Supervisor + ' to recover a Cashbot Cog Disguise part.',
-             'You must defeat the ' + Clerk + ' to recover a Lawbot Cog Disguise part.',
-             'You must defeat the ' + President + ' to recover a Bossbot Cog Disguise part.',
+             'You must defeat the ' + Foreman + ' to recover a Executivebot Cog Disguise part.',
+             'You must defeat the ' + Supervisor + ' to recover a Vaultbot Cog Disguise part.',
+             'You must defeat the ' + Clerk + ' to recover a Politibot Cog Disguise part.',
+             'You must defeat the ' + President + ' to recover a Boardbot Cog Disguise part.',
              'You must defeat the "This is above your paygrade, toon." to recover a ???.',
              'Cashbots manufacture and distribute their currency, Cogbucks, in three Mints - Coin, Dollar and Bullion.',
-             'Wait until the C.F.O. is dizzy to throw a safe, or he will use it as a helmet! Hit the helmet with another safe to knock it off.',
-             "It pays to be puzzled: the virtual Cogs in Lawbot HQ won't reward you with Subpoenas."),
+             'Wait until the V.S.S. 2.0 is dizzy to throw a safe, or he will use it as a helmet! Hit the helmet with another safe to knock it off.',
+             "It pays to be puzzled: the virtual Cogs in Politibot HQ won't reward you with Jury Notices."),
  TIP_ESTATE: ('Doodles can understand some SpeedChat phrases. Try them!',
               'Use the "Pet" SpeedChat menu to ask your Doodle to do tricks.',
               "You can teach Doodles tricks with training lessons from Clarabelle's Cattlelog.",
@@ -10084,42 +8727,41 @@ CircuitRaceEnd = "That's all for today's Toontown Grand Prix at Goofy Speedway. 
 TrickOrTreatMsg = 'You have already\nfound this treat!'
 WinterCarolingMsg = 'You have already been caroling here!'
 LawbotBossTempIntro0 = "Hmmm what's on the docket today?"
-LawbotBossTempIntro1 = 'Aha, we have a Toon on trial!'
-LawbotBossTempIntro2 = "The prosecution's case is strong."
-LawbotBossTempIntro3 = 'And here are the public defenders.'
-LawbotBossTempIntro4 = "Wait a minute... You're Toons!"
-LawbotBossTempJury1 = 'Jury selection will now commence.'
+LawbotBossTempIntro1 = 'I have no idea I am blind.'
+LawbotBossTempIntro2 = "Why do I even continue doing this when I can't even see what's happening?!"
+LawbotBossTempIntro3 = 'I want to hang myself.'
+LawbotBossTempIntro4 = "Let me guess there are toons right in front of me."
+LawbotBossTempJury1 = 'I will now walk over to my podium where I will be lifted up into the heavens.'
 LawbotBossHowToGetEvidence = 'Touch the witness stand to get evidence.'
 LawbotBossTrialChat1 = 'Court is now in session'
 LawbotBossHowToThrowPies = 'Press the Delete key to throw the evidence\n at the lawyers or into the scale!'
 LawbotBossNeedMoreEvidence = 'You need to get more evidence!'
-LawbotBossDefenseWins1 = 'Impossible! The defense won?'
-LawbotBossDefenseWins2 = 'No. I declare a mistrial! A new one will be scheduled.'
-LawbotBossDefenseWins3 = "Hrrmpphh. I'll be in my chambers."
-LawbotBossDefenseWins4 = "Oh, I forgot about the paperwork needed to file a mistrial..."
-LawbotBossProsecutionWins = 'I find in favor of the plaintiff'
+LawbotBossDefenseWins1 = 'Let me guess the toons won? Meh, whatever.'
+LawbotBossDefenseWins2 = 'Damn.'
+LawbotBossDefenseWins3 = "I am now backing into my chambers. I'm going to go die now."
+LawbotBossDefenseWins4 = 'I am now going to be squashed by a pile of paper.'
+LawbotBossProsecutionWins = 'Haha the cogs won all of you toons are now going to die.'
 LawbotBossReward = 'I award a promotion and the ability to summon Cogs'
 LawbotBossLeaveCannon = 'Leave cannon'
-LawbotBossPassExam = 'Bah, so you passed the bar exam.'
-LawbotBossTaunts = ['%s, I find you in contempt of court!',
- 'Objection sustained!',
- 'Strike that from the record.',
- 'Your appeal has been rejected. I sentence you to sadness!',
- 'Order in the court!']
-LawbotBossAreaAttackTaunt = "You're all in contempt of court!"
-WitnessToonName = 'Bumpy Bumblebehr'
+LawbotBossPassExam = 'REEEEEEEEEEEEEEEEEEEEE! There are too many explosions happening here.'
+LawbotBossTaunts = ['%s, OBJECTION!',
+ 'EEEEEEEEEEEEEEEEEEEEEEEEEE!',
+ 'Stop looking at me I am blind!',
+ 'I am going to make you go sad toon.',
+ 'ORDER IN THE FUCKING COURT!']
+LawbotBossAreaAttackTaunt = "That's Enough!"
+WitnessToonName = 'Big Fat Bear'
 WitnessToonPrepareBattleTwo = "Oh no! They're putting only Cogs on the jury!\x07Quick, use the cannons and shoot some Toon jurors into the jury chairs.\x07We need %d to get a balanced scale."
-WitnessToonNoJuror = 'Oh oh, no Toon jurors. This will be a tough trial.'
-WitnessToonOneJuror = 'Cool! There is 1 Toon in the jury!'
-WitnessToonSomeJurors = 'Cool! There are %d Toons in the jury!'
-WitnessToonAllJurors = 'Awesome! All the jurors are Toons!'
+WitnessToonNoJuror = 'Nice job dumbasses, you are going to lose now.'
+WitnessToonOneJuror = 'WOW you got a whopping 1 Toon in the jury! You could have done better. For shame.'
+WitnessToonSomeJurors = 'WOW you got a whipping %d Toons in the jury!'
+WitnessToonAllJurors = 'Damn, I am impressed. You have filled the entire jury with Toons!'
 WitnessToonPrepareBattleThree = 'Hurry, touch the witness stand to get evidence.\x07Press the Delete key to throw the evidence at the lawyers, or at the defense pan.'
 WitnessToonCongratulations = "You did it!  Thank you for a spectacular defense!\x07Here, take these papers the Chief Justice left behind.\x07With it you'll be able to summon Cogs from your Cog Gallery page."
 WitnessToonHPBoost = "\x07You've done a lot of work for the Resistance.\x07The Toon Council has decided to give you another Laff point. Congratulations!"
 WitnessToonLevelPromotion = "\x07Say--that C.J. Cog left behind your promotion papers.\x07I'll file them for you on the way out, so you'll get your promotion!"
 WitnessToonSuitPromotion = "\x07It seems like you've reached the highest level you can for a %s.\x07You can continue upgrading your Cog suit through the disguise page in your Shticker Book.\x07Along with getting a new Cog suit, you will also get a 1 point Laff boost!"
-WitnessToonLastPromotion = "\x07Wow, you've reached level %s on your Cog suit!\x07I'm pretty sure Cogs don't get promoted higher than that.\x07You can begin upgrading your V2.0 Cog suit through hard mode bosses!!"
-WitnessToonLastRevivePromotion = "\x07Wow, you've reached level %s on your V2.0 Cog suit!\x07I'm pretty sure Cogs don't get promoted higher than that.\x07You cant upgrade your Cog suit anymore, but you can certainly keep working for the Resistance!!"
+WitnessToonLastPromotion = "\x07Wow, you've reached level %s on your Cog suit!\x07I'm pretty sure Cogs don't get promoted higher than that.\x07You can't upgrade your Cog suit anymore, but you can certainly keep working for the Resistance!!"
 WitnessToonMaxed = '\x07I see that you have a level %s Cog suit. Very impressive!\x07On behalf of the Toon Council, thank you for coming back to rescue more Toons!'
 WitnessToonBonus = 'Wonderful! All the lawyers are stunned. Your evidence weight is %s times heavier for %s seconds'
 WitnessToonJuryWeightBonusSingular = {6: 'This is a tough case. You seated %d Toon juror, so your evidence has a bonus weight of %d.',
@@ -10147,7 +8789,7 @@ SummonDlgInvasionSuccess = "You have successfully summoned the Cogs. It's an inv
 SummonDlgInvasionBusy = 'A %s cannot be found now.  Try again when the Cog invasion is over.'
 SummonDlgInvasionFail = 'Sorry, the Cog invasion has failed.'
 SummonDlgShopkeeper = 'The Shopkeeper '
-ShopkeeperThanks = 'Thanks for saving my shop! Have this reward of %s jellybeans!'
+ShopkeeperThanks = 'Thanks for saving my shop!! Have this reward of %s jellybeans!'
 PolarPlaceEffect1 = NPCToonNames[3306] + ': Welcome to Polar Place!'
 PolarPlaceEffect2 = NPCToonNames[3306] + ': Try this on for size.'
 PolarPlaceEffect3 = NPCToonNames[3306] + ': Your new look will only work in ' + lTheBrrrgh + '.'
@@ -10460,9 +9102,9 @@ GolfBogey = 'Bogey'
 GolfDoubleBogey = 'Double Bogey'
 GolfTripleBogey = 'Triple Bogey'
 GolfShotDesc = {-4: GolfCondor,
- - 3: GolfAlbatross,
- - 2: GolfEagle,
- - 1: GolfBirdie,
+ -3: GolfAlbatross,
+ -2: GolfEagle,
+ -1: GolfBirdie,
  0: GolfPar,
  1: GolfBogey,
  2: GolfDoubleBogey,
@@ -10671,53 +9313,52 @@ BoardingTimeWarning = 'Boarding the elevator in '
 BoardingMore = 'more'
 BoardingGoShow = 'Going to\n%s in '
 BoardingGoPreShow = 'Confirming...'
-BossbotBossName = 'C.E.O.'
+BossbotBossName = 'The Chairman'
 BossbotRTWelcome = 'You toons will need different disguises.'
-BossbotRTRemoveSuit = 'First take off your cog suits...'
-BossbotRTFightWaiter = 'and then fight these waiters.'
-BossbotRTWearWaiter = "Good Job! Now put on the waiters' clothes."
-BossbotBossPreTwo1 = "What's taking so long? "
-BossbotBossPreTwo2 = 'Get cracking and serve my banquet!'
-BossbotRTServeFood1 = 'Hehe, serve the food I place on these conveyor belts.'
-BossbotRTServeFood2 = 'If you serve a cog three times in a row it will explode.'
-BossbotResistanceToonName = "Good ol' Gil Giggles"
-BossbotPhase3Speech1 = "What's happening here?!"
-BossbotPhase3Speech2 = 'These waiters are toons!'
-BossbotPhase3Speech3 = 'Get them!!!'
-BossbotPhase4Speech1 = 'Hrrmmpph. When I need a job done right...'
-BossbotPhase4Speech2 = "I'll do it myself."
-BossbotRTPhase4Speech1 = 'Nice! You took out the diners! Use the seltzer bottles to squirt the C.E.O.'
-BossbotRTPhase4Speech2 = 'Use the golf tees to slow down the C.E.O. and weaken his defenses.'
-BossbotRTPhase4Speech3 = 'Powerful shots against the C.E.O., when he is slowed down, have a higher chance to stun him!'
+BossbotRTRemoveSuit = 'First take off your clothes...'
+BossbotRTFightWaiter = 'Now get in there and take out those waiters!'
+BossbotRTWearWaiter = "NICE! Now put your clothes back on."
+BossbotBossPreTwo1 = "Well toons since you have destroyed all of my waiters...."
+BossbotBossPreTwo2 = 'I guess you are going to have to server these cogs yourselves, get cracking!!!'
+BossbotRTServeFood1 = 'I secretly put a special ingredient in the cog oil, so that when they drink it they will explode.'
+BossbotRTServeFood2 = 'If you serve a cog two times in a row it will explode.'
+BossbotResistanceToonName = "Hippie Pig"
+BossbotPhase3Speech1 = "I told you toons to feed these cogs, not destroy them all!"
+BossbotPhase3Speech2 = 'I bet you think you are going to escape. Think again!'
+BossbotPhase3Speech3 = 'Cogs block the door!!!'
+BossbotPhase4Speech1 = 'You cogs are so useless, you cannot even defeat a single toon!!!'
+BossbotPhase4Speech2 = "Must I do everything myself?!"
+BossbotRTPhase4Speech1 = 'Now it is time for you to defeat the one and the only Chairman.'
+BossbotRTPhase4Speech2 = 'Do not use the golf balls, they do not work! Do not be a sissy, use the seltzer bottles!'
+BossbotRTPhase4Speech3 = 'Powerful shots against The Chairman, when he is slowed down, have a higher chance to stun him!'
 BossbotPitcherLeave = 'Leave Bottle'
 BossbotPitcherLeaving = 'Leaving Bottle'
 BossbotPitcherAdvice = 'Use the left and right keys to rotate.\nHold down Ctrl increase power.\nRelease Ctrl to fire.'
 BossbotGolfSpotLeave = 'Leave Golf Ball'
 BossbotGolfSpotLeaving = 'Leaving Golf Ball'
 BossbotGolfSpotAdvice = 'Use the left and right keys to rotate.\nCtrl to fire.'
-BossbotRewardSpeech1 = "No! The Chairman won't like this."
-BossbotRewardSpeech2 = 'Arrrggghhh!!!!'
-BossbotRTCongratulations = "You did it!  You've demoted the C.E.O.!\x07Here, take these pink slips the C.E.O. left behind.\x07With it you'll be able to fire Cogs in a battle."
+BossbotRewardSpeech1 = "Great now I have to take my suit to the dry cleaners. I hope you're happy!"
+BossbotRewardSpeech2 = 'REEEEEEEEEEEEEEEEEEEEEEEE!!!!'
+BossbotRTCongratulations = "You did it!  You've defeated The Chairman. Toontown will finally be safe.\x07Here, take these pink slips The Chairman left behind.\x07With it you'll be able to fire Cogs in a battle."
 BossbotRTHPBoost = "\x07You've done a lot of work for the Resistance.\x07The Toon Council has decided to give you another Laff point. Congratulations!"
-BossbotRTLevelPromotion = "\x07Say--that C.E.O. Cog left behind your promotion papers.\x07I'll file them for you on the way out, so you'll get your promotion!"
+BossbotRTLevelPromotion = "\x07Say--that Chairman Cog left behind your promotion papers.\x07I'll file them for you on the way out, so you'll get your promotion!"
 BossbotRTSuitPromotion = "\x07It seems like you've reached the highest level you can for a %s.\x07You can continue upgrading your Cog suit through the disguise page in your Shticker Book.\x07Along with getting a new Cog suit, you will also get a 1 point Laff boost!"
-BossbotRTLastPromotion = "\x07Wow, you've reached level %s on your Cog suit!\x07I'm pretty sure Cogs don't get promoted higher than that.\x07You can begin upgrading your V2.0 Cog suit anymore through hard mode bosses!!"
-BossbotRTLastRevivePromotion = "\x07Wow, you've reached level %s on your V2.0 Cog suit!\x07I'm pretty sure Cogs don't get promoted higher than that.\x07You can't upgrade your Cog suit anymore, but you can certainly keep working for the Resistance!!"
+BossbotRTLastPromotion = "\x07Wow, you've reached level %s on your Cog suit!\x07I'm pretty sure Cogs don't get promoted higher than that.\x07You can't upgrade your Cog suit anymore, but you can certainly keep working for the Resistance!!"
 BossbotRTMaxed = '\x07I see that you have a level %s Cog suit. Very impressive!\x07On behalf of the Toon Council, thank you for coming back to rescue more Toons!'
-GolfAreaAttackTaunt = 'Fore!'
+GolfAreaAttackTaunt = 'That is enough!'
 OvertimeAttackTaunts = ["It's time to reorganize.", "Now let's downsize."]
-ElevatorBossBotBoss = 'Bossbot Clubhouse'
+ElevatorBossBotBoss = 'Boardbot Clubhouse'
 ElevatorBossBotCourse0 = 'The Front Three'
 ElevatorBossBotCourse1 = 'The Middle Six'
 ElevatorBossBotCourse2 = 'The Back Nine'
-ElevatorCashBotBoss = 'Cashbot Vault'
+ElevatorCashBotBoss = 'Vaultbot Vault'
 ElevatorCashBotMint0 = 'Coin Mint'
 ElevatorCashBotMint1 = 'Dollar Mint'
 ElevatorCashBotMint2 = 'Bullion Mint'
-ElevatorSellBotBoss = 'Sellbot Towers'
+ElevatorSellBotBoss = 'Chairbot Towers'
 ElevatorSellBotFactory0 = 'Front Entrance'
 ElevatorSellBotFactory1 = 'Side Entrance'
-ElevatorLawBotBoss = 'Lawbot Courthouse'
+ElevatorLawBotBoss = 'Politibot Courthouse'
 ElevatorLawBotCourse0 = 'Office A'
 ElevatorLawBotCourse1 = 'Office B'
 ElevatorLawBotCourse2 = 'Office C'
@@ -10902,8 +9543,8 @@ BoardroomGameInstructions = 'The COGS are having a meeting to decide what to do 
 CogdoCraneGameTitle = 'Vend-A-Stomper'
 CogdoCraneGameInstructions = 'The COGS are using a coin-operated machine to destroy laff barrels. Use the cranes to pick up and throw money bags, in order to prevent barrel destruction!'
 CogdoMazeGameTitle = 'Mover & Shaker\nField Office'
-CogdoMazeGameInstructions = 'The big Mover & Shaker Cogs have the code to open the door. Defeat them with your water balloons in order to get it!'
-CogdoMazeIntroMovieDialogue = (("This is the Toon Resistance! The Movers & Shakers\nhave our Jokes, and they've locked the exit!",), ('Grab water balloons at coolers, and throw them at Cogs!\nSmall Cogs drop Jokes, BIG COGS open the exit.',), ('The more Jokes you rescue, the bigger your Toon-Up\nat the end. Good luck!',))
+CogdoMazeGameInstructions = 'The big Python Charmer Cogs have the code to open the door. Defeat them with your water balloons in order to get it!'
+CogdoMazeIntroMovieDialogue = (("This is the Toon Resistance! The Python Charmers\nhave our Jokes, and they've locked the exit!",), ('Grab water balloons at coolers, and throw them at Cogs!\nSmall Cogs drop Jokes, BIG COGS open the exit.',), ('The more Jokes you rescue, the bigger your Toon-Up\nat the end. Good luck!',))
 CogdoMazeGameDoorOpens = 'THE EXIT IS OPEN FOR 60 SECONDS!\nGET THERE FAST FOR A BIGGER TOON-UP'
 CogdoMazeGameLocalToonFoundExit = "The exit will open when\nyou've busted all four BIG COGS!"
 CogdoMazeGameWaitingForToons = 'Waiting for other Toons...'
@@ -10915,15 +9556,15 @@ CogdoMazeThrowHint = "Press 'Ctrl' to throw your water balloon"
 CogdoMazeSquashHint = 'Falling objects pop your balloon'
 CogdoMazeBossHint = 'Big Cogs take TWO hits to defeat'
 CogdoMazeMinionHint = 'Smaller Cogs drop jokes'
-CogdoFlyingGameTitle = 'Legal Eagle Offices'
-CogdoFlyingGameInstructions = "Fly through the Legal Eagles' lair. Watch out for obstacles and cogs along the way, and don't forget to refuel your helicopter!"
+CogdoFlyingGameTitle = 'Barrister Offices'
+CogdoFlyingGameInstructions = "Fly through the Barristers' lair. Watch out for obstacles and cogs along the way, and don't forget to refuel your helicopter!"
 CogdoFlyingIntroMovieDialogue = (("You won't ruffle our feathers, Toons! We're destroying barrels of your Laff, and you cannot stop us!", "A flock of Toons! We're crushing barrels of your Laff in our %s, and there's nothing you can do about it!" % CogdoStomperName, "You can't egg us on, Toons! We're powering our offices with your Laff, and you're powerless to stop us!"), ('This is the Toon Resistance! A little bird told me you can use propellers to fly around, grab Barrel Destruction Memos, and keep Laff from being destroyed! Good luck, Toons!', 'Attention Toons! Wing it with a propeller and collect Barrel Destruction Memos to keep our Laff from being stomped! Toon Resistance out!', 'Toon Resistance here! Cause a flap by finding propellers, flying to the Barrel Destruction Memos, and keeping our Laff from being smashed! Have fun!'), ("Squawk! I'm a Silver Sprocket Award winner, I don't need this!", 'Do your best, Toons! You will find us to be quite talon-ted!', "We'll teach you to obey the pecking order, Toons!"))
 CogdoFlyingGameWaiting = 'Waiting for other Toons%s'
 CogdoFlyingGameFuelLabel = 'Fuel'
 CogdoFlyingGameInvasionTargeting = 'A %s has noticed you!'
 CogdoFlyingGameInvasionAttacking = 'Incoming %s!'
-CogdoFlyingGameLegalEagleTargeting = 'A Legal Eagle has noticed you!'
-CogdoFlyingGameLegalEagleAttacking = 'Incoming Eagle!'
+CogdoFlyingGameLegalEagleTargeting = 'A Barrister has noticed you!'
+CogdoFlyingGameLegalEagleAttacking = 'Incoming Barrister!'
 CogdoFlyingGamePickUpAPropeller = 'You need a propeller to fly!'
 CogdoFlyingGamePressCtrlToFly = "Press 'Ctrl' to fly up!"
 CogdoFlyingGameYouAreInvincible = 'Red Tape protects you!'
@@ -10940,7 +9581,7 @@ CogdoExecutiveSuiteTitle = 'Executive Suite'
 CogdoExecutiveSuiteIntroMessage = "Oh no, they've got the shop keeper!\nDefeat the Cogs and free the captive."
 CogdoExecutiveSuiteToonThankYou = 'Thanks for the rescue!\nIf you need help in a fight, use this SOS card to call my friend %s.'
 CogdoLawbotExecutiveSuiteToonThankYou = "Thanks for the rescue!\nIt seems the Cogs didn't leave behind the key to the Sprocket Award case.\x07Instead, use these summons I found laying around. You can summon Cogs with them!"
-CogdoExecutiveSuiteToonBye = 'Bye!'
+CogdoExecutiveSuiteToonBye = 'Go away!'
 SillySurgeTerms = {1: 'Amusing Ascent!',
  2: 'Silly Surge!',
  3: 'Ridiculous Rise!',
@@ -10961,16 +9602,15 @@ InteractivePropTrackBonusTerms = {0: 'Super Toon-Up!',
  5: 'Super Squirt!',
  6: ''}
 PlayingCardUnknown = 'Card Name is unknown'
-
-# Controls
 RemapPrompt = 'Choose the keys you wish to remap.'
 RemapPopup = 'Press the key you wish to remap this control to.'
-Controls = ['Move Up:', 'Move Left:', 'Move Down:', 'Move Right:',
-            'Jump:', 'Action Key:', 'Options Hotkey:', 'Chatbox Hotkey:', 'Screenshot Key:', 'Interact Key:']
-			
-GatorChatter = ["Don't be a hater, vote for Gator!", 'My favorite jellybean color is green.', 'Wooow! I hope I win the election!', 'How are you guys doing?']
-BeaverChatter = ["Got spring fever? Vote for Beaver!", 'My favorite jellybean color is brown.', "If I win, I will build new houses for all toons. How does that sound?", "Gator's alright, but you beaver belive that I'm winning.", 'Be a believer! Vote Beaver!']
-FoxChatter = ["Fox Rox!", 'My favorite jellybean color is orange.', "I'm adorable, how could you not vote for me? Owoooo!", "I'm the perfect combination of cat and dog!", 'Nobody mocks the fox, ya hear?']
-BatChatter = ["Don't be a brat, vote for Bat!", 'My favorite jellybean color is black.', "Whoooo dares awaken me!", "Got questions?", 'I gotta earn my wings, first.']
-RaccoonChatter = ["Sing some tunes and vote Raccoon!", 'My favorite jellybean color is purple.', "Oooh! There is half of an apple in here!", 'My friends call me "Trash Panda."', "I'm not rabid, I swear!"]
-
+Controls = ['Move Up:',
+ 'Move Left:',
+ 'Move Down:',
+ 'Move Right:',
+ 'Jump:',
+ 'Action Key:',
+ 'Options Hotkey:',
+ 'Chatbox Hotkey:',
+ 'Screenshot Key:',
+ 'Interact Key:']

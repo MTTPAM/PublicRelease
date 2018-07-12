@@ -25,8 +25,8 @@ class EstateLoader(SafeZoneLoader.SafeZoneLoader):
          State.State('house', self.enterHouse, self.exitHouse, ['quietZone']),
          State.State('quietZone', self.enterQuietZone, self.exitQuietZone, ['house', 'estate']),
          State.State('final', self.enterFinal, self.exitFinal, ['start'])], 'start', 'final')
-        self.musicFile = 'phase_3.5/audio/bgm/Estate_nbrhood.ogg'
-        self.activityMusicFile = 'phase_3.5/audio/bgm/Estate_SZ_activity.ogg'
+        self.musicFile = 'phase_4/audio/bgm/TC_nbrhood.ogg'
+        self.activityMusicFile = 'phase_3.5/audio/bgm/TC_SZ_activity.ogg'
         self.dnaFile = 'phase_5.5/dna/estate_1.pdna'
         self.safeZoneStorageDNAFile = None
         self.cloudSwitch = 0
@@ -47,8 +47,7 @@ class EstateLoader(SafeZoneLoader.SafeZoneLoader):
 
     def load(self):
         SafeZoneLoader.SafeZoneLoader.load(self)
-        self.music = base.loadMusic('phase_3.5/audio/bgm/Estate_nbrhood.ogg')
-        self.activityMusic = base.loadMusic('phase_3.5/audio/bgm/Estate_SZ_activity.ogg')
+        self.music = base.loader.loadMusic('phase_4/audio/bgm/TC_nbrhood.ogg')
         self.underwaterSound = base.loader.loadSfx('phase_4/audio/sfx/AV_ambient_water.ogg')
         self.swimSound = base.loader.loadSfx('phase_4/audio/sfx/AV_swim_single_stroke.ogg')
         self.submergeSound = base.loader.loadSfx('phase_5.5/audio/sfx/AV_jump_in_water.ogg')
@@ -121,8 +120,6 @@ class EstateLoader(SafeZoneLoader.SafeZoneLoader):
         base.localAvatar.stopChat()
         base.localAvatar.inEstate = 0
         SafeZoneLoader.SafeZoneLoader.exit(self)
-        self.music.stop()
-        self.activityMusic.stop()
 
     def createSafeZone(self, dnaFile):
         SafeZoneLoader.SafeZoneLoader.createSafeZone(self, dnaFile)
@@ -169,7 +166,6 @@ class EstateLoader(SafeZoneLoader.SafeZoneLoader):
         self.place.load()
         self.place.enter(requestStatus)
         self.estateZoneId = zoneId
-        base.playMusic(self.music, looping=1, volume=0.9)
 
     def exitEstate(self):
         self.notify.debug('exitEstate')
@@ -179,8 +175,6 @@ class EstateLoader(SafeZoneLoader.SafeZoneLoader):
         self.place = None
         base.cr.playGame.setPlace(self.place)
         base.cr.cache.flush()
-        self.music.stop()
-        return
 
     def handleEstateDone(self, doneStatus = None):
         if not doneStatus:
@@ -212,7 +206,6 @@ class EstateLoader(SafeZoneLoader.SafeZoneLoader):
         base.cr.playGame.setPlace(self.place)
         self.place.load()
         self.place.enter(requestStatus)
-        base.playMusic(self.activityMusic, looping=1, volume=0.9)
 
     def exitHouse(self):
         self.ignore(self.houseDoneEvent)
@@ -220,8 +213,6 @@ class EstateLoader(SafeZoneLoader.SafeZoneLoader):
         self.place.unload()
         self.place = None
         base.cr.playGame.setPlace(self.place)
-        self.activityMusic.stop()
-        return
 
     def handleHouseDone(self, doneStatus = None):
         if not doneStatus:

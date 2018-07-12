@@ -1,3 +1,4 @@
+#Embedded file name: toontown.makeatoon.BodyShop
 from pandac.PandaModules import *
 from toontown.toon import ToonDNA
 from direct.fsm import StateData
@@ -138,7 +139,6 @@ class BodyShop(StateData.StateData):
         self.memberButton.hide()
         self.shuffleFetchMsg = 'BodyShopShuffle'
         self.shuffleButton = ShuffleButton.ShuffleButton(self, self.shuffleFetchMsg)
-        return
 
     def unload(self):
         self.gui.removeNode()
@@ -170,6 +170,7 @@ class BodyShop(StateData.StateData):
         for button in self.speciesButtons:
             button.destroy()
             del button
+
         self.speciesButtons = []
         self.shuffleButton.unload()
         self.ignore('MAT-newToonCreated')
@@ -252,37 +253,39 @@ class BodyShop(StateData.StateData):
         if self.headChoice > maxHeadChoice:
             self.headChoice = maxHeadChoice
         self.__updateHead()
-        
+
     def createSpeciesButtons(self):
         gui = base.matGui
         shuffleUp = gui.find('**/tt_t_gui_mat_shuffleUp')
         shuffleDown = gui.find('**/tt_t_gui_mat_shuffleDown')
-        pos = ((.3, 0, .3),  (.6, 0, .3),  (.9, 0, .3),
-               (.3, 0, .1),  (.6, 0, .1),  (.9, 0, .1),
-               (.3, 0, -.1), (.6, 0, -.1), (.9, 0, -.1),
-               (.3, 0, -.3), (.6, 0, -.3), (.9, 0, -.3),
-               (.3, 0, -.5), (.6, 0, -.5), (.9, 0, -.5)
-              )
-        
-        for x in xrange(len(ToonDNA.toonSpeciesTypes)):
+        pos = ((0.3, 0, 0.3),
+         (0.6, 0, 0.3),
+         (0.9, 0, 0.3),
+         (0.3, 0, 0.1),
+         (0.6, 0, 0.1),
+         (0.9, 0, 0.1),
+         (0.3, 0, -0.1),
+         (0.6, 0, -0.1),
+         (0.9, 0, -0.1),
+         (0.6, 0, -0.3))
+        for x in range(len(ToonDNA.toonSpeciesTypes)):
             name = TTLocalizer.AllSpecies[x]
-            btn = DirectButton(relief = None, text_style = 3, image = (shuffleUp, shuffleDown, shuffleUp, shuffleDown), 
-            image_scale = (0.6, 0.7, 0.7), image1_scale = (0.63, 0.7, 0.7), image2_scale = (0.63, 0.7, 0.7),
-            text_fg = (1, 1, 1, 1), text = name, text_pos = (0, -0.02), text_scale = .08,
-            scale = 0.95, command = self.__setSpecies, extraArgs = [x])
+            btn = DirectButton(relief=None, text_style=3, image=(shuffleUp,
+             shuffleDown,
+             shuffleUp,
+             shuffleDown), image_scale=(0.6, 0.7, 0.7), image1_scale=(0.63, 0.7, 0.7), image2_scale=(0.63, 0.7, 0.7), text_fg=(1, 1, 1, 1), text=name, text_pos=(0, -0.02), text_scale=0.08, scale=0.95, command=self.__setSpecies, extraArgs=[x])
             btn.reparentTo(base.a2dLeftCenter)
             btn.setPos(pos[x])
             btn.hide()
             self.speciesButtons.append(btn)
-        
+
     def __setSpecies(self, offset):
         for btn in self.speciesButtons:
             btn['state'] = DGG.NORMAL
-            
+
         self.speciesButtons[offset]['state'] = DGG.DISABLED
-        
         length = len(ToonDNA.toonSpeciesTypes)
-        self.speciesChoice = (offset) % length
+        self.speciesChoice = offset % length
         self.species = ToonDNA.toonSpeciesTypes[self.speciesChoice]
         self.headList = ToonDNA.getHeadList(self.species)
         maxHeadChoice = len(self.headList) - 1
@@ -362,4 +365,3 @@ class BodyShop(StateData.StateData):
 
     def getCurrToonSetting(self):
         return [self.toon.style.head, self.toon.style.torso, self.toon.style.legs]
-

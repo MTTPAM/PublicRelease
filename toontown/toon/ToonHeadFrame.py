@@ -1,3 +1,4 @@
+#Embedded file name: toontown.toon.ToonHeadFrame
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
 from toontown.toon import ToonHead

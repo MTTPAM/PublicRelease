@@ -62,7 +62,12 @@ uberdogs:
 roles:
     - type: clientagent
       bind: 0.0.0.0:7198
+<<<<<<< HEAD:astron/config/cluster_yaml.yml
       version: "MTTPAM-v.2.5.0"
+=======
+      version: "MTTPAM-v.2.4.0"
+      manual_dc_hash: "0x9aa7bb2d"
+>>>>>>> parent of 83732bde... Public release2.5.0 Merge:astron/config/cluster.yml
       client:
        relocate: true
        add_interest: enabled

@@ -62,7 +62,7 @@ uberdogs:
 roles:
     - type: clientagent
       bind: 0.0.0.0:7198
-      version: "MTTPAM-v.2.5.0"
+      version: "MTTPAM-v.2.4.0"
       manual_dc_hash: "0x9aa7bb2d"
       client:
        relocate: true

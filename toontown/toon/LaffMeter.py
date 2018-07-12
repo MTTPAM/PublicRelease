@@ -1,3 +1,4 @@
+#Embedded file name: toontown.toon.LaffMeter
 from pandac.PandaModules import Vec4
 from direct.gui.DirectGui import DirectFrame, DirectLabel, DirectButton
 from toontown.toonbase import ToontownGlobals
@@ -16,15 +17,13 @@ class LaffMeter(DirectFrame):
         self.maxHp = maxHp
         self.__obscured = 0
         self.isLocalHealth = isLocalHealth
-        self.container = DirectFrame(parent = self, relief = None)
-        
+        self.container = DirectFrame(parent=self, relief=None)
         if self.style.type == 't':
             self.isToon = 1
         else:
             self.isToon = 0
-        
         self.load()
-        
+
     def showGags(self):
         self.showDetailsButton['command'] = self.backToDetails
         self.gagsBtn.hide()
@@ -32,7 +31,7 @@ class LaffMeter(DirectFrame):
         messenger.send('home')
         self.accept('home-up', self.backToDetails)
         self.accept('end-up', self.backToDetails)
-        
+
     def showTasks(self):
         self.showDetailsButton['command'] = self.backToDetails
         self.gagsBtn.hide()
@@ -40,7 +39,7 @@ class LaffMeter(DirectFrame):
         messenger.send('end')
         self.accept('home-up', self.backToDetails)
         self.accept('end-up', self.backToDetails)
-        
+
     def backToDetails(self):
         self.showDetailsButton['command'] = self.hideDetailsPopup
         self.gagsBtn.show()
@@ -51,32 +50,30 @@ class LaffMeter(DirectFrame):
         messenger.send('end-up')
 
     def showDetailsPopup(self):
-        # TODO: Bring up a little popup with buttons to choose between showing tasks and showing gags
         self.showDetailsButton.setColorScale(1, 1, 1, 1)
         gagicnmodel = loader.loadModel('phase_3.5/models/gui/inventory_icons')
         gagicon = gagicnmodel.find('**/inventory_tart')
         gagicnmodel.removeNode()
-        self.gagsBtn = DirectButton(parent = aspect2d, relief = None, pos = (-.4, 0, 0), text_style = 3, text_pos = (0, -.3), text_scale = 0.08, text = TTLocalizer.InventoryPageTitle, geom = gagicon, geom_scale = 2, scale = 1, command = self.showGags)
+        self.gagsBtn = DirectButton(parent=aspect2d, relief=None, pos=(-0.4, 0, 0), text_style=3, text_pos=(0, -0.3), text_scale=0.08, text=TTLocalizer.InventoryPageTitle, geom=gagicon, geom_scale=2, scale=1, command=self.showGags)
         tasksicnmodel = loader.loadModel('phase_3.5/models/gui/stickerbook_gui')
         tasksicon = tasksicnmodel.find('**/questCard')
         tasksicnmodel.removeNode()
-        self.toontasksButton = DirectButton(parent = aspect2d, relief = None, pos = (.4, 0, 0), text_style = 3, text_pos = (0, -.3), text_scale = 0.08, text = TTLocalizer.QuestPageToonTasks, geom = tasksicon, geom_scale = .35, scale = 1, command = self.showTasks)
+        self.toontasksButton = DirectButton(parent=aspect2d, relief=None, pos=(0.4, 0, 0), text_style=3, text_pos=(0, -0.3), text_scale=0.08, text=TTLocalizer.QuestPageToonTasks, geom=tasksicon, geom_scale=0.35, scale=1, command=self.showTasks)
         self.backToDetails()
-        
+
     def hideDetailsPopup(self):
         self.showDetailsButton.setColorScale(1, 1, 1, 0)
         messenger.send('home-up')
         messenger.send('end-up')
         self.gagsBtn.destroy()
         self.toontasksButton.destroy()
-        
         self.showDetailsButton['command'] = self.showDetailsPopup
-        
+
     def obscure(self, obscured):
         self.__obscured = obscured
         if self.__obscured:
             self.hide()
-            base.localAvatar.expBar.hide() # Hacky, I know, but I'll figure out a better way to hide the exp bar
+            base.localAvatar.expBar.hide()
 
     def isObscured(self):
         return self.__obscured
@@ -105,16 +102,6 @@ class LaffMeter(DirectFrame):
                 headModel = gui.find('**/pighead')
             elif hType == 'deer':
                 headModel = gui.find('**/deerhead')
-            elif hType == 'beaver':
-                headModel = gui.find('**/beaverhead')
-            elif hType == 'alligator':
-                headModel = gui.find('**/gatorhead')
-            elif hType == 'fox':
-                headModel = gui.find('**/foxhead')
-            elif hType == 'bat':
-                headModel = gui.find('**/bathead')
-            elif hType == 'raccoon':
-                headModel = gui.find('**/raccoonhead')
             else:
                 raise StandardError('unknown toon species: ', hType)
             self.color = self.style.getHeadColor()
@@ -147,16 +134,17 @@ class LaffMeter(DirectFrame):
              self.tooth1]
             for tooth in self.teeth:
                 tooth.setY(-0.1)
+
             self.fractions = [0.0,
              0.166666,
              0.333333,
              0.5,
              0.666666,
              0.833333]
-            if self.isLocalHealth: # Embed a little invisible button to show gags when clicking on the laff
-                self.showDetailsButton = DirectButton(relief = None, parent = self.container, image = 'phase_3/maps/android/tui_move_l.png', scale = (1), command = self.showDetailsPopup)
+            if self.isLocalHealth:
+                self.showDetailsButton = DirectButton(relief=None, parent=self.container, image='phase_3/maps/android/tui_move_l.png', scale=1, command=self.showDetailsPopup)
                 self.showDetailsButton.setTransparency(1)
-                self.showDetailsButton.setColorScale(1, 1, 1, 0) # Make it invisible - it still recognizes clicks
+                self.showDetailsButton.setColorScale(1, 1, 1, 0)
         gui.removeNode()
 
     def destroy(self):
@@ -258,5 +246,4 @@ class LaffMeter(DirectFrame):
     def setAvatar(self, av):
         if self.av:
             self.ignore(self.av.uniqueName('hpChange'))
-        
         self.av = av

@@ -1417,7 +1417,7 @@ class DistributedBattleBase(DistributedNode.DistributedNode, BattleBase):
             self.isVisualized = 0
         else:
             lsegs = LineSegs()
-            lsegs.setColor(style.getHeadColor())
+            lsegs.setColor(0.5, 0.5, 1, 1)
             lsegs.moveTo(0, 0, 0)
             for p in BattleBase.allPoints:
                 lsegs.drawTo(p[0], p[1], p[2])

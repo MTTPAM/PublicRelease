@@ -1,7 +1,7 @@
+#Embedded file name: toontown.toon.ToonHead
 from direct.actor import Actor
 from direct.task import Task
 from toontown.toonbase import ToontownGlobals
-from toontown.golf import GolfGlobals
 import string
 import random
 from pandac.PandaModules import *
@@ -22,12 +22,7 @@ if not base.config.GetBool('want-new-anims', 1):
      'p': '/models/char/monkey-heads-',
      'b': '/models/char/bear-heads-',
      's': '/models/char/pig-heads-',
-     'x': '/models/char/deer-heads-',
-     'z': '/models/char/beaver-heads-',
-     'a': '/models/char/alligator-heads-',
-     'v': '/models/char/fox-heads-',
-     'n': '/models/char/bat-heads-',
-     't': '/models/char/raccoon-heads-'}
+     'x': '/models/char/deer-heads-'}
 else:
     HeadDict = {'dls': '/models/char/tt_a_chr_dgm_shorts_head_',
      'dss': '/models/char/tt_a_chr_dgm_skirt_head_',
@@ -41,12 +36,7 @@ else:
      'p': '/models/char/monkey-heads-',
      'b': '/models/char/bear-heads-',
      's': '/models/char/pig-heads-',
-     'x': '/models/char/deer-heads-',
-     'z': '/models/char/beaver-heads-',
-     'a': '/models/char/alligator-heads-',
-     'v': '/models/char/fox-heads-',
-     'n': '/models/char/bat-heads-',
-     't': '/models/char/raccoon-heads-'}
+     'x': '/models/char/deer-heads-'}
 EyelashDict = {'d': '/models/char/dog-lashes',
  'c': '/models/char/cat-lashes',
  'h': '/models/char/horse-lashes',
@@ -56,17 +46,11 @@ EyelashDict = {'d': '/models/char/dog-lashes',
  'p': '/models/char/monkey-lashes',
  'b': '/models/char/bear-lashes',
  's': '/models/char/pig-lashes',
- 'x': '/models/char/deer-lashes',
- 'z': '/models/char/beaver-lashes',
- 'a': '/models/char/alligator-lashes',
- 'v': '/models/char/fox-lashes',
- 'n': '/models/char/bat-lashes',
- 't': '/models/char/raccoon-lashes'}
+ 'x': '/models/char/deer-lashes'}
 DogMuzzleDict = {'dls': '/models/char/dogMM_Shorts-headMuzzles-',
  'dss': '/models/char/dogMM_Skirt-headMuzzles-',
  'dsl': '/models/char/dogSS_Shorts-headMuzzles-',
  'dll': '/models/char/dogLL_Shorts-headMuzzles-'}
-
 PreloadHeads = {}
 
 def preloadToonHeads():
@@ -77,19 +61,17 @@ def preloadToonHeads():
         def preload(task):
             for key in HeadDict.keys():
                 fileRoot = HeadDict[key]
-
                 PreloadHeads['phase_3' + fileRoot + '1000'] = loader.loadModel('phase_3' + fileRoot + '1000')
                 PreloadHeads['phase_3' + fileRoot + '1000'].flattenMedium()
-
                 PreloadHeads['phase_3' + fileRoot + '500'] = loader.loadModel('phase_3' + fileRoot + '500')
                 PreloadHeads['phase_3' + fileRoot + '500'].flattenMedium()
-
                 PreloadHeads['phase_3' + fileRoot + '250'] = loader.loadModel('phase_3' + fileRoot + '250')
                 PreloadHeads['phase_3' + fileRoot + '250'].flattenMedium()
 
             return task.done
 
         taskMgr.add(preload, 'reload-toon')
+
 
 preloadToonHeads()
 
@@ -141,7 +123,7 @@ class ToonHead(Actor.Actor):
             return
         except:
             self.ToonHead_initialized = 1
-        
+
         Actor.Actor.__init__(self)
         self.toonName = 'ToonHead-' + str(self.this)
         self.__blinkName = 'blink-' + self.toonName
@@ -178,14 +160,13 @@ class ToonHead(Actor.Actor):
         self.__stareAtTime = 0
         self.lookAtPositionCallbackArgs = None
 
-
     def delete(self):
         try:
             self.ToonHead_deleted
             return
         except:
             self.ToonHead_deleted = 1
-        
+
         taskMgr.remove(self.__blinkName)
         taskMgr.remove(self.__lookName)
         taskMgr.remove(self.__stareAtName)
@@ -207,7 +188,6 @@ class ToonHead(Actor.Actor):
             del self.__eyelashClosed
         self.lookAtPositionCallbackArgs = None
         Actor.Actor.delete(self)
-
 
     def setupHead(self, dna, forGui = 0):
         self.__height = self.generateToonHead(1, dna, ('1000',), forGui)
@@ -246,15 +226,8 @@ class ToonHead(Actor.Actor):
         return self.__height
 
     def getRandomForwardLookAtPoint(self):
-        x = self.randGen.choice((-0.8,
-         -0.5,
-         0,
-         0.5,
-         0.8))
-        z = self.randGen.choice((-0.5,
-         0,
-         0.5,
-         0.8))
+        x = self.randGen.choice((-0.8, -0.5, 0, 0.5, 0.8))
+        z = self.randGen.choice((-0.5, 0, 0.5, 0.8))
         return Point3(x, 1.5, z)
 
     def findSomethingToLookAt(self):
@@ -267,10 +240,8 @@ class ToonHead(Actor.Actor):
         else:
             lookAtPnt = self.__defaultStarePoint
         self.lerpLookAt(lookAtPnt, blink=1)
-        return
 
     def generateToonHead(self, copy, style, lods, forGui = 0):
-        global PreloadHeads
         headStyle = style.head
         fix = None
         if headStyle == 'dls':
@@ -421,91 +392,11 @@ class ToonHead(Actor.Actor):
             filePrefix = HeadDict['x']
             fix = self.__fixHeadLongLong
             headHeight = 0.75
-        elif headStyle == 'zls':
-            filePrefix = HeadDict['z']
-            fix = self.__fixHeadLongShort
-            headHeight = 0.75
-        elif headStyle == 'zss':
-            filePrefix = HeadDict['z']
-            fix = self.__fixHeadShortShort
-            headHeight = 0.5
-        elif headStyle == 'zsl':
-            filePrefix = HeadDict['z']
-            fix = self.__fixHeadShortLong
-            headHeight = 0.5
-        elif headStyle == 'zll':
-            filePrefix = HeadDict['z']
-            fix = self.__fixHeadLongLong
-            headHeight = 0.75
-        elif headStyle == 'als':
-            filePrefix = HeadDict['a']
-            fix = self.__fixHeadLongShort
-            headHeight = 0.75
-        elif headStyle == 'ass':
-            filePrefix = HeadDict['a']
-            fix = self.__fixHeadShortShort
-            headHeight = 0.5
-        elif headStyle == 'asl':
-            filePrefix = HeadDict['a']
-            fix = self.__fixHeadShortLong
-            headHeight = 0.5
-        elif headStyle == 'all':
-            filePrefix = HeadDict['a']
-            fix = self.__fixHeadLongLong
-            headHeight = 0.75
-        elif headStyle == 'vls':
-            filePrefix = HeadDict['v']
-            fix = self.__fixHeadLongShort
-            headHeight = 0.75
-        elif headStyle == 'vss':
-            filePrefix = HeadDict['v']
-            fix = self.__fixHeadShortShort
-            headHeight = 0.5
-        elif headStyle == 'vsl':
-            filePrefix = HeadDict['v']
-            fix = self.__fixHeadShortLong
-            headHeight = 0.5
-        elif headStyle == 'vll':
-            filePrefix = HeadDict['v']
-            fix = self.__fixHeadLongLong
-            headHeight = 0.75
-        elif headStyle == 'nls':
-            filePrefix = HeadDict['n']
-            fix = self.__fixHeadLongShort
-            headHeight = 0.75
-        elif headStyle == 'nss':
-            filePrefix = HeadDict['n']
-            fix = self.__fixHeadShortShort
-            headHeight = 0.5
-        elif headStyle == 'nsl':
-            filePrefix = HeadDict['n']
-            fix = self.__fixHeadShortLong
-            headHeight = 0.5
-        elif headStyle == 'nll':
-            filePrefix = HeadDict['n']
-            fix = self.__fixHeadLongLong
-            headHeight = 0.75
-        elif headStyle == 'tls':
-            filePrefix = HeadDict['t']
-            fix = self.__fixHeadLongShort
-            headHeight = 0.75
-        elif headStyle == 'tss':
-            filePrefix = HeadDict['t']
-            fix = self.__fixHeadShortShort
-            headHeight = 0.5
-        elif headStyle == 'tsl':
-            filePrefix = HeadDict['t']
-            fix = self.__fixHeadShortLong
-            headHeight = 0.5
-        elif headStyle == 'tll':
-            filePrefix = HeadDict['t']
-            fix = self.__fixHeadLongLong
-            headHeight = 0.75
         else:
             ToonHead.notify.error('unknown head style: %s' % headStyle)
         if len(lods) == 1:
             filepath = 'phase_3' + filePrefix + lods[0]
-            self.loadModel(PreloadHeads[filepath], 'head', 'lodRoot', copy = True)
+            self.loadModel(PreloadHeads[filepath], 'head', 'lodRoot', copy=True)
             if not forGui:
                 pLoaded = self.loadPumpkin(headStyle[1], None, copy)
                 self.loadSnowMan(headStyle[1], None, copy)
@@ -616,7 +507,6 @@ class ToonHead(Actor.Actor):
             searchRoot = self.find('**/' + str(lodName))
         pumpkin = searchRoot.find('**/__Actor_head/pumpkin*')
         pumpkin.stash()
-        return
 
     def enablePumpkins(self, enable):
         if not hasattr(self, 'pumpkins'):
@@ -652,7 +542,6 @@ class ToonHead(Actor.Actor):
                     if self.__eyelashClosed:
                         self.__eyelashClosed.unstash()
                 self.pumpkins.stash()
-        return
 
     def enableSnowMen(self, enable):
         if not hasattr(self, 'snowMen'):
@@ -676,7 +565,6 @@ class ToonHead(Actor.Actor):
                     if self.__eyelashClosed:
                         self.__eyelashClosed.unstash()
                 self.snowMen.stash()
-        return
 
     def hideEars(self):
         self.findAllMatches('**/ears*;+s').stash()
@@ -702,7 +590,7 @@ class ToonHead(Actor.Actor):
         parts = self.findAllMatches('**/head*')
         parts.setColor(style.getHeadColor())
         animalType = style.getAnimal()
-        if animalType == 'cat' or animalType == 'rabbit' or animalType == 'bear' or animalType == 'mouse' or animalType == 'pig' or animalType =='deer' or animalType == 'beaver' or animalType == 'fox' or animalType == 'raccoon' or animalType == 'monkey':
+        if animalType == 'cat' or animalType == 'rabbit' or animalType == 'bear' or animalType == 'mouse' or animalType == 'pig' or animalType == 'deer':
             parts = self.findAllMatches('**/ear?-*')
             parts.setColor(style.getHeadColor())
 
@@ -812,7 +700,6 @@ class ToonHead(Actor.Actor):
                 if animalType != 'dog':
                     self.__lpupil.flattenStrong()
                     self.__rpupil.flattenStrong()
-        return
 
     def __setPupilDirection(self, x, y):
         if y < 0.0:
@@ -851,7 +738,6 @@ class ToonHead(Actor.Actor):
         x = min(max(x, -1), 1)
         y = min(max(y, -1), 1)
         self.__setPupilDirection(x, y)
-        return
 
     def __lookHeadAt(self, node, point, frac = 1.0, lod = None):
         reachedTarget = 1
@@ -911,7 +797,6 @@ class ToonHead(Actor.Actor):
             self.__eyelashOpen = model.find('**/' + openString).copyTo(head)
             self.__eyelashClosed = model.find('**/' + closedString).copyTo(head)
             model.removeNode()
-        return
 
     def __fixHeadLongLong(self, style, lodName = None, copy = 1):
         if lodName == None:
@@ -932,7 +817,7 @@ class ToonHead(Actor.Actor):
             searchRoot = self
         else:
             searchRoot = self.find('**/' + str(lodName))
-        if animalType != 'duck' and animalType != 'horse' and animalType != 'alligator' and animalType != 'bat':
+        if animalType != 'duck' and animalType != 'horse':
             if animalType == 'rabbit':
                 if copy:
                     searchRoot.find('**/ears-long').removeNode()
@@ -983,7 +868,7 @@ class ToonHead(Actor.Actor):
             searchRoot = self
         else:
             searchRoot = self.find('**/' + str(lodName))
-        if animalType != 'duck' and animalType != 'horse' and animalType != 'alligator' and animalType != 'bat':
+        if animalType != 'duck' and animalType != 'horse':
             if animalType == 'rabbit':
                 if copy:
                     searchRoot.find('**/ears-short').removeNode()
@@ -1103,7 +988,6 @@ class ToonHead(Actor.Actor):
             return Task.done
         else:
             return Task.cont
-        return
 
     def doLookAroundToStareAt(self, node, point):
         self.startStareAt(node, point)
@@ -1124,7 +1008,6 @@ class ToonHead(Actor.Actor):
             self.__stareAtPoint = self.__defaultStarePoint
         self.__stareAtTime = globalClock.getFrameTime()
         taskMgr.add(self.__stareAt, self.__stareAtName)
-        return
 
     def lerpLookAt(self, point, time = 1.0, blink = 0):
         taskMgr.remove(self.__stareAtName)
@@ -1178,8 +1061,6 @@ class ToonHead(Actor.Actor):
         for lodName in self.getLODNames():
             head = self.getPart('head', lodName)
             head.setHpr(0, 0, 0)
-
-        return
 
     def __lookAround(self, task):
         self.findSomethingToLookAt()
