@@ -23,7 +23,7 @@ runeDict = (
  HealthRune(hpBonus=4)
  )
 
-rune2Id {
+rune2Id = {
  AttackRune: [0, 1, 2],
  HealthRune: [3, 4, 5]
  }
