@@ -820,10 +820,8 @@ from toontown.betaevent import DistributedEvent/AI
 from toontown.betaevent import DistributedBetaEvent/AI
 from toontown.betaevent import DistributedBetaEventTTC/AI
 from toontown.weather import DistributedWeatherCycle/AI
-from toontown.weather import DistributedWeatherStorm/AI
 from toontown.club import DistributedToonClub/AI
 from toontown.environment import DistributedDayTimeManager/AI
-from toontown.environment import DistributedRainManager/AI
 from toontown.environment import DistributedWeatherMGR/AI
 
 
@@ -3990,13 +3988,6 @@ dclass DistributedWeatherCycle : DistributedObject {
   setDuration(int32) required broadcast ram;
 };
 
-dclass DistributedWeatherStorm : DistributedObject {
-  start() broadcast;
-  stop() broadcast;
-  setStormType(int8) broadcast ram;
-  setDuration(int32) broadcast ram;
-};
-
 struct Member {
   uint32 doId;
 }
@@ -4015,8 +4006,4 @@ dclass DistributedWeatherMGR : DistributedObject {
 
 dclass DistributedDayTimeManager : DistributedWeatherMGR {
   update(int8) broadcast ram;
-};
-
-dclass DistributedRainManager : DistributedWeatherMGR {
-  spawnLightning(int16, int16) broadcast ram;
 };

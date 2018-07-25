@@ -298,9 +298,6 @@ class Hood(StateData.StateData):
                 if sky == 'night':
                     self.newSky = loader.loadModel(self.nightSkyFile)
                     self.newSky.setTag('sky', 'Night')
-                if sky == 'rain':
-                    self.newSky = loader.loadModel(self.snowySkyFile)
-                    self.newSky.setTag('sky', 'Rain')
                 if self.oldSky:
                     self.oldSky.setTransparency(TransparencyAttrib.MDual, 1)
                 if self.newSky:

@@ -617,7 +617,6 @@ from toontown.toon import DistributedNPCPartyPerson/AI
 from toontown.toon import DistributedNPCPetclerk/AI
 from toontown.toon import DistributedNPCKartClerk/AI
 from toontown.toon import DistributedNPCLoopyG/AI
-from toontown.toon import DistributedNPCToony/AI
 from toontown.building import DistributedKnockKnockDoor/AI
 from toontown.building import DistributedElevator/AI
 from toontown.building import DistributedElevatorFSM/AI
@@ -817,11 +816,12 @@ from toontown.cogdominium import DistCogdoCrane/AI
 from toontown.cogdominium import DistCogdoCraneMoneyBag/AI
 from toontown.cogdominium import DistCogdoCraneCog/AI
 from toontown.parties.GlobalPartyManager/AI/UD import GlobalPartyManager/AI/UD
+from toontown.betaevent import DistributedEvent/AI
+from toontown.betaevent import DistributedBetaEvent/AI
+from toontown.betaevent import DistributedBetaEventTTC/AI
 from toontown.weather import DistributedWeatherCycle/AI
-from toontown.weather import DistributedWeatherStorm/AI
 from toontown.club import DistributedToonClub/AI
 from toontown.environment import DistributedDayTimeManager/AI
-from toontown.environment import DistributedRainManager/AI
 from toontown.environment import DistributedWeatherMGR/AI
 
 
@@ -1268,6 +1268,7 @@ dclass DistributedSuitBase : DistributedObject {
   setDNAString(blob) required broadcast ram;
   setLevelDist(int16) required broadcast ram;
   setBrushOff(int16) broadcast;
+  setElite(uint8) required broadcast ram;
   setWaiter(uint8) broadcast ram;
   setSkelecog(uint8) required broadcast ram;
   setSkeleRevives(uint8) required broadcast ram;
@@ -2447,11 +2448,6 @@ dclass DistributedNPCKartClerk : DistributedNPCToonBase {
 };
 
 dclass DistributedNPCLoopyG : DistributedNPCToon {
-};
-
-dclass DistributedNPCToony : DistributedNPCToonBase {
-  avatarEnter() broadcast ram;
-  setMovie(uint8, uint32, uint32, int16) broadcast ram;
 };
 
 dclass DistributedKnockKnockDoor : DistributedAnimatedProp {
@@ -3971,6 +3967,17 @@ dclass DistributedTrashcanZeroMgr : DistributedPhaseEventMgr {
 dclass DistributedSillyMeterMgr : DistributedPhaseEventMgr {
 };
 
+dclass DistributedEvent : DistributedObject {
+  start() broadcast ram;
+  setState(string, int32) broadcast ram;
+};
+
+dclass DistributedBetaEvent : DistributedEvent {
+};
+
+dclass DistributedBetaEventTTC : DistributedEvent {
+};
+
 dclass CharityScreen : DistributedObject {
    start() broadcast;
    setCount(uint16) broadcast ram;
@@ -3979,13 +3986,6 @@ dclass CharityScreen : DistributedObject {
 dclass DistributedWeatherCycle : DistributedObject {
   setState(string) required broadcast ram;
   setDuration(int32) required broadcast ram;
-};
-
-dclass DistributedWeatherStorm : DistributedObject {
-  start() broadcast;
-  stop() broadcast;
-  setStormType(int8) broadcast ram;
-  setDuration(int32) broadcast ram;
 };
 
 struct Member {
@@ -4006,8 +4006,4 @@ dclass DistributedWeatherMGR : DistributedObject {
 
 dclass DistributedDayTimeManager : DistributedWeatherMGR {
   update(int8) broadcast ram;
-};
-
-dclass DistributedRainManager : DistributedWeatherMGR {
-  spawnLightning(int16, int16) broadcast ram;
 };

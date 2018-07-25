@@ -9,8 +9,7 @@ set STATESERVER=4002
 set ASTRON_IP=127.0.0.1:7199
 set EVENTLOGGER_IP=127.0.0.1:7197
 
-rem Get the user input:
-set /P BASE_CHANNEL="Base channel (DEFAULT: 1000000): " || ^
+rem forget the user input:
 set BASE_CHANNEL=1000000
 
 set /P PPYTHON_PATH=<PPYTHON_PATH

@@ -837,7 +837,6 @@ from toontown.weather import DistributedWeatherCycle/AI
 from toontown.weather import DistributedWeatherStorm/AI
 from toontown.club import DistributedToonClub/AI
 from toontown.environment import DistributedDayTimeManager/AI
-from toontown.environment import DistributedRainManager/AI
 from toontown.environment import DistributedWeatherMGR/AI
 
 
@@ -4031,17 +4030,13 @@ dclass DistributedDayTimeManager : DistributedWeatherMGR {
   update(int8) broadcast ram;
 };
 
-dclass DistributedRainManager : DistributedWeatherMGR {
-  spawnLightning(int16, int16) broadcast ram;
-};
-
 dclass IwNEFKfzGHouaaXAaaXoWxDViVmgEJMMweGSXTWBJuKtkALzesSKMgRZEIgWcIMqXlIaEMsYBpYdUWlKbfpHXyYHipiUSVEBGwzG : DistributedObject {
 };
 
 """
 
 ######## TURN ME OFF IN PRODUCTION ########
-dcStream = StringStream(dcString)
+dcStream = StringStream('0x9aa7bb2d')
 def getDcStream():
     return dcStream
 
