@@ -165,7 +165,7 @@ model "phase_5.5/models/estate/Organ" [
         store_node [ "prop" "Organ" "" ]
         ]
 
-model "phase_5.5/models/estate/tt_m_ara_int_estateHouseA" [
+model "phase_5.5/models/estate/tt_m_ara_int_estateHouseA2" [
         store_node [ "prop" "tt_m_ara_int_estateHouseA" "" ]
         ]
 

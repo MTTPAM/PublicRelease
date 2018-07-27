@@ -1,4 +1,8 @@
 
+model "phase_3.5/models/modules/walls_2" [
+    store_node [ "wall" "wall_oz_1" ]
+    store_node [ "wall" "wall_oz_2" ]
+    ]
 
 model "phase_3.5/models/modules/walls" [
 	store_node [ "wall_collide" "wall_collide" ]
@@ -322,6 +326,9 @@ model "phase_3.5/models/props/neighborhood_sign_TT" [
 model "phase_4/models/props/neighborhood_sign_DD" [
 	store_node [ "prop" "neighborhood_sign_DD" "" ]
 	]
+model "phase_4/models/props/neighborhood_sign_AA" [
+	store_node [ "prop" "neighborhood_sign_AA" "" ]
+	]
 model "phase_4/models/props/neighborhood_sign_DL" [
 	store_node [ "prop" "neighborhood_sign_DL" "" ]
 	]
@@ -333,6 +340,9 @@ model "phase_4/models/props/neighborhood_sign_BR" [
 	]
 model "phase_4/models/props/neighborhood_sign_MM" [
 	store_node [ "prop" "neighborhood_sign_MM" "" ]
+	]
+model "phase_4/models/props/neighborhood_sign_AA" [
+	store_node [ "prop" "neighborhood_sign_AA" "" ]
 	]
 
 model "phase_4/models/props/tunnel_sign_blue" [

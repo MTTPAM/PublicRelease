@@ -1984,13 +1984,13 @@ group "donaldsDreamland" [
   suit_edge [ 206 24 ]
   suit_edge [ 24 206 ]
   battle_cell [ 20 20 -75 -20 -0.5 ]
-  street "street_40x40_DNARoot" [
-   code [ "street_40x40" ]
+  street "street_keyboard_40x40_DNARoot" [
+   code [ "street_keyboard_40x40" ]
    pos [ -55 0 0 ]
    nhpr [ -180 0 0 ]
    texture [ "street_street_DL_tex" ]
-   texture [ "street_sidewalk_DL_tex" ]
-   texture [ "street_curb_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
   ]
   flat_building "tb13:13_9_8_DNARoot" [
    pos [ -55 -40 0 ]
@@ -3005,13 +3005,13 @@ group "donaldsDreamland" [
   suit_edge [ 211 47 ]
   suit_edge [ 47 211 ]
   battle_cell [ 20 20 -162.923 -87.9166 -0.5 ]
-  street "street_40x40_DNARoot" [
-   code [ "street_40x40" ]
+  street "street_keyboard_40x40_DNARoot" [
+   code [ "street_keyboard_40x40" ]
    pos [ -155 -114.64 -1.14441e-005 ]
    nhpr [ 60 0 -0 ]
    texture [ "street_street_DL_tex" ]
-   texture [ "street_sidewalk_DL_tex" ]
-   texture [ "street_curb_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
   ]
   flat_building "tb17:random20_DNARoot" [
    pos [ -147.5 -101.651 0 ]
@@ -5187,13 +5187,13 @@ group "donaldsDreamland" [
   suit_edge [ 90 86 ]
   battle_cell [ 20 20 -35.6592 -170.475 -0.5 ]
   node "streets" [
-   street "street_40x40_DNARoot" [
-    code [ "street_40x40" ]
+   street "street_keyboard_40x40_DNARoot" [
+    code [ "street_keyboard_40x40" ]
     pos [ -55 -149.28 -1.14441e-005 ]
     nhpr [ -90 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
    street "street_sidewalk_20x20_DNARoot" [
     code [ "street_sidewalk_20x20" ]
@@ -7283,13 +7283,13 @@ group "donaldsDreamland" [
   suit_edge [ 220 112 ]
   suit_edge [ 112 220 ]
   battle_cell [ 20 20 -182.155 -203.031 -0.5 ]
-  street "street_40x40_DNARoot" [
-   code [ "street_40x40" ]
+  street "street_keyboard_40x40_DNARoot" [
+   code [ "street_keyboard_40x40" ]
    pos [ -155 -209.28 0 ]
    nhpr [ 120 0 0 ]
    texture [ "street_street_DL_tex" ]
-   texture [ "street_sidewalk_DL_tex" ]
-   texture [ "street_curb_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
   ]
   flat_building "tb30:13_9_8_DNARoot" [
    pos [ -160 -200.62 0 ]
@@ -7785,13 +7785,13 @@ group "donaldsDreamland" [
    texture [ "street_sidewalk_DL_tex" ]
    texture [ "street_curb_DL_tex" ]
   ]
-  street "street_40x40_DNARoot" [
-   code [ "street_40x40" ]
+  street "street_keyboard_40x40_DNARoot" [
+   code [ "street_keyboard_40x40" ]
    pos [ -229.64 -160 0 ]
    nhpr [ -150 0 0 ]
    texture [ "street_street_DL_tex" ]
-   texture [ "street_sidewalk_DL_tex" ]
-   texture [ "street_curb_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
   ]
   landmark_building "tb52:toon_landmark_hqDL_DNARoot" [
    code [ "toon_landmark_hqDL" ]
@@ -9403,13 +9403,13 @@ group "donaldsDreamland" [
   suit_edge [ 227 145 ]
   suit_edge [ 145 227 ]
   battle_cell [ 20 20 -154.039 -304.261 -0.5 ]
-  street "street_40x40_DNARoot" [
-   code [ "street_40x40" ]
+  street "street_keyboard_40x40_DNARoot" [
+   code [ "street_keyboard_40x40" ]
    pos [ -134.28 -283.92 -8.39233e-005 ]
    nhpr [ -180 0 -0 ]
    texture [ "street_street_DL_tex" ]
-   texture [ "street_sidewalk_DL_tex" ]
-   texture [ "street_curb_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
   ]
   flat_building "tb39:13_9_8_DNARoot" [
    pos [ -164.28 -283.92 0 ]
@@ -11405,13 +11405,13 @@ group "donaldsDreamland" [
   suit_edge [ 233 180 ]
   suit_edge [ 180 233 ]
   battle_cell [ 20 20 -154.845 -434.005 -0.5 ]
-  street "street_40x40_DNARoot" [
-   code [ "street_40x40" ]
+  street "street_keyboard_40x40_DNARoot" [
+   code [ "street_keyboard_40x40" ]
    pos [ -134.28 -413.92 1.90735e-006 ]
    nhpr [ 180 0 -0 ]
    texture [ "street_street_DL_tex" ]
-   texture [ "street_sidewalk_DL_tex" ]
-   texture [ "street_curb_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
   ]
   flat_building "tb47:20_DNARoot" [
    pos [ -164.28 -413.92 0 ]
@@ -12494,13 +12494,13 @@ group "donaldsDreamland" [
  visgroup "9150" [
   vis [   "9150"   "9149"   "9148"   "9147"   "9146"   "9145"   "9144"   "9143"   "9142"   ]
   battle_cell [ 20 20 -100 -485 -0.5 ]
-  street "street_40x40_DNARoot" [
-   code [ "street_40x40" ]
+  street "street_keyboard_40x40_DNARoot" [
+   code [ "street_keyboard_40x40" ]
    pos [ -79.28 -508.92 1.14441e-005 ]
    nhpr [ 90 0 -0 ]
    texture [ "street_street_DL_tex" ]
-   texture [ "street_sidewalk_DL_tex" ]
-   texture [ "street_curb_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
+   texture [ "street_bed_DL_tex" ]
   ]
   flat_building "tb49:12_8_DNARoot" [
    pos [ -119.28 -478.92 0 ]

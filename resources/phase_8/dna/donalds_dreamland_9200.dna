@@ -765,8 +765,8 @@ group "donaldsDreamland" [
     pos [ 60 90 0 ]
     nhpr [ -0 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
   ]
   group "buildings" [
@@ -2129,8 +2129,8 @@ group "donaldsDreamland" [
     pos [ 60 40 0 ]
     nhpr [ -0 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
   ]
   group "buildings" [
@@ -3235,13 +3235,13 @@ group "donaldsDreamland" [
   suit_edge [ 47 366 ]
   battle_cell [ 20 20 127.358 -8.25511 -0.5 ]
   group "streets" [
-   street "street_40x40_DNARoot" [
-    code [ "street_40x40" ]
+   street "street_keyboard_40x40_DNARoot" [
+    code [ "street_keyboard_40x40" ]
     pos [ 148.284 11.7157 0 ]
     nhpr [ 180 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
   ]
   group "buildings" [
@@ -4109,8 +4109,8 @@ group "donaldsDreamland" [
     pos [ 176.569 40 0 ]
     nhpr [ 90 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
   ]
   group "buildings" [
@@ -6180,12 +6180,12 @@ group "donaldsDreamland" [
   battle_cell [ 20 20 281.532 34.8645 -0.5 ]
   group "streets" [
    street "street_40x20_DNARoot" [
-    code [ "street_40x40" ]
+    code [ "street_keyboard_40x40" ]
     pos [ 261.569 55 -1.52588e-005 ]
     nhpr [ -90 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
    street "street_40x20_DNARoot" [
     code [ "street_sidewalk_10x40" ]
@@ -6883,12 +6883,12 @@ group "donaldsDreamland" [
   battle_cell [ 20 20 289.507 -46.1301 -0.5 ]
   group "streets" [
    street "street_40x20_DNARoot" [
-    code [ "street_40x40" ]
+    code [ "street_keyboard_40x40" ]
     pos [ 296.178 -74.305 -3.8147e-006 ]
     nhpr [ 60 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
   ]
   group "buildings" [
@@ -7070,12 +7070,12 @@ group "donaldsDreamland" [
   battle_cell [ 20 20 360.289 -42.0271 -0.5 ]
   group "streets" [
    street "street_40x20_DNARoot" [
-    code [ "street_40x40" ]
+    code [ "street_keyboard_40x40" ]
     pos [ 316.178 -39.664 1.52588e-005 ]
     nhpr [ -30 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
    street "street_40x20_DNARoot" [
     code [ "street_curved_corner" ]
@@ -9113,12 +9113,12 @@ group "donaldsDreamland" [
   battle_cell [ 20 20 198.766 -42.5383 -0.5 ]
   group "streets" [
    street "street_80x40_DNARoot" [
-    code [ "street_40x40" ]
+    code [ "street_keyboard_40x40" ]
     pos [ 206.896 -68.946 0 ]
     nhpr [ 60 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
   ]
   group "buildings" [
@@ -15122,8 +15122,8 @@ group "donaldsDreamland" [
     pos [ 89.8115 -101.575 5.34058e-005 ]
     nhpr [ -180 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
   ]
   group "buildings" [
@@ -15374,8 +15374,8 @@ group "donaldsDreamland" [
     pos [ 49.8115 -101.575 0 ]
     nhpr [ 120 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
   ]
   group "buildings" [
@@ -16199,8 +16199,8 @@ group "donaldsDreamland" [
     pos [ 19.8115 -49.613 0 ]
     nhpr [ -60 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
    street "street_80x40_DNARoot" [
     code [ "street_curved_corner" ]
@@ -17375,8 +17375,8 @@ group "donaldsDreamland" [
     pos [ -104.112 -74.972 0 ]
     nhpr [ 30 0 -0 ]
     texture [ "street_street_DL_tex" ]
-    texture [ "street_sidewalk_DL_tex" ]
-    texture [ "street_curb_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
+    texture [ "street_bed_DL_tex" ]
    ]
   ]
   group "buildings" [
@@ -17884,64 +17884,6 @@ group "donaldsDreamland" [
     nhpr [ 120 0 -0 ]
     scale [ 0.789164 0.789164 0.789164 ]
    ]
-   prop "linktunnel_cashhq_12000_DNARoot" [
-    code [ "prop_cog_tunnel" ]
-    pos [ -146.735 -76.4866 -0.496864 ]
-    nhpr [ -60 0 -0 ]
-    sign [
-     baseline [
-      code [ "suit" ]
-      color [ 0.752941 0.752941 0.752941 1 ]
-      pos [ 0 0 -0.454734 ]
-      scale [ 1.94135 1 1.34943 ]
-      text [
-       letters [ "C" ]
-      ]
-      text [
-       letters [ "A" ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
-      text [
-       letters [ "H" ]
-      ]
-      text [
-       letters [ "B" ]
-      ]
-      text [
-       letters [ "O" ]
-      ]
-      text [
-       letters [ "T" ]
-      ]
-     ]
-     baseline [
-      code [ "suit" ]
-      color [ 0.752941 0.752941 0.752941 1 ]
-      pos [ -0.145453 0 -1.58779 ]
-      scale [ 2.00652 1 1.22781 ]
-      text [
-       letters [ "C" ]
-      ]
-      text [
-       letters [ "O" ]
-      ]
-      text [
-       letters [ "G" ]
-      ]
-      text [
-       letters [ " " ]
-      ]
-      text [
-       letters [ "H" ]
-      ]
-      text [
-       letters [ "Q" ]
-      ]
-     ]
-    ]
-   ]
    prop "prop_cog_water_tower_DNARoot" [
     code [ "prop_cog_water_tower" ]
     pos [ -137.39 -36.1215 4.4691 ]
@@ -17966,6 +17908,101 @@ group "donaldsDreamland" [
     nhpr [ -60 0 -0 ]
     scale [ 0.738382 0.738382 0.738382 ]
    ]
+   prop "prop_cog_tunnel_DNARoot" [
+    code [ "prop_cog_tunnel" ]
+    pos [ -146.735 -76.4866 -0.496864 ]
+    nhpr [ -60 0 -0 ]
+    sign [
+     baseline [
+      code [ "suit" ]
+      color [ 0.752941 0.752941 0.752941 1 ]
+      pos [ 0 0 -0.454734 ]
+      scale [ 1.94135 1 1.34943 ]
+      text [
+       letters [ "U" ]
+      ]
+      text [
+       letters [ "N" ]
+      ]
+      text [
+       letters [ "D" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
+      text [
+       letters [ "R" ]
+      ]
+     ]
+     baseline [
+      code [ "suit" ]
+      color [ 0.752941 0.752941 0.752941 1 ]
+      pos [ -0.145453 0 -1.58779 ]
+      scale [ 2.00652 1 1.22781 ]
+      text [
+       letters [ "C" ]
+      ]
+      text [
+       letters [ "O" ]
+      ]
+      text [
+       letters [ "N" ]
+      ]
+      text [
+       letters [ "S" ]
+      ]
+      text [
+       letters [ "T" ]
+      ]
+      text [
+       letters [ "R" ]
+      ]
+      text [
+       letters [ "U" ]
+      ]
+      text [
+       letters [ "C" ]
+      ]
+      text [
+       letters [ "T" ]
+      ]
+      text [
+       letters [ "I" ]
+      ]
+      text [
+       letters [ "O" ]
+      ]
+      text [
+       letters [ "N" ]
+      ]
+     ]
+    ]
+   ]
+   prop "prop_cog_water_tower_DNARoot" [
+    code [ "prop_cog_water_tower" ]
+    pos [ -113.35 -73.1421 0 ]
+    nhpr [ 90 39.8056 21.8014 ]
+   ]
+   prop "prop_cog_water_tower_DNARoot" [
+    code [ "prop_cog_water_tower" ]
+    pos [ -119.332 -59.3928 0 ]
+    nhpr [ 45 33.5494 11.8887 ]
+   ]
+   prop "prop_cog_water_tower_DNARoot" [
+    code [ "prop_cog_water_tower" ]
+    pos [ -126.832 -46.4024 0 ]
+    nhpr [ 120 0 337.467 ]
+   ]
+  ]
+  prop "prop_cog_water_tower_DNARoot" [
+   code [ "prop_cog_water_tower" ]
+   pos [ -115.452 -35.331 0 ]
+   nhpr [ 30 90 0 ]
+  ]
+  prop "prop_cog_water_tower_DNARoot" [
+   code [ "prop_cog_water_tower" ]
+   pos [ -95.4518 -69.972 0 ]
+   nhpr [ 30.0006 296.565 0 ]
   ]
  ]
  visgroup "9253" [

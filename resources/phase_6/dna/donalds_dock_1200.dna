@@ -328,111 +328,141 @@ group "donaldsDock" [
      nhpr [ -180 0 -0 ]
     ]
    ]
-   prop "linktunnel_dg_5242_DNARoot" [
-    code [ "prop_neighborhood_tunnel" ]
+   prop "linktunnel_oz_6217_DNARoot" [
+    code [ "prop_outdoor_zone_entrance" ]
     pos [ -295 -430 0 ]
     nhpr [ -90 0 -0 ]
     sign [
-     code [ "tunnel_sign_green" ]
-     pos [ 0 0 0.9 ]
-     scale [ 1.5 1 1.5 ]
+     code [ "DD_sign2" ]
+     pos [ 0 0 -0.454327 ]
+     scale [ 1.9 1 1.4 ]
      baseline [
-      code [ "mickey" ]
-      color [ 1 1 0 1 ]
-      pos [ 0 0 -1.06 ]
-      scale [ 1.4 1 1.5 ]
-      width [ 55.0903 ]
-      height [ 55.0903 ]
+      code [ "TT_Comedy" ]
+      color [ 0.439216 0.247059 0.184314 1 ]
+      scale [ 1.5 1 1.4 ]
+      wiggle [ 3 ]
+      stomp [ 0.0367716 ]
       text [
-       letters [ "M" ]
+       letters [ "P" ]
       ]
       text [
-       letters [ "A" ]
+       letters [ "e" ]
+      ]
+      text [
+       letters [ "a" ]
+      ]
+      text [
+       letters [ "n" ]
+      ]
+      text [
+       letters [ "u" ]
+      ]
+      text [
+       letters [ "t" ]
+      ]
+      text [
+       letters [ " " ]
       ]
       text [
        letters [ "P" ]
       ]
       text [
-       letters [ "L" ]
+       letters [ "l" ]
       ]
       text [
-       letters [ "E" ]
+       letters [ "a" ]
+      ]
+      text [
+       letters [ "c" ]
+      ]
+      text [
+       letters [ "e" ]
+      ]
+     ]
+     baseline [
+      code [ "TT_Comedy" ]
+      color [ 0.439216 0.247059 0.184314 1 ]
+      pos [ 0 0 -1.2 ]
+      scale [ 1.5 1 1.4 ]
+      wiggle [ 3 ]
+      stomp [ 0.0367716 ]
+      text [
+       letters [ "A" ]
+      ]
+      text [
+       letters [ "c" ]
+      ]
+      text [
+       letters [ "o" ]
+      ]
+      text [
+       letters [ "r" ]
+      ]
+      text [
+       letters [ "n" ]
       ]
       text [
        letters [ " " ]
       ]
       text [
-       letters [ "S" ]
-      ]
-      text [
-       letters [ "T" ]
-      ]
-      text [
-       letters [ "R" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "T" ]
-      ]
-     ]
-     baseline [
-      pos [ 0 0 1.5 ]
-      scale [ 2.5 1 2.5 ]
-      graphic [
-       code [ "daisySZ" ]
-      ]
-     ]
-     baseline [
-      code [ "mickey" ]
-      color [ 1 1 0 1 ]
-      pos [ 0 0 -1.87 ]
-      scale [ 0.8 1 0.8 ]
-      width [ 39.1757 ]
-      height [ 39.1757 ]
-      text [
-       letters [ "D" ]
-      ]
-      text [
        letters [ "A" ]
       ]
       text [
-       letters [ "I" ]
+       letters [ "c" ]
       ]
       text [
-       letters [ "S" ]
+       letters [ "r" ]
       ]
       text [
-       letters [ "Y" ]
+       letters [ "e" ]
       ]
       text [
-       letters [ " " ]
+       letters [ "s" ]
       ]
-      text [
-       letters [ "G" ]
-      ]
-      text [
-       letters [ "A" ]
-      ]
-      text [
-       letters [ "R" ]
-      ]
-      text [
-       letters [ "D" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "N" ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
+     ]
+    ]
+   ]
+   flat_building "tb1:random_DNARoot" [
+    pos [ -295 -410 0 ]
+    nhpr [ -90 0 -0 ]
+    width [ 10 ]
+    wall [
+     height [ 20 ]
+     code [ "wall_lg_brick_ur" ]
+     color [ 0.16 0.44 0.27 1 ]
+     windows [
+      code [ "window_sm_round_ur" ]
+      color [ 0.31 0.63 0.37 1 ]
+      count [ 1 ]
+     ]
+    ]
+   ]
+   flat_building "tb1:random_DNARoot" [
+    pos [ -295 -440 0 ]
+    nhpr [ -90 0 -0 ]
+    width [ 10 ]
+    wall [
+     height [ 10 ]
+     code [ "wall_sm_wood_ur" ]
+     color [ 0.75 0.75 0.75 1 ]
+     windows [
+      code [ "window_porthole_ul" ]
+      color [ 0.08 0.47 0.31 1 ]
+      count [ 1 ]
+     ]
+    ]
+    wall [
+     height [ 10 ]
+     code [ "wall_sm_wood_dr" ]
+     color [ 0.75 0.75 0.75 1 ]
+     windows [
+      code [ "window_porthole_ul" ]
+      color [ 0.08 0.47 0.31 1 ]
+      count [ 1 ]
+     ]
+     cornice [
+      code [ "cornice_shingles_ur" ]
+      color [ 0.73 0.51 0.51 1 ]
      ]
     ]
    ]
@@ -2039,8 +2069,8 @@ group "donaldsDock" [
      pos [ 7.74 -14.16 0 ]
      nhpr [ -180 0 -0 ]
     ]
-    prop "neighborhood_sign_DG_DNARoot" [
-     code [ "neighborhood_sign_DG" ]
+    prop "neighborhood_sign_AA_DNARoot" [
+     code [ "neighborhood_sign_AA" ]
      pos [ 2 -1.16 0 ]
      nhpr [ 180 0 -0 ]
      scale [ 1.5 1.5 1.5 ]
@@ -4378,8 +4408,8 @@ group "donaldsDock" [
      pos [ 8.31 -8.65 0 ]
      nhpr [ -90 0 -0 ]
     ]
-    prop "neighborhood_sign_DG_DNARoot" [
-     code [ "neighborhood_sign_DG" ]
+    prop "neighborhood_sign_AA_DNARoot" [
+     code [ "neighborhood_sign_AA" ]
      pos [ 18.48 -1.1 0 ]
      nhpr [ -0 0 -0 ]
      scale [ 1.5 1.5 1.5 ]
@@ -6821,8 +6851,8 @@ group "donaldsDock" [
      color [ 0.57 0.39 0.34 1 ]
     ]
    ]
-   prop "neighborhood_sign_DG_DNARoot" [
-    code [ "neighborhood_sign_DG" ]
+   prop "neighborhood_sign_AA_DNARoot" [
+    code [ "neighborhood_sign_AA" ]
     pos [ 2.74 -1.16 0 ]
     nhpr [ -0 0 -0 ]
     scale [ 1.5 1.5 1.5 ]
@@ -7549,8 +7579,8 @@ group "donaldsDock" [
     pos [ 14 -8 0 ]
     nhpr [ -0 0 -0 ]
    ]
-   prop "neighborhood_sign_DG_DNARoot" [
-    code [ "neighborhood_sign_DG" ]
+   prop "neighborhood_sign_AA_DNARoot" [
+    code [ "neighborhood_sign_AA" ]
     pos [ 15.12 -1.04 0 ]
     nhpr [ 180 0 -0 ]
     scale [ 1.5 1.5 1.5 ]
@@ -8044,8 +8074,8 @@ group "donaldsDock" [
     nhpr [ -165 0 -0 ]
     scale [ 0.8 0.8 0.8 ]
    ]
-   prop "neighborhood_sign_DG_DNARoot" [
-    code [ "neighborhood_sign_DG" ]
+   prop "neighborhood_sign_AA_DNARoot" [
+    code [ "neighborhood_sign_AA" ]
     pos [ 5.07 -1.09 0 ]
     nhpr [ -180 0 -0 ]
     scale [ 1.5 1.5 1.5 ]
@@ -8289,8 +8319,8 @@ group "donaldsDock" [
     pos [ 11.76 -8.48 0 ]
     nhpr [ 45 0 -0 ]
    ]
-   prop "neighborhood_sign_DG_DNARoot" [
-    code [ "neighborhood_sign_DG" ]
+   prop "neighborhood_sign_AA_DNARoot" [
+    code [ "neighborhood_sign_AA" ]
     pos [ 10 -1.00003 0 ]
     nhpr [ -180 0 -0 ]
     scale [ 1.5 1.5 1.5 ]

@@ -15,10 +15,6 @@ place_model "phase_4/models/modules/safe_zone_tunnel_TT" [
 	store_node [ "prop" "prop_safe_zone_tunnel" ]
         ]
 
-place_model "phase_4/models/modules/Speedway_Tunnel" [
-	store_node [ "prop" "prop_GS_tunnel" "" ]
-        ]
-
 place_model "phase_4/models/modules/bank" [
 	store_node [ "toon_landmark" "toon_landmark_TT_bank" "" ]
         ]
@@ -66,3 +62,15 @@ place_model "phase_4/models/modules/toonhall" [
 place_model "phase_4/models/props/exteriorfish-zero" [
 	store_node [ "prop" "animated_prop_PetShopFishAnimatedProp" "exteriorfish" ]
 	]
+
+place_model "phase_8/models/props/daisys_flowerbox_yellow" [
+	store_node [ "prop" "prop_daisys_flowerbox_yellow" "" ]
+	]
+    
+place_model "phase_6/models/karting/KartArea_Tires" [
+	store_node [ "prop" "gs_tires" "" ]
+	]
+
+place_model "phase_4/models/modules/Speedway_Tunnel" [
+	store_node [ "prop" "prop_GS_tunnel" "" ]
+        ]

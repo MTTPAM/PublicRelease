@@ -45,18 +45,18 @@ group "daisysGarden" [
    ]
    prop "prop_daisy_park_table_DNARoot" [
     code [ "prop_daisy_park_table" ]
-    pos [ 45.42 337.14 14 ]
+    pos [ 23.4916 346.403 14 ]
     nhpr [ -0 0 -0 ]
    ]
    prop "prop_daisy_park_table_DNARoot" [
     code [ "prop_daisy_park_table" ]
     pos [ 93.66 290.13 14 ]
-    nhpr [ -0 0 -0 ]
+    nhpr [ 0 0 0 ]
    ]
    prop "prop_daisys_fountain_DNARoot" [
     code [ "prop_daisys_fountain" ]
-    pos [ 34.28 337.18 14 ]
-    nhpr [ 0 0 0 ]
+    pos [ 54.1496 333.531 14 ]
+    nhpr [ -31 0 0 ]
    ]
    prop "prop_daisy_park_table_DNARoot" [
     code [ "prop_daisy_park_table" ]
@@ -122,16 +122,16 @@ group "daisysGarden" [
    prop "prop_window_flowerbox_wood_DNARoot" [
     code [ "prop_window_flowerbox_wood" ]
     pos [ -21.08 279.46 14.42 ]
-    nhpr [ 0 0 0 ]
+    nhpr [ -0 0 -0 ]
    ]
-   prop "neighborhood_sign_DD_DNARoot" [
-    code [ "neighborhood_sign_DD" ]
+   prop "neighborhood_sign_AA_DNARoot" [
+    code [ "neighborhood_sign_AA" ]
     pos [ -14.26 338.87 13.97 ]
     nhpr [ 15 0 0 ]
     scale [ 1.5 1.5 1.5 ]
    ]
-   prop "neighborhood_sign_DD_DNARoot" [
-    code [ "neighborhood_sign_DD" ]
+   prop "neighborhood_sign_AA_DNARoot" [
+    code [ "neighborhood_sign_AA" ]
     pos [ 15.34 347.39 14.01 ]
     nhpr [ -165 0 0 ]
     scale [ 1.5 1.5 1.5 ]
@@ -643,326 +643,6 @@ group "daisysGarden" [
      color [ 1 0.55 0.81 1 ]
     ]
    ]
-   prop "linktunnel_dg_5201_DNARoot" [
-    code [ "prop_safe_zone_tunnel" ]
-    pos [ 32.92 452.25 7.36 ]
-    nhpr [ -165 0 0 ]
-    sign [
-     code [ "tunnel_sign_green" ]
-     pos [ 0 0 -0.18 ]
-     scale [ 1.5 1 1.5 ]
-     baseline [
-      code [ "mickey" ]
-      color [ 1 1 0 1 ]
-      pos [ 0 0 -0.95 ]
-      scale [ 1.4 1 1.5 ]
-      width [ 40.563 ]
-      height [ 40.563 ]
-      text [
-       letters [ "M" ]
-      ]
-      text [
-       letters [ "A" ]
-      ]
-      text [
-       letters [ "P" ]
-      ]
-      text [
-       letters [ "L" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ " " ]
-      ]
-      text [
-       letters [ " " ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
-      text [
-       letters [ "T" ]
-      ]
-      text [
-       letters [ "R" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "T" ]
-      ]
-     ]
-     baseline [
-      code [ "mickey" ]
-      color [ 1 1 0 1 ]
-      pos [ 0 0 -1.93 ]
-      scale [ 0.8 1 0.8 ]
-      width [ 33.3333 ]
-      height [ 33.3333 ]
-      text [
-       letters [ "D" ]
-      ]
-      text [
-       letters [ "A" ]
-      ]
-      text [
-       letters [ "I" ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
-      text [
-       letters [ "Y" ]
-      ]
-      text [
-       letters [ " " ]
-      ]
-      text [
-       letters [ "G" ]
-      ]
-      text [
-       letters [ "A" ]
-      ]
-      text [
-       letters [ "R" ]
-      ]
-      text [
-       letters [ "D" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "N" ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
-     ]
-     baseline [
-      pos [ 0 0 1.49 ]
-      scale [ 2.5 1 2.5 ]
-      graphic [
-       code [ "daisySZ" ]
-      ]
-     ]
-    ]
-   ]
-   prop "linktunnel_dg_5102_DNARoot" [
-    code [ "prop_safe_zone_tunnel" ]
-    pos [ -161.7 359.4 7.35 ]
-    nhpr [ -120 0 -0 ]
-    sign [
-     code [ "tunnel_sign_green" ]
-     scale [ 1.5 1 1.5 ]
-     baseline [
-      code [ "mickey" ]
-      color [ 1 1 0 1 ]
-      pos [ 0 0 -1.01 ]
-      nhpr [ 0 0 2 ]
-      scale [ 1.5 1 1.5 ]
-      width [ 35.8744 ]
-      height [ 35.8744 ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "L" ]
-      ]
-      text [
-       letters [ "M" ]
-      ]
-      text [
-       letters [ " " ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
-      text [
-       letters [ "T" ]
-      ]
-      text [
-       letters [ "R" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "T" ]
-      ]
-     ]
-     baseline [
-      code [ "mickey" ]
-      color [ 1 1 0 1 ]
-      pos [ 0 0 -2.02 ]
-      scale [ 0.8 1 0.8 ]
-      width [ 52.5099 ]
-      height [ 52.5099 ]
-      text [
-       letters [ "D" ]
-      ]
-      text [
-       letters [ "A" ]
-      ]
-      text [
-       letters [ "I" ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
-      text [
-       letters [ "Y" ]
-      ]
-      text [
-       letters [ " " ]
-      ]
-      text [
-       letters [ "G" ]
-      ]
-      text [
-       letters [ "A" ]
-      ]
-      text [
-       letters [ "R" ]
-      ]
-      text [
-       letters [ "D" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "N" ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
-     ]
-     baseline [
-      pos [ 0 0 1.73 ]
-      scale [ 2.5 1 2.5 ]
-      graphic [
-       code [ "daisySZ" ]
-      ]
-     ]
-    ]
-   ]
-   prop "linktunnel_dg_5401_DNARoot" [
-    code [ "prop_safe_zone_tunnel" ]
-    pos [ 219.08 243.08 7.3 ]
-    nhpr [ 111 0 0 ]
-    sign [
-     code [ "tunnel_sign_green" ]
-     pos [ 0 0 0.53 ]
-     scale [ 1.39066 1 1.61989 ]
-     baseline [
-      code [ "mickey" ]
-      color [ 1 1 0 1 ]
-      pos [ -0.17 0 -0.62297 ]
-      scale [ 1.87057 1 1.51598 ]
-      width [ 34.4253 ]
-      height [ 34.4253 ]
-      flags [ "d" ]
-      text [
-       letters [ "R" ]
-      ]
-      text [
-       letters [ "O" ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ " " ]
-      ]
-      text [
-       letters [ "V" ]
-      ]
-      text [
-       letters [ "A" ]
-      ]
-      text [
-       letters [ "L" ]
-      ]
-      text [
-       letters [ "L" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "Y" ]
-      ]
-     ]
-     baseline [
-      code [ "mickey" ]
-      color [ 1 1 0 1 ]
-      pos [ 0 0 -1.73655 ]
-      scale [ 0.95104 1 0.902303 ]
-      width [ 35.468 ]
-      height [ 35.468 ]
-      flags [ "d" ]
-      text [
-       letters [ "D" ]
-      ]
-      text [
-       letters [ "A" ]
-      ]
-      text [
-       letters [ "I" ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
-      text [
-       letters [ "Y" ]
-      ]
-      text [
-       letters [ " " ]
-      ]
-      text [
-       letters [ "G" ]
-      ]
-      text [
-       letters [ "A" ]
-      ]
-      text [
-       letters [ "R" ]
-      ]
-      text [
-       letters [ "D" ]
-      ]
-      text [
-       letters [ "E" ]
-      ]
-      text [
-       letters [ "N" ]
-      ]
-      text [
-       letters [ "S" ]
-      ]
-     ]
-     baseline [
-      pos [ 0 0 1.706 ]
-      scale [ 2.34951 1 1.88988 ]
-      graphic [
-       code [ "daisySZ" ]
-      ]
-     ]
-    ]
-   ]
    flat_building "sz0:random_DNARoot" [
     pos [ 83.8618 320.727 13 ]
     nhpr [ -30 0 -0 ]
@@ -1070,63 +750,247 @@ group "daisysGarden" [
      ]
     ]
    ]
-   landmark_building "tb3:toon_landmark_DG_clothes_shop_DNARoot" [
-    code [ "toon_landmark_DG_clothes_shop" ]
-    building_type [ "clotheshop" ]
-    title [ "Clothing Shop" ]
-    pos [ -140 145 0 ]
-    nhpr [ 105 0 0 ]
-    door [
-     code [ "door_double_clothesshop_ur" ]
-     color [ 1 0.55 0.65 1 ]
+   flat_building "sz0:random_DNARoot" [
+    pos [ 18.6437 350.457 13 ]
+    nhpr [ 0 0 0 ]
+    width [ 20 ]
+    wall [
+     height [ 4 ]
+     code [ "wall_basement_rock_ur" ]
+     color [ 0.22 0.74 0.62 1 ]
+     windows [
+      code [ "window_sm_pointed_ur" ]
+      color [ 1 1 1 1 ]
+      count [ 0 ]
+     ]
     ]
+    wall [
+     height [ 21 ]
+     code [ "wall_md_blank_ur" ]
+     color [ 1 0.55 0.55 1 ]
+     windows [
+      code [ "window_flower_porthole_ur" ]
+      color [ 1 1 0.6 1 ]
+      count [ 4 ]
+     ]
+     cornice [
+      code [ "cornice_brick_ur" ]
+      color [ 0.53 0.92 0.81 1 ]
+     ]
+    ]
+   ]
+   prop "linktunnel_dg_5201_DNARoot" [
+    code [ "prop_safe_zone_tunnel" ]
+    pos [ 32.92 452.25 7.36 ]
+    nhpr [ -165 0 0 ]
     sign [
+     code [ "tunnel_sign_green" ]
+     pos [ 0 0 -0.18 ]
+     scale [ 1.5 1 1.5 ]
      baseline [
       code [ "mickey" ]
-      color [ 0 0.72549 0 1 ]
-      pos [ 0 0 -0.5 ]
-      scale [ 1.5 1 1.5 ]
+      color [ 1 1 0 1 ]
+      pos [ 0 0 -0.95 ]
+      scale [ 1.4 1 1.5 ]
+      width [ 40.563 ]
+      height [ 40.563 ]
       text [
-       letters [ "C" ]
+       letters [ "D" ]
       ]
       text [
-       letters [ "l" ]
+       letters [ "A" ]
       ]
       text [
-       letters [ "o" ]
-      ]
-      text [
-       letters [ "t" ]
-      ]
-      text [
-       letters [ "h" ]
-      ]
-      text [
-       letters [ "i" ]
-      ]
-      text [
-       letters [ "n" ]
-      ]
-      text [
-       letters [ "g" ]
-      ]
-      text [
-       letters [ " " ]
+       letters [ "I" ]
       ]
       text [
        letters [ "S" ]
       ]
       text [
-       letters [ "t" ]
+       letters [ "Y" ]
       ]
       text [
-       letters [ "o" ]
+       letters [ " " ]
       ]
       text [
-       letters [ "r" ]
+       letters [ "D" ]
       ]
       text [
-       letters [ "e" ]
+       letters [ "R" ]
+      ]
+      text [
+       letters [ "I" ]
+      ]
+      text [
+       letters [ "V" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
+     ]
+     baseline [
+      code [ "mickey" ]
+      color [ 1 1 0 1 ]
+      pos [ 0 0 -1.93 ]
+      scale [ 0.8 1 0.8 ]
+      width [ 33.3333 ]
+      height [ 33.3333 ]
+      text [
+       letters [ "D" ]
+      ]
+      text [
+       letters [ "A" ]
+      ]
+      text [
+       letters [ "I" ]
+      ]
+      text [
+       letters [ "S" ]
+      ]
+      text [
+       letters [ "Y" ]
+      ]
+      text [
+       letters [ " " ]
+      ]
+      text [
+       letters [ "G" ]
+      ]
+      text [
+       letters [ "A" ]
+      ]
+      text [
+       letters [ "R" ]
+      ]
+      text [
+       letters [ "D" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
+      text [
+       letters [ "N" ]
+      ]
+      text [
+       letters [ "S" ]
+      ]
+     ]
+     baseline [
+      pos [ 0 0 1.49 ]
+      scale [ 2.5 1 2.5 ]
+      graphic [
+       code [ "daisySZ" ]
+      ]
+     ]
+    ]
+   ]
+   prop "linktunnel_dg_5102_DNARoot" [
+    code [ "prop_safe_zone_tunnel" ]
+    pos [ -161.7 359.4 7.35 ]
+    nhpr [ -120 0 -0 ]
+    sign [
+     code [ "tunnel_sign_green" ]
+     scale [ 1.5 1 1.5 ]
+     baseline [
+      code [ "mickey" ]
+      color [ 1 1 0 1 ]
+      pos [ 0 0 -1.01 ]
+      nhpr [ 0 0 2 ]
+      scale [ 1.5 1 1.5 ]
+      width [ 35.8744 ]
+      height [ 35.8744 ]
+      text [
+       letters [ "P" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
+      text [
+       letters [ "T" ]
+      ]
+      text [
+       letters [ "U" ]
+      ]
+      text [
+       letters [ "N" ]
+      ]
+      text [
+       letters [ "I" ]
+      ]
+      text [
+       letters [ "A" ]
+      ]
+      text [
+       letters [ " " ]
+      ]
+      text [
+       letters [ "P" ]
+      ]
+      text [
+       letters [ "L" ]
+      ]
+      text [
+       letters [ "A" ]
+      ]
+      text [
+       letters [ "C" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
+     ]
+     baseline [
+      code [ "mickey" ]
+      color [ 1 1 0 1 ]
+      pos [ 0 0 -2.02 ]
+      scale [ 0.8 1 0.8 ]
+      width [ 52.5099 ]
+      height [ 52.5099 ]
+      text [
+       letters [ "D" ]
+      ]
+      text [
+       letters [ "A" ]
+      ]
+      text [
+       letters [ "I" ]
+      ]
+      text [
+       letters [ "S" ]
+      ]
+      text [
+       letters [ "Y" ]
+      ]
+      text [
+       letters [ " " ]
+      ]
+      text [
+       letters [ "G" ]
+      ]
+      text [
+       letters [ "A" ]
+      ]
+      text [
+       letters [ "R" ]
+      ]
+      text [
+       letters [ "D" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
+      text [
+       letters [ "N" ]
+      ]
+      text [
+       letters [ "S" ]
+      ]
+     ]
+     baseline [
+      pos [ 0 0 1.73 ]
+      scale [ 2.5 1 2.5 ]
+      graphic [
+       code [ "daisySZ" ]
       ]
      ]
     ]
@@ -1143,18 +1007,149 @@ group "daisysGarden" [
       code [ "mickey" ]
       color [ 1 1 0 1 ]
       pos [ -0.17 0 -0.62297 ]
-      scale [ 1.87057 1 1.51598 ]
+      scale [ 1.55846 1 1.51598 ]
       width [ 34.4253 ]
       height [ 34.4253 ]
       flags [ "d" ]
       text [
-       letters [ "O" ]
+       letters [ "T" ]
+      ]
+      text [
+       letters [ "U" ]
+      ]
+      text [
+       letters [ "L" ]
+      ]
+      text [
+       letters [ "I" ]
+      ]
+      text [
+       letters [ "P" ]
+      ]
+      text [
+       letters [ " " ]
+      ]
+      text [
+       letters [ "T" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
+      text [
+       letters [ "R" ]
+      ]
+      text [
+       letters [ "R" ]
       ]
       text [
        letters [ "A" ]
       ]
       text [
-       letters [ "K" ]
+       letters [ "C" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
+     ]
+     baseline [
+      code [ "mickey" ]
+      color [ 1 1 0 1 ]
+      pos [ 0 0 -1.73655 ]
+      scale [ 0.95104 1 0.902303 ]
+      width [ 35.468 ]
+      height [ 35.468 ]
+      flags [ "d" ]
+      text [
+       letters [ "D" ]
+      ]
+      text [
+       letters [ "A" ]
+      ]
+      text [
+       letters [ "I" ]
+      ]
+      text [
+       letters [ "S" ]
+      ]
+      text [
+       letters [ "Y" ]
+      ]
+      text [
+       letters [ " " ]
+      ]
+      text [
+       letters [ "G" ]
+      ]
+      text [
+       letters [ "A" ]
+      ]
+      text [
+       letters [ "R" ]
+      ]
+      text [
+       letters [ "D" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
+      text [
+       letters [ "N" ]
+      ]
+      text [
+       letters [ "S" ]
+      ]
+     ]
+     baseline [
+      pos [ 0 0 1.706 ]
+      scale [ 2.34951 1 1.88988 ]
+      graphic [
+       code [ "daisySZ" ]
+      ]
+     ]
+    ]
+   ]
+   prop "linktunnel_dg_5401_DNARoot" [
+    code [ "prop_safe_zone_tunnel" ]
+    pos [ 219.08 243.08 7.30001 ]
+    nhpr [ 111 0 -0 ]
+    sign [
+     code [ "tunnel_sign_green" ]
+     pos [ 0 0 0.53 ]
+     scale [ 1.39066 1 1.61989 ]
+     baseline [
+      code [ "mickey" ]
+      color [ 1 1 0 1 ]
+      pos [ -0.17 0 -0.62297 ]
+      scale [ 1.30452 1 1.5 ]
+      width [ 34.4253 ]
+      height [ 34.4253 ]
+      flags [ "d" ]
+      text [
+       letters [ "S" ]
+      ]
+      text [
+       letters [ "U" ]
+      ]
+      text [
+       letters [ "N" ]
+      ]
+      text [
+       letters [ "F" ]
+      ]
+      text [
+       letters [ "L" ]
+      ]
+      text [
+       letters [ "O" ]
+      ]
+      text [
+       letters [ "W" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
+      text [
+       letters [ "R" ]
       ]
       text [
        letters [ " " ]
@@ -1232,35 +1227,6 @@ group "daisysGarden" [
       graphic [
        code [ "daisySZ" ]
       ]
-     ]
-    ]
-   ]
-   flat_building "sz0:random_DNARoot" [
-    pos [ 18.6437 350.457 13 ]
-    nhpr [ 0 0 0 ]
-    width [ 20 ]
-    wall [
-     height [ 4 ]
-     code [ "wall_basement_rock_ur" ]
-     color [ 0.22 0.74 0.62 1 ]
-     windows [
-      code [ "window_sm_pointed_ur" ]
-      color [ 1 1 1 1 ]
-      count [ 0 ]
-     ]
-    ]
-    wall [
-     height [ 21 ]
-     code [ "wall_md_blank_ur" ]
-     color [ 1 0.55 0.55 1 ]
-     windows [
-      code [ "window_flower_porthole_ur" ]
-      color [ 1 1 0.6 1 ]
-      count [ 4 ]
-     ]
-     cornice [
-      code [ "cornice_brick_ur" ]
-      color [ 0.53 0.92 0.81 1 ]
      ]
     ]
    ]
@@ -1373,13 +1339,13 @@ group "daisysGarden" [
   ]
   prop "daisys_garden_ext_DNARoot" [
    code [ "daisys_garden_ext" ]
-   pos [ -14.9747 335.34 13.99 ]
-   nhpr [ -180 0 0 ]
+   pos [ -14.9746 335.34 13.99 ]
+   nhpr [ 180 0 -0 ]
   ]
   prop "prop_party_gate_DNARoot" [
    code [ "prop_party_gate" ]
-   pos [ 66.9977 324.316 14.02 ]
-   nhpr [ -45 0 0 ]
+   pos [ 37.6967 343.633 14.02 ]
+   nhpr [ -18 0 0 ]
   ]
   flat_building "tb0:random_DNARoot" [
    pos [ 98.47 308.116 13 ]
@@ -1500,7 +1466,7 @@ group "daisysGarden" [
   ]
   flat_building "tb0:random_DNARoot" [
    pos [ 98.4162 298.289 13 ]
-   nhpr [ -75 0 0 ]
+   nhpr [ -75 0 -0 ]
    width [ 15 ]
    wall [
     height [ 3 ]
@@ -1538,7 +1504,7 @@ group "daisysGarden" [
    ]
   ]
   flat_building "tb0:random_DNARoot" [
-   pos [ 105.07 304.316 13 ]
+   pos [ 107.57 308.646 13 ]
    nhpr [ -90 0 0 ]
    width [ 10 ]
    wall [
@@ -1617,7 +1583,7 @@ group "daisysGarden" [
   ]
   flat_building "tb0:random_DNARoot" [
    pos [ 51.3461 343.033 13 ]
-   nhpr [ -30 0 0 ]
+   nhpr [ -30 0 -0 ]
    width [ 20 ]
    wall [
     height [ 4 ]
@@ -1644,16 +1610,68 @@ group "daisysGarden" [
     ]
    ]
   ]
+  landmark_building "tb3:toon_landmark_DG_clothes_shop_DNARoot" [
+   code [ "toon_landmark_DG_clothes_shop" ]
+   title [ "" ]
+   pos [ 72.827 320.239 13 ]
+   nhpr [ -30 0 0 ]
+   door [
+    code [ "door_double_round_ur" ]
+    color [ 1 1 1 1 ]
+   ]
+   sign [
+    baseline [
+     code [ "mickey" ]
+     color [ 1 0 0 1 ]
+     pos [ 0 0 -0.503471 ]
+     scale [ 1.5 1 1.5 ]
+     text [
+      letters [ "C" ]
+     ]
+     text [
+      letters [ "l" ]
+     ]
+     text [
+      letters [ "o" ]
+     ]
+     text [
+      letters [ "t" ]
+     ]
+     text [
+      letters [ "h" ]
+     ]
+     text [
+      letters [ "i" ]
+     ]
+     text [
+      letters [ "n" ]
+     ]
+     text [
+      letters [ "g" ]
+     ]
+     text [
+      letters [ " " ]
+     ]
+     text [
+      letters [ "S" ]
+     ]
+     text [
+      letters [ "h" ]
+     ]
+     text [
+      letters [ "o" ]
+     ]
+     text [
+      letters [ "p" ]
+     ]
+    ]
+   ]
+  ]
  ]
  prop "daisys_garden_ext_DNARoot" [
   code [ "daisys_garden_ext" ]
   pos [ 108.817 331.185 13.9 ]
-  nhpr [ -30 0 0 ]
+  nhpr [ -30 0 -0 ]
   scale [ 3 3 3 ]
- ]
- prop "prop_construction_sign_DNARoot" [
-  code [ "prop_construction_sign" ]
-  pos [ 108.897 264.801 14 ]
-  nhpr [ -64 0 0 ]
  ]
 ]

@@ -12211,13 +12211,13 @@ group "minniesMelodyLand" [
   ]
   
   // linktunnel_mm_4401_DNARoot -- That should be the prop name, but we want the street disabled for now
-  prop "prop_safe_zone_entrance_tunnel" [
+  prop "linktunnel_mm_4401_DNARoot" [
    code [ "prop_safe_zone_entrance_tunnel" ]
    pos [ 160 240 .5 ]
    nhpr [ 0 0 0 ]
    sign [
     code [ "tunnel_sign_magenta" ]
-    pos [ 0 0 0 ]
+    pos [ 0 0 -2.13 ]
     scale [ 1.5 1 1.5 ]
     baseline [
      code [ "mickey" ]
@@ -12348,89 +12348,6 @@ group "minniesMelodyLand" [
   ]
   
   flat_building "tb27:random_DNARoot" [
-   pos [ 200 260 0 ]
-   nhpr [ -90 0 -0 ]
-   width [ 20 ]
-   wall [
-    height [ 10 ]
-    code [ "wall_bricks_ur" ]
-    color [ 0.96 0.96 0.73 1 ]
-    windows [
-     code [ "window_md_curved_ur" ]
-     color [ 1 0.79 0.49 1 ]
-     count [ 1 ]
-    ]
-   ]
-   wall [
-    height [ 10 ]
-    code [ "wall_bricks_ur" ]
-    color [ 0.96 0.96 0.73 1 ]
-    windows [
-     code [ "window_md_curved_ur" ]
-     color [ 1 0.79 0.49 1 ]
-     count [ 1 ]
-    ]
-   ]
-  ]
-  flat_building "tb27:random_DNARoot" [
-   pos [ 200 260 0 ]
-   nhpr [ -0 0 -0 ]
-   width [ 10 ]
-   wall [
-    height [ 20 ]
-    code [ "wall_bricks_ur" ]
-    color [ 0.96 0.96 0.73 1 ]
-    windows [
-     code [ "window_md_curved_ul" ]
-     color [ 0.97 0.87 0.47 1 ]
-     count [ 1 ]
-    ]
-   ]
-   wall [
-    height [ 10 ]
-    code [ "wall_bricks_ur" ]
-    color [ 0.96 0.96 0.73 1 ]
-    windows [
-     code [ "window_md_curved_ul" ]
-     color [ 1 0.79 0.49 1 ]
-     count [ 1 ]
-    ]
-    cornice [
-     code [ "cornice_marble_ur" ]
-     color [ 1 1 0.58 1 ]
-    ]
-   ]
-  ]
-  flat_building "tb27:random_DNARoot" [
-   pos [ 200 280 0 ]
-   nhpr [ -90 0 -0 ]
-   width [ 20 ]
-   wall [
-    height [ 20 ]
-    code [ "wall_bricks_ur" ]
-    color [ 0.96 0.96 0.73 1 ]
-   ]
-   wall [
-    height [ 10 ]
-    code [ "wall_bricks_ur" ]
-    color [ 0.96 0.96 0.73 1 ]
-    windows [
-     code [ "window_md_curved_ul" ]
-     color [ 1 0.79 0.49 1 ]
-     count [ 1 ]
-    ]
-    cornice [
-     code [ "cornice_marble_ur" ]
-     color [ 1 1 0.58 1 ]
-    ]
-   ]
-   prop "prop_cello_flat_DNARoot" [
-    code [ "prop_cello_flat" ]
-    pos [ 2.6 -0.86 -5 ]
-    nhpr [ 60 0 -0 ]
-   ]
-  ]
-  flat_building "tb27:random_DNARoot" [
    pos [ 175 280 0 ]
    nhpr [ -0 0 -0 ]
    width [ 15 ]
@@ -12556,16 +12473,6 @@ group "minniesMelodyLand" [
      color [ 0.49 0.79 1 1 ]
      count [ 4 ]
     ]
-   ]
-   prop "prop_tree_small_ur_DNARoot" [
-    code [ "prop_tree_small_ur_MM" ]
-    pos [ 7.32001 -33.08 -4.95 ]
-    nhpr [ -0 0 -0 ]
-   ]
-   prop "prop_tree_small_ur_DNARoot" [
-    code [ "prop_tree_small_ur_MM" ]
-    pos [ 32.32 -32.08 -4.97 ]
-    nhpr [ -0 0 -0 ]
    ]
   ]
   flat_building "tb27:random_DNARoot" [

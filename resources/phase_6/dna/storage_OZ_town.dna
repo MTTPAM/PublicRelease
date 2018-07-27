@@ -1,11 +1,12 @@
+store_font [ "font" "DD_Portago"
+             "phase_3/models/fonts/Portago" ]
+
 store_texture [ "texture" "street_street_OZ_tex"	
-                "TL_Cookies/toonland/playground/oz/maps/dustroad.jpg" ]
-
+		"phase_6/maps/acorn_acres_road.jpg"		]
 store_texture [ "texture" "street_sidewalk_OZ_tex"
-                "TL_Cookies/toonland/playground/oz/maps/grassOZ.jpg" ]
-
+		"phase_3.5/maps/grassAA.jpg"	]
 store_texture [ "texture" "street_curb_OZ_tex"
-                "TL_Cookies/toonland/playground/oz/maps/grassOZ.jpg" ]
+		"phase_6/maps/outdoor_zone_board.jpg"	]
 
 place_model "phase_8/models/modules/street_modules_enhanced_DG" [
  store_node [ "street" "DG_street_interior_corner_slope" "DG_interior_corner_slope"  ]
@@ -72,12 +73,47 @@ place_model "phase_5/models/modules/street_low_fence" [
  store_node [ "prop" "fence_woodbrush_brick" "f_woodbrush_brick" ]
 ]
 
+place_model "phase_3.5/models/modules/TT_A1" [
+	store_node [ "toon_landmark" "toon_landmark_TT_A1" "TT_A1"  ]
+	]
+place_model "phase_5/models/modules/TT_A2" [
+	store_node [ "toon_landmark" "toon_landmark_TT_A2" "TT_A2"  ]
+	]
+place_model "phase_5/models/modules/TT_A3" [
+	store_node [ "toon_landmark" "toon_landmark_TT_A3" "TT_A3"  ]
+	]
+place_model "phase_5/models/modules/TT_B1" [
+	store_node [ "toon_landmark" "toon_landmark_TT_B1" "TT_B1"  ]
+	]
+place_model "phase_5/models/modules/TT_B2" [
+	store_node [ "toon_landmark" "toon_landmark_TT_B2" "TT_B2"  ]
+	]
+place_model "phase_5/models/modules/TT_C1" [
+	store_node [ "toon_landmark" "toon_landmark_TT_C1" "TT_C1"  ]
+	]
+
 place_model "phase_6/models/golf/outdoor_zone_entrance" [
  store_node [ "prop" "prop_outdoor_zone_entrance" "" ]
 ]
 
-place_model "phase_5/models/props/trashcan_TT" [
- store_node [ "prop" "prop_trashcan_metal" ]
+place_model "phase_6/models/props/trashcan_AA" [
+ store_node [ "prop" "prop_trashcan_AA" "" ]
+]
+
+place_model "phase_6/models/props/mailbox_AA" [
+ store_node [ "prop" "prop_mailbox_AA" "" ]
+]
+
+place_model "phase_6/models/props/AA_hydrant" [
+ store_node [ "prop" "prop_AA_hydrant" "" ]
+]
+
+place_model "phase_6/models/props/AA_streetlight1" [
+ store_node [ "prop" "prop_AA_streetlight1" "" ]
+]
+
+place_model "phase_6/models/props/AA_streetlight2" [
+ store_node [ "prop" "prop_AA_streetlight2" "" ]
 ]
 
 place_model "phase_6/models/golf/picnic_table" [
