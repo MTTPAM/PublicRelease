@@ -369,6 +369,8 @@ def attachSuitHead(node, suitName):
     head.calcTightBounds(p1, p2)
     d = p2 - p1
     biggest = max(d[0], d[2])
+    if biggest == 0:
+		biggest = 1
     column = suitIndex % SuitDNA.suitsPerDept
     s = (0.2 + column / 100.0) / biggest
     pos = -0.14 + (SuitDNA.suitsPerDept - column - 1) / 135.0
