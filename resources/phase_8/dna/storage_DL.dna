@@ -63,8 +63,6 @@ hood_model "phase_8/models/props/streetlight_DL" [
 
 store_texture [ "texture" "street_street_DL_tex"
 		"phase_3.5/maps/cobblestone_purple.jpg"		]
-store_texture [ "texture" "street_bed_DL_tex"
-		"phase_3.5/maps/ddl_bed_street.jpg"		]
 store_texture [ "texture" "street_sidewalk_DL_tex"	
 		"phase_3.5/maps/sidewalk_4cont_purple.jpg"	]
 store_texture [ "texture" "street_curb_DL_tex"

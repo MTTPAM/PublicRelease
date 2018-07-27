@@ -670,6 +670,7 @@ group "daisysGarden" [
      baseline [
       pos [ 0 0 1.65 ]
       scale [ 2.5 1 2.5 ]
+      kern [ 1.e-006 ]
       graphic [
        code [ "daisySZ" ]
       ]
@@ -4184,6 +4185,35 @@ group "daisysGarden" [
    ]
   ]
   group "buildings" [
+   flat_building "tb0:random25_DNARoot" [
+    pos [ -35 700 0 ]
+    nhpr [ -90 0 -0 ]
+    width [ 10 ]
+    wall [
+     height [ 4 ]
+     code [ "wall_basement_brick_ur" ]
+     color [ 0.69 0.31 0.83 1 ]
+     windows [
+      code [ "window_sm_pointed_ur" ]
+      color [ 1 1 1 1 ]
+      count [ 0 ]
+     ]
+    ]
+    wall [
+     height [ 21 ]
+     code [ "wall_md_blank_ur" ]
+     color [ 1 0.55 1 1 ]
+     windows [
+      code [ "window_flower_porthole_ur" ]
+      color [ 1 1 1 1 ]
+      count [ 4 ]
+     ]
+     cornice [
+      code [ "cornice_brick_ur" ]
+      color [ 0.8 0.53 1 1 ]
+     ]
+    ]
+   ]
    flat_building "tb5:random25_DNARoot" [
     pos [ 295 -20 0 ]
     nhpr [ -180 0 -0 ]
@@ -10772,8 +10802,8 @@ group "daisysGarden" [
     ]
    ]
    flat_building "tb0:random_DNARoot" [
-    pos [ 695.05 69.8 0 ]
-    nhpr [ -90 0 -0 ]
+    pos [ 700.05 64.8 0 ]
+    nhpr [ 180 0 -0 ]
     width [ 5 ]
     wall [
      height [ 3 ]
@@ -10802,7 +10832,7 @@ group "daisysGarden" [
    ]
    flat_building "tb0:random_DNARoot" [
     pos [ 695.05 104.8 0 ]
-    nhpr [ -90 0 0 ]
+    nhpr [ -0 0 -0 ]
     width [ 5 ]
     wall [
      height [ 4 ]
@@ -10826,96 +10856,116 @@ group "daisysGarden" [
    ]
   ]
   group "props" [
-   prop "linktunnel_oz_6118_DNARoot" [
-    code [ "prop_outdoor_zone_entrance" ]
-    pos [ 696.05 84.8 0 ]
+   prop "linktunnel_dd_1201_DNARoot" [
+    code [ "prop_neighborhood_tunnel" ]
+    pos [ 695.05 84.8 0 ]
     nhpr [ -90 0 -0 ]
     sign [
-     code [ "DD_sign2" ]
-     pos [ 0 0 -0.454327 ]
-     scale [ 1.9 1 1.4 ]
+     code [ "tunnel_sign_red" ]
+     pos [ 0 0 0.2 ]
+     scale [ 1.5 1 1.5 ]
      baseline [
-      code [ "TT_Comedy" ]
-      color [ 0.439216 0.247059 0.184314 1 ]
-      scale [ 1.5 1 1.4 ]
-      wiggle [ 3 ]
-      stomp [ 0.0367716 ]
+      code [ "mickey" ]
+      color [ 0.501961 0 0.25098 1 ]
+      pos [ 0 0 -1.15 ]
+      scale [ 1.2 1 1.5 ]
+      width [ 66.6667 ]
+      height [ 66.6667 ]
+      text [
+       letters [ "S" ]
+      ]
+      text [
+       letters [ "E" ]
+      ]
       text [
        letters [ "A" ]
       ]
       text [
-       letters [ "c" ]
+       letters [ "W" ]
       ]
       text [
-       letters [ "o" ]
+       letters [ "E" ]
       ]
       text [
-       letters [ "r" ]
+       letters [ "E" ]
       ]
       text [
-       letters [ "n" ]
+       letters [ "D" ]
       ]
       text [
        letters [ " " ]
       ]
       text [
-       letters [ "A" ]
+       letters [ "S" ]
       ]
       text [
-       letters [ "v" ]
+       letters [ "T" ]
       ]
       text [
-       letters [ "e" ]
+       letters [ "R" ]
       ]
       text [
-       letters [ "n" ]
+       letters [ "E" ]
       ]
       text [
-       letters [ "u" ]
+       letters [ "E" ]
       ]
       text [
-       letters [ "e" ]
+       letters [ "T" ]
       ]
      ]
      baseline [
-      code [ "TT_Comedy" ]
-      color [ 0.439216 0.247059 0.184314 1 ]
-      pos [ 0 0 -1.2 ]
-      scale [ 1.5 1 1.4 ]
-      wiggle [ 3 ]
-      stomp [ 0.0367716 ]
+      pos [ 0 0 1.5 ]
+      scale [ 2.5 1 2.5 ]
+      graphic [
+       code [ "donaldSZ" ]
+      ]
+     ]
+     baseline [
+      code [ "mickey" ]
+      color [ 0.501961 0 0.25098 1 ]
+      pos [ 0 0 -1.96 ]
+      scale [ 0.7 1 0.7 ]
+      width [ 43.5654 ]
+      height [ 43.5654 ]
+      text [
+       letters [ "D" ]
+      ]
+      text [
+       letters [ "O" ]
+      ]
+      text [
+       letters [ "N" ]
+      ]
       text [
        letters [ "A" ]
       ]
       text [
-       letters [ "c" ]
+       letters [ "L" ]
       ]
       text [
-       letters [ "o" ]
+       letters [ "D" ]
       ]
       text [
-       letters [ "r" ]
+       letters [ "'" ]
       ]
       text [
-       letters [ "n" ]
+       letters [ "S" ]
       ]
       text [
        letters [ " " ]
       ]
       text [
-       letters [ "A" ]
+       letters [ "D" ]
       ]
       text [
-       letters [ "c" ]
+       letters [ "O" ]
       ]
       text [
-       letters [ "r" ]
+       letters [ "C" ]
       ]
       text [
-       letters [ "e" ]
-      ]
-      text [
-       letters [ "s" ]
+       letters [ "K" ]
       ]
      ]
     ]
