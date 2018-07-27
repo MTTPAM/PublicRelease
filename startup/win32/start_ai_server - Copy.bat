@@ -9,13 +9,13 @@ set EVENTLOGGER_IP=127.0.0.1:7197
 
 rem Get the user input:
 echo Don't Change district name from Test Canvas or it will show up in invasion api!
-set /P DISTRICT_NAME="District name (DEFAULT: Test Canvas): " || ^
-set DISTRICT_NAME=Test Canvas
-set /P BASE_CHANNEL="Base channel (DEFAULT: 401000000): " || ^
-set BASE_CHANNEL=401000000
-
-set /P START_TIME="START TIME(DEFAULT : 6): " || ^
-set START_TIME=6
+set /P DISTRICT_NAME="District name (DEFAULT: District2): " || ^
+set DISTRICT_NAME=District2
+echo To Make More Than One District
+echo Change This Number's 3rd diget up each district you makecab
+echo EX: 403000000
+set /P BASE_CHANNEL="Base channel (DEFAULT: 402000000): " || ^
+set BASE_CHANNEL=402000000
 title %DISTRICT_NAME%
 
 set /P PPYTHON_PATH=<PPYTHON_PATH
@@ -35,5 +35,5 @@ echo ===============================
 %PPYTHON_PATH% -m toontown.ai.ServiceStart --base-channel %BASE_CHANNEL% ^
                --max-channels %MAX_CHANNELS% --stateserver %STATESERVER% ^
                --astron-ip %ASTRON_IP% --eventlogger-ip %EVENTLOGGER_IP% ^
-               --district-name "%DISTRICT_NAME%" --start-time "%START_TIME%"
+               --district-name "%DISTRICT_NAME%"
 goto main
