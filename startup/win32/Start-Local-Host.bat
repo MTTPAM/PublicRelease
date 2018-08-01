@@ -9,7 +9,7 @@ start start_ai_server_auto.bat
 cd ../../
 
 set /P PPYTHON_PATH=<PPYTHON_PATH
-set TT_GAMESERVER=localhost
+set TT_GAMESERVER=127.0.0.1
 set TT_PLAYCOOKIE=localuser
 :client
 
