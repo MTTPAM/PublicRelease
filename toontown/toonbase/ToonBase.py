@@ -503,7 +503,7 @@ class ToonBase(OTPBase.OTPBase):
             self.cleanupDownloadWatcher()
         else:
             self.acceptOnce('launcherAllPhasesComplete', self.cleanupDownloadWatcher)
-        gameServer = os.environ.get('TT_GAMESERVER', 'localhost')
+        gameServer = os.environ.get('TT_GAMESERVER', '127.0.0.1')
         serverPort = base.config.GetInt('server-port', 7198)
         clientagents = base.config.GetInt('client-agents', 1) - 1
         serverPort += random.randint(0, clientagents) * 100

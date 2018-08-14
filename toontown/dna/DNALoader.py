@@ -163,27 +163,35 @@ class DNALoader(object):
                     self.curComp = new_comp
 
     def loadDNAFileBase(self, store, _file):
-        if type(_file) == str and _file.endswith('.dna'):
-            _file = _file.replace('.dna', '.pdna')
-        _file = Filename('resources/' + _file)
+        if type(_file) == str and _file.endswith(".dna"):
+            _file = _file.replace(".dna", ".pdna")
+        if __debug__:
+            _file = Filename("./resources/" + _file)
+        else:
+            _file = Filename("/" + _file)
+
         vfs = VirtualFileSystem.getGlobalPtr()
-        vfs.resolveFilename(_file, '')
+        vfs.resolveFilename(_file, "")
         if not vfs.exists(_file):
-            raise DNAError.DNAError("Unable to open DNA file '%s'" % str(_file))
+            raise DNAError.DNAError("Unable to open DNA file '%s'" % (str(_file)))
         dnaData = vfs.readFile(_file, True)
+
         self.curStore = store
         dg = PyDatagram(dnaData)
         dgi = PyDatagramIterator(dg)
         header = dgi.extractBytes(5)
         if header != 'PDNA\n':
-            raise DNAError.DNAError('Invalid header: %s' % header)
+            raise DNAError.DNAError('Invalid header: %s' % (header))
+
         compressed = dgi.getBool()
         dgi.skipBytes(1)
+
         if compressed:
             data = dgi.getRemainingBytes()
             data = zlib.decompress(data)
             dg = PyDatagram(data)
             dgi = PyDatagramIterator(dg)
+
         self.curComp = None
         self.handleStorageData(dgi)
         self.handleCompData(dgi)

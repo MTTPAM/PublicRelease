@@ -13,7 +13,8 @@ from panda3d.core import *
 import glob
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from otp.settings.Settings import Settings
-loadPrcFile('config/general.prc')
+if __debug__:
+    loadPrcFile('config/general.prc')
 notify = directNotify.newCategory('AltisClient')
 notify.setInfo(True)
 preferencesFilename = ConfigVariableString('preferences-filename', 'user/settings.json').getValue()

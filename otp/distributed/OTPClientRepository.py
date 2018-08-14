@@ -41,6 +41,7 @@ from otp.otpgui import OTPDialog
 from otp.uberdog import OtpAvatarManager
 from toontown.chat.ChatGlobals import *
 from otp.otpgui import LoadingDialog, PopupDialog
+import __builtin__
 
 class OTPClientRepository(ClientRepositoryBase):
     notify = directNotify.newCategory('OTPClientRepository')
@@ -240,6 +241,160 @@ class OTPClientRepository(ClientRepositoryBase):
         self.centralLogger = self.generateGlobalObject(OtpDoGlobals.OTP_DO_ID_CENTRAL_LOGGER, 'CentralLogger')
         self.chatAgent = self.generateGlobalObject(OtpDoGlobals.OTP_DO_ID_CHAT_MANAGER, 'ChatAgent')
         self.csm = None
+
+    def readDCFile(self, dcFileNames=None):
+        dcFile = self.getDcFile()
+        dcFile.clear()
+        self.dclassesByName = {}
+        self.dclassesByNumber = {}
+        self.hashVal = 0
+
+        if isinstance(dcFileNames, types.StringTypes):
+            # If we were given a single string, make it a list.
+            dcFileNames = [dcFileNames]
+
+        dcImports = {}
+        if dcFileNames == None:
+            try:
+                # For Nirai
+                readResult = dcFile.read(dcStream, '__dc__')
+                del __builtin__.dcStream
+
+            except NameError:
+                readResult = dcFile.readAll()
+
+            if not readResult:
+                self.notify.error("Could not read dc file.")
+
+        else:
+            searchPath = getModelPath().getValue()
+            for dcFileName in dcFileNames:
+                pathname = Filename(dcFileName)
+                vfs.resolveFilename(pathname, searchPath)
+                readResult = dcFile.read(pathname)
+                if not readResult:
+                    self.notify.error("Could not read dc file: %s" % (pathname))
+
+        self.hashVal = dcFile.getHash()
+
+        # Now import all of the modules required by the DC file.
+        for n in xrange(dcFile.getNumImportModules()):
+            moduleName = dcFile.getImportModule(n)[:]
+
+            # Maybe the module name is represented as "moduleName/AI".
+            suffix = moduleName.split('/')
+            moduleName = suffix[0]
+            suffix=suffix[1:]
+            if self.dcSuffix in suffix:
+                moduleName += self.dcSuffix
+            elif self.dcSuffix == 'UD' and 'AI' in suffix: #HACK:
+                moduleName += 'AI'
+
+            importSymbols = []
+            for i in xrange(dcFile.getNumImportSymbols(n)):
+                symbolName = dcFile.getImportSymbol(n, i)
+
+                # Maybe the symbol name is represented as "symbolName/AI".
+                suffix = symbolName.split('/')
+                symbolName = suffix[0]
+                suffix=suffix[1:]
+                if self.dcSuffix in suffix:
+                    symbolName += self.dcSuffix
+                elif self.dcSuffix == 'UD' and 'AI' in suffix: #HACK:
+                    symbolName += 'AI'
+
+                importSymbols.append(symbolName)
+
+            self.importModule(dcImports, moduleName, importSymbols)
+
+        # Now get the class definition for the classes named in the DC
+        # file.
+        for i in xrange(dcFile.getNumClasses()):
+            dclass = dcFile.getClass(i)
+            number = dclass.getNumber()
+            className = dclass.getName() + self.dcSuffix
+
+            # Does the class have a definition defined in the newly
+            # imported namespace?
+            classDef = dcImports.get(className)
+            if classDef is None and self.dcSuffix == 'UD': #HACK:
+                className = dclass.getName() + 'AI'
+                classDef = dcImports.get(className)
+
+            # Also try it without the dcSuffix.
+            if classDef == None:
+                className = dclass.getName()
+                classDef = dcImports.get(className)
+            if classDef is None:
+                self.notify.debug("No class definition for %s." % (className))
+            else:
+                if type(classDef) == types.ModuleType:
+                    if not hasattr(classDef, className):
+                        self.notify.warning("Module %s does not define class %s." % (className, className))
+                        continue
+                    classDef = getattr(classDef, className)
+
+                if type(classDef) != types.ClassType and type(classDef) != types.TypeType:
+                    self.notify.error("Symbol %s is not a class name." % (className))
+                else:
+                    dclass.setClassDef(classDef)
+
+            self.dclassesByName[className] = dclass
+            if number >= 0:
+                self.dclassesByNumber[number] = dclass
+
+        # Owner Views
+        if self.hasOwnerView():
+            ownerDcSuffix = self.dcSuffix + 'OV'
+            # dict of class names (without 'OV') that have owner views
+            ownerImportSymbols = {}
+
+            # Now import all of the modules required by the DC file.
+            for n in xrange(dcFile.getNumImportModules()):
+                moduleName = dcFile.getImportModule(n)
+
+                # Maybe the module name is represented as "moduleName/AI".
+                suffix = moduleName.split('/')
+                moduleName = suffix[0]
+                suffix=suffix[1:]
+                if ownerDcSuffix in suffix:
+                    moduleName = moduleName + ownerDcSuffix
+
+                importSymbols = []
+                for i in xrange(dcFile.getNumImportSymbols(n)):
+                    symbolName = dcFile.getImportSymbol(n, i)
+
+                    # Check for the OV suffix
+                    suffix = symbolName.split('/')
+                    symbolName = suffix[0]
+                    suffix=suffix[1:]
+                    if ownerDcSuffix in suffix:
+                        symbolName += ownerDcSuffix
+                    importSymbols.append(symbolName)
+                    ownerImportSymbols[symbolName] = None
+
+                self.importModule(dcImports, moduleName, importSymbols)
+
+            # Now get the class definition for the owner classes named
+            # in the DC file.
+            for i in xrange(dcFile.getNumClasses()):
+                dclass = dcFile.getClass(i)
+                if ((dclass.getName()+ownerDcSuffix) in ownerImportSymbols):
+                    number = dclass.getNumber()
+                    className = dclass.getName() + ownerDcSuffix
+
+                    # Does the class have a definition defined in the newly
+                    # imported namespace?
+                    classDef = dcImports.get(className)
+                    if classDef is None:
+                        self.notify.error("No class definition for %s." % className)
+                    else:
+                        if type(classDef) == types.ModuleType:
+                            if not hasattr(classDef, className):
+                                self.notify.error("Module %s does not define class %s." % (className, className))
+                            classDef = getattr(classDef, className)
+                        dclass.setOwnerClassDef(classDef)
+                        self.dclassesByName[className] = dclass
 
     def startLeakDetector(self):
         if hasattr(self, 'leakDetector'):
