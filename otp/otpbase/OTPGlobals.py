@@ -278,7 +278,7 @@ def getNametagFont(index):
     if index not in NametagFonts or NametagFonts[index] is None:
             InterfaceFont = TextNode.getDefaultFont()
             NametagFonts[index] = TextNode.getDefaultFont()
-        else:
+    else:
             NametagFonts[index] = loader.loadFont(NametagFontPaths[index], lineHeight=1.0)
     return NametagFonts[index]
 
@@ -449,7 +449,27 @@ headHeightDict = {'dls': 0.75,
  'xls': 0.75,
  'xss': 0.5,
  'xsl': 0.5,
- 'xll': 0.75}
+ 'xll': 0.75,
+ 'zls': 0.75,	
+ 'zss': 0.5,	
+ 'zsl': 0.5,	
+ 'zll': 0.75,	
+ 'als': 0.75,	
+ 'ass': 0.5,	
+ 'asl': 0.5,	
+ 'all': 0.75,	
+ 'vls': 0.75,	
+ 'vss': 0.5,	
+ 'vsl': 0.5,	
+ 'vll': 0.75,	
+ 'nls': 0.75,	
+ 'nss': 0.5,	
+ 'nsl': 0.5,	
+ 'nll': 0.75,	
+ 'tls': 0.75,	
+ 'tss': 0.5,	
+ 'tsl': 0.5,	
+ 'tll': 0.75}
 RandomButton = 'Randomize'
 TypeANameButton = 'Type Name'
 PickANameButton = 'Pick-A-Name'
