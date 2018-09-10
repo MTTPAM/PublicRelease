@@ -2,11 +2,13 @@
   "acceptingNewFriends": {
     "100000001": true,
     "100000002": true,
+    "100000005": true,
     "100000046": true
   },
   "acceptingNonFriendWhispers": {
     "100000001": true,
     "100000002": true,
+    "100000005": true,
     "100000046": true
   },
   "anisotropic-filtering": 4,
@@ -45,17 +47,20 @@
   "language": "English",
   "lastEffect": {
     "100000001": 0,
-    "100000002": 0,
+    "100000002": 1,
+    "100000005": 0,
     "100000046": 0
   },
   "lastNametag": {
     "100000001": 0,
     "100000002": 0,
+    "100000005": 0,
     "100000046": 0
   },
   "lastRod": {
     "100000001": 0,
     "100000002": 0,
+    "100000005": 0,
     "100000046": 0
   },
   "loadDisplay": "pandagl",

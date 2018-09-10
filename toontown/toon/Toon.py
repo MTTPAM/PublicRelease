@@ -48,6 +48,12 @@ MonkeyDialogueArray = []
 BearDialogueArray = []
 PigDialogueArray = []
 DeerDialogueArray = []
+#add new toon species
+BeaverDialogueArray = []
+AlligatorDialogueArray = []
+FoxDialogueArray = []
+BatDialogueArray = []
+RaccoonDialogueArray = []
 LegsAnimDict = {}
 TorsoAnimDict = {}
 HeadAnimDict = {}
@@ -356,6 +362,11 @@ def loadDialog():
     global DeerDialogueArray
     global HorseDialogueArray
     global MonkeyDialogueArray
+    global BeaverDialogueArray
+    global AlligatorDialogueArray
+    global FoxDialogueArray
+    global BatDialogueArray
+    global RaccoonDialogueArray
     loadPath = 'phase_3.5/audio/dial/'
     DogDialogueFiles = ('AV_dog_short', 'AV_dog_med', 'AV_dog_long', 'AV_dog_question', 'AV_dog_exclaim', 'AV_dog_howl')
     for file in DogDialogueFiles:
