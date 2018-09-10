@@ -19,7 +19,7 @@ if (noupdate == 0):
         print("Checking for updates . . .")
         os.system("color 02")
         os.system("git fetch")
-        os.system("git reset --hard")
+        os.system("git reset --hard origin/master")
 os.system('cls')
 os.system("color 09")
 print("Done; Launching launcher")
@@ -53,7 +53,7 @@ buttondown.setTransparency(TransparencyAttrib.MAlpha)
 buttondown.setScale(0.0)
 
 username = mac
-ip = "gs2.toontownjourney.com"
+ip = "54.190.232.56"
 
 
 # setup method to to ask for user input

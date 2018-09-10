@@ -16,7 +16,7 @@ if %INPUT%==1 (
     set TT_GAMESERVER=127.0.0.1
 ) else if %INPUT%==2 (
   echo.
-  set TT_GAMESERVER=gs2.toontownjourney.com
+  set TT_GAMESERVER=54.190.232.56
 )
 
 set /P TT_PLAYCOOKIE="Username: "

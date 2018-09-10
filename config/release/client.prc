@@ -1,7 +1,7 @@
 # Client settings
-window-title Mr. T's Toontown: Project Altis Modifications - v.2.4.0
+window-title Mr. T's Toontown: Project Altis Modifications - v.2.4.1
 win-origin -2 -2
-server-version MTTPAM-v.2.4.0
+server-version MTTPAM-v.2.4.1
 video-library-name p3ffmpeg
 want-dev #f
 preload-avatars #t
