@@ -19,7 +19,7 @@ if (noupdate == 0):
         print("Checking for updates . . .")
         os.system("color 02")
         os.system("git fetch")
-        os.system("git reset --hard origin/master")
+        os.system("git reset --hard")
 os.system('cls')
 os.system("color 09")
 print("Done; Launching launcher")
