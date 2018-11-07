@@ -53,7 +53,8 @@ buttondown.setTransparency(TransparencyAttrib.MAlpha)
 buttondown.setScale(0.0)
 
 username = mac
-ip = "54.190.232.56"
+# Changed To Local Host
+ip = "127.0.0.1"
 
 
 # setup method to to ask for user input
