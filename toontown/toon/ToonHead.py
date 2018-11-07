@@ -22,7 +22,12 @@ if not base.config.GetBool('want-new-anims', 1):
      'p': '/models/char/monkey-heads-',
      'b': '/models/char/bear-heads-',
      's': '/models/char/pig-heads-',
-     'x': '/models/char/deer-heads-'}
+     'x': '/models/char/deer-heads-',
+     'z': '/models/char/beaver-heads-',	
+     'a': '/models/char/alligator-heads-',	
+     'v': '/models/char/fox-heads-',	
+     'n': '/models/char/bat-heads-',	
+     't': '/models/char/raccoon-heads-'}
 else:
     HeadDict = {'dls': '/models/char/tt_a_chr_dgm_shorts_head_',
      'dss': '/models/char/tt_a_chr_dgm_skirt_head_',
@@ -36,7 +41,12 @@ else:
      'p': '/models/char/monkey-heads-',
      'b': '/models/char/bear-heads-',
      's': '/models/char/pig-heads-',
-     'x': '/models/char/deer-heads-'}
+     'x': '/models/char/deer-heads-',
+     'z': '/models/char/beaver-heads-',	
+     'a': '/models/char/alligator-heads-',	
+     'v': '/models/char/fox-heads-',	
+     'n': '/models/char/bat-heads-',	
+     't': '/models/char/raccoon-heads-'}
 EyelashDict = {'d': '/models/char/dog-lashes',
  'c': '/models/char/cat-lashes',
  'h': '/models/char/horse-lashes',
@@ -46,7 +56,12 @@ EyelashDict = {'d': '/models/char/dog-lashes',
  'p': '/models/char/monkey-lashes',
  'b': '/models/char/bear-lashes',
  's': '/models/char/pig-lashes',
- 'x': '/models/char/deer-lashes'}
+ 'x': '/models/char/deer-lashes',
+ 'z': '/models/char/beaver-lashes',	
+ 'a': '/models/char/alligator-lashes',	
+ 'v': '/models/char/fox-lashes',	
+ 'n': '/models/char/bat-lashes',	
+ 't': '/models/char/raccoon-lashes'}
 DogMuzzleDict = {'dls': '/models/char/dogMM_Shorts-headMuzzles-',
  'dss': '/models/char/dogMM_Skirt-headMuzzles-',
  'dsl': '/models/char/dogSS_Shorts-headMuzzles-',
@@ -392,6 +407,86 @@ class ToonHead(Actor.Actor):
             filePrefix = HeadDict['x']
             fix = self.__fixHeadLongLong
             headHeight = 0.75
+        elif headStyle == 'zls':	
+            filePrefix = HeadDict['z']	
+            fix = self.__fixHeadLongShort	
+            headHeight = 0.75	
+        elif headStyle == 'zss':	
+            filePrefix = HeadDict['z']	
+            fix = self.__fixHeadShortShort	
+            headHeight = 0.5	
+        elif headStyle == 'zsl':	
+            filePrefix = HeadDict['z']	
+            fix = self.__fixHeadShortLong	
+            headHeight = 0.5	
+        elif headStyle == 'zll':	
+            filePrefix = HeadDict['z']	
+            fix = self.__fixHeadLongLong	
+            headHeight = 0.75	
+        elif headStyle == 'als':	
+            filePrefix = HeadDict['a']	
+            fix = self.__fixHeadLongShort	
+            headHeight = 0.75	
+        elif headStyle == 'ass':	
+            filePrefix = HeadDict['a']	
+            fix = self.__fixHeadShortShort	
+            headHeight = 0.5	
+        elif headStyle == 'asl':	
+            filePrefix = HeadDict['a']	
+            fix = self.__fixHeadShortLong	
+            headHeight = 0.5	
+        elif headStyle == 'all':	
+            filePrefix = HeadDict['a']	
+            fix = self.__fixHeadLongLong	
+            headHeight = 0.75	
+        elif headStyle == 'vls':	
+            filePrefix = HeadDict['v']	
+            fix = self.__fixHeadLongShort	
+            headHeight = 0.75	
+        elif headStyle == 'vss':	
+            filePrefix = HeadDict['v']	
+            fix = self.__fixHeadShortShort	
+            headHeight = 0.5	
+        elif headStyle == 'vsl':	
+            filePrefix = HeadDict['v']	
+            fix = self.__fixHeadShortLong	
+            headHeight = 0.5	
+        elif headStyle == 'vll':	
+            filePrefix = HeadDict['v']	
+            fix = self.__fixHeadLongLong	
+            headHeight = 0.75	
+        elif headStyle == 'nls':	
+            filePrefix = HeadDict['n']	
+            fix = self.__fixHeadLongShort	
+            headHeight = 0.75	
+        elif headStyle == 'nss':	
+            filePrefix = HeadDict['n']	
+            fix = self.__fixHeadShortShort	
+            headHeight = 0.5	
+        elif headStyle == 'nsl':	
+            filePrefix = HeadDict['n']	
+            fix = self.__fixHeadShortLong	
+            headHeight = 0.5	
+        elif headStyle == 'nll':	
+            filePrefix = HeadDict['n']	
+            fix = self.__fixHeadLongLong	
+            headHeight = 0.75	
+        elif headStyle == 'tls':	
+            filePrefix = HeadDict['t']	
+            fix = self.__fixHeadLongShort	
+            headHeight = 0.75	
+        elif headStyle == 'tss':	
+            filePrefix = HeadDict['t']	
+            fix = self.__fixHeadShortShort	
+            headHeight = 0.5	
+        elif headStyle == 'tsl':	
+            filePrefix = HeadDict['t']	
+            fix = self.__fixHeadShortLong	
+            headHeight = 0.5	
+        elif headStyle == 'tll':	
+            filePrefix = HeadDict['t']	
+            fix = self.__fixHeadLongLong	
+            headHeight = 0.75
         else:
             ToonHead.notify.error('unknown head style: %s' % headStyle)
         if len(lods) == 1:
@@ -590,7 +685,7 @@ class ToonHead(Actor.Actor):
         parts = self.findAllMatches('**/head*')
         parts.setColor(style.getHeadColor())
         animalType = style.getAnimal()
-        if animalType == 'cat' or animalType == 'rabbit' or animalType == 'bear' or animalType == 'mouse' or animalType == 'pig' or animalType == 'deer':
+        if animalType == 'cat' or animalType == 'rabbit' or animalType == 'bear' or animalType == 'mouse' or animalType == 'pig' or animalType =='deer' or animalType == 'beaver' or animalType == 'fox' or animalType == 'raccoon' or animalType == 'monkey':
             parts = self.findAllMatches('**/ear?-*')
             parts.setColor(style.getHeadColor())
 
@@ -817,7 +912,7 @@ class ToonHead(Actor.Actor):
             searchRoot = self
         else:
             searchRoot = self.find('**/' + str(lodName))
-        if animalType != 'duck' and animalType != 'horse':
+        if animalType != 'duck' and animalType != 'horse' and animalType != 'alligator' and animalType != 'bat':
             if animalType == 'rabbit':
                 if copy:
                     searchRoot.find('**/ears-long').removeNode()
@@ -868,7 +963,7 @@ class ToonHead(Actor.Actor):
             searchRoot = self
         else:
             searchRoot = self.find('**/' + str(lodName))
-        if animalType != 'duck' and animalType != 'horse':
+        if animalType != 'duck' and animalType != 'horse' and animalType != 'alligator' and animalType != 'bat':
             if animalType == 'rabbit':
                 if copy:
                     searchRoot.find('**/ears-short').removeNode()

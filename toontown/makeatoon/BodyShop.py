@@ -258,16 +258,12 @@ class BodyShop(StateData.StateData):
         gui = base.matGui
         shuffleUp = gui.find('**/tt_t_gui_mat_shuffleUp')
         shuffleDown = gui.find('**/tt_t_gui_mat_shuffleDown')
-        pos = ((0.3, 0, 0.3),
-         (0.6, 0, 0.3),
-         (0.9, 0, 0.3),
-         (0.3, 0, 0.1),
-         (0.6, 0, 0.1),
-         (0.9, 0, 0.1),
-         (0.3, 0, -0.1),
-         (0.6, 0, -0.1),
-         (0.9, 0, -0.1),
-         (0.6, 0, -0.3))
+        pos = ((.3, 0, .3),  (.6, 0, .3),  (.9, 0, .3),
+         (.3, 0, .1),  (.6, 0, .1),  (.9, 0, .1),
+         (.3, 0, -.1), (.6, 0, -.1), (.9, 0, -.1),
+         (.3, 0, -.3), (.6, 0, -.3), (.9, 0, -.3),
+         (.3, 0, -.5), (.6, 0, -.5), (.9, 0, -.5))
+		 
         for x in range(len(ToonDNA.toonSpeciesTypes)):
             name = TTLocalizer.AllSpecies[x]
             btn = DirectButton(relief=None, text_style=3, image=(shuffleUp,
