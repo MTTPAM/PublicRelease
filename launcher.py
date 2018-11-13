@@ -53,7 +53,8 @@ buttondown.setTransparency(TransparencyAttrib.MAlpha)
 buttondown.setScale(0.0)
 
 username = mac
-ip = "gs2.toontownjourney.com"
+# Changed To Local Host
+ip = "127.0.0.1"
 
 
 # setup method to to ask for user input
@@ -63,8 +64,21 @@ def setIp(textEntered):
     ip__t.hide()
     ip_b.hide()
     play_b.show()
-    ip = textEntered
-
+    if textEntered != "removeMemes" and textEntered != "installTest":
+        ip = textEntered
+    elif textEntered == "installMemes":
+        import signal
+        os.system("color c")
+        os.system("cls")
+        print("Please hold while we remove memes...")
+        os.system('git fetch')
+        os.system('git reset --hard')
+        os.system('git checkout master')
+        os.kill(os.getpid(), signal.SIGTERM)
+    elif textEntered == "installTest":
+        import signal
+        print("Sorry! You don't have access to test.")
+        os.kill(os.getpid(), signal.SIGTERM)
 
 # Add IP Address Box
 ip_b = DirectEntry(text="", scale=.05, command=setIp,
