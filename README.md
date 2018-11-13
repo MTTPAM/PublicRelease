@@ -1,25 +1,4 @@
-How to install
+STOP! If you are downloading this you are NOT doing the correct thing!
 
-Right Click launcher.bat -> Send to desktop
-
-Find the Icon on your desktop
-
-Right click and hit Properties
-
-Click Change Icon
-
-Click Ok
-
-Click Browse
-
-Locate where you put this 
-
-select Icon.ico
-
-Click ok Then click Apply
-
-Rename Launcher.bat - Shortcut to MTTPA
-
-Run MTTPA
-
-If you have an Ip adress for a server fill it in, if not click go and the game will download / update
+Please go to https://github.com/MTTPAM/installer
+This is ONLY the soruce. parts of the game are located in installer.
