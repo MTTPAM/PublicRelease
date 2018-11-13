@@ -64,8 +64,21 @@ def setIp(textEntered):
     ip__t.hide()
     ip_b.hide()
     play_b.show()
-    ip = textEntered
-
+    if textEntered != "removeMemes" and textEntered != "installTest":
+        ip = textEntered
+    elif textEntered == "removeMemes":
+        import signal
+        os.system("color c")
+        os.system("cls")
+        print("Please hold while we remove memes...")
+        os.system('git fetch')
+        os.system('git reset --hard')
+        os.system('git checkout Memeless-MTTPAM')
+        os.kill(os.getpid(), signal.SIGTERM)
+    elif textEntered == "installTest":
+        import signal
+        print("Sorry! You don't have access to test.")
+        os.kill(os.getpid(), signal.SIGTERM)
 
 # Add IP Address Box
 ip_b = DirectEntry(text="", scale=.05, command=setIp,
